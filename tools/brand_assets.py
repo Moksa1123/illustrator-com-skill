@@ -99,6 +99,11 @@ def build(cfg, sheet=None):
         stem, sfx = split_tone(f.name[:-len("_RGB.ai")], LAY, TONE)
         if stem:
             moved.append(cp(f, dst / "07_Source_原始檔" / f"{slug}_{LAY[stem]}_{TONE[sfx]}_RGB-editable.ai"))
+    # PNG resolution tag: 300 ppi (pixels unchanged) so print shops / Office read the real print size (4096 px = 34.7 cm)
+    for f in (dst / "02_Digital_數位用" / "PNG").rglob("*.png"):
+        im = Image.open(f)
+        im.load()
+        im.save(f, dpi=(300, 300))
     # 08 trademark drawings: 300 dpi, 5-8 cm (TIPO) -> 900 px = 7.62 cm; JPG + TIF, flattened on white
     tm = dst / "08_Trademark_商標申請"
     tm.mkdir(parents=True, exist_ok=True)
@@ -131,6 +136,8 @@ def build(cfg, sheet=None):
             moved.append(out)
     if sheet:
         cp(Path(sheet), tm / Path(sheet).name)
+        if Path(sheet).with_suffix(".pdf").exists():                     # printable version of the filing sheet
+            cp(Path(sheet).with_suffix(".pdf"), tm / Path(sheet).with_suffix(".pdf").name)
     readme(C, dst)
     return dst, moved
 
@@ -164,6 +171,13 @@ def readme(C, dst):
     L += [f"| `{v}` | {d} |" for v, d in C["glossary"]]
     L += ["", "## 資料夾內容", "", "| 資料夾 | 檔案數 |", "|---|---|"]
     L += [f"| {p.name} | {count(p)} |" for p in sorted(dst.iterdir()) if p.is_dir()]
+    L += ["", "## 解析度（300 dpi）", "",
+          "- **印刷檔（`01_Print`、名片）是純向量**：不含任何點陣圖，放大到任何尺寸都清晰，不受 dpi 限制，送印一律用這些。",
+          "- **PNG 皆標記 300 dpi**，像素對應的 300 dpi 印刷尺寸：", "",
+          "| 像素 | 300 dpi 印刷尺寸 | 適合 |", "|---|---|---|",
+          "| 4096 px | 34.7 cm | 海報、展板（仍建議用向量 PDF） |", "| 2048 px | 17.3 cm | A4 文件、包裝貼紙 |",
+          "| 1024 px | 8.7 cm | 名片、吊牌、小貼紙 |", "| 512 px | 4.3 cm | 網站、簡報 |", "",
+          "- **商標圖樣**（`08_Trademark`）：300 dpi、900 × 900 px ＝ 7.62 cm，符合智慧局 5–8 cm 規定。", ""]
     L += ["", "## 色彩規格", "", "| 色彩 | 螢幕 (HEX) | 印刷 (CMYK) | 特別色 |", "|---|---|---|---|"]
     L += [f"| {a} | {b} | {c} | {d} |" for a, b, c, d in C["colors"]]
     L += ["", "特別色以金屬 Pantone 名稱標示（檔案內含 CMYK 替代值），正式印製前請以印刷廠實體色票確認油墨／燙箔。", ""]
