@@ -157,10 +157,17 @@ def build(cfg, sheet=None):
         out.parent.mkdir(exist_ok=True)
         page.save(out, "PDF", resolution=300)
         moved.append(out)
-    if sheet:
-        cp(Path(sheet), tm / Path(sheet).name)
-        if Path(sheet).with_suffix(".pdf").exists():                     # printable version of the filing sheet
-            cp(Path(sheet).with_suffix(".pdf"), tm / Path(sheet).with_suffix(".pdf").name)
+    if sheet:                                                  # the filing sheet: editable DOCX + formal PDF (Word layout); the .md source stays in _work
+        sp = Path(sheet)
+        formal = sp.with_name(sp.stem + "_正式版.pdf")
+        for src, name in ((sp.with_suffix(".docx"), sp.stem + ".docx"), (formal if formal.exists() else sp.with_suffix(".pdf"), sp.stem + ".pdf")):
+            if src.exists():
+                cp(src, tm / name)
+        forms = sp.parent / "tipo_forms" / "filled"             # TIPO official application forms, filled (T0101)
+        if forms.exists():
+            for f in sorted(forms.iterdir()):
+                if f.suffix in (".docx", ".pdf"):
+                    moved.append(cp(f, tm / "application-form_官方申請書" / f.name))
     readme(C, dst)
     return dst, moved
 
