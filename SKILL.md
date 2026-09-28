@@ -19,15 +19,17 @@ description: Drive Adobe Illustrator on Windows from an agent. Runs ExtendScript
 | `tools/html2ai.py` | Fixed-size HTML layout → editable Illustrator document: vector boxes (fill, gradient, border, radius, shadow), embedded photos, imported inline SVG, real text frames. |
 | `tools/logo_package.py` | Industry-standard logo delivery package from a finished logo kit: RGB vectors; CMYK print AI / EPS / PDF-X-1a (greys forced K-only, brand ink K values, spot-colour plates) with a per-file colour audit; PNG 64–4096; social avatars / covers / Open Graph / e-mail; favicon + app icons; README with colour specs. |
 | `tools/brand_assets.py` | Re-files a logo package into a clean, use-first delivery folder (Print / Digital / Social / Web / Card / Guidelines / Source / Trademark) with ASCII filenames, a README, and trademark drawings for TIPO (JPG + TIF, 300 dpi, 7.6 cm, white background, cropped to the mark). |
+| `tools/tipo_form.py`, `tools/md_docx.py` | Taiwan trademark filing: fills the official TIPO T0101 form (`V` in the form's own bordered boxes, PDF via Word); Markdown → formal DOCX/PDF (repeating table headers, unsplit rows, chapter page breaks). |
 | `tools/ui.py`, `tools/ui_drive.py` | Screenshot plus key/mouse input limited to Illustrator windows, for the rare thing that is only on screen. |
 
 ## First run on a new machine
 ```
-pip install -r requirements.txt && playwright install chromium
-python index/build_index.py          # API index from your Illustrator
-python tools/capture_commands.py     # (optional) re-capture the menu-command list, then python index/build_menu_index.py
+illustrator-com setup                # pip install -r requirements.txt, API index from your Illustrator, doctor
+illustrator-com doctor --smoke       # what is missing, and one real script in Illustrator
 python tests/run_tests.py            # what works on your version -> tests/REPORT.md
 ```
+Without the npm CLI: `pip install -r requirements.txt`, then `python index/build_index.py`. Re-capture the menu-command
+list after an Illustrator upgrade: `python tools/capture_commands.py`, then `python index/build_menu_index.py`.
 
 ## Using it
 ```python

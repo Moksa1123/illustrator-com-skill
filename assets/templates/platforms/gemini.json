@@ -1,0 +1,14 @@
+{
+  "platform": "gemini",
+  "displayName": "Gemini CLI",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".gemini",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": "~/.gemini"
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

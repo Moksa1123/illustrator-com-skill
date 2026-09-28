@@ -1,0 +1,14 @@
+{
+  "platform": "kiro",
+  "displayName": "Kiro",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".kiro",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": null
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

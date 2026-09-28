@@ -9,3 +9,8 @@ examples/out/
 # generated locally from your own Illustrator (Adobe type-library text / app exports): not redistributed
 index/ai-dom.json
 index/raw/
+
+# installer state when the runtime is --link'ed to this checkout
+_state/
+node_modules/
+*.tgz

@@ -1,0 +1,15 @@
+{
+  "platform": "codex",
+  "displayName": "Codex CLI",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".codex",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": "~/.codex"
+  },
+  "frontmatter": {
+    "user-invocable": true
+  },
+  "note": "Codex also reads the cross-tool ~/.agents/skills/ path: add --to ~/.agents."
+}

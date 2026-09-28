@@ -128,7 +128,21 @@ ZH = [f"- **選單指令：可腳本化的設計指令 {tot_ok}/{tot_can} 全部
       f"- **工具：{tl_ok}/{len(tl)}** 個工具可切換並讀回；其餘 `selectTool` 接受但 Illustrator 的 `getSelectedToolName()` 會拋錯（每個都有對應的腳本做法）。",
       "- 被擋下（證據在 `tests/blocked.json`）：" + "；".join(f"{r['path']}" for r in blocked_rows) + "。",
       "", *table, "", "每個指令的腳本做法與驗證方式：[tests/CAPABILITIES.md](tests/CAPABILITIES.md)。"]
-for name, block in (("README.md", EN), ("README.zh-TW.md", ZH)):
+JA = [f"- **メニューコマンド：スクリプト可能なデザインコマンド {tot_ok}/{tot_can} をすべて検証（{pct:.1f}%）。Illustrator にブロックされる {tot_blk} 件を含めると {tot_ok}/{tot_can + tot_blk}（{pct_b:.1f}%）。** "
+      f"残り {tot_na} 件は UI／環境設定／Web／生成 AI のコマンド（n/a、理由はコマンドごとに記載）。✅ はすべてサンドボックス文書で実行し、結果を読み戻して確認しています。",
+      f"- **効果：{fx_ok}/{fx_n}** 件の「効果」メニューの効果を LiveEffect XML でダイアログなしに適用し、全パラメーターを保存ファイルから読み戻し（`presets/effects.json`）。",
+      f"- **ライブラリ：{lib_ok}/{lib_n}** 件のテストに合格（`tests/REPORT.md`）：DOM の読み戻し、書き出したピクセル、書き出しファイルのデコード、保存ファイルの効果。",
+      f"- **ツール：{tl_ok}/{len(tl)}** 件を選択して読み戻し。残りは `selectTool` は受け付けるものの `getSelectedToolName()` が例外を投げます（いずれもスクリプトでの代替手段あり）。",
+      "- ブロック（証拠は `tests/blocked.json`）：" + "、".join(f"{r['path']}" for r in blocked_rows) + "。",
+      "", *table, "", "コマンドごとのスクリプトでの実行方法と検証方法：[tests/CAPABILITIES.md](tests/CAPABILITIES.md)。"]
+KO = [f"- **메뉴 명령: 스크립트로 실행 가능한 디자인 명령 {tot_ok}/{tot_can} 전부 검증({pct:.1f}%). Illustrator가 막는 {tot_blk}개를 포함하면 {tot_ok}/{tot_can + tot_blk}({pct_b:.1f}%).** "
+      f"나머지 {tot_na}개는 UI/환경 설정/웹/생성형 AI 명령입니다(n/a, 명령마다 이유 기재). 모든 ✅는 샌드박스 문서에서 실행하고 결과를 다시 읽어 확인했습니다.",
+      f"- **효과: {fx_ok}/{fx_n}**개의 효과 메뉴 효과를 LiveEffect XML로 대화상자 없이 적용하고, 모든 매개변수를 저장된 파일에서 다시 읽음(`presets/effects.json`).",
+      f"- **라이브러리: {lib_ok}/{lib_n}**개 테스트 통과(`tests/REPORT.md`): DOM 재확인, 내보낸 픽셀, 내보낸 파일 디코딩, 저장 파일의 효과.",
+      f"- **도구: {tl_ok}/{len(tl)}**개 선택 후 재확인. 나머지는 `selectTool`은 받아들이지만 `getSelectedToolName()`이 예외를 던집니다(모두 스크립트 대안 있음).",
+      "- 차단됨(증거는 `tests/blocked.json`): " + "; ".join(f"{r['path']}" for r in blocked_rows) + ".",
+      "", *table, "", "명령별 스크립트 실행 방법과 검증 방법: [tests/CAPABILITIES.md](tests/CAPABILITIES.md)."]
+for name, block in (("README.md", EN), ("README.zh-TW.md", ZH), ("README.ja.md", JA), ("README.ko.md", KO)):
     p = SKILL / name
     if p.exists():
         s = p.read_text(encoding="utf-8")

@@ -1,0 +1,14 @@
+{
+  "platform": "cline",
+  "displayName": "Cline",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".cline",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": "~/.cline"
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

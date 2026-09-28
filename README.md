@@ -1,6 +1,6 @@
 # illustrator-com-skill
 
-**English** · [繁體中文](README.zh-TW.md)
+**English** · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
 Let a coding agent (Claude Code and others) drive **Adobe Illustrator on Windows**. Every capability is checked by
 running it in a sandbox document and **reading the result back** — DOM values, exported pixels, and the effect
@@ -20,6 +20,8 @@ Companion to [photoshop-com-skill](https://github.com/Moksa1123/photoshop-com-sk
 | `tests/` | Library tests (`run_tests.py` → `REPORT.md`) and sweeps of every menu command, effect and tool (`menu_sweep.py`, `effects_sweep.py`, `tools_sweep.py`) → `CAPABILITIES.md`: how to do each one from a script and how it was verified. |
 | `presets/sizes.json` + `tools/sizes.py` | 53 design-size presets (Instagram, Facebook, Open Graph, LINE, YouTube, TikTok, Google Ads, Amazon, Shopify, Etsy, Shopee, momo…) with safe zones and sources; `new <id>` opens the artboard with guides. |
 | `tools/html2ai.py` | Fixed-size HTML layout → **editable vector** Illustrator document: boxes become shapes (fill, linear gradient, border, radius, shadow), photos are embedded as displayed, inline SVG is imported as paths, text becomes real text frames. |
+| `tools/logo_package.py`, `tools/brand_assets.py` | Industry-standard **logo delivery package** from a finished logo kit (one JSON config): RGB vectors; print-ready CMYK AI / EPS / PDF-X-1a with greys forced to K-only, brand ink K values and spot-colour plates, audited per file; PNG 64–4096 px at 300 ppi; social avatars / covers / Open Graph / e-mail; favicon + app icons; then re-filed into a clean use-first folder (Print / Digital / Social / Web / Card / Guidelines / Source / Trademark). |
+| `tools/tipo_form.py`, `tools/md_docx.py` | Trademark filing helpers for Taiwan (TIPO): trademark drawings (JPG + TIF, 300 dpi, 7.6 cm), the official T0101 application form filled in (check boxes ticked in the form's own bordered boxes), and Markdown → formal DOCX/PDF via Word (repeating table headers, rows never split). |
 | `tools/ui.py`, `tools/capture_commands.py`, `tools/make_graph_fixture.py` | Screen/keyboard control limited to Illustrator windows, for the few things that only exist on screen. |
 
 ## Verified coverage (Illustrator 2024 / 28.0)
@@ -27,7 +29,7 @@ Companion to [photoshop-com-skill](https://github.com/Moksa1123/photoshop-com-sk
 <!-- coverage:start -->
 - **Menu commands: 452/452 scriptable design commands verified (100.0%); 452/454 (99.6%) counting the 2 blocked ones.** 181 more are UI / preferences / web / generative-AI commands (n/a, reason given per command). Every ✅ was run in a sandbox document and its result read back.
 - **Effects: 115/115** Effect-menu effects applied without a dialog through LiveEffect XML, every parameter read back from the saved file (`presets/effects.json`).
-- **Library: 39/40** tests pass (`tests/REPORT.md`): DOM readback, exported pixels, decoded exports, saved-file effects.
+- **Library: 40/40** tests pass (`tests/REPORT.md`): DOM readback, exported pixels, decoded exports, saved-file effects.
 - **Tools: 60/85** tools selected and read back; the rest are accepted by `selectTool` but Illustrator's `getSelectedToolName()` throws for them (each has a script equivalent).
 - Blocked (evidence in `tests/blocked.json`): File > Save Selected Slices; File > Print.
 
@@ -49,12 +51,63 @@ Per command, with the exact script route and how it was verified: [tests/CAPABIL
 
 ## Install
 
+Needs Windows 10/11, Adobe Illustrator, Python 3.9+ and Node 18+.
+
 ```bash
-pip install -r requirements.txt
-playwright install chromium        # only for html2ai
+npm install -g illustrator-com-skill
+illustrator-com init --ai claude -g      # or: npx illustrator-com-skill init --ai claude -g
+illustrator-com setup                    # pip install -r requirements.txt + API index from your Illustrator + doctor
 ```
 
-Use it as an agent skill by copying this folder into your skills directory (e.g. `~/.claude/skills/illustrator-com/`).
+`init` copies the runtime (`lib/`, `tools/`, `index/`, `tests/`, `presets/`) to `~/.illustrator-com-skill/` once and
+writes a `SKILL.md` for each assistant that points at it, so the API index built from your Illustrator is shared by every
+assistant and survives updates.
+
+```bash
+illustrator-com init                     # pick assistants interactively
+illustrator-com init --ai cursor,windsurf  # this project only (.cursor/skills/…, .windsurf/skills/…)
+illustrator-com init --ai all -g         # every assistant that has a user-wide skills folder
+illustrator-com doctor --smoke           # Windows, Python, packages, Illustrator COM, index, one real script
+illustrator-com list | info | versions | uninstall [--purge]
+```
+
+### 14 AI platforms
+
+| `--ai` | Assistant | Project | Global (`-g`) |
+|---|---|---|---|
+| `claude` | Claude Code | `.claude/skills/illustrator-com/` | `~/.claude/skills/` |
+| `cursor` | Cursor | `.cursor/skills/illustrator-com/` | `~/.cursor/skills/` |
+| `windsurf` | Windsurf / Devin Desktop | `.windsurf/skills/illustrator-com/` | — |
+| `antigravity` | Antigravity / generic agent | `.agent/skills/illustrator-com/` | `~/.gemini/antigravity/global_skills/` |
+| `copilot` | GitHub Copilot | `.github/skills/illustrator-com/` | `~/.copilot/skills/` |
+| `kiro` | Kiro | `.kiro/skills/illustrator-com/` | — |
+| `codex` | Codex CLI | `.codex/skills/illustrator-com/` | `~/.codex/skills/` |
+| `qoder` | Qoder | `.qoder/skills/illustrator-com/` | — |
+| `cline` | Cline | `.cline/skills/illustrator-com/` | `~/.cline/skills/` |
+| `gemini` | Gemini CLI | `.gemini/skills/illustrator-com/` | `~/.gemini/skills/` |
+| `trae` | Trae | `.trae/skills/illustrator-com/` | — |
+| `opencode` | OpenCode | `.opencode/skills/illustrator-com/` | — |
+| `continue` | Continue | `.continue/skills/illustrator-com/` | — |
+| `codebuddy` | CodeBuddy | `.codebuddy/skills/illustrator-com/` | — |
+
+The assistant has to run on the Windows machine that has Illustrator: cloud agents (Claude.ai web, Copilot coding
+agent, Codex cloud) cannot reach a local Illustrator.
+
+### Updates
+
+```bash
+illustrator-com update                   # latest npm version -> runtime + every recorded install
+illustrator-com check                    # is there a newer version? (cached for 24 h)
+illustrator-com config auto-update on    # let `check` install updates by itself
+```
+
+Every installed `SKILL.md` asks the agent to run `check --quiet` once per session, so you hear about a new version
+without doing anything. Auto-update is **off** by default: an update never lands in the middle of your work unless you
+turn it on. Updates keep your API index (`index/ai-dom.json`) and back up any runtime file you edited
+(`~/.illustrator-com-skill/_state/backup/`).
+
+Working on the skill itself: `node bin/illustrator-com.mjs init --link --ai claude -g` points the runtime at your
+checkout instead of copying it.
 
 ## Quick start
 
@@ -95,7 +148,7 @@ AI.png('C:/out/post.png'); AI.svg('C:/out/post.svg', {outlineText: true}); 'ok'
 
 ## Requirements
 
-Windows 10/11, Python 3.9+. Developed and verified on Illustrator 2024 (28.0); other versions should work through the same COM interface but are untested, so run `tests/run_tests.py` and the sweeps on yours. macOS would need an AppleScript
+Windows 10/11, Python 3.9+, Node 18+ (installer only). Developed and verified on Illustrator 2024 (28.0); other versions should work through the same COM interface but are untested, so run `tests/run_tests.py` and the sweeps on yours. macOS would need an AppleScript
 `do javascript` bridge.
 
 Troubleshooting: `docs/troubleshooting-com.md` · Sizes: `docs/sizes.md`

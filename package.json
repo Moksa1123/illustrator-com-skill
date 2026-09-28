@@ -1,0 +1,63 @@
+{
+  "name": "illustrator-com-skill",
+  "version": "1.0.0",
+  "description": "Agent skill that drives Adobe Illustrator on Windows over COM: dialog-free ExtendScript, 452/452 scriptable menu commands and 115 live effects verified by readback, an API index built from your own Illustrator, a tested design library, 53 design-size presets, HTML-to-vector, and an industry-standard logo delivery package. Installs into 14 AI coding assistants.",
+  "bin": {
+    "illustrator-com": "bin/illustrator-com.mjs"
+  },
+  "files": [
+    "bin",
+    "assets",
+    "lib",
+    "index",
+    "!index/ai-dom.json",
+    "!index/raw",
+    "presets",
+    "tools",
+    "tests",
+    "!tests/snaps",
+    "!tests/fixtures/fixture",
+    "!tests/fixtures/out",
+    "examples",
+    "!examples/out",
+    "docs",
+    "!**/__pycache__",
+    "!**/*.pyc",
+    "SKILL.md",
+    "README.md",
+    "README.zh-TW.md",
+    "README.ja.md",
+    "README.ko.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE",
+    "requirements.txt"
+  ],
+  "scripts": {
+    "list": "node bin/illustrator-com.mjs list",
+    "doctor": "node bin/illustrator-com.mjs doctor",
+    "link": "node bin/illustrator-com.mjs init --link --ai claude -g",
+    "test": "python tests/run_tests.py",
+    "test:installer": "node tests/installer.test.mjs",
+    "prepublishOnly": "node tests/installer.test.mjs"
+  },
+  "keywords": [
+    "illustrator", "adobe-illustrator", "extendscript", "com", "windows", "vector", "svg", "logo", "design",
+    "claude", "claude-code", "cursor", "windsurf", "copilot", "codex", "gemini", "kiro", "cline",
+    "ai-skill", "agent-skills", "coding-assistant", "moksa"
+  ],
+  "author": "Moksa1123",
+  "license": "MIT",
+  "homepage": "https://github.com/Moksa1123/illustrator-com-skill#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moksa1123/illustrator-com-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Moksa1123/illustrator-com-skill/issues"
+  },
+  "os": ["win32"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

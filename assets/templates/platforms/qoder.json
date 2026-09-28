@@ -1,0 +1,14 @@
+{
+  "platform": "qoder",
+  "displayName": "Qoder",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".qoder",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": null
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

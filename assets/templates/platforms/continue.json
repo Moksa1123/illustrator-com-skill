@@ -1,0 +1,14 @@
+{
+  "platform": "continue",
+  "displayName": "Continue",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".continue",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": null
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

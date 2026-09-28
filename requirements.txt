@@ -1,4 +1,9 @@
-pywin32>=306
-psutil>=5.9
-Pillow>=10.0
-playwright>=1.40
+# required
+pywin32>=306          # COM (lib/ai_run.py)
+psutil>=5.9           # dialog watchdog (lib/ai_dialogs.py)
+Pillow>=10.0          # exported-pixel checks, PNG sizes, trademark drawings
+pywinauto>=0.6.8      # dialog plans, UI Automation (lib/ai_dialogs.py, tools/ui_drive.py)
+# optional (per tool)
+pypdf>=4.0            # tools/logo_package.py: PDF/X plate checks
+python-docx>=1.1      # tools/md_docx.py, tools/tipo_form.py
+playwright>=1.40      # tools/html2ai.py  (then: python -m playwright install chromium)

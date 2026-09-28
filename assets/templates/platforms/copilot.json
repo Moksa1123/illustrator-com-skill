@@ -1,0 +1,15 @@
+{
+  "platform": "copilot",
+  "displayName": "GitHub Copilot",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".github",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": "~/.copilot"
+  },
+  "frontmatter": {
+    "user-invocable": true
+  },
+  "note": "Use Copilot in VS Code on Windows; the cloud coding agent runs on Linux and cannot reach a local Illustrator."
+}

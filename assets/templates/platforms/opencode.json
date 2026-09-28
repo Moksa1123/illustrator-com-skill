@@ -1,0 +1,14 @@
+{
+  "platform": "opencode",
+  "displayName": "OpenCode",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".opencode",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": null
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

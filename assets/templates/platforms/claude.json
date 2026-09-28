@@ -1,0 +1,14 @@
+{
+  "platform": "claude",
+  "displayName": "Claude Code",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".claude",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": "~/.claude"
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

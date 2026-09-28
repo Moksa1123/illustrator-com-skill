@@ -1,0 +1,15 @@
+{
+  "platform": "antigravity",
+  "displayName": "Antigravity / Generic Agent",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".agent",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": "~/.gemini/antigravity/global_skills",
+    "globalSkillPath": "illustrator-com"
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

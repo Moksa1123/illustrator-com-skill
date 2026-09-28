@@ -1,0 +1,15 @@
+{
+  "platform": "windsurf",
+  "displayName": "Windsurf / Devin Desktop",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".windsurf",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": null
+  },
+  "frontmatter": {
+    "user-invocable": true
+  },
+  "note": "Devin Desktop also reads .devin/: add --to .devin."
+}

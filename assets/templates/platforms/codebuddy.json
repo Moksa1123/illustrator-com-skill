@@ -1,0 +1,14 @@
+{
+  "platform": "codebuddy",
+  "displayName": "CodeBuddy",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".codebuddy",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": null
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}

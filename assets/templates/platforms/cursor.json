@@ -1,0 +1,14 @@
+{
+  "platform": "cursor",
+  "displayName": "Cursor",
+  "installType": "full",
+  "folderStructure": {
+    "root": ".cursor",
+    "skillPath": "skills/illustrator-com",
+    "filename": "SKILL.md",
+    "globalRoot": "~/.cursor"
+  },
+  "frontmatter": {
+    "user-invocable": true
+  }
+}
