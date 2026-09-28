@@ -134,6 +134,29 @@ def build(cfg, sheet=None):
             out = tm / f"{slug}_trademark_{label}_300dpi_7.6cm.{ext}"
             canvas.save(out, dpi=(300, 300), quality=95) if ext == "jpg" else canvas.save(out, dpi=(300, 300), compression="tiff_lzw")
             moved.append(out)
+    # paper filing: TIPO asks for 5 floating drawings (5-8 cm) on plain paper -> A4 sheet, 6 copies at 7.62 cm, 300 dpi, cut guides
+    from PIL import ImageDraw, ImageFont
+    for jpg in sorted(tm.glob("*_trademark_*.jpg")):
+        page = Image.new("RGB", (2480, 3508), (255, 255, 255))
+        d = ImageDraw.Draw(page)
+        cell = Image.open(jpg).convert("RGB")
+        xs, ys = (295, 1285), (330, 1380, 2430)
+        for y in ys:
+            for x in xs:
+                page.paste(cell, (x, y))
+                for k in range(0, 900, 30):                     # dashed cut frame, 3 mm outside the drawing
+                    for (a, b, c2, e) in ((x - 35 + k, y - 35, x - 35 + k + 15, y - 35), (x - 35 + k, y + 935, x - 35 + k + 15, y + 935),
+                                          (x - 35, y - 35 + k, x - 35, y - 35 + k + 15), (x + 935, y - 35 + k, x + 935, y - 35 + k + 15)):
+                        d.line((a, b, c2, e), fill=(150, 150, 150), width=2)
+        try:
+            f = ImageFont.truetype("C:/Windows/Fonts/msjh.ttc", 38)
+        except OSError:
+            f = None
+        d.text((295, 3380), f"浮貼用商標圖樣 5 張以上（每張 7.62 × 7.62 cm，300 dpi）· 列印請選「實際大小／100%」· {jpg.stem}", fill=(90, 90, 90), font=f)
+        out = tm / "paper-filing_浮貼用" / f"{jpg.stem}_A4-print.pdf"
+        out.parent.mkdir(exist_ok=True)
+        page.save(out, "PDF", resolution=300)
+        moved.append(out)
     if sheet:
         cp(Path(sheet), tm / Path(sheet).name)
         if Path(sheet).with_suffix(".pdf").exists():                     # printable version of the filing sheet
