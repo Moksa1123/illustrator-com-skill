@@ -18,6 +18,7 @@ description: Drive Adobe Illustrator on Windows from an agent. Runs ExtendScript
 | `presets/sizes.json` + `tools/sizes.py` | 53 design-size presets with safe zones, file limits, sources. `list <kw>`, `show <id>`, `new <id>` (artboard + safe-zone guides). |
 | `tools/html2ai.py` | Fixed-size HTML layout → editable Illustrator document: vector boxes (fill, gradient, border, radius, shadow), embedded photos, imported inline SVG, real text frames. |
 | `tools/logo_package.py` | Industry-standard logo delivery package from a finished logo kit: RGB vectors; CMYK print AI / EPS / PDF-X-1a (greys forced K-only, brand ink K values, spot-colour plates) with a per-file colour audit; PNG 64–4096; social avatars / covers / Open Graph / e-mail; favicon + app icons; README with colour specs. |
+| `tools/brand_assets.py` | Re-files a logo package into a clean, use-first delivery folder (Print / Digital / Social / Web / Card / Guidelines / Source / Trademark) with ASCII filenames, a README, and trademark drawings for TIPO (JPG + TIF, 300 dpi, 7.6 cm, white background, cropped to the mark). |
 | `tools/ui.py`, `tools/ui_drive.py` | Screenshot plus key/mouse input limited to Illustrator windows, for the rare thing that is only on screen. |
 
 ## First run on a new machine
