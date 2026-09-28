@@ -49,7 +49,7 @@ jobs:
         run: |
           set -euo pipefail
           npm pack --dry-run --json > pack.json
-          node -e "const f=require('./pack.json')[0].files.map(x=>x.path);const bad=f.filter(p=>/ai-dom\.json|index\/raw\/|__pycache__|tests\/snaps\//.test(p));if(bad.length){console.error('generated files in package:',bad);process.exit(1)}console.log(f.length+' files')"
+          node -e "const j=require('./pack.json');const f=(Array.isArray(j)?j[0]:Object.values(j)[0]).files.map(x=>x.path);const bad=f.filter(p=>/ai-dom\.json|index\/raw\/|__pycache__|tests\/snaps\//.test(p));if(bad.length){console.error('generated files in package:',bad);process.exit(1)}console.log(f.length+' files')"
 
       - name: Publish
         if: github.event_name == 'push' || inputs.dry_run == false
