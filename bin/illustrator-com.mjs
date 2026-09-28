@@ -23,6 +23,7 @@ import { homedir, platform as osPlatform } from "node:os";
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { createInterface } from "node:readline/promises";
+import https from "node:https";
 
 const PKG_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const PKG = JSON.parse(readFileSync(join(PKG_ROOT, "package.json"), "utf8"));
@@ -278,11 +279,21 @@ function setup(state, { playwright = false, index = true } = {}) {
 
 // ---------- npm registry / update ----------------------------------------------------------------------------------
 
-async function registry(path = "") {
-  const res = await fetch(REGISTRY + path, { signal: AbortSignal.timeout(5000), headers: { accept: "application/json" } });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`npm registry: HTTP ${res.status}`);
-  return res.json();
+function registry(path = "") {                        // node:https, not fetch: fetch + process exit trips a libuv assertion on Windows
+  return new Promise((resolve_, reject) => {
+    const req = https.get(REGISTRY + path, { headers: { accept: "application/json", connection: "close" }, timeout: 5000 }, (res) => {
+      let body = "";
+      res.setEncoding("utf8");
+      res.on("data", (c) => (body += c));
+      res.on("end", () => {
+        if (res.statusCode === 404) return resolve_(null);
+        if (res.statusCode !== 200) return reject(new Error(`npm registry: HTTP ${res.statusCode}`));
+        try { resolve_(JSON.parse(body)); } catch (e) { reject(e); }
+      });
+    });
+    req.on("timeout", () => req.destroy(new Error("npm registry: timeout")));
+    req.on("error", reject);
+  });
 }
 function newer(a, b) {                                     // semver a > b (x.y.z, prerelease ignored)
   const pa = a.split("-")[0].split(".").map(Number), pb = b.split("-")[0].split(".").map(Number);
@@ -291,7 +302,7 @@ function newer(a, b) {                                     // semver a > b (x.y.
 }
 
 function isGlobalInstall() {
-  const r = spawnSync("npm", ["root", "-g"], { encoding: "utf8", shell: true });
+  const r = spawnSync("npm root -g", { encoding: "utf8", shell: true });
   return r.status === 0 && PKG_ROOT.toLowerCase().startsWith(r.stdout.trim().toLowerCase());
 }
 
@@ -303,16 +314,17 @@ async function update(state, { checkOnly = false } = {}) {
   if (!latest) { out(`${NAME} is not on npm yet — nothing to update from.`); return 0; }
   state.lastCheck = Date.now(); state.latest = latest.version; saveState(state);
   if (!newer(latest.version, installed)) { out(`Up to date (${installed}).`); return 0; }
+  if (!/^\d+\.\d+\.\d+(-[0-9A-Za-z.]+)?$/.test(latest.version)) { err(`Unexpected version from the registry: ${latest.version}`); return 1; }
   out(`Update available: ${installed} -> ${latest.version}`);
   if (checkOnly) return 0;
   if (isGlobalInstall()) {
     out(`> npm install -g ${NAME}@${latest.version}`);
-    const r = spawnSync("npm", ["install", "-g", `${NAME}@${latest.version}`], { stdio: "inherit", shell: true });
+    const r = spawnSync(`npm install -g ${NAME}@${latest.version}`, { stdio: "inherit", shell: true });
     if (r.status !== 0) return r.status || 1;
-    return spawnSync("illustrator-com", ["sync"], { stdio: "inherit", shell: true }).status ?? 1;
+    return spawnSync("illustrator-com sync", { stdio: "inherit", shell: true }).status ?? 1;
   }
   out(`> npx -y ${NAME}@${latest.version} sync`);
-  return spawnSync("npx", ["-y", `${NAME}@${latest.version}`, "sync"], { stdio: "inherit", shell: true }).status ?? 1;
+  return spawnSync(`npx -y ${NAME}@${latest.version} sync`, { stdio: "inherit", shell: true }).status ?? 1;
 }
 
 async function check(state, { quiet = false } = {}) {
@@ -532,4 +544,4 @@ async function main() {
   }
 }
 
-main().then((c) => process.exit(c ?? 0)).catch((e) => { err(`Error: ${e.message}`); process.exit(1); });
+main().then((c) => { process.exitCode = c ?? 0; }).catch((e) => { err(`Error: ${e.message}`); process.exitCode = 1; });

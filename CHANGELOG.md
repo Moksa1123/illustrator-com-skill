@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 — 2026-09-28
+
+- `versions` / `check` / `update` no longer end with a libuv assertion on Windows (registry request through `node:https`, no forced `process.exit`).
+- No DEP0190 warning when `update` runs npm / npx; the version read from the registry is validated before use.
+- `compact` layouts: logo packages ship height-sized PNGs (24h–240h) and every print set (`png_sizes` in the brand config).
+
 ## 1.0.0 — 2026-09-28
 
 First npm release.
