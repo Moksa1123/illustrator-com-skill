@@ -1,0 +1,682 @@
+[
+ {
+  "tool": "Adobe Select Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "document.selection = items / AI.select()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Direct Select Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "pathPoint.selected = PathPointSelection.ANCHORPOINT",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Direct Object Select Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "select an item inside a group: group.pageItems[i].selected = true",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Magic Wand Tool",
+  "selected": true,
+  "got": "Adobe Magic Wand Tool",
+  "ok": true,
+  "how": "Select > Same > … (menu sweep)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Crop Tool",
+  "selected": true,
+  "got": "Adobe Crop Tool",
+  "ok": true,
+  "how": "artboards: AI.addArtboard() / artboard.artboardRect",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Direct Lasso Tool",
+  "selected": true,
+  "got": "Adobe Direct Lasso Tool",
+  "ok": true,
+  "how": "pathPoint.selected by region (loop points inside a polygon)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Pen Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "AI.path(points) / pathItem.setEntirePath() + pathPoints[i].leftDirection/rightDirection",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Add Anchor Point Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "Object > Path > Add Anchor Points / pathPoints.add()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Delete Anchor Point Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "pathPoint.remove()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Anchor Point Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "pathPoint.pointType = PointType.SMOOTH / CORNER",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Curvature Tool",
+  "selected": true,
+  "got": "Adobe Curvature Tool",
+  "ok": true,
+  "how": "AI.path([[x, y, inX, inY, outX, outY], …]) smooth points",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Line Tool",
+  "selected": true,
+  "got": "Adobe Line Tool",
+  "ok": true,
+  "how": "AI.line(x1, y1, x2, y2)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Arc Tool",
+  "selected": true,
+  "got": "Adobe Arc Tool",
+  "ok": true,
+  "how": "AI.path with bezier handles (quarter arc)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Shape Construction Spiral Tool",
+  "selected": true,
+  "got": "Adobe Shape Construction Spiral Tool",
+  "ok": true,
+  "how": "AI.path with computed spiral points",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Rectangular Grid Tool",
+  "selected": true,
+  "got": "Adobe Rectangular Grid Tool",
+  "ok": true,
+  "how": "loops of AI.line / AI.grid",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Polar Grid Tool",
+  "selected": true,
+  "got": "Adobe Polar Grid Tool",
+  "ok": true,
+  "how": "AI.circle rings + AI.line spokes",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Rectangle Shape Tool",
+  "selected": true,
+  "got": "Adobe Rectangle Shape Tool",
+  "ok": true,
+  "how": "AI.rect()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Rounded Rectangle Tool",
+  "selected": true,
+  "got": "Adobe Rounded Rectangle Tool",
+  "ok": true,
+  "how": "AI.roundRect()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Ellipse Shape Tool",
+  "selected": true,
+  "got": "Adobe Ellipse Shape Tool",
+  "ok": true,
+  "how": "AI.ellipse() / AI.circle()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Shape Construction Regular Polygon Tool",
+  "selected": true,
+  "got": "Adobe Shape Construction Regular Polygon Tool",
+  "ok": true,
+  "how": "AI.polygon()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Shape Construction Star Tool",
+  "selected": true,
+  "got": "Adobe Shape Construction Star Tool",
+  "ok": true,
+  "how": "AI.star()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Flare Tool",
+  "selected": true,
+  "got": "Adobe Flare Tool",
+  "ok": true,
+  "how": "Flare needs a mouse gesture (no DOM)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Brush Tool",
+  "selected": true,
+  "got": "Adobe Brush Tool",
+  "ok": true,
+  "how": "brush.applyTo(path)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Blob Brush Tool",
+  "selected": true,
+  "got": "Adobe Blob Brush Tool",
+  "ok": true,
+  "how": "filled paths: AI.path + Pathfinder unite",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Freehand Tool",
+  "selected": true,
+  "got": "Adobe Freehand Tool",
+  "ok": true,
+  "how": "AI.path(points) (pencil)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Freehand Smooth Tool",
+  "selected": true,
+  "got": "Adobe Freehand Smooth Tool",
+  "ok": true,
+  "how": "Object > Path > Smooth",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Freehand Erase Tool",
+  "selected": true,
+  "got": "Adobe Freehand Erase Tool",
+  "ok": true,
+  "how": "pathPoint.remove() / Pathfinder minusFront",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Shaper Tool",
+  "selected": true,
+  "got": "Adobe Shaper Tool",
+  "ok": true,
+  "how": "AI.rect/AI.ellipse/AI.polygon + AI.pathfinder",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Sprayer Tool",
+  "selected": true,
+  "got": "Adobe Symbol Sprayer Tool",
+  "ok": true,
+  "how": "loop symbolItems.add(symbol) at positions",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Shifter Tool",
+  "selected": true,
+  "got": "Adobe Symbol Shifter Tool",
+  "ok": true,
+  "how": "symbolItem.translate()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Scruncher Tool",
+  "selected": true,
+  "got": "Adobe Symbol Scruncher Tool",
+  "ok": true,
+  "how": "symbolItem.translate()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Sizer Tool",
+  "selected": true,
+  "got": "Adobe Symbol Sizer Tool",
+  "ok": true,
+  "how": "symbolItem.resize()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Spinner Tool",
+  "selected": true,
+  "got": "Adobe Symbol Spinner Tool",
+  "ok": true,
+  "how": "symbolItem.rotate()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Stainer Tool",
+  "selected": true,
+  "got": "Adobe Symbol Stainer Tool",
+  "ok": true,
+  "how": "symbolItem colorize via opacity/blend",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Screener Tool",
+  "selected": true,
+  "got": "Adobe Symbol Screener Tool",
+  "ok": true,
+  "how": "symbolItem.opacity",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Symbol Styler Tool",
+  "selected": true,
+  "got": "Adobe Symbol Styler Tool",
+  "ok": true,
+  "how": "graphicStyle.applyTo(symbolItem)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Column Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graphs cannot be created by script (tests/fixtures/graph.ai made with the tool)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Stacked Column Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Bar Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Stacked Bar Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Line Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Area Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Scatter Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Pie Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Radar Graph Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "graph (fixture)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Slice Tool",
+  "selected": true,
+  "got": "Adobe Slice Tool",
+  "ok": true,
+  "how": "item.sliced = true / Object > Slice",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Slice Select Tool",
+  "selected": true,
+  "got": "Adobe Slice Select Tool",
+  "ok": true,
+  "how": "select sliced items",
+  "kind": "tool"
+ },
+ {
+  "tool": "Perspective Grid Tool",
+  "selected": true,
+  "got": "Perspective Grid Tool",
+  "ok": true,
+  "how": "document.showPerspectiveGrid()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Perspective Selection Tool",
+  "selected": true,
+  "got": "Perspective Selection Tool",
+  "ok": true,
+  "how": "Object > Perspective > Attach to Active Plane",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Type Tool",
+  "selected": true,
+  "got": "Adobe Type Tool",
+  "ok": true,
+  "how": "AI.text(str, x, y, {…}) (point text)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Area Type Tool",
+  "selected": true,
+  "got": "Adobe Area Type Tool",
+  "ok": true,
+  "how": "AI.text(str, x, y, {width, height}) (area text)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Path Type Tool",
+  "selected": true,
+  "got": "Adobe Path Type Tool",
+  "ok": true,
+  "how": "AI.textOnPath(path, str)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Vertical Type Tool",
+  "selected": true,
+  "got": "Adobe Vertical Type Tool",
+  "ok": true,
+  "how": "AI.text(str, x, y, {vertical: true})",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Vertical Area Type Tool",
+  "selected": true,
+  "got": "Adobe Vertical Area Type Tool",
+  "ok": true,
+  "how": "areaText + orientation VERTICAL",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Vertical Path Type Tool",
+  "selected": true,
+  "got": "Adobe Vertical Path Type Tool",
+  "ok": true,
+  "how": "pathText + orientation VERTICAL",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Touch Type Tool",
+  "selected": true,
+  "got": "Adobe Touch Type Tool",
+  "ok": true,
+  "how": "characters[i].characterAttributes (size, rotation, baselineShift, horizontalScale)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Gradient Vector Tool",
+  "selected": true,
+  "got": "Adobe Gradient Vector Tool",
+  "ok": true,
+  "how": "AI.gradient() fill + GradientColor.angle / origin",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Mesh Editing Tool",
+  "selected": true,
+  "got": "Adobe Mesh Editing Tool",
+  "ok": true,
+  "how": "Object > Create Gradient Mesh (menu sweep)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Shape Builder Tool",
+  "selected": true,
+  "got": "Adobe Shape Builder Tool",
+  "ok": true,
+  "how": "AI.pathfinder(items, 'unite' | 'divide' …)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Planar Paintbucket Tool",
+  "selected": true,
+  "got": "Adobe Planar Paintbucket Tool",
+  "ok": true,
+  "how": "Live Paint (menu sweep); fill via pathfinder divide + fillColor",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Planar Face Select Tool",
+  "selected": true,
+  "got": "Adobe Planar Face Select Tool",
+  "ok": true,
+  "how": "Live Paint selection",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Rotate Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "AI.rotate()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Reflect Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "AI.flip()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Scale Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "AI.scaleTo() / item.resize()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Shear Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "item.transform(shear matrix)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Reshape Tool",
+  "selected": true,
+  "got": "Adobe Reshape Tool",
+  "ok": true,
+  "how": "move pathPoints[i].anchor",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Width Tool",
+  "selected": true,
+  "got": "Adobe Width Tool",
+  "ok": true,
+  "how": "variable width profile (no DOM; use stroke + Offset Path)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Warp Tool",
+  "selected": true,
+  "got": "Adobe Warp Tool",
+  "ok": true,
+  "how": "AI.warp() / Envelope Distort",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe New Twirl Tool",
+  "selected": true,
+  "got": "Adobe New Twirl Tool",
+  "ok": true,
+  "how": "Effect > Distort & Transform > Twist (AI.fx)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Pucker Tool",
+  "selected": true,
+  "got": "Adobe Pucker Tool",
+  "ok": true,
+  "how": "Effect > Pucker & Bloat (AI.fx)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Bloat Tool",
+  "selected": true,
+  "got": "Adobe Bloat Tool",
+  "ok": true,
+  "how": "Effect > Pucker & Bloat (AI.fx)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Scallop Tool",
+  "selected": true,
+  "got": "Adobe Scallop Tool",
+  "ok": true,
+  "how": "Effect > Zig Zag / Roughen (AI.fx)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Cyrstallize Tool",
+  "selected": true,
+  "got": "Adobe Cyrstallize Tool",
+  "ok": true,
+  "how": "Effect > Roughen (AI.fx)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Wrinkle Tool",
+  "selected": true,
+  "got": "Adobe Wrinkle Tool",
+  "ok": true,
+  "how": "Effect > Roughen (AI.fx)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Free Transform Tool",
+  "selected": true,
+  "got": "Adobe Free Transform Tool",
+  "ok": true,
+  "how": "item.transform(matrix) / Effect > Free Distort",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Measure Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "AI.box(item) (readback)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Eyedropper Tool",
+  "selected": true,
+  "got": "Adobe Eyedropper Tool",
+  "ok": true,
+  "how": "copy colors: target.fillColor = source.fillColor",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Blend Tool",
+  "selected": true,
+  "got": "Adobe Blend Tool",
+  "ok": true,
+  "how": "AI.blend()",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Eraser Tool",
+  "selected": true,
+  "got": "Adobe Eraser Tool",
+  "ok": true,
+  "how": "Pathfinder minusFront with an eraser shape",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Scissors Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "split a path: two AI.path() from its points",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Knife Tool",
+  "selected": true,
+  "got": "Adobe Knife Tool",
+  "ok": true,
+  "how": "Object > Path > Divide Objects Below",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Scroll Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "view: document.activeView.centerPoint",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Page Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "print tiling (no DOM)",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Rotate Canvas Tool",
+  "selected": true,
+  "got": "Adobe Rotate Canvas Tool",
+  "ok": true,
+  "how": "document.activeView.rotateAngle",
+  "kind": "tool"
+ },
+ {
+  "tool": "Adobe Zoom Tool",
+  "selected": true,
+  "ok": false,
+  "getErr": "錯誤: an Illustrator error occurred: 1346458189 ('PARM')",
+  "how": "document.activeView.zoom",
+  "kind": "tool"
+ }
+]

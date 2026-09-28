@@ -1,0 +1,4863 @@
+{
+"source": "ai2024_commands.kys",
+"items": [
+{
+"cmd": "new",
+"path": "File > New",
+"top": "File",
+"key": 78,
+"mods": 64
+},
+{
+"cmd": "newFromTemplate",
+"path": "File > New from Template",
+"top": "File",
+"key": 78,
+"mods": 96
+},
+{
+"cmd": "open",
+"path": "File > Open",
+"top": "File",
+"key": 79,
+"mods": 64
+},
+{
+"cmd": "Adobe Bridge Browse",
+"path": "File > Browse in Bridge",
+"top": "File",
+"key": 79,
+"mods": 192
+},
+{
+"cmd": "close",
+"path": "File > Close",
+"top": "File",
+"key": 87,
+"mods": 64
+},
+{
+"cmd": "closeAll",
+"path": "File > Close All",
+"top": "File",
+"key": 87,
+"mods": 192
+},
+{
+"cmd": "save",
+"path": "File > Save",
+"top": "File",
+"key": 83,
+"mods": 64
+},
+{
+"cmd": "saveas",
+"path": "File > Save As",
+"top": "File",
+"key": 83,
+"mods": 96
+},
+{
+"cmd": "saveacopy",
+"path": "File > Save a Copy",
+"top": "File",
+"key": 83,
+"mods": 192
+},
+{
+"cmd": "Adobe AI Save Selected Slices",
+"path": "File > Save Selected Slices",
+"top": "File",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "saveasTemplate",
+"path": "File > Save as Template",
+"top": "File",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "revert",
+"path": "File > Revert",
+"top": "File",
+"key": 25,
+"mods": 0
+},
+{
+"cmd": "Search Adobe Stock",
+"path": "File > Search Adobe Stock",
+"top": "File",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AI Place",
+"path": "File > Place",
+"top": "File",
+"key": 80,
+"mods": 96
+},
+{
+"cmd": "exportForScreens",
+"path": "File > Export > Export for Screens",
+"top": "File",
+"key": 69,
+"mods": 192
+},
+{
+"cmd": "export",
+"path": "File > Export > Export As",
+"top": "File",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe AI Save For Web",
+"path": "File > Export > Save for Web (Legacy)",
+"top": "File",
+"key": 83,
+"mods": 224
+},
+{
+"cmd": "exportSelection",
+"path": "File > Export Selection",
+"top": "File",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Package Menu Item",
+"path": "File > Package",
+"top": "File",
+"key": 80,
+"mods": 224
+},
+{
+"cmd": "ai_browse_for_script",
+"path": "File > Scripts > Other Script",
+"top": "File",
+"key": 25,
+"mods": 64
+},
+{
+"cmd": "document",
+"path": "File > Document Setup",
+"top": "File",
+"key": 80,
+"mods": 192
+},
+{
+"cmd": "doc-color-cmyk",
+"path": "File > Document Color Mode > CMYK Color",
+"top": "File",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "doc-color-rgb",
+"path": "File > Document Color Mode > RGB Color",
+"top": "File",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "File Info",
+"path": "File > File Info",
+"top": "File",
+"key": 73,
+"mods": 224
+},
+{
+"cmd": "Print",
+"path": "File > Print",
+"top": "File",
+"key": 80,
+"mods": 64
+},
+{
+"cmd": "quit",
+"path": "File > Exit",
+"top": "File",
+"key": 81,
+"mods": 64
+},
+{
+"cmd": "undo",
+"path": "Edit > Undo",
+"top": "Edit",
+"key": 90,
+"mods": 64
+},
+{
+"cmd": "redo",
+"path": "Edit > Redo",
+"top": "Edit",
+"key": 90,
+"mods": 96
+},
+{
+"cmd": "cut",
+"path": "Edit > Cut",
+"top": "Edit",
+"key": 88,
+"mods": 64
+},
+{
+"cmd": "copy",
+"path": "Edit > Copy",
+"top": "Edit",
+"key": 67,
+"mods": 64
+},
+{
+"cmd": "paste",
+"path": "Edit > Paste",
+"top": "Edit",
+"key": 86,
+"mods": 64
+},
+{
+"cmd": "pasteFront",
+"path": "Edit > Paste in Front",
+"top": "Edit",
+"key": 70,
+"mods": 64
+},
+{
+"cmd": "pasteBack",
+"path": "Edit > Paste in Back",
+"top": "Edit",
+"key": 66,
+"mods": 64
+},
+{
+"cmd": "pasteInPlace",
+"path": "Edit > Paste in Place",
+"top": "Edit",
+"key": 86,
+"mods": 96
+},
+{
+"cmd": "pasteInAllArtboard",
+"path": "Edit > Paste on All Artboards",
+"top": "Edit",
+"key": 86,
+"mods": 224
+},
+{
+"cmd": "pasteWithoutFormatting",
+"path": "Edit > Paste without Formatting",
+"top": "Edit",
+"key": 86,
+"mods": 192
+},
+{
+"cmd": "clear",
+"path": "Edit > Clear",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find and Replace",
+"path": "Edit > Find and Replace",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Next",
+"path": "Edit > Find Next",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Auto Spell Check",
+"path": "Edit > Spelling > Auto Spell Check",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Check Spelling",
+"path": "Edit > Spelling > Check Spelling",
+"top": "Edit",
+"key": 73,
+"mods": 64
+},
+{
+"cmd": "Edit Custom Dictionary...",
+"path": "Edit > Edit Custom Dictionary",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Recolor Art Dialog",
+"path": "Edit > Edit Colors > Recolor Artwork",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Generative Recolor Art Dialog",
+"path": "Edit > Edit Colors > Generative Recolor",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Colors6",
+"path": "Edit > Edit Colors > Invert Colors",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Colors5",
+"path": "Edit > Edit Colors > Blend Vertically",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Colors4",
+"path": "Edit > Edit Colors > Blend Horizontally",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Colors3",
+"path": "Edit > Edit Colors > Blend Front to Back",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adjust3",
+"path": "Edit > Edit Colors > Adjust Color Balance",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Colors8",
+"path": "Edit > Edit Colors > Convert to CMYK",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Colors9",
+"path": "Edit > Edit Colors > Convert to RGB",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Colors7",
+"path": "Edit > Edit Colors > Convert to Grayscale",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Saturate3",
+"path": "Edit > Edit Colors > Saturate",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Overprint2",
+"path": "Edit > Edit Colors > Overprint Black",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "EditOriginal Menu Item",
+"path": "Edit > Edit Original",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Transparency Presets",
+"path": "Edit > Transparency Flattener Presets",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Print Presets",
+"path": "Edit > Print Presets",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "PDF Presets",
+"path": "Edit > Adobe PDF Presets",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "PerspectiveGridPresets",
+"path": "Edit > Perspective Grid Presets",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "color",
+"path": "Edit > Color Settings",
+"top": "Edit",
+"key": 75,
+"mods": 96
+},
+{
+"cmd": "assignprofile",
+"path": "Edit > Assign Profile",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "KBSC Menu Item",
+"path": "Edit > Keyboard Shortcuts",
+"top": "Edit",
+"key": 75,
+"mods": 224
+},
+{
+"cmd": "ExportSettings",
+"path": "Edit > My Settings > Export Settings",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "ImportSettings",
+"path": "Edit > My Settings > Import Settings",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "preference",
+"path": "Edit > Preferences > General",
+"top": "Edit",
+"key": 75,
+"mods": 64
+},
+{
+"cmd": "selectionPref",
+"path": "Edit > Preferences > Selection & Anchor Display",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "keyboardPref",
+"path": "Edit > Preferences > Type",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "unitundoPref",
+"path": "Edit > Preferences > Units",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "guidegridPref",
+"path": "Edit > Preferences > Guides & Grid",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "snapPref",
+"path": "Edit > Preferences > Smart Guides",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "slicePref",
+"path": "Edit > Preferences > Slices",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "hyphenPref",
+"path": "Edit > Preferences > Hyphenation",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "pluginPref",
+"path": "Edit > Preferences > Plug-ins & Scratch Disks",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "userInterfacePref",
+"path": "Edit > Preferences > User Interface",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "GPUPerformancePref",
+"path": "Edit > Preferences > Performance",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "FilePref",
+"path": "Edit > Preferences > File Handling",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "ClipboardPref",
+"path": "Edit > Preferences > Clipboard Handling",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "BlackPref",
+"path": "Edit > Preferences > Appearance of Black",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "TouchPref",
+"path": "Edit > Preferences > Touch Workspace",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "DevicesPref",
+"path": "Edit > Preferences > Devices",
+"top": "Edit",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "transformagain",
+"path": "Object > Transform > Transform Again",
+"top": "Object",
+"key": 68,
+"mods": 64
+},
+{
+"cmd": "transformmove",
+"path": "Object > Transform > Move",
+"top": "Object",
+"key": 77,
+"mods": 96
+},
+{
+"cmd": "transformrotate",
+"path": "Object > Transform > Rotate",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "transformreflect",
+"path": "Object > Transform > Reflect",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "transformscale",
+"path": "Object > Transform > Scale",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "transformshear",
+"path": "Object > Transform > Shear",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Transform v23",
+"path": "Object > Transform > Transform Each",
+"top": "Object",
+"key": 68,
+"mods": 224
+},
+{
+"cmd": "AI Reset Bounding Box",
+"path": "Object > Transform > Reset Bounding Box",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "sendToFront",
+"path": "Object > Arrange > Bring to Front",
+"top": "Object",
+"key": 93,
+"mods": 96
+},
+{
+"cmd": "sendForward",
+"path": "Object > Arrange > Bring Forward",
+"top": "Object",
+"key": 93,
+"mods": 64
+},
+{
+"cmd": "sendBackward",
+"path": "Object > Arrange > Send Backward",
+"top": "Object",
+"key": 91,
+"mods": 64
+},
+{
+"cmd": "sendToBack",
+"path": "Object > Arrange > Send to Back",
+"top": "Object",
+"key": 91,
+"mods": 96
+},
+{
+"cmd": "Selection Hat 2",
+"path": "Object > Arrange > Send to Current Layer",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Horizontal Align Left",
+"path": "Object > Align > Horizontal Align Left",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Horizontal Align Center",
+"path": "Object > Align > Horizontal Align Center",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Horizontal Align Right",
+"path": "Object > Align > Horizontal Align Right",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Vertical Align Top",
+"path": "Object > Align > Vertical Align Top",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Vertical Align Center",
+"path": "Object > Align > Vertical Align Center",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Vertical Align Bottom",
+"path": "Object > Align > Vertical Align Bottom",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Vertical Distribute Top",
+"path": "Object > Distribute > Vertical Distribute Top",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Vertical Distribute Center",
+"path": "Object > Distribute > Vertical Distribute Center",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Vertical Distribute Bottom",
+"path": "Object > Distribute > Vertical Distribute Bottom",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Horizontal Distribute Left",
+"path": "Object > Distribute > Horizontal Distribute Left",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Horizontal Distribute Center",
+"path": "Object > Distribute > Horizontal Distribute Center",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Horizontal Distribute Right",
+"path": "Object > Distribute > Horizontal Distribute Right",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "group",
+"path": "Object > Group",
+"top": "Object",
+"key": 71,
+"mods": 64
+},
+{
+"cmd": "ungroup",
+"path": "Object > Ungroup",
+"top": "Object",
+"key": 71,
+"mods": 96
+},
+{
+"cmd": "lock",
+"path": "Object > Lock > Selection",
+"top": "Object",
+"key": 50,
+"mods": 64
+},
+{
+"cmd": "Selection Hat 5",
+"path": "Object > Lock > All Artwork Above",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 7",
+"path": "Object > Lock > Other Layers",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "unlockAll",
+"path": "Object > Unlock All",
+"top": "Object",
+"key": 50,
+"mods": 192
+},
+{
+"cmd": "hide",
+"path": "Object > Hide > Selection",
+"top": "Object",
+"key": 51,
+"mods": 64
+},
+{
+"cmd": "Selection Hat 4",
+"path": "Object > Hide > All Artwork Above",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 6",
+"path": "Object > Hide > Other Layers",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "showAll",
+"path": "Object > Show All",
+"top": "Object",
+"key": 51,
+"mods": 192
+},
+{
+"cmd": "Expand3",
+"path": "Object > Expand",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "expandStyle",
+"path": "Object > Expand Appearance",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Crop Image",
+"path": "Object > Crop Image",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Rasterize 8 menu item",
+"path": "Object > Rasterize",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "make mesh",
+"path": "Object > Create Gradient Mesh",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AI Object Mosaic Plug-in4",
+"path": "Object > Create Object Mosaic",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "TrimMark v25",
+"path": "Object > Create Trim Marks",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Flatten Transparency",
+"path": "Object > Flatten Transparency",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Pixel Perfect",
+"path": "Object > Make Pixel Perfect",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Make Slice",
+"path": "Object > Slice > Make",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Release Slice",
+"path": "Object > Slice > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Create from Guides",
+"path": "Object > Slice > Create from Guides",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Create from Selection",
+"path": "Object > Slice > Create from Selection",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Duplicate",
+"path": "Object > Slice > Duplicate Slice",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Combine",
+"path": "Object > Slice > Combine Slices",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Divide",
+"path": "Object > Slice > Divide Slices",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Delete All Slices",
+"path": "Object > Slice > Delete All",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Slice Options",
+"path": "Object > Slice > Slice Options",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Clip to Artboard",
+"path": "Object > Slice > Clip to Artboard",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "join",
+"path": "Object > Path > Join",
+"top": "Object",
+"key": 74,
+"mods": 64
+},
+{
+"cmd": "average",
+"path": "Object > Path > Average",
+"top": "Object",
+"key": 74,
+"mods": 192
+},
+{
+"cmd": "OffsetPath v22",
+"path": "Object > Path > Outline Stroke",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "OffsetPath v23",
+"path": "Object > Path > Offset Path",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Reverse Path Direction",
+"path": "Object > Path > Reverse Path Direction",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "simplify menu item",
+"path": "Object > Path > Simplify",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "smooth menu item",
+"path": "Object > Path > Smooth",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Add Anchor Points2",
+"path": "Object > Path > Add Anchor Points",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Remove Anchor Points menu",
+"path": "Object > Path > Remove Anchor Points",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Knife Tool2",
+"path": "Object > Path > Divide Objects Below",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Rows and Columns....",
+"path": "Object > Path > Split Into Grid",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "cleanup menu item",
+"path": "Object > Path > Clean Up",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Convert to Shape",
+"path": "Object > Shape > Convert to Shapes",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Expand Shape",
+"path": "Object > Shape > Expand Shape",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Make Pattern",
+"path": "Object > Pattern > Make",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Edit Pattern",
+"path": "Object > Pattern > Edit Pattern",
+"top": "Object",
+"key": 21,
+"mods": 96
+},
+{
+"cmd": "Adobe Pattern Tile Color",
+"path": "Object > Pattern > Tile Edge Color",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Text To Pattern",
+"path": "Object > Pattern > Text to Pattern (Beta)",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Radial Repeat",
+"path": "Object > Repeat > Radial",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Grid Repeat",
+"path": "Object > Repeat > Grid",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Symmetry Repeat",
+"path": "Object > Repeat > Mirror",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Release Repeat Art",
+"path": "Object > Repeat > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Repeat Art Options",
+"path": "Object > Repeat > Options",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Partial Rearrange Make",
+"path": "Object > Intertwine > Make",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Partial Rearrange Release",
+"path": "Object > Intertwine > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Partial Rearrange Edit",
+"path": "Object > Intertwine > Edit",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Path Blend Make",
+"path": "Object > Blend > Make",
+"top": "Object",
+"key": 66,
+"mods": 192
+},
+{
+"cmd": "Path Blend Release",
+"path": "Object > Blend > Release",
+"top": "Object",
+"key": 66,
+"mods": 224
+},
+{
+"cmd": "Path Blend Options",
+"path": "Object > Blend > Blend Options",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Path Blend Expand",
+"path": "Object > Blend > Expand",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Path Blend Replace Spine",
+"path": "Object > Blend > Replace Spine",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Path Blend Reverse Spine",
+"path": "Object > Blend > Reverse Spine",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Path Blend Reverse Stack",
+"path": "Object > Blend > Reverse Front to Back",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Warp",
+"path": "Object > Envelope Distort > Make with Warp",
+"top": "Object",
+"key": 87,
+"mods": 224
+},
+{
+"cmd": "Create Envelope Grid",
+"path": "Object > Envelope Distort > Make with Mesh",
+"top": "Object",
+"key": 77,
+"mods": 192
+},
+{
+"cmd": "Make Envelope",
+"path": "Object > Envelope Distort > Make with Top Object",
+"top": "Object",
+"key": 67,
+"mods": 192
+},
+{
+"cmd": "Release Envelope",
+"path": "Object > Envelope Distort > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Envelope Options",
+"path": "Object > Envelope Distort > Envelope Options",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Expand Envelope",
+"path": "Object > Envelope Distort > Expand",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Edit Envelope Contents",
+"path": "Object > Envelope Distort > Edit Contents",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Attach to Active Plane",
+"path": "Object > Perspective > Attach to Active Plane",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Release with Perspective",
+"path": "Object > Perspective > Release with Perspective",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Show Object Grid Plane",
+"path": "Object > Perspective > Move Plane to Match Object",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Edit Original Object",
+"path": "Object > Perspective > Edit Text",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Planet X",
+"path": "Object > Live Paint > Make",
+"top": "Object",
+"key": 88,
+"mods": 192
+},
+{
+"cmd": "Marge Planet X",
+"path": "Object > Live Paint > Merge",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Release Planet X",
+"path": "Object > Live Paint > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Planet X Options",
+"path": "Object > Live Paint > Gap Options",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Expand Planet X",
+"path": "Object > Live Paint > Expand",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Vector Edge",
+"path": "Object > Mockup (Beta) > Make",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Release Vector Edge",
+"path": "Object > Mockup (Beta) > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Edit Vector Edge",
+"path": "Object > Mockup (Beta) > Edit",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Image Tracing",
+"path": "Object > Image Trace > Make",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make and Expand Image Tracing",
+"path": "Object > Image Trace > Make and Expand",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Release Image Tracing",
+"path": "Object > Image Trace > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Expand Image Tracing",
+"path": "Object > Image Trace > Expand",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Make Text Wrap",
+"path": "Object > Text Wrap > Make",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Release Text Wrap",
+"path": "Object > Text Wrap > Release",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Text Wrap Options...",
+"path": "Object > Text Wrap > Text Wrap Options",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "makeMask",
+"path": "Object > Clipping Mask > Make",
+"top": "Object",
+"key": 55,
+"mods": 64
+},
+{
+"cmd": "releaseMask",
+"path": "Object > Clipping Mask > Release",
+"top": "Object",
+"key": 55,
+"mods": 192
+},
+{
+"cmd": "editMask",
+"path": "Object > Clipping Mask > Edit Mask",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "compoundPath",
+"path": "Object > Compound Path > Make",
+"top": "Object",
+"key": 56,
+"mods": 64
+},
+{
+"cmd": "noCompoundPath",
+"path": "Object > Compound Path > Release",
+"top": "Object",
+"key": 56,
+"mods": 224
+},
+{
+"cmd": "setCropMarks",
+"path": "Object > Artboards > Convert to Artboards",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "ReArrange Artboards",
+"path": "Object > Artboards > Rearrange All Artboards",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Fit Artboard to artwork bounds",
+"path": "Object > Artboards > Fit to Artwork Bounds",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Fit Artboard to selected Art",
+"path": "Object > Artboards > Fit to Selected Art",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "setGraphStyle",
+"path": "Object > Graph > Type",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "editGraphData",
+"path": "Object > Graph > Data",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "graphDesigns",
+"path": "Object > Graph > Design",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "setBarDesign",
+"path": "Object > Graph > Column",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "setIconDesign",
+"path": "Object > Graph > Marker",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "collectForExportSingleAsset",
+"path": "Object > Collect For Export > As Single Asset",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "collectForExportMultipleAsset",
+"path": "Object > Collect For Export > As Multiple Assets",
+"top": "Object",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Browse Typekit Fonts Menu IllustratorUI",
+"path": "Type > More from Adobe Fonts",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "alternate glyph palette plugin",
+"path": "Type > Glyphs",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "point-area",
+"path": "Type > Convert To Area Type / Point Type",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "areatextoptions",
+"path": "Type > Area Type Options",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "textpathtypeRainbow",
+"path": "Type > Type on a Path > Rainbow",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "textpathtypeSkew",
+"path": "Type > Type on a Path > Skew",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "textpathtype3d",
+"path": "Type > Type on a Path > 3D Ribbon",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "textpathtypestairs",
+"path": "Type > Type on a Path > Stair Step",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "textpathtypeGravity",
+"path": "Type > Type on a Path > Gravity",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "textpathtypeOptions",
+"path": "Type > Type on a Path > Type on a Path Options",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "updateLegacyTOP",
+"path": "Type > Type on a Path > Update Legacy Type on a Path",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe internal composite font plugin",
+"path": "Type > Composite Fonts",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Kinsoku Settings",
+"path": "Type > Kinsoku Shori Settings",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe MojiKumi Settings",
+"path": "Type > Mojikumi Settings",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "threadTextCreate",
+"path": "Type > Threaded Text > Create",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "releaseThreadedTextSelection",
+"path": "Type > Threaded Text > Release Selection",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "removeThreading",
+"path": "Type > Threaded Text > Remove Threading",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "fitHeadline",
+"path": "Type > Fit Headline",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe IllustratorUI Resolve Missing Font",
+"path": "Type > Resolve Missing Fonts",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Illustrator Find Font Menu Item",
+"path": "Type > Find/Replace Font",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "UpperCase Change Case Item",
+"path": "Type > Change Case > UPPERCASE",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "LowerCase Change Case Item",
+"path": "Type > Change Case > lowercase",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Title Case Change Case Item",
+"path": "Type > Change Case > Title Case",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Sentence case Change Case Item",
+"path": "Type > Change Case > Sentence case",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Illustrator Smart Punctuation Menu Item",
+"path": "Type > Smart Punctuation",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "outline",
+"path": "Type > Create Outlines",
+"top": "Type",
+"key": 79,
+"mods": 96
+},
+{
+"cmd": "Adobe Optical Alignment Item",
+"path": "Type > Optical Margin Alignment",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "~bullet",
+"path": "Type > Insert Special Character > Symbols > Bullet",
+"top": "Type",
+"key": 56,
+"mods": 128
+},
+{
+"cmd": "~copyright",
+"path": "Type > Insert Special Character > Symbols > Copyright Symbol",
+"top": "Type",
+"key": 71,
+"mods": 128
+},
+{
+"cmd": "~ellipsis",
+"path": "Type > Insert Special Character > Symbols > Ellipsis",
+"top": "Type",
+"key": 59,
+"mods": 128
+},
+{
+"cmd": "~paragraphSymbol",
+"path": "Type > Insert Special Character > Symbols > Paragraph Symbol",
+"top": "Type",
+"key": 55,
+"mods": 128
+},
+{
+"cmd": "~registeredTrademark",
+"path": "Type > Insert Special Character > Symbols > Registered Trademark Symbol",
+"top": "Type",
+"key": 82,
+"mods": 128
+},
+{
+"cmd": "~sectionSymbol",
+"path": "Type > Insert Special Character > Symbols > Section Symbol",
+"top": "Type",
+"key": 54,
+"mods": 128
+},
+{
+"cmd": "~trademarkSymbol",
+"path": "Type > Insert Special Character > Symbols > Trademark Symbol",
+"top": "Type",
+"key": 50,
+"mods": 128
+},
+{
+"cmd": "~emDash",
+"path": "Type > Insert Special Character > Hyphens and Dashes > Em Dash",
+"top": "Type",
+"key": 45,
+"mods": 160
+},
+{
+"cmd": "~enDash",
+"path": "Type > Insert Special Character > Hyphens and Dashes > En Dash",
+"top": "Type",
+"key": 45,
+"mods": 128
+},
+{
+"cmd": "~discretionaryHyphen",
+"path": "Type > Insert Special Character > Hyphens and Dashes > Discretionary Hyphen",
+"top": "Type",
+"key": 45,
+"mods": 96
+},
+{
+"cmd": "~doubleLeftQuote",
+"path": "Type > Insert Special Character > Quotation Marks > Double Left Quotation Marks",
+"top": "Type",
+"key": 91,
+"mods": 128
+},
+{
+"cmd": "~doubleRightQuote",
+"path": "Type > Insert Special Character > Quotation Marks > Double Right Quotation Marks",
+"top": "Type",
+"key": 91,
+"mods": 160
+},
+{
+"cmd": "~singleLeftQuote",
+"path": "Type > Insert Special Character > Quotation Marks > Single Left Quotation Mark",
+"top": "Type",
+"key": 93,
+"mods": 128
+},
+{
+"cmd": "~singleRightQuote",
+"path": "Type > Insert Special Character > Quotation Marks > Single Right Quotation Mark",
+"top": "Type",
+"key": 93,
+"mods": 160
+},
+{
+"cmd": "~emSpace",
+"path": "Type > Insert Whitespace Character > Em Space",
+"top": "Type",
+"key": 77,
+"mods": 96
+},
+{
+"cmd": "~enSpace",
+"path": "Type > Insert Whitespace Character > En Space",
+"top": "Type",
+"key": 78,
+"mods": 96
+},
+{
+"cmd": "~hairSpace",
+"path": "Type > Insert Whitespace Character > Hair Space",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "~thinSpace",
+"path": "Type > Insert Whitespace Character > Thin Space",
+"top": "Type",
+"key": 77,
+"mods": 224
+},
+{
+"cmd": "~forcedLineBreak",
+"path": "Type > Insert Break Character > Forced Line Break",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "~placeHolderText",
+"path": "Type > Fill with Placeholder Text",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "showHiddenChar",
+"path": "Type > Show Hidden Characters",
+"top": "Type",
+"key": 73,
+"mods": 192
+},
+{
+"cmd": "type-horizontal",
+"path": "Type > Type Orientation > Horizontal",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "type-vertical",
+"path": "Type > Type Orientation > Vertical",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "convertlegacyText",
+"path": "Type > Legacy Text > Update All Legacy Text",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "convertlegacyText1",
+"path": "Type > Legacy Text > Update Selected Legacy Text",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "convertlegacyText2",
+"path": "Type > Legacy Text > Hide Copies",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "convertlegacyText3",
+"path": "Type > Legacy Text > Delete Copies",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "convertlegacyText4",
+"path": "Type > Legacy Text > Select Copies",
+"top": "Type",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "selectall",
+"path": "Select > All",
+"top": "Select",
+"key": 65,
+"mods": 64
+},
+{
+"cmd": "selectallinartboard",
+"path": "Select > All on Active Artboard",
+"top": "Select",
+"key": 65,
+"mods": 192
+},
+{
+"cmd": "deselectall",
+"path": "Select > Deselect",
+"top": "Select",
+"key": 65,
+"mods": 96
+},
+{
+"cmd": "Find Reselect menu item",
+"path": "Select > Reselect",
+"top": "Select",
+"key": 54,
+"mods": 64
+},
+{
+"cmd": "Inverse menu item",
+"path": "Select > Inverse",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 8",
+"path": "Select > Next Object Above",
+"top": "Select",
+"key": 93,
+"mods": 192
+},
+{
+"cmd": "Selection Hat 9",
+"path": "Select > Next Object Below",
+"top": "Select",
+"key": 91,
+"mods": 192
+},
+{
+"cmd": "Find Appearance menu item",
+"path": "Select > Same > Appearance",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Appearance Attributes menu item",
+"path": "Select > Same > Appearance Attribute",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Blending Mode menu item",
+"path": "Select > Same > Blending Mode",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Fill & Stroke menu item",
+"path": "Select > Same > Fill & Stroke",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Fill Color menu item",
+"path": "Select > Same > Fill Color",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Opacity menu item",
+"path": "Select > Same > Opacity",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Stroke Color menu item",
+"path": "Select > Same > Stroke Color",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Stroke Weight menu item",
+"path": "Select > Same > Stroke Weight",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Style menu item",
+"path": "Select > Same > Graphic Style",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Live Shape menu item",
+"path": "Select > Same > Shape",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Symbol Instance menu item",
+"path": "Select > Same > Symbol Instance",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Link Block Series menu item",
+"path": "Select > Same > Link Block Series",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Text Font Family menu item",
+"path": "Select > Same > Font Family",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Text Font Family Style menu item",
+"path": "Select > Same > Font Family & Style",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Text Font Family Style Size menu item",
+"path": "Select > Same > Font Family, Style & Size",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Text Font Size menu item",
+"path": "Select > Same > Font Size",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Text Fill Color menu item",
+"path": "Select > Same > Text Fill Color",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Text Stroke Color menu item",
+"path": "Select > Same > Text Stroke Color",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Find Text Fill Stroke Color menu item",
+"path": "Select > Same > Text Fill & Stroke Color",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 3",
+"path": "Select > Object > All on Same Layers",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 1",
+"path": "Select > Object > Direction Handles",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Bristle Brush Strokes menu item",
+"path": "Select > Object > Bristle Brush Strokes",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Brush Strokes menu item",
+"path": "Select > Object > Brush Strokes",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Clipping Masks menu item",
+"path": "Select > Object > Clipping Masks",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Stray Points menu item",
+"path": "Select > Object > Stray Points",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Text Objects menu item",
+"path": "Select > Object > All Text Objects",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Point Text Objects menu item",
+"path": "Select > Object > Point Text Objects",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Area Text Objects menu item",
+"path": "Select > Object > Area Text Objects",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "SmartEdit Menu Item",
+"path": "Select > Start Global Edit",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 10",
+"path": "Select > Save Selection",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 11",
+"path": "Select > Edit Selection",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Selection Hat 14",
+"path": "Select > Update Selection",
+"top": "Select",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Apply Last Effect",
+"path": "Effect > Apply Last Effect",
+"top": "Effect",
+"key": 69,
+"mods": 96
+},
+{
+"cmd": "Adobe Last Effect",
+"path": "Effect > Last Effect",
+"top": "Effect",
+"key": 69,
+"mods": 224
+},
+{
+"cmd": "Live Rasterize Effect Setting",
+"path": "Effect > Document Raster Effects Settings",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe Geometry3D Extrude",
+"path": "Effect > 3D and Materials > Extrude & Bevel",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe Geometry3D Revolve",
+"path": "Effect > 3D and Materials > Revolve",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe Geometry3D Inflate",
+"path": "Effect > 3D and Materials > Inflate",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe Geometry3D Rotate",
+"path": "Effect > 3D and Materials > Rotate",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe Geometry3D Materials",
+"path": "Effect > 3D and Materials > Materials",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live 3DExtrude",
+"path": "Effect > 3D and Materials > 3D (Classic) > Extrude & Bevel (Classic)",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live 3DRevolve",
+"path": "Effect > 3D and Materials > 3D (Classic) > Revolve (Classic)",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live 3DRotate",
+"path": "Effect > 3D and Materials > 3D (Classic) > Rotate (Classic)",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live SVG Filters",
+"path": "Effect > SVG Filters > Apply SVG Filter",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "SVG Filter Import",
+"path": "Effect > SVG Filters > Import SVG Filter",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Arc",
+"path": "Effect > Warp > Arc",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Arc Lower",
+"path": "Effect > Warp > Arc Lower",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Arc Upper",
+"path": "Effect > Warp > Arc Upper",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Arch",
+"path": "Effect > Warp > Arch",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Bulge",
+"path": "Effect > Warp > Bulge",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Shell Lower",
+"path": "Effect > Warp > Shell Lower",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Shell Upper",
+"path": "Effect > Warp > Shell Upper",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Flag",
+"path": "Effect > Warp > Flag",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Wave",
+"path": "Effect > Warp > Wave",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Fish",
+"path": "Effect > Warp > Fish",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Rise",
+"path": "Effect > Warp > Rise",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Fisheye",
+"path": "Effect > Warp > Fisheye",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Inflate",
+"path": "Effect > Warp > Inflate",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Squeeze",
+"path": "Effect > Warp > Squeeze",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Deform Twist",
+"path": "Effect > Warp > Twist",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Roughen",
+"path": "Effect > Distort & Transform > Roughen",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pucker & Bloat",
+"path": "Effect > Distort & Transform > Pucker & Bloat",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Twist",
+"path": "Effect > Distort & Transform > Twist",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Transform",
+"path": "Effect > Distort & Transform > Transform",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Zig Zag",
+"path": "Effect > Distort & Transform > Zig Zag",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Free Distort",
+"path": "Effect > Distort & Transform > Free Distort",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Scribble and Tweak",
+"path": "Effect > Distort & Transform > Tweak",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Trim Marks",
+"path": "Effect > Crop Marks",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Offset Path",
+"path": "Effect > Path > Offset Path",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Outline Object",
+"path": "Effect > Path > Outline Object",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Outline Stroke",
+"path": "Effect > Path > Outline Stroke",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Add",
+"path": "Effect > Pathfinder > Add",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Intersect",
+"path": "Effect > Pathfinder > Intersect",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Exclude",
+"path": "Effect > Pathfinder > Exclude",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Subtract",
+"path": "Effect > Pathfinder > Subtract",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Minus Back",
+"path": "Effect > Pathfinder > Minus Back",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Divide",
+"path": "Effect > Pathfinder > Divide",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Trim",
+"path": "Effect > Pathfinder > Trim",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Merge",
+"path": "Effect > Pathfinder > Merge",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Crop",
+"path": "Effect > Pathfinder > Crop",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Outline",
+"path": "Effect > Pathfinder > Outline",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Hard Mix",
+"path": "Effect > Pathfinder > Hard Mix",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Soft Mix",
+"path": "Effect > Pathfinder > Soft Mix",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Pathfinder Trap",
+"path": "Effect > Pathfinder > Trap",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Rectangle",
+"path": "Effect > Convert to Shape > Rectangle",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Rounded Rectangle",
+"path": "Effect > Convert to Shape > Rounded Rectangle",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Ellipse",
+"path": "Effect > Convert to Shape > Ellipse",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Inner Glow",
+"path": "Effect > Stylize > Inner Glow",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe Round Corners",
+"path": "Effect > Stylize > Round Corners",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Scribble Fill",
+"path": "Effect > Stylize > Scribble",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Outer Glow",
+"path": "Effect > Stylize > Outer Glow",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Feather",
+"path": "Effect > Stylize > Feather",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe Drop Shadow",
+"path": "Effect > Stylize > Drop Shadow",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Rasterize",
+"path": "Effect > Rasterize",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_GEfc",
+"path": "Effect > Effect Gallery",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_ClrH",
+"path": "Effect > Pixelate > Color Halftone",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Crst",
+"path": "Effect > Pixelate > Crystallize",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Mztn",
+"path": "Effect > Pixelate > Mezzotint",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Pntl",
+"path": "Effect > Pixelate > Pointillize",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_DfsG",
+"path": "Effect > Distort > Diffuse Glow",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_OcnR",
+"path": "Effect > Distort > Ocean Ripple",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Gls ",
+"path": "Effect > Distort > Glass",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_RdlB",
+"path": "Effect > Blur > Radial Blur",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_SmrB",
+"path": "Effect > Blur > Smart Blur",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Adobe PSL Gaussian Blur",
+"path": "Effect > Blur > Gaussian Blur",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Crsh",
+"path": "Effect > Brush Strokes > Crosshatch",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_SprS",
+"path": "Effect > Brush Strokes > Sprayed Strokes",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Smie",
+"path": "Effect > Brush Strokes > Sumi-e",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_AccE",
+"path": "Effect > Brush Strokes > Accented Edges",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_InkO",
+"path": "Effect > Brush Strokes > Ink Outlines",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Spt ",
+"path": "Effect > Brush Strokes > Spatter",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_AngS",
+"path": "Effect > Brush Strokes > Angled Strokes",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_DrkS",
+"path": "Effect > Brush Strokes > Dark Strokes",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_MscT",
+"path": "Effect > Texture > Mosaic Tiles",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_StnG",
+"path": "Effect > Texture > Stained Glass",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Ptch",
+"path": "Effect > Texture > Patchwork",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Grn ",
+"path": "Effect > Texture > Grain",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Txtz",
+"path": "Effect > Texture > Texturizer",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Crql",
+"path": "Effect > Texture > Craquelure",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_NtPr",
+"path": "Effect > Sketch > Note Paper",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Stmp",
+"path": "Effect > Sketch > Stamp",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Phtc",
+"path": "Effect > Sketch > Photocopy",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_WtrP",
+"path": "Effect > Sketch > Water Paper",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Chrc",
+"path": "Effect > Sketch > Charcoal",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_GraP",
+"path": "Effect > Sketch > Graphic Pen",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Plst",
+"path": "Effect > Sketch > Plaster",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_BsRl",
+"path": "Effect > Sketch > Bas Relief",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_ChlC",
+"path": "Effect > Sketch > Chalk & Charcoal",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_HlfS",
+"path": "Effect > Sketch > Halftone Pattern",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Rtcl",
+"path": "Effect > Sketch > Reticulation",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_CntC",
+"path": "Effect > Sketch > Conté Crayon",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_TrnE",
+"path": "Effect > Sketch > Torn Edges",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Chrm",
+"path": "Effect > Sketch > Chrome",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_DryB",
+"path": "Effect > Artistic > Dry Brush",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_PlsW",
+"path": "Effect > Artistic > Plastic Wrap",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_SmdS",
+"path": "Effect > Artistic > Smudge Stick",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_PntD",
+"path": "Effect > Artistic > Paint Daubs",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Frsc",
+"path": "Effect > Artistic > Fresco",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_ClrP",
+"path": "Effect > Artistic > Colored Pencil",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Ct  ",
+"path": "Effect > Artistic > Cutout",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Wtrc",
+"path": "Effect > Artistic > Watercolor",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_PstE",
+"path": "Effect > Artistic > Poster Edges",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Spng",
+"path": "Effect > Artistic > Sponge",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_FlmG",
+"path": "Effect > Artistic > Film Grain",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_RghP",
+"path": "Effect > Artistic > Rough Pastels",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Undr",
+"path": "Effect > Artistic > Underpainting",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_PltK",
+"path": "Effect > Artistic > Palette Knife",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_NGlw",
+"path": "Effect > Artistic > Neon Glow",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_NTSC",
+"path": "Effect > Video > NTSC Colors",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_Dntr",
+"path": "Effect > Video > De-Interlace",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live PSAdapter_plugin_GlwE",
+"path": "Effect > Stylize > Glowing Edges",
+"top": "Effect",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "preview",
+"path": "View > Outline / Preview",
+"top": "View",
+"key": 89,
+"mods": 64
+},
+{
+"cmd": "OpenGLCompositorPreview",
+"path": "View > GPU Preview / Preview on CPU",
+"top": "View",
+"key": 69,
+"mods": 64
+},
+{
+"cmd": "ink",
+"path": "View > Overprint Preview",
+"top": "View",
+"key": 89,
+"mods": 224
+},
+{
+"cmd": "raster",
+"path": "View > Pixel Preview",
+"top": "View",
+"key": 89,
+"mods": 192
+},
+{
+"cmd": "TrimView",
+"path": "View > Trim View",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Presentation Mode",
+"path": "View > Presentation Mode",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proof-document",
+"path": "View > Proof Setup > Working CMYK",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proof-mac-rgb",
+"path": "View > Proof Setup > Legacy Macintosh RGB",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proof-win-rgb",
+"path": "View > Proof Setup > Internet Standard RGB (sRGB)",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proof-monitor-rgb",
+"path": "View > Proof Setup > Monitor RGB",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proof-colorblindp",
+"path": "View > Proof Setup > Color blindness - Protanopia-type",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proof-colorblindd",
+"path": "View > Proof Setup > Color blindness - Deuteranopia-type",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proof-custom",
+"path": "View > Proof Setup > Customize",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "proofColors",
+"path": "View > Proof Colors",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "zoomin",
+"path": "View > Zoom In",
+"top": "View",
+"key": 61,
+"mods": 64
+},
+{
+"cmd": "zoomout",
+"path": "View > Zoom Out",
+"top": "View",
+"key": 45,
+"mods": 64
+},
+{
+"cmd": "fitin",
+"path": "View > Fit Artboard in Window",
+"top": "View",
+"key": 48,
+"mods": 64
+},
+{
+"cmd": "fitall",
+"path": "View > Fit All in Window",
+"top": "View",
+"key": 48,
+"mods": 192
+},
+{
+"cmd": "RotateView180",
+"path": "View > Rotate View > 180°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView150",
+"path": "View > Rotate View > 150°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView135",
+"path": "View > Rotate View > 135°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView120",
+"path": "View > Rotate View > 120°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView90",
+"path": "View > Rotate View > 90°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView60",
+"path": "View > Rotate View > 60°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView45",
+"path": "View > Rotate View > 45°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView30",
+"path": "View > Rotate View > 30°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateView15",
+"path": "View > Rotate View > 15°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewZero",
+"path": "View > Rotate View > 0°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative15",
+"path": "View > Rotate View > -15°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative30",
+"path": "View > Rotate View > -30°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative45",
+"path": "View > Rotate View > -45°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative60",
+"path": "View > Rotate View > -60°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative90",
+"path": "View > Rotate View > -90°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative120",
+"path": "View > Rotate View > -120°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative135",
+"path": "View > Rotate View > -135°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative150",
+"path": "View > Rotate View > -150°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "RotateViewNegative180",
+"path": "View > Rotate View > -180°",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "resetRotationView",
+"path": "View > Reset Rotate View",
+"top": "View",
+"key": 49,
+"mods": 96
+},
+{
+"cmd": "rotateViewToSelection",
+"path": "View > Rotate View to Selection",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Feedback Menu",
+"path": "View > Hide Slices",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AISlice Lock Menu",
+"path": "View > Lock Slices",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AI Bounding Box Toggle",
+"path": "View > Hide Bounding Box",
+"top": "View",
+"key": 66,
+"mods": 96
+},
+{
+"cmd": "TransparencyGrid Menu Item",
+"path": "View > Show Transparency Grid",
+"top": "View",
+"key": 68,
+"mods": 96
+},
+{
+"cmd": "actualsize",
+"path": "View > Actual Size",
+"top": "View",
+"key": 49,
+"mods": 64
+},
+{
+"cmd": "Gradient Feedback",
+"path": "View > Hide Gradient Annotator",
+"top": "View",
+"key": 71,
+"mods": 192
+},
+{
+"cmd": "Show Gaps Planet X",
+"path": "View > Show Live Paint Gaps",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Live Corner Annotator",
+"path": "View > Hide Corner Widget",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "edge",
+"path": "View > Hide Edges",
+"top": "View",
+"key": 72,
+"mods": 64
+},
+{
+"cmd": "Snapomatic on-off menu item",
+"path": "View > Smart Guides",
+"top": "View",
+"key": 85,
+"mods": 64
+},
+{
+"cmd": "Show Perspective Grid",
+"path": "View > Perspective Grid > Show Grid",
+"top": "View",
+"key": 73,
+"mods": 96
+},
+{
+"cmd": "Show Ruler",
+"path": "View > Perspective Grid > Show Rulers",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Snap to Grid",
+"path": "View > Perspective Grid > Snap to Grid",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Lock Perspective Grid",
+"path": "View > Perspective Grid > Lock Grid",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Lock Station Point",
+"path": "View > Perspective Grid > Lock Station Point",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Define Perspective Grid",
+"path": "View > Perspective Grid > Define Grid",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Save Perspective Grid as Preset",
+"path": "View > Perspective Grid > Save Grid as Preset",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "artboard",
+"path": "View > Hide Artboards",
+"top": "View",
+"key": 72,
+"mods": 96
+},
+{
+"cmd": "pagetiling",
+"path": "View > Show Print Tiling",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "showtemplate",
+"path": "View > Show Template",
+"top": "View",
+"key": 87,
+"mods": 96
+},
+{
+"cmd": "ruler",
+"path": "View > Rulers > Show Rulers",
+"top": "View",
+"key": 82,
+"mods": 64
+},
+{
+"cmd": "rulerCoordinateSystem",
+"path": "View > Rulers > Change to Global Rulers",
+"top": "View",
+"key": 82,
+"mods": 192
+},
+{
+"cmd": "videoruler",
+"path": "View > Rulers > Show Video Rulers",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "textthreads",
+"path": "View > Show Text Threads",
+"top": "View",
+"key": 89,
+"mods": 96
+},
+{
+"cmd": "showguide",
+"path": "View > Guides > Hide Guides",
+"top": "View",
+"key": 59,
+"mods": 64
+},
+{
+"cmd": "lockguide",
+"path": "View > Guides > Lock Guides",
+"top": "View",
+"key": 59,
+"mods": 192
+},
+{
+"cmd": "makeguide",
+"path": "View > Guides > Make Guides",
+"top": "View",
+"key": 53,
+"mods": 64
+},
+{
+"cmd": "releaseguide",
+"path": "View > Guides > Release Guides",
+"top": "View",
+"key": 53,
+"mods": 192
+},
+{
+"cmd": "clearguide",
+"path": "View > Guides > Clear Guides",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "showgrid",
+"path": "View > Show Grid",
+"top": "View",
+"key": 39,
+"mods": 64
+},
+{
+"cmd": "snapgrid",
+"path": "View > Snap to Grid",
+"top": "View",
+"key": 39,
+"mods": 96
+},
+{
+"cmd": "pixelconstraints",
+"path": "View > Snap to Pixel",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "snappoint",
+"path": "View > Snap to Point",
+"top": "View",
+"key": 39,
+"mods": 192
+},
+{
+"cmd": "glyphSnapping",
+"path": "View > Snap to Glyph",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "newview",
+"path": "View > New View",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "editview",
+"path": "View > Edit Views",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view1",
+"path": "View > Saved View 1",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view2",
+"path": "View > Saved View 2",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view3",
+"path": "View > Saved View 3",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view4",
+"path": "View > Saved View 4",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view5",
+"path": "View > Saved View 5",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view6",
+"path": "View > Saved View 6",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view7",
+"path": "View > Saved View 7",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view8",
+"path": "View > Saved View 8",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view9",
+"path": "View > Saved View 9",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "view10",
+"path": "View > Saved View 10",
+"top": "View",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "newwindow",
+"path": "Window > New Window",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "cascade",
+"path": "Window > Arrange > Cascade",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "tile",
+"path": "Window > Arrange > Tile",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "floatInWindow",
+"path": "Window > Arrange > Float in Window",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "floatAllInWindows",
+"path": "Window > Arrange > Float All in Windows",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "consolidateAllWindows",
+"path": "Window > Arrange > Consolidate All Windows",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Browse Add-Ons Menu",
+"path": "Window > Find Extensions on Exchange",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Touch Workspace",
+"path": "Window > Workspace > Touch",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Reset Workspace",
+"path": "Window > Workspace > Reset",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe New Workspace",
+"path": "Window > Workspace > New Workspace",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Manage Workspace",
+"path": "Window > Workspace > Manage Workspaces",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Basic Toolbar Menu",
+"path": "Window > Toolbars > Basic",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Advanced Toolbar Menu",
+"path": "Window > Toolbars > Advanced",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "New Tools Panel",
+"path": "Window > Toolbars > New Toolbar",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Manage Tools Panel",
+"path": "Window > Toolbars > Manage Toolbar",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "drover control palette plugin",
+"path": "Window > Control",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe 3D Panel",
+"path": "Window > 3D and Materials",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "CSS Menu Item",
+"path": "Window > CSS Properties",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "ReTypeWindowMenu",
+"path": "Window > Retype (Beta)",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe SVG Interactivity Palette",
+"path": "Window > SVG Interactivity",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Generate",
+"path": "Window > Generate Patterns (Beta)",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Property Palette",
+"path": "Window > Properties",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Separation Preview Panel",
+"path": "Window > Separations Preview",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Action Palette",
+"path": "Window > Actions",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AdobeLayerPalette1",
+"path": "Window > Layers",
+"top": "Window",
+"key": 20,
+"mods": 0
+},
+{
+"cmd": "Adobe Pattern Panel Toggle",
+"path": "Window > Pattern Options",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Style Palette",
+"path": "Window > Asset Export",
+"top": "Window",
+"key": 19,
+"mods": 32
+},
+{
+"cmd": "AdobeAlignObjects2",
+"path": "Window > Align",
+"top": "Window",
+"key": 20,
+"mods": 32
+},
+{
+"cmd": "AdobeNavigator",
+"path": "Window > Navigator",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "internal palettes posing as plug-in menus-attributes",
+"path": "Window > Attributes",
+"top": "Window",
+"key": 24,
+"mods": 64
+},
+{
+"cmd": "Adobe Artboard Palette",
+"path": "Window > Artboards",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Flattening Preview",
+"path": "Window > Flattener Preview",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Vectorize Panel",
+"path": "Window > Image Trace",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "DocInfo1",
+"path": "Window > Document Info",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "internal palettes posing as plug-in menus-opentype",
+"path": "Window > Type > OpenType",
+"top": "Window",
+"key": 84,
+"mods": 224
+},
+{
+"cmd": "internal palettes posing as plug-in menus-character",
+"path": "Window > Type > Character",
+"top": "Window",
+"key": 84,
+"mods": 64
+},
+{
+"cmd": "Character Styles",
+"path": "Window > Type > Character Styles",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "alternate glyph palette plugin 2",
+"path": "Window > Type > Glyphs",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "internal palettes posing as plug-in menus-tab",
+"path": "Window > Type > Tabs",
+"top": "Window",
+"key": 84,
+"mods": 96
+},
+{
+"cmd": "internal palettes posing as plug-in menus-paragraph",
+"path": "Window > Type > Paragraph",
+"top": "Window",
+"key": 84,
+"mods": 192
+},
+{
+"cmd": "Adobe Paragraph Styles Palette",
+"path": "Window > Type > Paragraph Styles",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Vector Edge Panel",
+"path": "Window > Mockup (Beta)",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe History Panel Menu Item",
+"path": "Window > History",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Gradient Palette",
+"path": "Window > Gradient",
+"top": "Window",
+"key": 22,
+"mods": 64
+},
+{
+"cmd": "Adobe Symbol Palette",
+"path": "Window > Symbols",
+"top": "Window",
+"key": 24,
+"mods": 96
+},
+{
+"cmd": "Adobe BrushManager Menu Item",
+"path": "Window > Brushes",
+"top": "Window",
+"key": 18,
+"mods": 0
+},
+{
+"cmd": "Adobe Stroke Palette",
+"path": "Window > Stroke",
+"top": "Window",
+"key": 23,
+"mods": 64
+},
+{
+"cmd": "Adobe Style Palette",
+"path": "Window > Graphic Styles",
+"top": "Window",
+"key": 18,
+"mods": 32
+},
+{
+"cmd": "Adobe Harmony Palette",
+"path": "Window > Color Guide",
+"top": "Window",
+"key": 16,
+"mods": 32
+},
+{
+"cmd": "Adobe Swatches Menu Item",
+"path": "Window > Swatches",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AdobeTransformObjects1",
+"path": "Window > Transform",
+"top": "Window",
+"key": 21,
+"mods": 32
+},
+{
+"cmd": "Adobe Variables Palette Menu Item",
+"path": "Window > Variables",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe CSXS Extension com.adobe.DesignLibraries.angular\\750\\663\\607\\746\\626\\631\\745\\672\\653",
+"path": "Window > Libraries",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe SmartExport Panel Menu Item",
+"path": "Window > Asset Export",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "internal palettes posing as plug-in menus-info",
+"path": "Window > Info",
+"top": "Window",
+"key": 21,
+"mods": 64
+},
+{
+"cmd": "Adobe PathfinderUI",
+"path": "Window > Pathfinder",
+"top": "Window",
+"key": 22,
+"mods": 96
+},
+{
+"cmd": "Adobe Transparency Palette Menu Item",
+"path": "Window > Transparency",
+"top": "Window",
+"key": 23,
+"mods": 96
+},
+{
+"cmd": "Adobe LinkPalette Menu Item",
+"path": "Window > Links",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Color Palette",
+"path": "Window > Color",
+"top": "Window",
+"key": 19,
+"mods": 0
+},
+{
+"cmd": "AI Magic Wand",
+"path": "Window > Magic Wand",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Symbol Palette Plugin Other libraries menu item",
+"path": "Window > Symbol Libraries > Other Library",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AdobeBrushMgrUI Other libraries menu item",
+"path": "Window > Brush Libraries > Other Library",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Art Style Plugin Other libraries menu item",
+"path": "Window > Graphic Style Libraries > Other Library",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AdobeSwatch_ Other libraries menu item",
+"path": "Window > Swatch Libraries > Other Library",
+"top": "Window",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "helpcontent",
+"path": "Help > Illustrator Help",
+"top": "Help",
+"key": 14,
+"mods": 0
+},
+{
+"cmd": "supportContent",
+"path": "Help > Support Center",
+"top": "Help",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "whatsNewContent",
+"path": "Help > What's New",
+"top": "Help",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "supportCommunity",
+"path": "Help > Community",
+"top": "Help",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "wishform",
+"path": "Help > Submit Bug/Feature Request",
+"top": "Help",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "systemInfo",
+"path": "Help > System Info",
+"top": "Help",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "about",
+"path": "Help > About Illustrator",
+"top": "Help",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "switchSelTool",
+"path": "Keyboard > Switch Selection Tools",
+"top": "Keyboard",
+"key": 96,
+"mods": 64
+},
+{
+"cmd": "faceSizeUp",
+"path": "Keyboard > Font Size Up (large step)",
+"top": "Keyboard",
+"key": 46,
+"mods": 96
+},
+{
+"cmd": "faceSizeDown",
+"path": "Keyboard > Font Size Down (large step)",
+"top": "Keyboard",
+"key": 44,
+"mods": 96
+},
+{
+"cmd": "sizeStepUp",
+"path": "Keyboard > Font Size Up",
+"top": "Keyboard",
+"key": 46,
+"mods": 224
+},
+{
+"cmd": "sizeStepDown",
+"path": "Keyboard > Font Size Down",
+"top": "Keyboard",
+"key": 44,
+"mods": 224
+},
+{
+"cmd": "~kernFurther",
+"path": "Keyboard > Kern/Track Looser",
+"top": "Keyboard",
+"key": 93,
+"mods": 96
+},
+{
+"cmd": "~kernCloser",
+"path": "Keyboard > Kern/Track Tighter",
+"top": "Keyboard",
+"key": 91,
+"mods": 96
+},
+{
+"cmd": "tracking",
+"path": "Keyboard > Tracking Looser (word)",
+"top": "Keyboard",
+"key": 75,
+"mods": 192
+},
+{
+"cmd": "clearTrack",
+"path": "Keyboard > Clear Tracking",
+"top": "Keyboard",
+"key": 81,
+"mods": 192
+},
+{
+"cmd": "spacing",
+"path": "Keyboard > Word Spacing",
+"top": "Keyboard",
+"key": 79,
+"mods": 224
+},
+{
+"cmd": "clearTypeScale",
+"path": "Keyboard > Reset Horizontal/Vertical Scale",
+"top": "Keyboard",
+"key": 88,
+"mods": 96
+},
+{
+"cmd": "highlightFont",
+"path": "Keyboard > Highlight Font",
+"top": "Keyboard",
+"key": 70,
+"mods": 224
+},
+{
+"cmd": "highlightFont2",
+"path": "Keyboard > Highlight Font (alt)",
+"top": "Keyboard",
+"key": 77,
+"mods": 224
+},
+{
+"cmd": "leftAlign",
+"path": "Keyboard > Align Text Left",
+"top": "Keyboard",
+"key": 76,
+"mods": 96
+},
+{
+"cmd": "centerAlign",
+"path": "Keyboard > Align Text Center",
+"top": "Keyboard",
+"key": 67,
+"mods": 96
+},
+{
+"cmd": "rightAlign",
+"path": "Keyboard > Align Text Right",
+"top": "Keyboard",
+"key": 82,
+"mods": 96
+},
+{
+"cmd": "justify",
+"path": "Keyboard > Justify Left",
+"top": "Keyboard",
+"key": 74,
+"mods": 96
+},
+{
+"cmd": "justifyCenter",
+"path": "Keyboard > Justify Center",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "justifyRight",
+"path": "Keyboard > Justify Right",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "justifyAll",
+"path": "Keyboard > Justify All Lines",
+"top": "Keyboard",
+"key": 70,
+"mods": 96
+},
+{
+"cmd": "toggleAutoHyphen",
+"path": "Keyboard > Toggle Auto Hyphenation",
+"top": "Keyboard",
+"key": 72,
+"mods": 224
+},
+{
+"cmd": "toggleLineComposer",
+"path": "Keyboard > Toggle Line Composer",
+"top": "Keyboard",
+"key": 67,
+"mods": 224
+},
+{
+"cmd": "~subscript",
+"path": "Keyboard > Subscript",
+"top": "Keyboard",
+"key": 61,
+"mods": 224
+},
+{
+"cmd": "~superScript",
+"path": "Keyboard > Superscript",
+"top": "Keyboard",
+"key": 61,
+"mods": 96
+},
+{
+"cmd": "lock2",
+"path": "Keyboard > Lock Unselected Artwork",
+"top": "Keyboard",
+"key": 50,
+"mods": 224
+},
+{
+"cmd": "hide2",
+"path": "Keyboard > Hide Unselected Artwork",
+"top": "Keyboard",
+"key": 51,
+"mods": 224
+},
+{
+"cmd": "repeatPathfinder",
+"path": "Keyboard > Repeat Pathfinder",
+"top": "Keyboard",
+"key": 52,
+"mods": 64
+},
+{
+"cmd": "avgAndJoin",
+"path": "Keyboard > Average and Join",
+"top": "Keyboard",
+"key": 74,
+"mods": 224
+},
+{
+"cmd": "enterFocus",
+"path": "Keyboard > Enter Isolation Mode",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "exitFocus",
+"path": "Keyboard > Exit Isolation Mode",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe New Symbol Shortcut",
+"path": "Keyboard > New Symbol",
+"top": "Keyboard",
+"key": 21,
+"mods": 0
+},
+{
+"cmd": "Adobe Color Palette Secondary",
+"path": "Keyboard > Cycle Color Modes",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe Actions Batch",
+"path": "Keyboard > Actions Batch",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe New Fill Shortcut",
+"path": "Keyboard > Add New Fill",
+"top": "Keyboard",
+"key": 47,
+"mods": 64
+},
+{
+"cmd": "Adobe New Stroke Shortcut",
+"path": "Keyboard > Add New Stroke",
+"top": "Keyboard",
+"key": 47,
+"mods": 192
+},
+{
+"cmd": "Adobe New Style Shortcut",
+"path": "Keyboard > New Graphic Style",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "AdobeLayerPalette2",
+"path": "Keyboard > New Layer",
+"top": "Keyboard",
+"key": 76,
+"mods": 64
+},
+{
+"cmd": "AdobeLayerPalette3",
+"path": "Keyboard > New Layer with Options",
+"top": "Keyboard",
+"key": 76,
+"mods": 192
+},
+{
+"cmd": "Adobe Update Link Shortcut",
+"path": "Keyboard > Update Link",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Adobe New Swatch Shortcut Menu",
+"path": "Keyboard > New Swatch",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "Debug Panel",
+"path": "Keyboard > Debug Panel",
+"top": "Keyboard",
+"key": 24,
+"mods": 224
+},
+{
+"cmd": "switchUnits",
+"path": "Keyboard > Cycle Units",
+"top": "Keyboard",
+"key": 85,
+"mods": 224
+},
+{
+"cmd": "new2",
+"path": "Keyboard > New (alternate)",
+"top": "Keyboard",
+"key": 78,
+"mods": 192
+},
+{
+"cmd": "closeAll2",
+"path": "Keyboard > Close All (alternate)",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "helpcontent2",
+"path": "Keyboard > Help (alternate)",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "undo2",
+"path": "Keyboard > Undo (alternate)",
+"top": "Keyboard",
+"key": 0,
+"mods": 0
+},
+{
+"cmd": "cut2",
+"path": "Keyboard > Cut (alternate)",
+"top": "Keyboard",
+"key": 15,
+"mods": 0
+},
+{
+"cmd": "copy2",
+"path": "Keyboard > Copy (alternate)",
+"top": "Keyboard",
+"key": 16,
+"mods": 0
+},
+{
+"cmd": "paste2",
+"path": "Keyboard > Paste (alternate)",
+"top": "Keyboard",
+"key": 17,
+"mods": 0
+},
+{
+"cmd": "zoomin2",
+"path": "Keyboard > Zoom In (alternate)",
+"top": "Keyboard",
+"key": 43,
+"mods": 64
+},
+{
+"cmd": "debugPalette",
+"path": "Keyboard > Debug Palette",
+"top": "Keyboard",
+"key": 25,
+"mods": 224
+},
+{
+"cmd": "navigateToNextDocument",
+"path": "Keyboard > Next Document",
+"top": "Keyboard",
+"key": 19,
+"mods": 64
+},
+{
+"cmd": "navigateToPreviousDocument",
+"path": "Keyboard > Previous Document",
+"top": "Keyboard",
+"key": 19,
+"mods": 96
+},
+{
+"cmd": "navigateToNextDocumentGroup",
+"path": "Keyboard > Next Document Group",
+"top": "Keyboard",
+"key": 19,
+"mods": 192
+},
+{
+"cmd": "navigateToPreviousDocumentGroup",
+"path": "Keyboard > Previous Document Group",
+"top": "Keyboard",
+"key": 19,
+"mods": 224
+},
+{
+"cmd": "~subscript2",
+"path": "Keyboard > Subscript (alternate)",
+"top": "Keyboard",
+"key": 43,
+"mods": 224
+},
+{
+"cmd": "~superScript2",
+"path": "Keyboard > Superscript (alternate)",
+"top": "Keyboard",
+"key": 43,
+"mods": 96
+}
+],
+"tools": [
+{
+"tool": "Adobe Select Tool"
+},
+{
+"tool": "Adobe Direct Select Tool"
+},
+{
+"tool": "Adobe Direct Object Select Tool"
+},
+{
+"tool": "Adobe Magic Wand Tool"
+},
+{
+"tool": "Adobe Crop Tool"
+},
+{
+"tool": "Adobe Direct Lasso Tool"
+},
+{
+"tool": "Adobe Pen Tool"
+},
+{
+"tool": "Adobe Add Anchor Point Tool"
+},
+{
+"tool": "Adobe Delete Anchor Point Tool"
+},
+{
+"tool": "Adobe Anchor Point Tool"
+},
+{
+"tool": "Adobe Curvature Tool"
+},
+{
+"tool": "Adobe Line Tool"
+},
+{
+"tool": "Adobe Arc Tool"
+},
+{
+"tool": "Adobe Shape Construction Spiral Tool"
+},
+{
+"tool": "Adobe Rectangular Grid Tool"
+},
+{
+"tool": "Adobe Polar Grid Tool"
+},
+{
+"tool": "Adobe Rectangle Shape Tool"
+},
+{
+"tool": "Adobe Rounded Rectangle Tool"
+},
+{
+"tool": "Adobe Ellipse Shape Tool"
+},
+{
+"tool": "Adobe Shape Construction Regular Polygon Tool"
+},
+{
+"tool": "Adobe Shape Construction Star Tool"
+},
+{
+"tool": "Adobe Flare Tool"
+},
+{
+"tool": "Adobe Brush Tool"
+},
+{
+"tool": "Adobe Blob Brush Tool"
+},
+{
+"tool": "Adobe Freehand Tool"
+},
+{
+"tool": "Adobe Freehand Smooth Tool"
+},
+{
+"tool": "Adobe Freehand Erase Tool"
+},
+{
+"tool": "Adobe Corner Join Tool"
+},
+{
+"tool": "Adobe Shaper Tool"
+},
+{
+"tool": "Adobe Symbol Sprayer Tool"
+},
+{
+"tool": "Adobe Symbol Shifter Tool"
+},
+{
+"tool": "Adobe Symbol Scruncher Tool"
+},
+{
+"tool": "Adobe Symbol Sizer Tool"
+},
+{
+"tool": "Adobe Symbol Spinner Tool"
+},
+{
+"tool": "Adobe Symbol Stainer Tool"
+},
+{
+"tool": "Adobe Symbol Screener Tool"
+},
+{
+"tool": "Adobe Symbol Styler Tool"
+},
+{
+"tool": "Adobe Column Graph Tool"
+},
+{
+"tool": "Adobe Stacked Column Graph Tool"
+},
+{
+"tool": "Adobe Bar Graph Tool"
+},
+{
+"tool": "Adobe Stacked Bar Graph Tool"
+},
+{
+"tool": "Adobe Line Graph Tool"
+},
+{
+"tool": "Adobe Area Graph Tool"
+},
+{
+"tool": "Adobe Scatter Graph Tool"
+},
+{
+"tool": "Adobe Pie Graph Tool"
+},
+{
+"tool": "Adobe Radar Graph Tool"
+},
+{
+"tool": "Adobe Slice Tool"
+},
+{
+"tool": "Adobe Slice Select Tool"
+},
+{
+"tool": "Perspective Grid Tool"
+},
+{
+"tool": "Perspective Selection Tool"
+},
+{
+"tool": "Adobe Type Tool"
+},
+{
+"tool": "Adobe Area Type Tool"
+},
+{
+"tool": "Adobe Path Type Tool"
+},
+{
+"tool": "Adobe Vertical Type Tool"
+},
+{
+"tool": "Adobe Vertical Area Type Tool"
+},
+{
+"tool": "Adobe Vertical Path Type Tool"
+},
+{
+"tool": "Adobe Touch Type Tool"
+},
+{
+"tool": "Adobe Gradient Vector Tool"
+},
+{
+"tool": "Adobe Mesh Editing Tool"
+},
+{
+"tool": "Adobe Shape Builder Tool"
+},
+{
+"tool": "Adobe Planar Paintbucket Tool"
+},
+{
+"tool": "Adobe Planar Face Select Tool"
+},
+{
+"tool": "Adobe Rotate Tool"
+},
+{
+"tool": "Adobe Reflect Tool"
+},
+{
+"tool": "Adobe Scale Tool"
+},
+{
+"tool": "Adobe Shear Tool"
+},
+{
+"tool": "Adobe Reshape Tool"
+},
+{
+"tool": "Adobe Width Tool"
+},
+{
+"tool": "Adobe Warp Tool"
+},
+{
+"tool": "Adobe New Twirl Tool"
+},
+{
+"tool": "Adobe Pucker Tool"
+},
+{
+"tool": "Adobe Bloat Tool"
+},
+{
+"tool": "Adobe Scallop Tool"
+},
+{
+"tool": "Adobe Cyrstallize Tool"
+},
+{
+"tool": "Adobe Wrinkle Tool"
+},
+{
+"tool": "Adobe Puppet Warp Tool"
+},
+{
+"tool": "Adobe Free Transform Tool"
+},
+{
+"tool": "Adobe Measure Tool"
+},
+{
+"tool": "Adobe Eyedropper Tool"
+},
+{
+"tool": "Adobe Blend Tool"
+},
+{
+"tool": "Adobe Eraser Tool"
+},
+{
+"tool": "Adobe Scissors Tool"
+},
+{
+"tool": "Adobe Knife Tool"
+},
+{
+"tool": "Adobe Scroll Tool"
+},
+{
+"tool": "Adobe Page Tool"
+},
+{
+"tool": "Adobe Rotate Canvas Tool"
+},
+{
+"tool": "Adobe Zoom Tool"
+},
+{
+"tool": "Adobe Place Gun Tool"
+},
+{
+"tool": "Adobe Stencil Tool"
+},
+{
+"tool": "Adobe Pattern Tile Tool"
+},
+{
+"tool": "Adobe Color Theme Picker Tool"
+},
+{
+"tool": "Adobe Ignore Color Tool"
+},
+{
+"tool": "Adobe Intertwine Zone Marker Tool"
+},
+{
+"tool": "Adobe Toggle Fill Stroke"
+},
+{
+"tool": "Adobe Default Fill Stroke"
+},
+{
+"tool": "Adobe Swap Fill Stroke"
+},
+{
+"tool": "Adobe Paint Color"
+},
+{
+"tool": "Adobe Paint Gradient"
+},
+{
+"tool": "Adobe Paint None"
+},
+{
+"tool": "Adobe Toggle Screen Mode"
+},
+{
+"tool": "Adobe Toggle Palettes"
+},
+{
+"tool": "Adobe Toggle Closing Palettes"
+},
+{
+"tool": "Adobe Tool Inc Diameter"
+},
+{
+"tool": "Adobe Tool Dec Diameter"
+},
+{
+"tool": "Adobe Symbolism Inc Intensity"
+},
+{
+"tool": "Adobe Symbolism Dec Intensity"
+},
+{
+"tool": "Adobe Opacity 0"
+},
+{
+"tool": "Adobe Opacity 10"
+},
+{
+"tool": "Adobe Opacity 20"
+},
+{
+"tool": "Adobe Opacity 30"
+},
+{
+"tool": "Adobe Opacity 40"
+},
+{
+"tool": "Adobe Opacity 50"
+},
+{
+"tool": "Adobe Opacity 60"
+},
+{
+"tool": "Adobe Opacity 70"
+},
+{
+"tool": "Adobe Opacity 80"
+},
+{
+"tool": "Adobe Opacity 90"
+},
+{
+"tool": "Adobe Opacity 100"
+},
+{
+"tool": "Adobe Blend Mode Normal"
+},
+{
+"tool": "Adobe Blend Mode Darken"
+},
+{
+"tool": "Adobe Blend Mode Multiply"
+},
+{
+"tool": "Adobe Blend Mode Color Burn"
+},
+{
+"tool": "Adobe Blend Mode Lighten"
+},
+{
+"tool": "Adobe Blend Mode Screen"
+},
+{
+"tool": "Adobe Blend Mode Color Dodge"
+},
+{
+"tool": "Adobe Blend Mode Overlay"
+},
+{
+"tool": "Adobe Blend Mode Soft Light"
+},
+{
+"tool": "Adobe Blend Mode Hard Light"
+},
+{
+"tool": "Adobe Blend Mode Difference"
+},
+{
+"tool": "Adobe Blend Mode Exclusion"
+},
+{
+"tool": "Adobe Blend Mode Hue"
+},
+{
+"tool": "Adobe Blend Mode Saturation"
+},
+{
+"tool": "Adobe Blend Mode Color"
+},
+{
+"tool": "Adobe Blend Mode Luminosity"
+},
+{
+"tool": "Adobe Blend Mode Next Mode"
+},
+{
+"tool": "Adobe Blend Mode Prev Mode"
+},
+{
+"tool": "Adobe Toggle Drawing Mode"
+},
+{
+"tool": "Adobe Presentation Mode"
+}
+]
+}

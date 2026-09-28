@@ -1,0 +1,76 @@
+{
+ "kit": "path/to/your-logo-kit",
+ "out": "path/to/your-logo-package",
+ "slug": "brand",
+ "layouts": {
+  "logo": [
+   "logo",
+   "brand-logo"
+  ],
+  "horizontal": [
+   "logo-horizontal",
+   "brand-logo-horizontal"
+  ],
+  "mark": [
+   "mark",
+   "brand-mark"
+  ]
+ },
+ "tones": {
+  "color": "",
+  "dark": "-dark",
+  "silver": "-silver",
+  "silver-dark": "-silver-dark"
+ },
+ "print_sets": {
+  "fullcolor": [
+   "color",
+   "cmyk"
+  ],
+  "black": [
+   "color",
+   "black"
+  ],
+  "white": [
+   "dark",
+   "white"
+  ],
+  "grayscale": [
+   "silver",
+   "cmyk"
+  ],
+  "spot-PANTONE-877C": [
+   "color",
+   "spot:PANTONE 877 C:0,0,0,40"
+  ]
+ },
+ "bg_light": "#ffffff",
+ "bg_dark": "#1d1d1f",
+ "avatar_tone_on_dark": "dark",
+ "avatar_bg": "#ffffff",
+ "avatar_tone": "color",
+ "card": "print",
+ "guide": [
+  "brand-guidelines.pdf"
+ ],
+ "favicon": "favicon",
+ "icon": "icon",
+ "colors": [
+  [
+   "Ink",
+   "#1D1D1F",
+   "K100",
+   "—"
+  ]
+ ],
+ "name": "Brand",
+ "ink_map": {
+  "#1d1d1f": 100
+ },
+ "k_only": [
+  "fullcolor",
+  "black",
+  "white",
+  "grayscale"
+ ]
+}

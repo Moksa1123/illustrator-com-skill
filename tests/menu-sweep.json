@@ -1,0 +1,5234 @@
+[
+ {
+  "cmd": "new",
+  "how": "app.documents.add(DocumentColorSpace.RGB, w, h) / AI.newDoc()",
+  "ok": true,
+  "dialogs": [],
+  "diff": [],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 9063
+ },
+ {
+  "cmd": "saveasTemplate",
+  "how": "save the .ai and store it as .ait (a template is an .ai opened as a new untitled document; the menu itself needs the Save dialog)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48934
+ },
+ {
+  "cmd": "newFromTemplate",
+  "how": "app.open(template.ait) -> new untitled document with the template's content",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49275
+ },
+ {
+  "cmd": "open",
+  "how": "app.open(file)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 43480
+ },
+ {
+  "cmd": "close",
+  "how": "document.close(SaveOptions.DONOTSAVECHANGES)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 78614
+ },
+ {
+  "cmd": "closeAll",
+  "how": "while (documents.length) documents[0].close(DONOTSAVECHANGES)",
+  "ok": true,
+  "recovered": 2,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "boards",
+   "doc",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 88472
+ },
+ {
+  "cmd": "save",
+  "how": "document.save() (or MENU('save') on a saved document)",
+  "ok": true,
+  "recovered": 2,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 100363
+ },
+ {
+  "cmd": "saveas",
+  "how": "AI.saveAI(path) = document.saveAs(file, IllustratorSaveOptions)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6030
+ },
+ {
+  "cmd": "saveacopy",
+  "how": "document.save() + File.copy(target) (the open document keeps its name, like Save a Copy)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 64134
+ },
+ {
+  "cmd": "Adobe AI Save Selected Slices",
+  "how": "Save Selected Slices: menu + Save Optimized dialog (path typed)",
+  "ok": false,
+  "recovered": 1,
+  "dialogs": [
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "另存最佳化檔案",
+   "另存最佳化檔案",
+   "OS_PopupWindow"
+  ],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check false ",
+  "ms": 252820
+ },
+ {
+  "cmd": "revert",
+  "how": "File > Revert (confirm dialog accepted)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "Adobe Illustrator",
+   "OS_PopupWindow"
+  ],
+  "diff": [
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 59918
+ },
+ {
+  "cmd": "AI Place",
+  "how": "document.placedItems.add(); item.file = File / AI.place(file, x, y, {w, embed})",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 58763
+ },
+ {
+  "cmd": "exportForScreens",
+  "how": "document.exportForScreens(folder, ExportForScreensType, options, itemToExport) / AI.exportScreens()",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6941
+ },
+ {
+  "cmd": "export",
+  "how": "document.exportFile(file, ExportType.*, options) / AI.png() AI.jpg() AI.svg() AI.webp() AI.psd()",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7959
+ },
+ {
+  "cmd": "Adobe AI Save For Web",
+  "how": "exportFile(ExportType.GIF / PNG8 / JPEG) (the legacy Save for Web formats)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 62157
+ },
+ {
+  "cmd": "exportSelection",
+  "how": "document.exportSelectionAsPNG(path) (Export Selection)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 54022
+ },
+ {
+  "cmd": "Package Menu Item",
+  "how": "File > Package: menu + package dialog (default location next to the .ai)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "Adobe Illustrator",
+   "OS_PopupWindow",
+   "封裝",
+   "OS_PopupWindow",
+   "OS_PopupWindow",
+   "Adobe Illustrator",
+   "Adobe Illustrator"
+  ],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 58191
+ },
+ {
+  "cmd": "ai_browse_for_script",
+  "how": "$.evalFile(file) (File > Scripts > Other Script runs a .jsx the same way)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 40437
+ },
+ {
+  "cmd": "document",
+  "how": "File > Document Setup: bleed / units / transparency grid are dialog-only; scripting sets them at creation (DocumentPreset) — here the dialog's first field (bleed top) is typed",
+  "ok": true,
+  "dialogs": [
+   "文件設定"
+  ],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash b504db345298cbca -> 72ab3f8c5d78626d",
+  "ms": 10230
+ },
+ {
+  "cmd": "doc-color-cmyk",
+  "how": "app.executeMenuCommand('doc-color-cmyk')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "swatches",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6698
+ },
+ {
+  "cmd": "doc-color-rgb",
+  "how": "app.executeMenuCommand('doc-color-rgb')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "swatches",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 42459
+ },
+ {
+  "cmd": "File Info",
+  "how": "document.XMPString (File Info edits the XMP metadata)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 40641
+ },
+ {
+  "cmd": "Print",
+  "how": "document.print(PrintOptions) to a PostScript file (printerName = the 'Adobe PostScript File' virtual printer, jobOptions.file)",
+  "ok": false,
+  "detail": "error: timeout after 180s (dialogs seen: [])",
+  "fault": false,
+  "retried": true,
+  "ms": 616433
+ },
+ {
+  "cmd": "undo",
+  "how": "app.undo() / MENU('undo') (undoes the last step of the running script)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8436
+ },
+ {
+  "cmd": "redo",
+  "how": "app.redo() / MENU('redo')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 56315
+ },
+ {
+  "cmd": "cut",
+  "how": "app.executeMenuCommand('cut')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 67854
+ },
+ {
+  "cmd": "copy",
+  "how": "MENU('copy') then MENU('paste')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 62997
+ },
+ {
+  "cmd": "paste",
+  "how": "app.executeMenuCommand('paste')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 70911
+ },
+ {
+  "cmd": "pasteFront",
+  "how": "app.executeMenuCommand('pasteFront')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 11212
+ },
+ {
+  "cmd": "pasteBack",
+  "how": "app.executeMenuCommand('pasteBack')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 10481
+ },
+ {
+  "cmd": "pasteInPlace",
+  "how": "app.executeMenuCommand('pasteInPlace')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 10325
+ },
+ {
+  "cmd": "pasteInAllArtboard",
+  "how": "app.executeMenuCommand('pasteInAllArtboard')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "boards",
+   "doc",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 80506
+ },
+ {
+  "cmd": "pasteWithoutFormatting",
+  "how": "append the text to contents: the new characters take the destination's style (Paste without Formatting)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 11952
+ },
+ {
+  "cmd": "clear",
+  "how": "app.executeMenuCommand('clear')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 12065
+ },
+ {
+  "cmd": "Find and Replace",
+  "how": "AI.replaceText(find, replace) (keeps character styles)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 61590
+ },
+ {
+  "cmd": "Find Next",
+  "how": "AI.findText(str) -> [{frame, index}] (search the stories)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 76956
+ },
+ {
+  "cmd": "Recolor Art Dialog",
+  "how": "AI.recolor(items, [[from, to], ...]) (Recolor Artwork: color mapping)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 9862
+ },
+ {
+  "cmd": "Colors6",
+  "how": "app.executeMenuCommand('Colors6')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 64972
+ },
+ {
+  "cmd": "Colors5",
+  "how": "app.executeMenuCommand('Colors5')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7590
+ },
+ {
+  "cmd": "Colors4",
+  "how": "app.executeMenuCommand('Colors4')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 69627
+ },
+ {
+  "cmd": "Colors3",
+  "how": "app.executeMenuCommand('Colors3')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6921
+ },
+ {
+  "cmd": "Adjust3",
+  "how": "Edit Colors > Adjust Color Balance (dialog: first channel -50 through UI Automation)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "調整色彩"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 58432
+ },
+ {
+  "cmd": "Colors8",
+  "how": "app.executeMenuCommand('Colors8')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc"
+  ],
+  "level": "fingerprint",
+  "detail": "changed: items, layers, doc, art, pixels",
+  "ms": 60867
+ },
+ {
+  "cmd": "Colors9",
+  "how": "app.executeMenuCommand('Colors9')",
+  "ok": true,
+  "recovered": 2,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc"
+  ],
+  "level": "fingerprint",
+  "detail": "changed: items, layers, doc, art, pixels",
+  "ms": 66472
+ },
+ {
+  "cmd": "Colors7",
+  "how": "app.executeMenuCommand('Colors7')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7513
+ },
+ {
+  "cmd": "Saturate3",
+  "how": "Edit Colors > Saturate: menu + dialog (intensity typed)",
+  "ok": true,
+  "dialogs": [
+   "飽和度"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 11599
+ },
+ {
+  "cmd": "Overprint2",
+  "how": "app.executeMenuCommand('Overprint2')",
+  "ok": true,
+  "dialogs": [
+   "黑色疊印"
+  ],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8460
+ },
+ {
+  "cmd": "transformmove",
+  "how": "item.translate(dx, dy) / AI.moveTo(); menu: Move dialog (horizontal typed)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "移動"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48739
+ },
+ {
+  "cmd": "transformagain",
+  "how": "MENU('transformagain') repeats the last menu transform (here Move 30 pt)",
+  "ok": true,
+  "dialogs": [
+   "移動"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 9864
+ },
+ {
+  "cmd": "transformrotate",
+  "how": "item.rotate(deg) / AI.rotate(); menu: Rotate dialog (angle typed)",
+  "ok": true,
+  "dialogs": [
+   "旋轉"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8009
+ },
+ {
+  "cmd": "transformreflect",
+  "how": "item.resize(-100, 100) / AI.flip(); menu: Reflect dialog",
+  "ok": true,
+  "dialogs": [
+   "鏡射"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "doc"
+  ],
+  "level": "fingerprint",
+  "detail": "changed: items, layers, brushes, doc, art",
+  "ms": 8810
+ },
+ {
+  "cmd": "transformscale",
+  "how": "item.resize(sx, sy) / AI.scaleTo(); menu: Scale dialog (uniform % typed)",
+  "ok": true,
+  "dialogs": [
+   "縮放"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8407
+ },
+ {
+  "cmd": "transformshear",
+  "how": "item.transform(matrix) with a shear matrix; menu: Shear dialog (angle typed)",
+  "ok": true,
+  "dialogs": [
+   "傾斜"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8557
+ },
+ {
+  "cmd": "Transform v23",
+  "how": "loop items: item.resize(); menu: Transform Each dialog (horizontal scale typed)",
+  "ok": true,
+  "dialogs": [
+   "個別變形"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8722
+ },
+ {
+  "cmd": "AI Reset Bounding Box",
+  "how": "Object > Transform > Reset Bounding Box (after a menu Rotate 30 deg; the saved art records the box)",
+  "ok": true,
+  "dialogs": [
+   "旋轉"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "deep",
+  "detail": "art hash 4bd8cf83da2ba63c -> a7e8473a0715936c",
+  "ms": 10826
+ },
+ {
+  "cmd": "sendToFront",
+  "how": "item.zOrder(ZOrderMethod.BRINGTOFRONT)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6894
+ },
+ {
+  "cmd": "sendForward",
+  "how": "item.zOrder(ZOrderMethod.BRINGFORWARD)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47554
+ },
+ {
+  "cmd": "sendBackward",
+  "how": "item.zOrder(ZOrderMethod.SENDBACKWARD)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 82869
+ },
+ {
+  "cmd": "sendToBack",
+  "how": "item.zOrder(ZOrderMethod.SENDTOBACK)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 50538
+ },
+ {
+  "cmd": "Selection Hat 2",
+  "how": "item.move(layer, ElementPlacement.PLACEATBEGINNING)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49680
+ },
+ {
+  "cmd": "Horizontal Align Left",
+  "how": "AI.align(items, 'left')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 87439
+ },
+ {
+  "cmd": "Horizontal Align Center",
+  "how": "AI.align(items, 'hcenter')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7137
+ },
+ {
+  "cmd": "Horizontal Align Right",
+  "how": "AI.align(items, 'right')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45943
+ },
+ {
+  "cmd": "Vertical Align Top",
+  "how": "AI.align(items, 'top')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48699
+ },
+ {
+  "cmd": "Vertical Align Center",
+  "how": "AI.align(items, 'vcenter')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44817
+ },
+ {
+  "cmd": "Vertical Align Bottom",
+  "how": "AI.align(items, 'bottom')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46831
+ },
+ {
+  "cmd": "Vertical Distribute Top",
+  "how": "AI.distribute(items, 'v') (top edges)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5682
+ },
+ {
+  "cmd": "Vertical Distribute Center",
+  "how": "AI.distribute(items, 'v') (centers)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5999
+ },
+ {
+  "cmd": "Vertical Distribute Bottom",
+  "how": "AI.distribute(items, 'v') (bottom edges)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44012
+ },
+ {
+  "cmd": "Horizontal Distribute Left",
+  "how": "AI.distribute(items, 'h') (left edges)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47654
+ },
+ {
+  "cmd": "Horizontal Distribute Center",
+  "how": "AI.distribute(items, 'h') (centers)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46688
+ },
+ {
+  "cmd": "Horizontal Distribute Right",
+  "how": "AI.distribute(items, 'h') (right edges)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45061
+ },
+ {
+  "cmd": "group",
+  "how": "AI.group(items)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44505
+ },
+ {
+  "cmd": "ungroup",
+  "how": "AI.ungroup(group)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46409
+ },
+ {
+  "cmd": "lock",
+  "how": "item.locked = true",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6643
+ },
+ {
+  "cmd": "Selection Hat 5",
+  "how": "lock every item above: item.locked = true for absoluteZOrderPosition > n",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6505
+ },
+ {
+  "cmd": "Selection Hat 7",
+  "how": "layer.locked = true for the other layers",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "retried": true,
+  "ms": 124999
+ },
+ {
+  "cmd": "unlockAll",
+  "how": "item.locked = false (for all)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 10009
+ },
+ {
+  "cmd": "hide",
+  "how": "item.hidden = true",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5758
+ },
+ {
+  "cmd": "Selection Hat 4",
+  "how": "item.hidden = true for items above",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45847
+ },
+ {
+  "cmd": "Selection Hat 6",
+  "how": "layer.visible = false for the other layers",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "retried": true,
+  "ms": 160999
+ },
+ {
+  "cmd": "showAll",
+  "how": "item.hidden = false (for all)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 11226
+ },
+ {
+  "cmd": "Expand3",
+  "how": "Object > Expand (dialog accepted): fill and stroke become separate paths",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "展開"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49157
+ },
+ {
+  "cmd": "expandStyle",
+  "how": "AI.expandAppearance(item)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48288
+ },
+ {
+  "cmd": "Crop Image",
+  "how": "Object > Crop Image (or executeMenuCommand('Crop Image')), drag a crop handle (tools/menu_ui.edge_drag), Enter commits",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49422
+ },
+ {
+  "cmd": "Rasterize 8 menu item",
+  "how": "document.rasterize(item, bounds, RasterizeOptions) / AI.rasterize()",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "點陣化"
+  ],
+  "diff": [
+   "items",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47696
+ },
+ {
+  "cmd": "make mesh",
+  "how": "Object > Create Gradient Mesh (dialog accepted)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "建立漸層網格"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 88878
+ },
+ {
+  "cmd": "AI Object Mosaic Plug-in4",
+  "how": "Object > Create Object Mosaic (dialog accepted)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "建立物件馬賽克"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 51340
+ },
+ {
+  "cmd": "TrimMark v25",
+  "how": "Object > Create Trim Marks",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46507
+ },
+ {
+  "cmd": "Flatten Transparency",
+  "how": "Object > Flatten Transparency (dialog accepted)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "透明度平面化",
+   "進度"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48321
+ },
+ {
+  "cmd": "Make Pixel Perfect",
+  "how": "item.pixelAligned = true / MENU('Make Pixel Perfect')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6786
+ },
+ {
+  "cmd": "AISlice Make Slice",
+  "how": "item.sliced = true / MENU('AISlice Make Slice')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45906
+ },
+ {
+  "cmd": "AISlice Release Slice",
+  "how": "app.executeMenuCommand('AISlice Release Slice')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46427
+ },
+ {
+  "cmd": "AISlice Create from Guides",
+  "how": "app.executeMenuCommand('AISlice Create from Guides')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash c7dfe3f55a599fcf -> 732be88883723c46",
+  "ms": 47331
+ },
+ {
+  "cmd": "AISlice Create from Selection",
+  "how": "app.executeMenuCommand('AISlice Create from Selection')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash c9f37e2ffd568b0b -> 17bd65681bde580d",
+  "ms": 7475
+ },
+ {
+  "cmd": "AISlice Duplicate",
+  "how": "app.executeMenuCommand('AISlice Duplicate')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 647cbea916d1735b -> cdf78d810eba23e9",
+  "ms": 55563
+ },
+ {
+  "cmd": "AISlice Combine",
+  "how": "app.executeMenuCommand('AISlice Combine')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash ac7584b54058f0e3 -> fd7c8462a60c3623",
+  "ms": 11364
+ },
+ {
+  "cmd": "AISlice Divide",
+  "how": "app.executeMenuCommand('AISlice Divide')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "分割切片",
+   "OS_PopupWindow",
+   "移動",
+   "OS_PopupWindow"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 72b648adb4e73a12 -> c4b245e094b1fd0a",
+  "ms": 92814
+ },
+ {
+  "cmd": "AISlice Delete All Slices",
+  "how": "app.executeMenuCommand('AISlice Delete All Slices')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46347
+ },
+ {
+  "cmd": "AISlice Slice Options",
+  "how": "app.executeMenuCommand('AISlice Slice Options')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "切片選項"
+  ],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 296472333ff1941f -> 5c74e9a47a48f603",
+  "ms": 50713
+ },
+ {
+  "cmd": "AISlice Clip to Artboard",
+  "how": "app.executeMenuCommand('AISlice Clip to Artboard')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash fa45115897d5f4ac -> d80b83f81ce22cd5",
+  "ms": 47672
+ },
+ {
+  "cmd": "join",
+  "how": "Object > Path > Join (two open paths)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49429
+ },
+ {
+  "cmd": "average",
+  "how": "Object > Path > Average (dialog: both axes)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "平均"
+  ],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48332
+ },
+ {
+  "cmd": "OffsetPath v22",
+  "how": "Object > Path > Outline Stroke",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 51069
+ },
+ {
+  "cmd": "OffsetPath v23",
+  "how": "AI.offsetPath(item, d) + AI.expandAppearance(); menu: Offset Path dialog (offset typed)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "位移複製"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 51860
+ },
+ {
+  "cmd": "Reverse Path Direction",
+  "how": "app.executeMenuCommand('Reverse Path Direction')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47113
+ },
+ {
+  "cmd": "simplify menu item",
+  "how": "Object > Path > Simplify via the menu bar; the on-canvas widget's automatic result is committed with Enter (121 -> ~10 points)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "late_dialogs": [
+   "移動"
+  ],
+  "ms": 13350
+ },
+ {
+  "cmd": "smooth menu item",
+  "how": "Object > Path > Smooth via the menu bar; the on-canvas slider is dragged (tools/menu_ui.widget_drag) and applies on release",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 55187
+ },
+ {
+  "cmd": "Add Anchor Points2",
+  "how": "Object > Path > Add Anchor Points",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46033
+ },
+ {
+  "cmd": "Remove Anchor Points menu",
+  "how": "Object > Path > Remove Anchor Points (selected anchors)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5699
+ },
+ {
+  "cmd": "Knife Tool2",
+  "how": "Object > Path > Divide Objects Below (top object cuts the ones below)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "fingerprint",
+  "detail": "changed: items, layers, doc, art, pixels",
+  "ms": 50224
+ },
+ {
+  "cmd": "Rows and Columns....",
+  "how": "Object > Path > Split Into Grid (dialog: rows 2, columns 2 set through UI Automation)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "分割成網格"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 50369
+ },
+ {
+  "cmd": "cleanup menu item",
+  "how": "Object > Path > Clean Up (dialog: stray points, unpainted, empty text)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "清除"
+  ],
+  "diff": [
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46649
+ },
+ {
+  "cmd": "Convert to Shape",
+  "how": "Object > Shape > Convert to Shapes (live shape)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 051822c60951933c -> fa03a6d2a0001b6d",
+  "ms": 84662
+ },
+ {
+  "cmd": "Expand Shape",
+  "how": "Object > Shape > Expand Shape",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 7b5512dbe5bc36e2 -> b60880abfba9dffb",
+  "ms": 9488
+ },
+ {
+  "cmd": "Adobe Make Pattern",
+  "how": "Object > Pattern > Make (enters pattern mode, adds a swatch); exit with MENU('exitFocus')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "Adobe Illustrator"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "swatches",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48822
+ },
+ {
+  "cmd": "Adobe Edit Pattern",
+  "how": "Object > Pattern > Edit Pattern on a pattern-filled object (enters pattern editing mode)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "swatches",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 574417886fa8ff4d -> 7b401eeb673a8f4c",
+  "ms": 9345
+ },
+ {
+  "cmd": "Make Radial Repeat",
+  "how": "AI.repeat(item, 'radial')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6706
+ },
+ {
+  "cmd": "Make Grid Repeat",
+  "how": "AI.repeat(item, 'grid')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46238
+ },
+ {
+  "cmd": "Make Symmetry Repeat",
+  "how": "AI.repeat(item, 'mirror') (nothing stays selected; readback document.symmetryRepeatItems)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45702
+ },
+ {
+  "cmd": "Release Repeat Art",
+  "how": "app.executeMenuCommand('Release Repeat Art')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7919
+ },
+ {
+  "cmd": "Repeat Art Options",
+  "how": "app.executeMenuCommand('Repeat Art Options')",
+  "ok": true,
+  "dialogs": [
+   "重複選項"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash edd9250e5b0b97d9 -> e926bfadc18c001c",
+  "ms": 11492
+ },
+ {
+  "cmd": "Partial Rearrange Make",
+  "how": "app.executeMenuCommand('Partial Rearrange Make')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 5488d8774812f49b -> 3e334dda5d41afc0",
+  "ms": 8700
+ },
+ {
+  "cmd": "Partial Rearrange Release",
+  "how": "app.executeMenuCommand('Partial Rearrange Release')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 70d1e4c2f40a3f08 -> 5488d8774812f49b",
+  "ms": 9445
+ },
+ {
+  "cmd": "Partial Rearrange Edit",
+  "how": "app.executeMenuCommand('Partial Rearrange Edit')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash bc7b4821dbcc0384 -> 1c24d6befd3cb5c5",
+  "ms": 8757
+ },
+ {
+  "cmd": "Path Blend Make",
+  "how": "AI.blend([a, b])",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5946
+ },
+ {
+  "cmd": "Path Blend Release",
+  "how": "app.executeMenuCommand('Path Blend Release')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47554
+ },
+ {
+  "cmd": "Path Blend Options",
+  "how": "Object > Blend > Blend Options (dialog: orientation 'Align to Path' clicked through UI Automation)",
+  "ok": true,
+  "dialogs": [
+   "漸變選項"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 3fd5e356439103ba -> 67d73a79e3e51a1f",
+  "ms": 13007
+ },
+ {
+  "cmd": "Path Blend Expand",
+  "how": "app.executeMenuCommand('Path Blend Expand')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8646
+ },
+ {
+  "cmd": "Path Blend Replace Spine",
+  "how": "app.executeMenuCommand('Path Blend Replace Spine')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 449ad8fe1049c0bf -> 7fe22906ca5600ea",
+  "ms": 9797
+ },
+ {
+  "cmd": "Path Blend Reverse Spine",
+  "how": "app.executeMenuCommand('Path Blend Reverse Spine')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash f0af195248f4e7df -> d558c9e5ddd22eb2",
+  "ms": 9501
+ },
+ {
+  "cmd": "Path Blend Reverse Stack",
+  "how": "app.executeMenuCommand('Path Blend Reverse Stack')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash f5ef134b943a3123 -> 7b46b90f2e6a615d",
+  "ms": 10605
+ },
+ {
+  "cmd": "Make Warp",
+  "how": "Object > Envelope Distort > Make with Warp (dialog accepted) — or AI.warp() as a live effect",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "彎曲選項"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47011
+ },
+ {
+  "cmd": "Create Envelope Grid",
+  "how": "Object > Envelope Distort > Make with Mesh (dialog accepted)",
+  "ok": true,
+  "dialogs": [
+   "封套網格"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7055
+ },
+ {
+  "cmd": "Make Envelope",
+  "how": "Object > Envelope Distort > Make with Top Object",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6414
+ },
+ {
+  "cmd": "Release Envelope",
+  "how": "app.executeMenuCommand('Release Envelope')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8681
+ },
+ {
+  "cmd": "Envelope Options",
+  "how": "Object > Envelope Distort > Envelope Options (fidelity 90 through UI Automation)",
+  "ok": true,
+  "dialogs": [
+   "封套選項"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "deep",
+  "detail": "art hash f156b6cedcd345e0 -> ac74ef2eb70409cf",
+  "ms": 13624
+ },
+ {
+  "cmd": "Expand Envelope",
+  "how": "app.executeMenuCommand('Expand Envelope')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 50009
+ },
+ {
+  "cmd": "Edit Envelope Contents",
+  "how": "Object > Envelope Distort > Edit Contents (the saved art records the envelope in contents-editing state) — via the menu bar: 物件 > 封套扭曲 > 編輯內容 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "deep",
+  "detail": "art hash e3c86e22f5ab3500 -> bbd14826e8d4523c",
+  "ms": 56459
+ },
+ {
+  "cmd": "Attach to Active Plane",
+  "how": "app.executeMenuCommand('Attach to Active Plane')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash a870e8ce7cc54e09 -> 2434e07b70c8e21d",
+  "ms": 51422
+ },
+ {
+  "cmd": "Release with Perspective",
+  "how": "app.executeMenuCommand('Release with Perspective')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 38e40029fd7b466a -> de7128948982d1d4",
+  "ms": 49563
+ },
+ {
+  "cmd": "Show Object Grid Plane",
+  "how": "app.executeMenuCommand('Show Object Grid Plane')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 9779bfa94b35be2b -> 29c2f6007a8927c1",
+  "ms": 95095
+ },
+ {
+  "cmd": "Edit Original Object",
+  "how": "app.executeMenuCommand('Edit Original Object')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "deep",
+  "detail": "art hash e41fb1d849df06fe -> f37a2b0aaee7d606",
+  "ms": 52817
+ },
+ {
+  "cmd": "Make Planet X",
+  "how": "Object > Live Paint > Make",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6317
+ },
+ {
+  "cmd": "Marge Planet X",
+  "how": "app.executeMenuCommand('Marge Planet X')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash b9dac92e8482b6d1 -> 9998c528338424a6",
+  "ms": 9748
+ },
+ {
+  "cmd": "Release Planet X",
+  "how": "app.executeMenuCommand('Release Planet X')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7383
+ },
+ {
+  "cmd": "Planet X Options",
+  "how": "app.executeMenuCommand('Planet X Options')",
+  "ok": true,
+  "dialogs": [
+   "間隙選項"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash ce01dbcdbac56dba -> ca05a75969f81627",
+  "ms": 11739
+ },
+ {
+  "cmd": "Expand Planet X",
+  "how": "app.executeMenuCommand('Expand Planet X')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7996
+ },
+ {
+  "cmd": "Make Image Tracing",
+  "how": "rasterOrPlaced.trace() / AI.trace()",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6375
+ },
+ {
+  "cmd": "Make and Expand Image Tracing",
+  "how": "AI.trace(item, preset, true)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46601
+ },
+ {
+  "cmd": "Release Image Tracing",
+  "how": "tracing.releaseTracing()",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "brushes",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 51392
+ },
+ {
+  "cmd": "Expand Image Tracing",
+  "how": "tracing.expandTracing()",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 43686
+ },
+ {
+  "cmd": "Make Text Wrap",
+  "how": "item.wrapped = true",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6915
+ },
+ {
+  "cmd": "Release Text Wrap",
+  "how": "item.wrapped = false",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8175
+ },
+ {
+  "cmd": "Text Wrap Options...",
+  "how": "item.wrapOffset / wrapInside",
+  "ok": true,
+  "dialogs": [
+   "繞圖排文選項"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 9994
+ },
+ {
+  "cmd": "makeMask",
+  "how": "AI.clip(mask, items)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6080
+ },
+ {
+  "cmd": "releaseMask",
+  "how": "app.executeMenuCommand('releaseMask')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6488
+ },
+ {
+  "cmd": "editMask",
+  "how": "Object > Clipping Mask > Edit Mask (the mask path gets selected)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44748
+ },
+ {
+  "cmd": "compoundPath",
+  "how": "AI.compound(paths)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44007
+ },
+ {
+  "cmd": "noCompoundPath",
+  "how": "app.executeMenuCommand('noCompoundPath')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44268
+ },
+ {
+  "cmd": "setCropMarks",
+  "how": "document.artboards.add(rect) / AI.addArtboard()",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "boards",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46339
+ },
+ {
+  "cmd": "ReArrange Artboards",
+  "how": "document.rearrangeArtboards(layout, rowsOrCols, spacing, moveArtwork)",
+  "ok": true,
+  "dialogs": [
+   "重新排列所有工作區域順序"
+  ],
+  "diff": [
+   "items",
+   "boards",
+   "doc",
+   "sel"
+  ],
+  "level": "deep",
+  "detail": "art hash 9d73dd23960efbd5 -> b8dbece48c6fa5d4",
+  "ms": 11009
+ },
+ {
+  "cmd": "Fit Artboard to artwork bounds",
+  "how": "AI.fitArtboard(i)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "boards",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6051
+ },
+ {
+  "cmd": "Fit Artboard to selected Art",
+  "how": "document.fitArtboardToSelectedArt(i) / AI.fitArtboard(i, items)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "boards",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5908
+ },
+ {
+  "cmd": "collectForExportSingleAsset",
+  "how": "document.assets.add(group of the items) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45977
+ },
+ {
+  "cmd": "collectForExportMultipleAsset",
+  "how": "document.assets.add(item) per item [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46093
+ },
+ {
+  "cmd": "setGraphStyle",
+  "how": "Object > Graph > Type (dialog: chart type)",
+  "ok": true,
+  "dialogs": [
+   "圖表類型"
+  ],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 9c77ff9aed9c21fb -> f7c5d026d29296ec",
+  "ms": 15528
+ },
+ {
+  "cmd": "editGraphData",
+  "how": "Object > Graph > Data (opens the data window)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "late_dialogs": [
+   ""
+  ],
+  "ms": 9808
+ },
+ {
+  "cmd": "graphDesigns",
+  "how": "Object > Graph > Design: select the artwork, then New Design in the dialog (dialog plan: uiaclick 新增設計, OK)",
+  "ok": true,
+  "dialogs": [
+   "圖表設計"
+  ],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash b3568323375a22f9 -> a5c6f19b5a1e7161",
+  "ms": 20028
+ },
+ {
+  "cmd": "setBarDesign",
+  "how": "Object > Graph > Column",
+  "ok": true,
+  "dialogs": [
+   "長條圖"
+  ],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 69317f566e8cb6d9 -> 0eeaef12cbf410b0",
+  "ms": 11221
+ },
+ {
+  "cmd": "setIconDesign",
+  "how": "Object > Graph > Marker",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "圖表記號"
+  ],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 822d10e7ab4471fc -> e2218d17e9393ccb",
+  "ms": 53846
+ },
+ {
+  "cmd": "point-area",
+  "how": "textFrame.convertPointObjectToAreaObject() [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46404
+ },
+ {
+  "cmd": "areatextoptions",
+  "how": "textFrame.columnCount / rowCount / columnGutter / rowGutter / spacing / firstBaseline",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5349
+ },
+ {
+  "cmd": "textpathtypeRainbow",
+  "how": "Type > Type on a Path > Rainbow (from Skew; Rainbow is the default) — via the menu bar: 文字 > 路徑文字 > 彩虹效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "pixels",
+  "detail": "artboard pixels 268a1b709a57 -> 4927944135c0",
+  "ms": 61487
+ },
+ {
+  "cmd": "textpathtypeSkew",
+  "how": "Type > Type on a Path > Skew — via the menu bar: 文字 > 路徑文字 > 偏斜效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "pixels",
+  "detail": "artboard pixels 4927944135c0 -> 268a1b709a57",
+  "ms": 57609
+ },
+ {
+  "cmd": "textpathtype3d",
+  "how": "Type > Type on a Path > 3d — via the menu bar: 文字 > 路徑文字 > 3D 帶狀效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "pixels",
+  "detail": "artboard pixels 4927944135c0 -> 129c937d573c",
+  "ms": 13934
+ },
+ {
+  "cmd": "textpathtypestairs",
+  "how": "Type > Type on a Path > stairs — via the menu bar: 文字 > 路徑文字 > 階梯效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "pixels",
+  "detail": "artboard pixels 4927944135c0 -> 6c43ffac0699",
+  "ms": 54919
+ },
+ {
+  "cmd": "textpathtypeGravity",
+  "how": "Type > Type on a Path > Gravity — via the menu bar: 文字 > 路徑文字 > 重力效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "pixels",
+  "detail": "artboard pixels 4927944135c0 -> 599943e7bc6e",
+  "ms": 63072
+ },
+ {
+  "cmd": "textpathtypeOptions",
+  "how": "Type > Type on a Path > Options (dialog: Flip toggled) — via the menu bar: 文字 > 路徑文字 > 路徑文字選項 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "路徑文字選項"
+  ],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "pixels",
+  "detail": "artboard pixels 4927944135c0 -> 243a5bc3347e",
+  "ms": 58309
+ },
+ {
+  "cmd": "threadTextCreate",
+  "how": "Type > Threaded Text > Create (area text + an empty path)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "!錯誤: No such element"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49906
+ },
+ {
+  "cmd": "releaseThreadedTextSelection",
+  "how": "Type > Threaded Text > Release Selection (the selected frame leaves the thread) — via the menu bar: 文字 > 文字緒 > 釋放選取的文字物件 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "!錯誤: No such element"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 55033
+ },
+ {
+  "cmd": "removeThreading",
+  "how": "Type > Threaded Text > Remove Threading (every frame keeps its text, the thread is gone) — via the menu bar: 文字 > 文字緒 > 移除文字緒 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "!錯誤: No such element"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 59152
+ },
+ {
+  "cmd": "fitHeadline",
+  "how": "AI.fitHeadline(frame): largest tracking that keeps the line on one line of the frame (the menu needs a text cursor)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6046
+ },
+ {
+  "cmd": "Adobe Illustrator Find Font Menu Item",
+  "how": "characterAttributes.textFont = app.textFonts.getByName(...) (Find/Replace Font)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45238
+ },
+ {
+  "cmd": "UpperCase Change Case Item",
+  "how": "app.executeMenuCommand('UpperCase Change Case Item')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 9463
+ },
+ {
+  "cmd": "LowerCase Change Case Item",
+  "how": "app.executeMenuCommand('LowerCase Change Case Item')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49660
+ },
+ {
+  "cmd": "Title Case Change Case Item",
+  "how": "app.executeMenuCommand('Title Case Change Case Item')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46720
+ },
+ {
+  "cmd": "Sentence case Change Case Item",
+  "how": "app.executeMenuCommand('Sentence case Change Case Item')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49145
+ },
+ {
+  "cmd": "Adobe Illustrator Smart Punctuation Menu Item",
+  "how": "Type > Smart Punctuation (dialog accepted)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "智慧型標點",
+   "Adobe Illustrator"
+  ],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 52170
+ },
+ {
+  "cmd": "outline",
+  "how": "textFrame.createOutline() / AI.outline()",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7025
+ },
+ {
+  "cmd": "Adobe Optical Alignment Item",
+  "how": "textFrame.opticalAlignment = true",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49895
+ },
+ {
+  "cmd": "~bullet",
+  "how": "characters[i].contents = '\\u2022' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5517
+ },
+ {
+  "cmd": "~copyright",
+  "how": "characters[i].contents = '\\u00A9' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5893
+ },
+ {
+  "cmd": "~ellipsis",
+  "how": "characters[i].contents = '\\u2026' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5479
+ },
+ {
+  "cmd": "~paragraphSymbol",
+  "how": "characters[i].contents = '\\u00B6' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5694
+ },
+ {
+  "cmd": "~registeredTrademark",
+  "how": "characters[i].contents = '\\u00AE' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5625
+ },
+ {
+  "cmd": "~sectionSymbol",
+  "how": "characters[i].contents = '\\u00A7' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48501
+ },
+ {
+  "cmd": "~trademarkSymbol",
+  "how": "characters[i].contents = '\\u2122' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48792
+ },
+ {
+  "cmd": "~emDash",
+  "how": "characters[i].contents = '\\u2014' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5924
+ },
+ {
+  "cmd": "~enDash",
+  "how": "characters[i].contents = '\\u2013' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5936
+ },
+ {
+  "cmd": "~discretionaryHyphen",
+  "how": "characters[i].contents = '\\u00AD' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5936
+ },
+ {
+  "cmd": "~doubleLeftQuote",
+  "how": "characters[i].contents = '\\u201C' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5759
+ },
+ {
+  "cmd": "~doubleRightQuote",
+  "how": "characters[i].contents = '\\u201D' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6569
+ },
+ {
+  "cmd": "~singleLeftQuote",
+  "how": "characters[i].contents = '\\u2018' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6479
+ },
+ {
+  "cmd": "~singleRightQuote",
+  "how": "characters[i].contents = '\\u2019' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6471
+ },
+ {
+  "cmd": "~emSpace",
+  "how": "characters[i].contents = '\\u2003' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6206
+ },
+ {
+  "cmd": "~enSpace",
+  "how": "characters[i].contents = '\\u2002' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5881
+ },
+ {
+  "cmd": "~hairSpace",
+  "how": "characters[i].contents = '\\u200A' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5880
+ },
+ {
+  "cmd": "~thinSpace",
+  "how": "characters[i].contents = '\\u2009' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6572
+ },
+ {
+  "cmd": "~forcedLineBreak",
+  "how": "characters[i].contents = '\\u0003' [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "retried": true,
+  "ms": 180576
+ },
+ {
+  "cmd": "~placeHolderText",
+  "how": "textFrame.contents = placeholder text [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46356
+ },
+ {
+  "cmd": "type-horizontal",
+  "how": "textFrame.orientation = TextOrientation.HORIZONTAL",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 50251
+ },
+ {
+  "cmd": "type-vertical",
+  "how": "textFrame.orientation = TextOrientation.VERTICAL",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 55123
+ },
+ {
+  "cmd": "convertlegacyText",
+  "how": "legacyTextItems[i].convertToNative() for all [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "swatches",
+   "symbols",
+   "styles",
+   "brushes",
+   "doc",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47015
+ },
+ {
+  "cmd": "convertlegacyText1",
+  "how": "legacyTextItem.convertToNative() [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "swatches",
+   "symbols",
+   "styles",
+   "brushes",
+   "doc",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 53302
+ },
+ {
+  "cmd": "convertlegacyText2",
+  "how": "legacyTextItem.hidden = true (hide copies) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "swatches",
+   "symbols",
+   "styles",
+   "brushes",
+   "doc",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44968
+ },
+ {
+  "cmd": "convertlegacyText3",
+  "how": "legacyTextItem.remove() (delete copies) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "swatches",
+   "symbols",
+   "styles",
+   "brushes",
+   "doc",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7041
+ },
+ {
+  "cmd": "convertlegacyText4",
+  "how": "legacyTextItem.selected = true (select copies) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "swatches",
+   "symbols",
+   "styles",
+   "brushes",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45854
+ },
+ {
+  "cmd": "selectall",
+  "how": "item.selected = true for every item / document.selection = items",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45867
+ },
+ {
+  "cmd": "selectallinartboard",
+  "how": "document.selectObjectsOnActiveArtboard()",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47403
+ },
+ {
+  "cmd": "deselectall",
+  "how": "document.selection = null",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46458
+ },
+ {
+  "cmd": "Find Reselect menu item",
+  "how": "app.executeMenuCommand('Find Reselect menu item')",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7679
+ },
+ {
+  "cmd": "Inverse menu item",
+  "how": "select every item that is not selected",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6059
+ },
+ {
+  "cmd": "Selection Hat 8",
+  "how": "select the item with the next higher absoluteZOrderPosition",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45948
+ },
+ {
+  "cmd": "Selection Hat 9",
+  "how": "select the item with the next lower absoluteZOrderPosition",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45864
+ },
+ {
+  "cmd": "Find Appearance menu item",
+  "how": "compare appearance (fill, stroke, effects) and select matches",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45334
+ },
+ {
+  "cmd": "Find Appearance Attributes menu item",
+  "how": "select items sharing a live effect",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46911
+ },
+ {
+  "cmd": "Find Blending Mode menu item",
+  "how": "select items with the same blendingMode",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49300
+ },
+ {
+  "cmd": "Find Fill & Stroke menu item",
+  "how": "select items with equal fillColor and strokeColor",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6638
+ },
+ {
+  "cmd": "Find Fill Color menu item",
+  "how": "select items with equal fillColor",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7018
+ },
+ {
+  "cmd": "Find Opacity menu item",
+  "how": "select items with equal opacity",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46154
+ },
+ {
+  "cmd": "Find Stroke Color menu item",
+  "how": "select items with equal strokeColor",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47971
+ },
+ {
+  "cmd": "Find Stroke Weight menu item",
+  "how": "select items with equal strokeWidth",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45483
+ },
+ {
+  "cmd": "Find Style menu item",
+  "how": "select items with the same graphic style",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6834
+ },
+ {
+  "cmd": "Find Live Shape menu item",
+  "how": "select live shapes of the same kind",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 10121
+ },
+ {
+  "cmd": "Find Symbol Instance menu item",
+  "how": "select symbolItems whose .symbol is the same",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "symbols",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44629
+ },
+ {
+  "cmd": "Find Link Block Series menu item",
+  "how": "select the frames of one story (textFrame.story.textFrames)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "!錯誤: No such element"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 51401
+ },
+ {
+  "cmd": "Find Text Font Family menu item",
+  "how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7924
+ },
+ {
+  "cmd": "Find Text Font Family Style menu item",
+  "how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6971
+ },
+ {
+  "cmd": "Find Text Font Family Style Size menu item",
+  "how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7993
+ },
+ {
+  "cmd": "Find Text Font Size menu item",
+  "how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6740
+ },
+ {
+  "cmd": "Find Text Fill Color menu item",
+  "how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6709
+ },
+ {
+  "cmd": "Find Text Stroke Color menu item",
+  "how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49865
+ },
+ {
+  "cmd": "Find Text Fill Stroke Color menu item",
+  "how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 52203
+ },
+ {
+  "cmd": "Selection Hat 3",
+  "how": "select every item of item.layer",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7313
+ },
+ {
+  "cmd": "Selection Hat 1",
+  "how": "pathPoint.selected = PathPointSelection.*",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6746
+ },
+ {
+  "cmd": "Bristle Brush Strokes menu item",
+  "how": "Select > Object > Bristle Brush Strokes (in a document that has bristle brushes: the shipped Bristle Brush library)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "boards",
+   "swatches",
+   "symbols",
+   "styles",
+   "brushes",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7106
+ },
+ {
+  "cmd": "Brush Strokes menu item",
+  "how": "brush.applyTo(path); select paths that have a brush",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5961
+ },
+ {
+  "cmd": "Clipping Masks menu item",
+  "how": "select pathItems with clipping == true",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 9777
+ },
+ {
+  "cmd": "Stray Points menu item",
+  "how": "select pathItems with a single point",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44177
+ },
+ {
+  "cmd": "Text Objects menu item",
+  "how": "select every textFrame",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44954
+ },
+ {
+  "cmd": "Point Text Objects menu item",
+  "how": "select textFrames with kind POINTTEXT",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48868
+ },
+ {
+  "cmd": "Area Text Objects menu item",
+  "how": "select textFrames with kind AREATEXT",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48788
+ },
+ {
+  "cmd": "SmartEdit Menu Item",
+  "how": "Select > Start Global Edit",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "symbols",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 53583
+ },
+ {
+  "cmd": "Selection Hat 10",
+  "how": "Select > Save Selection (name typed)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "儲存選取範圍"
+  ],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 52352d6efdbd3db7 -> c51b08a8951b3dbf",
+  "ms": 47969
+ },
+ {
+  "cmd": "Selection Hat 11",
+  "how": "Select > Edit Selection (dialog: the saved selection 'MySel' deleted through UI Automation)",
+  "ok": true,
+  "dialogs": [
+   "儲存選取範圍",
+   "編輯選取範圍"
+  ],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash 236bdcf6ec9e6fe7 -> 49bb2bc3eeae67e5",
+  "ms": 13775
+ },
+ {
+  "cmd": "Selection Hat 14",
+  "how": "Select > Update Selection (choose saved 'MySel', add an object, update; re-choosing 'MySel' now selects 2 objects) — via the menu bar: 選取 > 更新選取範圍 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "儲存選取範圍"
+  ],
+  "diff": [
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 65439
+ },
+ {
+  "cmd": "Adobe Apply Last Effect",
+  "how": "app.executeMenuCommand('Adobe Apply Last Effect')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "粗糙效果"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "deep",
+  "detail": "art hash 6c165e1ddaa68e71 -> 38009a73c8e735c2",
+  "ms": 50997
+ },
+ {
+  "cmd": "Adobe Last Effect",
+  "how": "app.executeMenuCommand('Adobe Last Effect')",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "粗糙效果",
+   "粗糙效果"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel"
+  ],
+  "level": "deep",
+  "detail": "art hash bb04d5a879436032 -> 26d5e7b925b876f0",
+  "ms": 52826
+ },
+ {
+  "cmd": "Live Rasterize Effect Setting",
+  "how": "document.rasterEffectSettings.resolution / .transparency / .padding ...",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5062
+ },
+ {
+  "cmd": "preview",
+  "how": "View > Outline (readback document.isOutlineMode())",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6157
+ },
+ {
+  "cmd": "ink",
+  "how": "View > Overprint Preview (readback document.getPreviewMode())",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7396
+ },
+ {
+  "cmd": "raster",
+  "how": "View > Pixel Preview (readback document.getPreviewMode())",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6320
+ },
+ {
+  "cmd": "TrimView",
+  "how": "View > Trim View (readback document.isTrimViewEnabled()) — via the menu bar: 檢視 > 剪裁視圖 (tools/menu_ui.py; app.executeMenuCommand refuses this id)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 10371
+ },
+ {
+  "cmd": "zoomin",
+  "how": "document.activeView.zoom",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6588
+ },
+ {
+  "cmd": "zoomout",
+  "how": "document.activeView.zoom",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6475
+ },
+ {
+  "cmd": "fitin",
+  "how": "document.activeView.zoom",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6813
+ },
+ {
+  "cmd": "fitall",
+  "how": "document.activeView.zoom",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "boards",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7041
+ },
+ {
+  "cmd": "actualsize",
+  "how": "view.visibleZoom reads 1 (view.zoom is scaled by the display DPI: 1.5 at 150%)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6078
+ },
+ {
+  "cmd": "RotateView180",
+  "how": "document.activeView.rotateAngle = 180 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45833
+ },
+ {
+  "cmd": "RotateView150",
+  "how": "document.activeView.rotateAngle = 150 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4760
+ },
+ {
+  "cmd": "RotateView135",
+  "how": "document.activeView.rotateAngle = 135 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4769
+ },
+ {
+  "cmd": "RotateView120",
+  "how": "document.activeView.rotateAngle = 120 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5276
+ },
+ {
+  "cmd": "RotateView90",
+  "how": "document.activeView.rotateAngle = 90 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5161
+ },
+ {
+  "cmd": "RotateView60",
+  "how": "document.activeView.rotateAngle = 60 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5279
+ },
+ {
+  "cmd": "RotateView45",
+  "how": "document.activeView.rotateAngle = 45 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4690
+ },
+ {
+  "cmd": "RotateView30",
+  "how": "document.activeView.rotateAngle = 30 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44921
+ },
+ {
+  "cmd": "RotateView15",
+  "how": "document.activeView.rotateAngle = 15 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44683
+ },
+ {
+  "cmd": "RotateViewNegative15",
+  "how": "document.activeView.rotateAngle = -15 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44096
+ },
+ {
+  "cmd": "RotateViewNegative30",
+  "how": "document.activeView.rotateAngle = -30 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44338
+ },
+ {
+  "cmd": "RotateViewNegative45",
+  "how": "document.activeView.rotateAngle = -45 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5059
+ },
+ {
+  "cmd": "RotateViewNegative60",
+  "how": "document.activeView.rotateAngle = -60 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5512
+ },
+ {
+  "cmd": "RotateViewNegative90",
+  "how": "document.activeView.rotateAngle = -90 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 43993
+ },
+ {
+  "cmd": "RotateViewNegative120",
+  "how": "document.activeView.rotateAngle = -120 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5291
+ },
+ {
+  "cmd": "RotateViewNegative135",
+  "how": "document.activeView.rotateAngle = -135 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4962
+ },
+ {
+  "cmd": "RotateViewNegative150",
+  "how": "document.activeView.rotateAngle = -150 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4789
+ },
+ {
+  "cmd": "RotateViewNegative180",
+  "how": "document.activeView.rotateAngle = -180 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 44801
+ },
+ {
+  "cmd": "RotateViewZero",
+  "how": "document.activeView.rotateAngle = 0 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45315
+ },
+ {
+  "cmd": "resetRotationView",
+  "how": "document.activeView.rotateAngle = 0 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 43260
+ },
+ {
+  "cmd": "rotateViewToSelection",
+  "how": "document.activeView.rotateAngle = the item's rotation (30 deg here) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45410
+ },
+ {
+  "cmd": "TransparencyGrid Menu Item",
+  "how": "View > Transparency Grid (readback document.isTransparencyGridVisible())",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6622
+ },
+ {
+  "cmd": "ruler",
+  "how": "View > Rulers (readback document.isRulerVisible())",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48367
+ },
+ {
+  "cmd": "showguide",
+  "how": "View > Guides (readback document.isGuideVisible())",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45304
+ },
+ {
+  "cmd": "makeguide",
+  "how": "pathItem.guides = true",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45566
+ },
+ {
+  "cmd": "releaseguide",
+  "how": "pathItem.guides = false",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46812
+ },
+ {
+  "cmd": "clearguide",
+  "how": "remove every pathItem with guides == true",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6680
+ },
+ {
+  "cmd": "lockguide",
+  "how": "View > Guides > Lock Guides (readback: the Guides menu switches between Lock and Unlock Guides)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "sel"
+  ],
+  "level": "menu readback",
+  "detail": "檢視 > 參考線: ['解除鎖定參考線', '鎖定參考線']",
+  "ms": 12686
+ },
+ {
+  "cmd": "showgrid",
+  "how": "View > Show Grid (readback document.isGridVisible())",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46324
+ },
+ {
+  "cmd": "Show Perspective Grid",
+  "how": "document.showPerspectiveGrid() / hidePerspectiveGrid()",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash ac69c2f529dbcd96 -> 7545f58d49af8e50",
+  "ms": 48864
+ },
+ {
+  "cmd": "newview",
+  "how": "View > New View (name typed)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "新增檢視"
+  ],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash b93e527e80504bdd -> 868ff587899d0ef3",
+  "ms": 49884
+ },
+ {
+  "cmd": "newwindow",
+  "how": "Window > New Window (readback document.views.length)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 46583
+ },
+ {
+  "cmd": "leftAlign",
+  "how": "paragraphAttributes.justification = Justification.LEFT [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 49532
+ },
+ {
+  "cmd": "centerAlign",
+  "how": "paragraphAttributes.justification = Justification.CENTER [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4837
+ },
+ {
+  "cmd": "rightAlign",
+  "how": "paragraphAttributes.justification = Justification.RIGHT [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 47765
+ },
+ {
+  "cmd": "justify",
+  "how": "paragraphAttributes.justification = Justification.FULLJUSTIFYLASTLINELEFT [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 57304
+ },
+ {
+  "cmd": "justifyCenter",
+  "how": "paragraphAttributes.justification = Justification.FULLJUSTIFYLASTLINECENTER [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48925
+ },
+ {
+  "cmd": "justifyRight",
+  "how": "paragraphAttributes.justification = Justification.FULLJUSTIFYLASTLINERIGHT [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48329
+ },
+ {
+  "cmd": "justifyAll",
+  "how": "paragraphAttributes.justification = Justification.FULLJUSTIFY [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4840
+ },
+ {
+  "cmd": "sizeStepUp",
+  "how": "characterAttributes.size += 2 (the shortcut step) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4863
+ },
+ {
+  "cmd": "sizeStepDown",
+  "how": "characterAttributes.size -= 2 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5748
+ },
+ {
+  "cmd": "faceSizeUp",
+  "how": "characterAttributes.size += 10 (large step) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5860
+ },
+ {
+  "cmd": "faceSizeDown",
+  "how": "characterAttributes.size -= 10 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5665
+ },
+ {
+  "cmd": "~kernFurther",
+  "how": "characterAttributes.tracking += 20 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5664
+ },
+ {
+  "cmd": "~kernCloser",
+  "how": "characterAttributes.tracking -= 20 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5315
+ },
+ {
+  "cmd": "tracking",
+  "how": "characterAttributes.tracking += 100 (word step) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5187
+ },
+ {
+  "cmd": "clearTrack",
+  "how": "characterAttributes.tracking = 0 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5152
+ },
+ {
+  "cmd": "clearTypeScale",
+  "how": "characterAttributes.horizontalScale = verticalScale = 100 [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5600
+ },
+ {
+  "cmd": "~superScript",
+  "how": "characterAttributes.baselinePosition = FontBaselineOption.SUPERSCRIPT [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5905
+ },
+ {
+  "cmd": "~subscript",
+  "how": "characterAttributes.baselinePosition = FontBaselineOption.SUBSCRIPT [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5759
+ },
+ {
+  "cmd": "toggleAutoHyphen",
+  "how": "paragraphAttributes.hyphenation = !hyphenation [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4839
+ },
+ {
+  "cmd": "toggleLineComposer",
+  "how": "paragraphAttributes.everyLineComposer = !everyLineComposer [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4341
+ },
+ {
+  "cmd": "lock2",
+  "how": "lock every unselected item: item.locked = true where !item.selected [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4465
+ },
+ {
+  "cmd": "hide2",
+  "how": "hide every unselected item: item.hidden = true where !item.selected [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 4893
+ },
+ {
+  "cmd": "repeatPathfinder",
+  "how": "call AI.pathfinder(items, op) again (repeat Pathfinder) [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5285
+ },
+ {
+  "cmd": "avgAndJoin",
+  "how": "MENU('average') + MENU('join') on the two end points [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers",
+   "sel",
+   "n"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6545
+ },
+ {
+  "cmd": "enterFocus",
+  "how": "double-click the group with the Selection tool (tools/menu_ui.dblclick_color); readback: the temporary Isolation Mode layer appears",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6203
+ },
+ {
+  "cmd": "exitFocus",
+  "how": "Esc in the document window leaves isolation mode (readback: the Isolation Mode layer is gone)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6673
+ },
+ {
+  "cmd": "Adobe New Fill Shortcut",
+  "how": "Appearance: add new fill",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash ad5aedd83b892edb -> be6e69eb3798af48",
+  "ms": 7587
+ },
+ {
+  "cmd": "Adobe New Stroke Shortcut",
+  "how": "Appearance: add new stroke",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash ad5aedd83b892edb -> 20f86a255f86072c",
+  "ms": 7706
+ },
+ {
+  "cmd": "Adobe New Style Shortcut",
+  "how": "Graphic Styles: new style from selection",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "繪圖樣式選項"
+  ],
+  "diff": [
+   "layers",
+   "styles"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 45251
+ },
+ {
+  "cmd": "AdobeLayerPalette2",
+  "how": "document.layers.add()",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 6185
+ },
+ {
+  "cmd": "AdobeLayerPalette3",
+  "how": "document.layers.add() (+ options dialog)",
+  "ok": true,
+  "dialogs": [
+   "圖層選項"
+  ],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 7564
+ },
+ {
+  "cmd": "Adobe New Swatch Shortcut Menu",
+  "how": "document.swatches.add()",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "新增色票"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "swatches",
+   "doc"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 50028
+ },
+ {
+  "cmd": "Adobe New Symbol Shortcut",
+  "how": "document.symbols.add(item)",
+  "ok": true,
+  "dialogs": [
+   "符號選項"
+  ],
+  "diff": [
+   "items",
+   "layers",
+   "symbols",
+   "sel"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 8482
+ },
+ {
+  "cmd": "Adobe Update Link Shortcut",
+  "how": "placedItem.relink(file) / update after the file changed",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "late_dialogs": [
+   "Adobe Illustrator"
+  ],
+  "ms": 49903
+ },
+ {
+  "cmd": "assignprofile",
+  "how": "Edit > Assign Profile: 'Don't Color Manage' chosen (readback document.colorProfileName)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "指定描述檔"
+  ],
+  "diff": [
+   "layers"
+  ],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 48273
+ },
+ {
+  "cmd": "updateLegacyTOP",
+  "how": "Type > Type on a Path > Update Legacy Type on a Path (legacy file)",
+  "ok": true,
+  "dialogs": [],
+  "diff": [
+   "items",
+   "text",
+   "layers",
+   "swatches",
+   "symbols",
+   "styles",
+   "brushes",
+   "doc",
+   "sel",
+   "n"
+  ],
+  "level": "deep",
+  "detail": "art hash 8149aa593cbd57c2 -> 5b00c5786ec24810",
+  "ms": 14343
+ },
+ {
+  "cmd": "SVG Filter Import",
+  "how": "Effect > SVG Filters > Import SVG Filter (file typed into the open dialog)",
+  "ok": true,
+  "recovered": 1,
+  "dialogs": [
+   "選取 SVG 檔案",
+   "讀入狀態"
+  ],
+  "diff": [
+   "layers",
+   "doc"
+  ],
+  "level": "deep",
+  "detail": "art hash cb22dff7e15ae857 -> 2aa8ab5b196c6509",
+  "ms": 53588
+ },
+ {
+  "cmd": "spacing",
+  "how": "paragraphAttributes.desiredWordSpacing [menu ID refuses scripts: PARM]",
+  "ok": true,
+  "dialogs": [],
+  "diff": [],
+  "level": "readback",
+  "detail": "check true",
+  "ms": 5711
+ }
+]

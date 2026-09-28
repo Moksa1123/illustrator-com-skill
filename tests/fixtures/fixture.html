@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  html, body { margin: 0; }
+  .canvas { position: relative; width: 600px; height: 800px; overflow: hidden; background: #2B2520; color: #F4EFE8; font-family: Arial, sans-serif; }
+  .band { position: absolute; left: 0; top: 0; width: 600px; height: 70px; background: linear-gradient(90deg, #C8A97E 0%, #8C6F52 100%); }
+  .hd { position: absolute; left: 40px; top: 22px; font-size: 22px; font-weight: 700; letter-spacing: .2em; color: #2B2520; }
+  .en { position: absolute; left: 40px; top: 100px; font: italic 400 58px/1 Georgia, serif; }
+  .zh { position: absolute; left: 40px; top: 175px; font: 400 28px/1.3 "Microsoft JhengHei", sans-serif; letter-spacing: .1em; }
+  .photo { position: absolute; left: 40px; top: 240px; width: 400px; height: 440px; overflow: hidden; border-radius: 24px; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tag { position: absolute; left: 470px; top: 250px; width: 90px; height: 90px; border: 3px solid #C8A97E; border-radius: 50%;
+         box-shadow: 4px 6px 10px rgba(0,0,0,.5); background: #3a332c; }
+  .icon { position: absolute; left: 480px; top: 380px; width: 80px; height: 80px; }
+  .side { position: absolute; left: 490px; top: 500px; writing-mode: vertical-rl; font: 400 34px "Microsoft JhengHei", sans-serif; color: #C8A97E; }
+  .btn { position: absolute; left: 40px; top: 710px; width: 220px; height: 54px; border-radius: 27px; background: #C8A97E; color: #2B2520;
+         font: 700 20px/54px Arial, sans-serif; text-align: center; }
+  .rule { position: absolute; left: 300px; top: 736px; width: 260px; height: 0; border-top: 2px dashed #8C6F52; }
+</style></head>
+<body><div class="canvas">
+  <div class="band"></div>
+  <div class="hd">STUDIO</div>
+  <div class="en">Bean &amp; Heart</div>
+  <div class="zh">手沖咖啡 單品豆</div>
+  <div class="photo"><img src="fixture.jpg"></div>
+  <div class="tag"></div>
+  <svg class="icon" viewBox="0 0 80 80"><circle cx="40" cy="40" r="36" fill="#C8A97E"/><path d="M20 44 L36 58 L62 24" stroke="#2B2520" stroke-width="8" fill="none"/></svg>
+  <div class="side">職人烘焙</div>
+  <div class="btn">SHOP NOW</div>
+  <div class="rule"></div>
+</div></body></html>

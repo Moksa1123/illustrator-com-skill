@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+tests/snaps/
+tests/fixtures/fixture/
+tests/fixtures/out/
+examples/out/
+*.log
+
+# generated locally from your own Illustrator (Adobe type-library text / app exports): not redistributed
+index/ai-dom.json
+index/raw/

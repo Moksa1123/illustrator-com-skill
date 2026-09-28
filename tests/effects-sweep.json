@@ -1,0 +1,5182 @@
+[
+ {
+  "cmd": "Live PSAdapter_plugin_Pntl",
+  "menu": "Effect > Pixelate > Pointillize",
+  "ok": true,
+  "dialogs": [
+   "點狀化",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Pntl",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 36,
+   "ps": {
+    "ClSz": 5,
+    "FlRs": 1790490606
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Pntl\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Pntl\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 6,
+   "read": {
+    "ClSz": 6,
+    "FlRs": 1790490614
+   }
+  },
+  "detail": "PSAdapter_plugin_Pntl: XML applies it with defaults; dialog field 0 typed 6 -> descriptor ClSz=6 read back",
+  "ms": 17703
+ },
+ {
+  "cmd": "Live Roughen",
+  "menu": "Effect > Distort & Transform > Roughen",
+  "ok": true,
+  "dialogs": [
+   "粗糙效果",
+   "OS_PopupWindow",
+   ""
+  ],
+  "name": "Adobe Roughen",
+  "params": {
+   "dtal": 10.0,
+   "asiz": 5.0,
+   "size": 5.0,
+   "absoluteness": 0.0,
+   "roundness": 0.0
+  },
+  "types": {
+   "dtal": "Real",
+   "asiz": "Real",
+   "size": "Real",
+   "absoluteness": "Real",
+   "roundness": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Roughen\"><Dict data=\"R dtal 10.0 R asiz 5.0 R size 5.0 R absoluteness 0.0 R roundness 0.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Roughen\"><Dict data=\"R dtal 16.0 R asiz 5.0 R size 5.0 R absoluteness 0.0 R roundness 0.0 \"/></LiveEffect>",
+  "changed": "dtal",
+  "detail": "Adobe Roughen: 5 params read back, dtal changed to 16.0",
+  "retried": true,
+  "ms": 61177
+ },
+ {
+  "cmd": "Live Adobe Geometry3D Extrude",
+  "menu": "Effect > 3D and Materials > Extrude & Bevel",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Geometry3D",
+  "params": {
+   "Geometry3DkSunlightRotationKey": 145.0,
+   "Geometry3DkSunlightElevationKey": 45.0,
+   "Geometry3DkSunlightCloudinessKey": 40.0,
+   "Geometry3DkSunlightVisibilityKey": true,
+   "Geometry3DkSunlightIntensityKey": 70.0,
+   "Geometry3DkOutputProfileKey": 0,
+   "Geometry3DkUseDynamicShadowBoundsKey": true,
+   "Geometry3DkGlobalLightKey": true,
+   "Geometry3DkShadowProfileKey": 0,
+   "Geometry3DkShadowGroundDistanceKey": 0.0,
+   "Geometry3DkEngineProfileKey": 0,
+   "Geometry3DkQualityProfileKey": 1,
+   "Geometry3DkSunlightNameKey": "åæº 1",
+   "Geometry3DkSunlightNameCounterKey": 1.0,
+   "Geometry3DkGlobalLightIntensityKey": 50.0,
+   "Geometry3DkShadowSpreadKey": 50.0,
+   "Geometry3DkRenderAsWireframe": false,
+   "Geometry3DkReduceNoiseKey": true,
+   "Geometry3DkOperationTypeKey": 0,
+   "Geometry3DkExtrudeDepthKey": 50.0,
+   "Geometry3DkExtrudeCapKey": true,
+   "Geometry3DkExtrudeTaperEndKey": 100.0,
+   "Geometry3DkExtrudeTwistEndKey": 0.0,
+   "Geometry3DkExtrudeTwistBeginKey": 0.0,
+   "Geometry3DkExtrudeTaperBeginKey": 100.0,
+   "MaterialDensity": 100.0,
+   "MaterialMetallic": 0.0,
+   "MaterialOffsetY": 0.0,
+   "Geometry3DkRotationXKey": -0.314159,
+   "MaterialRotation": 0.0,
+   "MaterialRoughness": 40.0,
+   "Geometry3DkFOVKey": 0.0,
+   "MaterialFilePathKey": "",
+   "Geometry3DkRotationZKey": -0.1413717,
+   "Geometry3DkRotationYKey": -0.45378561,
+   "Geometry3DkContainKeys": 1,
+   "MaterialResolutionKey": 10,
+   "MaterialOffsetX": 0.0
+  },
+  "types": {
+   "Geometry3DkSunlightRotationKey": "Real",
+   "Geometry3DkSunlightElevationKey": "Real",
+   "Geometry3DkSunlightCloudinessKey": "Real",
+   "Geometry3DkSunlightVisibilityKey": "Bool",
+   "Geometry3DkSunlightIntensityKey": "Real",
+   "Geometry3DkOutputProfileKey": "Int",
+   "Geometry3DkUseDynamicShadowBoundsKey": "Bool",
+   "Geometry3DkGlobalLightKey": "Bool",
+   "Geometry3DkShadowProfileKey": "Int",
+   "Geometry3DkShadowGroundDistanceKey": "Real",
+   "Geometry3DkEngineProfileKey": "Int",
+   "Geometry3DkQualityProfileKey": "Int",
+   "Geometry3DkSunlightNameKey": "UnicodeString",
+   "Geometry3DkSunlightNameCounterKey": "Real",
+   "Geometry3DkGlobalLightIntensityKey": "Real",
+   "Geometry3DkShadowSpreadKey": "Real",
+   "Geometry3DkRenderAsWireframe": "Bool",
+   "Geometry3DkReduceNoiseKey": "Bool",
+   "Geometry3DkOperationTypeKey": "Int",
+   "Geometry3DkExtrudeDepthKey": "Real",
+   "Geometry3DkExtrudeCapKey": "Bool",
+   "Geometry3DkExtrudeTaperEndKey": "Real",
+   "Geometry3DkExtrudeTwistEndKey": "Real",
+   "Geometry3DkExtrudeTwistBeginKey": "Real",
+   "Geometry3DkExtrudeTaperBeginKey": "Real",
+   "MaterialDensity": "Real",
+   "MaterialMetallic": "Real",
+   "MaterialOffsetY": "Real",
+   "Geometry3DkRotationXKey": "Real",
+   "MaterialRotation": "Real",
+   "MaterialRoughness": "Real",
+   "Geometry3DkFOVKey": "Real",
+   "MaterialFilePathKey": "UnicodeString",
+   "Geometry3DkRotationZKey": "Real",
+   "Geometry3DkRotationYKey": "Real",
+   "Geometry3DkContainKeys": "Int",
+   "MaterialResolutionKey": "Int",
+   "MaterialOffsetX": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 145.0 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 0 R Geometry3DkExtrudeDepthKey 50.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey -0.314159 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey -0.1413717 R Geometry3DkRotationYKey -0.45378561 I Geometry3DkContainKeys 1 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 218.5 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 0 R Geometry3DkExtrudeDepthKey 50.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey -0.314159 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey -0.1413717 R Geometry3DkRotationYKey -0.45378561 I Geometry3DkContainKeys 1 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 \"/></LiveEffect>",
+  "changed": "Geometry3DkSunlightRotationKey",
+  "detail": "Adobe Geometry3D: 36 params read back, Geometry3DkSunlightRotationKey changed to 218.5",
+  "ms": 16181
+ },
+ {
+  "cmd": "Live Adobe Geometry3D Revolve",
+  "menu": "Effect > 3D and Materials > Revolve",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Geometry3D",
+  "params": {
+   "Geometry3DkSunlightRotationKey": 145.0,
+   "Geometry3DkSunlightElevationKey": 45.0,
+   "Geometry3DkSunlightCloudinessKey": 40.0,
+   "Geometry3DkSunlightVisibilityKey": true,
+   "Geometry3DkSunlightIntensityKey": 70.0,
+   "Geometry3DkOutputProfileKey": 0,
+   "Geometry3DkUseDynamicShadowBoundsKey": true,
+   "Geometry3DkGlobalLightKey": true,
+   "Geometry3DkShadowProfileKey": 0,
+   "Geometry3DkShadowGroundDistanceKey": 0.0,
+   "Geometry3DkEngineProfileKey": 0,
+   "Geometry3DkQualityProfileKey": 1,
+   "Geometry3DkSunlightNameKey": "åæº 1",
+   "Geometry3DkSunlightNameCounterKey": 1.0,
+   "Geometry3DkGlobalLightIntensityKey": 50.0,
+   "Geometry3DkShadowSpreadKey": 50.0,
+   "Geometry3DkRenderAsWireframe": false,
+   "Geometry3DkReduceNoiseKey": true,
+   "Geometry3DkOperationTypeKey": 3,
+   "MaterialDensity": 100.0,
+   "MaterialMetallic": 0.0,
+   "MaterialOffsetY": 0.0,
+   "Geometry3DkRotationXKey": -0.314159,
+   "MaterialRotation": 0.0,
+   "MaterialRoughness": 40.0,
+   "Geometry3DkFOVKey": 0.0,
+   "MaterialFilePathKey": "",
+   "Geometry3DkRotationZKey": -0.1413717,
+   "Geometry3DkRotationYKey": -0.45378561,
+   "Geometry3DkContainKeys": 8,
+   "MaterialResolutionKey": 10,
+   "MaterialOffsetX": 0.0,
+   "Geometry3DkRevolveOffsetKey": 0.0,
+   "Geometry3DkRevolveAngleKey": 360.0,
+   "Geometry3DkRevolveEdgeKey": true,
+   "Geometry3DkRevolveTwistBeginKey": 0.0,
+   "Geometry3DkRevolveCapKey": true,
+   "Geometry3DkRevolveTwistEndKey": 0.0,
+   "Geometry3DkRevolveTaperBeginKey": 100.0,
+   "Geometry3DkRevolveTaperEndKey": 100.0
+  },
+  "types": {
+   "Geometry3DkSunlightRotationKey": "Real",
+   "Geometry3DkSunlightElevationKey": "Real",
+   "Geometry3DkSunlightCloudinessKey": "Real",
+   "Geometry3DkSunlightVisibilityKey": "Bool",
+   "Geometry3DkSunlightIntensityKey": "Real",
+   "Geometry3DkOutputProfileKey": "Int",
+   "Geometry3DkUseDynamicShadowBoundsKey": "Bool",
+   "Geometry3DkGlobalLightKey": "Bool",
+   "Geometry3DkShadowProfileKey": "Int",
+   "Geometry3DkShadowGroundDistanceKey": "Real",
+   "Geometry3DkEngineProfileKey": "Int",
+   "Geometry3DkQualityProfileKey": "Int",
+   "Geometry3DkSunlightNameKey": "UnicodeString",
+   "Geometry3DkSunlightNameCounterKey": "Real",
+   "Geometry3DkGlobalLightIntensityKey": "Real",
+   "Geometry3DkShadowSpreadKey": "Real",
+   "Geometry3DkRenderAsWireframe": "Bool",
+   "Geometry3DkReduceNoiseKey": "Bool",
+   "Geometry3DkOperationTypeKey": "Int",
+   "MaterialDensity": "Real",
+   "MaterialMetallic": "Real",
+   "MaterialOffsetY": "Real",
+   "Geometry3DkRotationXKey": "Real",
+   "MaterialRotation": "Real",
+   "MaterialRoughness": "Real",
+   "Geometry3DkFOVKey": "Real",
+   "MaterialFilePathKey": "UnicodeString",
+   "Geometry3DkRotationZKey": "Real",
+   "Geometry3DkRotationYKey": "Real",
+   "Geometry3DkContainKeys": "Int",
+   "MaterialResolutionKey": "Int",
+   "MaterialOffsetX": "Real",
+   "Geometry3DkRevolveOffsetKey": "Real",
+   "Geometry3DkRevolveAngleKey": "Real",
+   "Geometry3DkRevolveEdgeKey": "Bool",
+   "Geometry3DkRevolveTwistBeginKey": "Real",
+   "Geometry3DkRevolveCapKey": "Bool",
+   "Geometry3DkRevolveTwistEndKey": "Real",
+   "Geometry3DkRevolveTaperBeginKey": "Real",
+   "Geometry3DkRevolveTaperEndKey": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 145.0 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 3 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey -0.314159 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey -0.1413717 R Geometry3DkRotationYKey -0.45378561 I Geometry3DkContainKeys 8 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 R Geometry3DkRevolveOffsetKey 0.0 R Geometry3DkRevolveAngleKey 360.0 B Geometry3DkRevolveEdgeKey 1 R Geometry3DkRevolveTwistBeginKey 0.0 B Geometry3DkRevolveCapKey 1 R Geometry3DkRevolveTwistEndKey 0.0 R Geometry3DkRevolveTaperBeginKey 100.0 R Geometry3DkRevolveTaperEndKey 100.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 218.5 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 3 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey -0.314159 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey -0.1413717 R Geometry3DkRotationYKey -0.45378561 I Geometry3DkContainKeys 8 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 R Geometry3DkRevolveOffsetKey 0.0 R Geometry3DkRevolveAngleKey 360.0 B Geometry3DkRevolveEdgeKey 1 R Geometry3DkRevolveTwistBeginKey 0.0 B Geometry3DkRevolveCapKey 1 R Geometry3DkRevolveTwistEndKey 0.0 R Geometry3DkRevolveTaperBeginKey 100.0 R Geometry3DkRevolveTaperEndKey 100.0 \"/></LiveEffect>",
+  "changed": "Geometry3DkSunlightRotationKey",
+  "detail": "Adobe Geometry3D: 38 params read back, Geometry3DkSunlightRotationKey changed to 218.5",
+  "ms": 15361
+ },
+ {
+  "cmd": "Live Adobe Geometry3D Inflate",
+  "menu": "Effect > 3D and Materials > Inflate",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Geometry3D",
+  "params": {
+   "Geometry3DkSunlightRotationKey": 145.0,
+   "Geometry3DkSunlightElevationKey": 45.0,
+   "Geometry3DkSunlightCloudinessKey": 40.0,
+   "Geometry3DkSunlightVisibilityKey": true,
+   "Geometry3DkSunlightIntensityKey": 70.0,
+   "Geometry3DkOutputProfileKey": 0,
+   "Geometry3DkUseDynamicShadowBoundsKey": true,
+   "Geometry3DkGlobalLightKey": true,
+   "Geometry3DkShadowProfileKey": 0,
+   "Geometry3DkShadowGroundDistanceKey": 0.0,
+   "Geometry3DkEngineProfileKey": 0,
+   "Geometry3DkQualityProfileKey": 1,
+   "Geometry3DkSunlightNameKey": "åæº 1",
+   "Geometry3DkSunlightNameCounterKey": 1.0,
+   "Geometry3DkGlobalLightIntensityKey": 50.0,
+   "Geometry3DkShadowSpreadKey": 50.0,
+   "Geometry3DkRenderAsWireframe": false,
+   "Geometry3DkReduceNoiseKey": true,
+   "Geometry3DkOperationTypeKey": 2,
+   "Geometry3DkExtrudeDepthKey": 10.0,
+   "Geometry3DkExtrudeCapKey": true,
+   "Geometry3DkExtrudeTaperEndKey": 100.0,
+   "Geometry3DkExtrudeTwistEndKey": 0.0,
+   "Geometry3DkExtrudeTwistBeginKey": 0.0,
+   "Geometry3DkExtrudeTaperBeginKey": 100.0,
+   "MaterialDensity": 100.0,
+   "MaterialMetallic": 0.0,
+   "MaterialOffsetY": 0.0,
+   "Geometry3DkRotationXKey": 0.0,
+   "MaterialRotation": 0.0,
+   "MaterialRoughness": 40.0,
+   "Geometry3DkFOVKey": 0.0,
+   "MaterialFilePathKey": "",
+   "Geometry3DkRotationZKey": 0.0,
+   "Geometry3DkRotationYKey": 0.0,
+   "Geometry3DkContainKeys": 5,
+   "MaterialResolutionKey": 10,
+   "MaterialOffsetX": 0.0,
+   "Geometry3DkInflateBothSidesKey": false,
+   "Geometry3DkInflateStrengthKey": 100.0
+  },
+  "types": {
+   "Geometry3DkSunlightRotationKey": "Real",
+   "Geometry3DkSunlightElevationKey": "Real",
+   "Geometry3DkSunlightCloudinessKey": "Real",
+   "Geometry3DkSunlightVisibilityKey": "Bool",
+   "Geometry3DkSunlightIntensityKey": "Real",
+   "Geometry3DkOutputProfileKey": "Int",
+   "Geometry3DkUseDynamicShadowBoundsKey": "Bool",
+   "Geometry3DkGlobalLightKey": "Bool",
+   "Geometry3DkShadowProfileKey": "Int",
+   "Geometry3DkShadowGroundDistanceKey": "Real",
+   "Geometry3DkEngineProfileKey": "Int",
+   "Geometry3DkQualityProfileKey": "Int",
+   "Geometry3DkSunlightNameKey": "UnicodeString",
+   "Geometry3DkSunlightNameCounterKey": "Real",
+   "Geometry3DkGlobalLightIntensityKey": "Real",
+   "Geometry3DkShadowSpreadKey": "Real",
+   "Geometry3DkRenderAsWireframe": "Bool",
+   "Geometry3DkReduceNoiseKey": "Bool",
+   "Geometry3DkOperationTypeKey": "Int",
+   "Geometry3DkExtrudeDepthKey": "Real",
+   "Geometry3DkExtrudeCapKey": "Bool",
+   "Geometry3DkExtrudeTaperEndKey": "Real",
+   "Geometry3DkExtrudeTwistEndKey": "Real",
+   "Geometry3DkExtrudeTwistBeginKey": "Real",
+   "Geometry3DkExtrudeTaperBeginKey": "Real",
+   "MaterialDensity": "Real",
+   "MaterialMetallic": "Real",
+   "MaterialOffsetY": "Real",
+   "Geometry3DkRotationXKey": "Real",
+   "MaterialRotation": "Real",
+   "MaterialRoughness": "Real",
+   "Geometry3DkFOVKey": "Real",
+   "MaterialFilePathKey": "UnicodeString",
+   "Geometry3DkRotationZKey": "Real",
+   "Geometry3DkRotationYKey": "Real",
+   "Geometry3DkContainKeys": "Int",
+   "MaterialResolutionKey": "Int",
+   "MaterialOffsetX": "Real",
+   "Geometry3DkInflateBothSidesKey": "Bool",
+   "Geometry3DkInflateStrengthKey": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 145.0 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 2 R Geometry3DkExtrudeDepthKey 10.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey 0.0 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey 0.0 R Geometry3DkRotationYKey 0.0 I Geometry3DkContainKeys 5 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 B Geometry3DkInflateBothSidesKey 0 R Geometry3DkInflateStrengthKey 100.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 218.5 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 2 R Geometry3DkExtrudeDepthKey 10.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey 0.0 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey 0.0 R Geometry3DkRotationYKey 0.0 I Geometry3DkContainKeys 5 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 B Geometry3DkInflateBothSidesKey 0 R Geometry3DkInflateStrengthKey 100.0 \"/></LiveEffect>",
+  "changed": "Geometry3DkSunlightRotationKey",
+  "detail": "Adobe Geometry3D: 38 params read back, Geometry3DkSunlightRotationKey changed to 218.5",
+  "ms": 15198
+ },
+ {
+  "cmd": "Live Adobe Geometry3D Rotate",
+  "menu": "Effect > 3D and Materials > Rotate",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Geometry3D",
+  "params": {
+   "Geometry3DkSunlightRotationKey": 145.0,
+   "Geometry3DkSunlightElevationKey": 45.0,
+   "Geometry3DkSunlightCloudinessKey": 40.0,
+   "Geometry3DkSunlightVisibilityKey": true,
+   "Geometry3DkSunlightIntensityKey": 70.0,
+   "Geometry3DkOutputProfileKey": 0,
+   "Geometry3DkUseDynamicShadowBoundsKey": true,
+   "Geometry3DkGlobalLightKey": true,
+   "Geometry3DkShadowProfileKey": 0,
+   "Geometry3DkShadowGroundDistanceKey": 0.0,
+   "Geometry3DkEngineProfileKey": 0,
+   "Geometry3DkQualityProfileKey": 1,
+   "Geometry3DkSunlightNameKey": "åæº 1",
+   "Geometry3DkSunlightNameCounterKey": 1.0,
+   "Geometry3DkGlobalLightIntensityKey": 50.0,
+   "Geometry3DkShadowSpreadKey": 50.0,
+   "Geometry3DkRenderAsWireframe": false,
+   "Geometry3DkReduceNoiseKey": true,
+   "Geometry3DkOperationTypeKey": 4,
+   "Geometry3DkExtrudeDepthKey": 10.0,
+   "Geometry3DkExtrudeCapKey": true,
+   "Geometry3DkExtrudeTaperEndKey": 100.0,
+   "Geometry3DkExtrudeTwistEndKey": 0.0,
+   "Geometry3DkExtrudeTwistBeginKey": 0.0,
+   "Geometry3DkExtrudeTaperBeginKey": 100.0,
+   "MaterialDensity": 100.0,
+   "MaterialMetallic": 0.0,
+   "MaterialOffsetY": 0.0,
+   "Geometry3DkRotationXKey": -0.314159,
+   "MaterialRotation": 0.0,
+   "MaterialRoughness": 40.0,
+   "Geometry3DkFOVKey": 0.0,
+   "MaterialFilePathKey": "",
+   "Geometry3DkRotationZKey": -0.1413717,
+   "Geometry3DkRotationYKey": -0.45378561,
+   "Geometry3DkContainKeys": 1,
+   "MaterialResolutionKey": 10,
+   "MaterialOffsetX": 0.0
+  },
+  "types": {
+   "Geometry3DkSunlightRotationKey": "Real",
+   "Geometry3DkSunlightElevationKey": "Real",
+   "Geometry3DkSunlightCloudinessKey": "Real",
+   "Geometry3DkSunlightVisibilityKey": "Bool",
+   "Geometry3DkSunlightIntensityKey": "Real",
+   "Geometry3DkOutputProfileKey": "Int",
+   "Geometry3DkUseDynamicShadowBoundsKey": "Bool",
+   "Geometry3DkGlobalLightKey": "Bool",
+   "Geometry3DkShadowProfileKey": "Int",
+   "Geometry3DkShadowGroundDistanceKey": "Real",
+   "Geometry3DkEngineProfileKey": "Int",
+   "Geometry3DkQualityProfileKey": "Int",
+   "Geometry3DkSunlightNameKey": "UnicodeString",
+   "Geometry3DkSunlightNameCounterKey": "Real",
+   "Geometry3DkGlobalLightIntensityKey": "Real",
+   "Geometry3DkShadowSpreadKey": "Real",
+   "Geometry3DkRenderAsWireframe": "Bool",
+   "Geometry3DkReduceNoiseKey": "Bool",
+   "Geometry3DkOperationTypeKey": "Int",
+   "Geometry3DkExtrudeDepthKey": "Real",
+   "Geometry3DkExtrudeCapKey": "Bool",
+   "Geometry3DkExtrudeTaperEndKey": "Real",
+   "Geometry3DkExtrudeTwistEndKey": "Real",
+   "Geometry3DkExtrudeTwistBeginKey": "Real",
+   "Geometry3DkExtrudeTaperBeginKey": "Real",
+   "MaterialDensity": "Real",
+   "MaterialMetallic": "Real",
+   "MaterialOffsetY": "Real",
+   "Geometry3DkRotationXKey": "Real",
+   "MaterialRotation": "Real",
+   "MaterialRoughness": "Real",
+   "Geometry3DkFOVKey": "Real",
+   "MaterialFilePathKey": "UnicodeString",
+   "Geometry3DkRotationZKey": "Real",
+   "Geometry3DkRotationYKey": "Real",
+   "Geometry3DkContainKeys": "Int",
+   "MaterialResolutionKey": "Int",
+   "MaterialOffsetX": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 145.0 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 4 R Geometry3DkExtrudeDepthKey 10.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey -0.314159 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey -0.1413717 R Geometry3DkRotationYKey -0.45378561 I Geometry3DkContainKeys 1 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 218.5 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 4 R Geometry3DkExtrudeDepthKey 10.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey -0.314159 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey -0.1413717 R Geometry3DkRotationYKey -0.45378561 I Geometry3DkContainKeys 1 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 \"/></LiveEffect>",
+  "changed": "Geometry3DkSunlightRotationKey",
+  "detail": "Adobe Geometry3D: 36 params read back, Geometry3DkSunlightRotationKey changed to 218.5",
+  "ms": 14928
+ },
+ {
+  "cmd": "Live Adobe Geometry3D Materials",
+  "menu": "Effect > 3D and Materials > Materials",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Geometry3D",
+  "params": {
+   "Geometry3DkSunlightRotationKey": 145.0,
+   "Geometry3DkSunlightElevationKey": 45.0,
+   "Geometry3DkSunlightCloudinessKey": 40.0,
+   "Geometry3DkSunlightVisibilityKey": true,
+   "Geometry3DkSunlightIntensityKey": 70.0,
+   "Geometry3DkOutputProfileKey": 0,
+   "Geometry3DkUseDynamicShadowBoundsKey": true,
+   "Geometry3DkGlobalLightKey": true,
+   "Geometry3DkShadowProfileKey": 0,
+   "Geometry3DkShadowGroundDistanceKey": 0.0,
+   "Geometry3DkEngineProfileKey": 0,
+   "Geometry3DkQualityProfileKey": 1,
+   "Geometry3DkSunlightNameKey": "åæº 1",
+   "Geometry3DkSunlightNameCounterKey": 1.0,
+   "Geometry3DkGlobalLightIntensityKey": 50.0,
+   "Geometry3DkShadowSpreadKey": 50.0,
+   "Geometry3DkRenderAsWireframe": false,
+   "Geometry3DkReduceNoiseKey": true,
+   "Geometry3DkOperationTypeKey": 4,
+   "Geometry3DkExtrudeDepthKey": 10.0,
+   "Geometry3DkExtrudeCapKey": true,
+   "Geometry3DkExtrudeTaperEndKey": 100.0,
+   "Geometry3DkExtrudeTwistEndKey": 0.0,
+   "Geometry3DkExtrudeTwistBeginKey": 0.0,
+   "Geometry3DkExtrudeTaperBeginKey": 100.0,
+   "MaterialDensity": 100.0,
+   "MaterialMetallic": 0.0,
+   "MaterialOffsetY": 0.0,
+   "Geometry3DkRotationXKey": 0.0,
+   "MaterialRotation": 0.0,
+   "MaterialRoughness": 40.0,
+   "Geometry3DkFOVKey": 0.0,
+   "MaterialFilePathKey": "",
+   "Geometry3DkRotationZKey": 0.0,
+   "Geometry3DkRotationYKey": 0.0,
+   "Geometry3DkContainKeys": 1,
+   "MaterialResolutionKey": 10,
+   "MaterialOffsetX": 0.0
+  },
+  "types": {
+   "Geometry3DkSunlightRotationKey": "Real",
+   "Geometry3DkSunlightElevationKey": "Real",
+   "Geometry3DkSunlightCloudinessKey": "Real",
+   "Geometry3DkSunlightVisibilityKey": "Bool",
+   "Geometry3DkSunlightIntensityKey": "Real",
+   "Geometry3DkOutputProfileKey": "Int",
+   "Geometry3DkUseDynamicShadowBoundsKey": "Bool",
+   "Geometry3DkGlobalLightKey": "Bool",
+   "Geometry3DkShadowProfileKey": "Int",
+   "Geometry3DkShadowGroundDistanceKey": "Real",
+   "Geometry3DkEngineProfileKey": "Int",
+   "Geometry3DkQualityProfileKey": "Int",
+   "Geometry3DkSunlightNameKey": "UnicodeString",
+   "Geometry3DkSunlightNameCounterKey": "Real",
+   "Geometry3DkGlobalLightIntensityKey": "Real",
+   "Geometry3DkShadowSpreadKey": "Real",
+   "Geometry3DkRenderAsWireframe": "Bool",
+   "Geometry3DkReduceNoiseKey": "Bool",
+   "Geometry3DkOperationTypeKey": "Int",
+   "Geometry3DkExtrudeDepthKey": "Real",
+   "Geometry3DkExtrudeCapKey": "Bool",
+   "Geometry3DkExtrudeTaperEndKey": "Real",
+   "Geometry3DkExtrudeTwistEndKey": "Real",
+   "Geometry3DkExtrudeTwistBeginKey": "Real",
+   "Geometry3DkExtrudeTaperBeginKey": "Real",
+   "MaterialDensity": "Real",
+   "MaterialMetallic": "Real",
+   "MaterialOffsetY": "Real",
+   "Geometry3DkRotationXKey": "Real",
+   "MaterialRotation": "Real",
+   "MaterialRoughness": "Real",
+   "Geometry3DkFOVKey": "Real",
+   "MaterialFilePathKey": "UnicodeString",
+   "Geometry3DkRotationZKey": "Real",
+   "Geometry3DkRotationYKey": "Real",
+   "Geometry3DkContainKeys": "Int",
+   "MaterialResolutionKey": "Int",
+   "MaterialOffsetX": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 145.0 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 4 R Geometry3DkExtrudeDepthKey 10.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey 0.0 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey 0.0 R Geometry3DkRotationYKey 0.0 I Geometry3DkContainKeys 1 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Geometry3D\"><Dict data=\"R Geometry3DkSunlightRotationKey 218.5 R Geometry3DkSunlightElevationKey 45.0 R Geometry3DkSunlightCloudinessKey 40.0 B Geometry3DkSunlightVisibilityKey 1 R Geometry3DkSunlightIntensityKey 70.0 I Geometry3DkOutputProfileKey 0 B Geometry3DkUseDynamicShadowBoundsKey 1 B Geometry3DkGlobalLightKey 1 I Geometry3DkShadowProfileKey 0 R Geometry3DkShadowGroundDistanceKey 0.0 I Geometry3DkEngineProfileKey 0 I Geometry3DkQualityProfileKey 1 R Geometry3DkSunlightNameCounterKey 1.0 R Geometry3DkGlobalLightIntensityKey 50.0 R Geometry3DkShadowSpreadKey 50.0 B Geometry3DkRenderAsWireframe 0 B Geometry3DkReduceNoiseKey 1 I Geometry3DkOperationTypeKey 4 R Geometry3DkExtrudeDepthKey 10.0 B Geometry3DkExtrudeCapKey 1 R Geometry3DkExtrudeTaperEndKey 100.0 R Geometry3DkExtrudeTwistEndKey 0.0 R Geometry3DkExtrudeTwistBeginKey 0.0 R Geometry3DkExtrudeTaperBeginKey 100.0 R MaterialDensity 100.0 R MaterialMetallic 0.0 R MaterialOffsetY 0.0 R Geometry3DkRotationXKey 0.0 R MaterialRotation 0.0 R MaterialRoughness 40.0 R Geometry3DkFOVKey 0.0 R Geometry3DkRotationZKey 0.0 R Geometry3DkRotationYKey 0.0 I Geometry3DkContainKeys 1 I MaterialResolutionKey 10 R MaterialOffsetX 0.0 \"/></LiveEffect>",
+  "changed": "Geometry3DkSunlightRotationKey",
+  "detail": "Adobe Geometry3D: 36 params read back, Geometry3DkSunlightRotationKey changed to 218.5",
+  "ms": 9673
+ },
+ {
+  "cmd": "Live 3DExtrude",
+  "menu": "Effect > 3D and Materials > 3D (Classic) > Extrude & Bevel (Classic)",
+  "ok": true,
+  "dialogs": [
+   "3D 突出與斜角選項 (經典)"
+  ],
+  "name": "Adobe 3D Effect",
+  "params": {
+   "DisplayString": "¸\\))",
+   "paramsDictionaryInitialized": true,
+   "revolveAngle": 360.0,
+   "revolveOffset": 0.0,
+   "bevelHeight": 4.0,
+   "revolveCap": true,
+   "extrudeDepth": 50.0,
+   "3Dversion": 2,
+   "revolveAxisMode": 0,
+   "extrudeCap": true,
+   "rotationPresetKey": 9,
+   "cameraPerspective": 0.0,
+   "effectStyle": 0,
+   "surfaceStyle": 3,
+   "surfaceAmbient": 50.0,
+   "surfaceMatte": 40.0,
+   "bevelExtentIn": true,
+   "surfaceGloss": 10.0,
+   "numLights": 1,
+   "preserveSpots": false,
+   "showHiddenSurfaces": false,
+   "shadeMaps": false,
+   "blendSteps": 25.0,
+   "invisibleGeo": false,
+   "shadeMode": 3,
+   "numArtMaps": 0,
+   "mat_00": 0.890047044425083,
+   "mat_01": 0.125087954547906,
+   "mat_03": 0.0,
+   "mat_22": 0.854803934540093,
+   "mat_23": 0.0,
+   "mat_12": -0.27774263474948,
+   "mat_20": -0.455865193785597,
+   "mat_31": 0.0,
+   "mat_32": 0.0,
+   "mat_21": 0.247986206450273,
+   "mat_30": 0.0,
+   "mat_33": 1.0,
+   "mat_10": 0.001784321998364,
+   "mat_11": 0.960653863281371,
+   "mat_02": 0.438371146789104,
+   "mat_13": 0.0,
+   "lightDirX": 0.389999985694885,
+   "lightDirY": 0.330000013113022,
+   "lightDirZ": -0.850000023841858,
+   "lightPosZ": -1.0,
+   "lightPosX": 0.0,
+   "lightIntensity": 1.0,
+   "lightPosY": 0.0,
+   "rotZ": 8.0,
+   "rotY": -26.0,
+   "rotX": -18.0
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "paramsDictionaryInitialized": "Bool",
+   "revolveAngle": "Real",
+   "revolveOffset": "Real",
+   "bevelHeight": "Real",
+   "revolveCap": "Bool",
+   "extrudeDepth": "Real",
+   "3Dversion": "Int",
+   "revolveAxisMode": "Int",
+   "extrudeCap": "Bool",
+   "rotationPresetKey": "Int",
+   "cameraPerspective": "Real",
+   "effectStyle": "Int",
+   "surfaceStyle": "Int",
+   "surfaceAmbient": "Real",
+   "surfaceMatte": "Real",
+   "bevelExtentIn": "Bool",
+   "surfaceGloss": "Real",
+   "numLights": "Int",
+   "preserveSpots": "Bool",
+   "showHiddenSurfaces": "Bool",
+   "shadeMaps": "Bool",
+   "blendSteps": "Real",
+   "invisibleGeo": "Bool",
+   "shadeMode": "Int",
+   "numArtMaps": "Int",
+   "mat_00": "Real",
+   "mat_01": "Real",
+   "mat_03": "Real",
+   "mat_22": "Real",
+   "mat_23": "Real",
+   "mat_12": "Real",
+   "mat_20": "Real",
+   "mat_31": "Real",
+   "mat_32": "Real",
+   "mat_21": "Real",
+   "mat_30": "Real",
+   "mat_33": "Real",
+   "mat_10": "Real",
+   "mat_11": "Real",
+   "mat_02": "Real",
+   "mat_13": "Real",
+   "lightDirX": "Real",
+   "lightDirY": "Real",
+   "lightDirZ": "Real",
+   "lightPosZ": "Real",
+   "lightPosX": "Real",
+   "lightIntensity": "Real",
+   "lightPosY": "Real",
+   "rotZ": "Real",
+   "rotY": "Real",
+   "rotX": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe 3D Effect\"><Dict data=\"B paramsDictionaryInitialized 1 R revolveAngle 360.0 R revolveOffset 0.0 R bevelHeight 4.0 B revolveCap 1 R extrudeDepth 50.0 I 3Dversion 2 I revolveAxisMode 0 B extrudeCap 1 I rotationPresetKey 9 R cameraPerspective 0.0 I effectStyle 0 I surfaceStyle 3 R surfaceAmbient 50.0 R surfaceMatte 40.0 B bevelExtentIn 1 R surfaceGloss 10.0 I numLights 1 B preserveSpots 0 B showHiddenSurfaces 0 B shadeMaps 0 R blendSteps 25.0 B invisibleGeo 0 I shadeMode 3 I numArtMaps 0 R mat_00 0.890047044425083 R mat_01 0.125087954547906 R mat_03 0.0 R mat_22 0.854803934540093 R mat_23 0.0 R mat_12 -0.27774263474948 R mat_20 -0.455865193785597 R mat_31 0.0 R mat_32 0.0 R mat_21 0.247986206450273 R mat_30 0.0 R mat_33 1.0 R mat_10 0.001784321998364 R mat_11 0.960653863281371 R mat_02 0.438371146789104 R mat_13 0.0 R lightDirX 0.389999985694885 R lightDirY 0.330000013113022 R lightDirZ -0.850000023841858 R lightPosZ -1.0 R lightPosX 0.0 R lightIntensity 1.0 R lightPosY 0.0 R rotZ 8.0 R rotY -26.0 R rotX -18.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe 3D Effect\"><Dict data=\"B paramsDictionaryInitialized 1 R revolveAngle 541.0 R revolveOffset 0.0 R bevelHeight 4.0 B revolveCap 1 R extrudeDepth 50.0 I 3Dversion 2 I revolveAxisMode 0 B extrudeCap 1 I rotationPresetKey 9 R cameraPerspective 0.0 I effectStyle 0 I surfaceStyle 3 R surfaceAmbient 50.0 R surfaceMatte 40.0 B bevelExtentIn 1 R surfaceGloss 10.0 I numLights 1 B preserveSpots 0 B showHiddenSurfaces 0 B shadeMaps 0 R blendSteps 25.0 B invisibleGeo 0 I shadeMode 3 I numArtMaps 0 R mat_00 0.890047044425083 R mat_01 0.125087954547906 R mat_03 0.0 R mat_22 0.854803934540093 R mat_23 0.0 R mat_12 -0.27774263474948 R mat_20 -0.455865193785597 R mat_31 0.0 R mat_32 0.0 R mat_21 0.247986206450273 R mat_30 0.0 R mat_33 1.0 R mat_10 0.001784321998364 R mat_11 0.960653863281371 R mat_02 0.438371146789104 R mat_13 0.0 R lightDirX 0.389999985694885 R lightDirY 0.330000013113022 R lightDirZ -0.850000023841858 R lightPosZ -1.0 R lightPosX 0.0 R lightIntensity 1.0 R lightPosY 0.0 R rotZ 8.0 R rotY -26.0 R rotX -18.0 \"/></LiveEffect>",
+  "changed": "revolveAngle",
+  "detail": "Adobe 3D Effect: 51 params read back, revolveAngle changed to 541.0",
+  "ms": 12865
+ },
+ {
+  "cmd": "Live 3DRevolve",
+  "menu": "Effect > 3D and Materials > 3D (Classic) > Revolve (Classic)",
+  "ok": true,
+  "dialogs": [
+   "3D 迴轉選項 (經典)",
+   "",
+   ""
+  ],
+  "name": "Adobe 3D Effect",
+  "params": {
+   "DisplayString": "¸\\))",
+   "paramsDictionaryInitialized": true,
+   "revolveAngle": 360.0,
+   "revolveOffset": 0.0,
+   "bevelHeight": 4.0,
+   "revolveCap": true,
+   "extrudeDepth": 50.0,
+   "3Dversion": 2,
+   "revolveAxisMode": 0,
+   "extrudeCap": true,
+   "rotationPresetKey": 9,
+   "cameraPerspective": 0.0,
+   "effectStyle": 1,
+   "surfaceStyle": 3,
+   "surfaceAmbient": 50.0,
+   "surfaceMatte": 40.0,
+   "bevelExtentIn": true,
+   "surfaceGloss": 10.0,
+   "numLights": 1,
+   "preserveSpots": false,
+   "showHiddenSurfaces": false,
+   "shadeMaps": false,
+   "blendSteps": 25.0,
+   "invisibleGeo": false,
+   "shadeMode": 3,
+   "numArtMaps": 0,
+   "mat_00": 0.890047044425083,
+   "mat_01": 0.125087954547906,
+   "mat_03": 0.0,
+   "mat_22": 0.854803934540093,
+   "mat_23": 0.0,
+   "mat_12": -0.27774263474948,
+   "mat_20": -0.455865193785597,
+   "mat_31": 0.0,
+   "mat_32": 0.0,
+   "mat_21": 0.247986206450273,
+   "mat_30": 0.0,
+   "mat_33": 1.0,
+   "mat_10": 0.001784321998364,
+   "mat_11": 0.960653863281371,
+   "mat_02": 0.438371146789104,
+   "mat_13": 0.0,
+   "lightDirX": 0.389999985694885,
+   "lightDirY": 0.330000013113022,
+   "lightDirZ": -0.850000023841858,
+   "lightPosZ": -1.0,
+   "lightPosX": 0.0,
+   "lightIntensity": 1.0,
+   "lightPosY": 0.0,
+   "rotZ": 8.0,
+   "rotY": -26.0,
+   "rotX": -18.0
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "paramsDictionaryInitialized": "Bool",
+   "revolveAngle": "Real",
+   "revolveOffset": "Real",
+   "bevelHeight": "Real",
+   "revolveCap": "Bool",
+   "extrudeDepth": "Real",
+   "3Dversion": "Int",
+   "revolveAxisMode": "Int",
+   "extrudeCap": "Bool",
+   "rotationPresetKey": "Int",
+   "cameraPerspective": "Real",
+   "effectStyle": "Int",
+   "surfaceStyle": "Int",
+   "surfaceAmbient": "Real",
+   "surfaceMatte": "Real",
+   "bevelExtentIn": "Bool",
+   "surfaceGloss": "Real",
+   "numLights": "Int",
+   "preserveSpots": "Bool",
+   "showHiddenSurfaces": "Bool",
+   "shadeMaps": "Bool",
+   "blendSteps": "Real",
+   "invisibleGeo": "Bool",
+   "shadeMode": "Int",
+   "numArtMaps": "Int",
+   "mat_00": "Real",
+   "mat_01": "Real",
+   "mat_03": "Real",
+   "mat_22": "Real",
+   "mat_23": "Real",
+   "mat_12": "Real",
+   "mat_20": "Real",
+   "mat_31": "Real",
+   "mat_32": "Real",
+   "mat_21": "Real",
+   "mat_30": "Real",
+   "mat_33": "Real",
+   "mat_10": "Real",
+   "mat_11": "Real",
+   "mat_02": "Real",
+   "mat_13": "Real",
+   "lightDirX": "Real",
+   "lightDirY": "Real",
+   "lightDirZ": "Real",
+   "lightPosZ": "Real",
+   "lightPosX": "Real",
+   "lightIntensity": "Real",
+   "lightPosY": "Real",
+   "rotZ": "Real",
+   "rotY": "Real",
+   "rotX": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe 3D Effect\"><Dict data=\"B paramsDictionaryInitialized 1 R revolveAngle 360.0 R revolveOffset 0.0 R bevelHeight 4.0 B revolveCap 1 R extrudeDepth 50.0 I 3Dversion 2 I revolveAxisMode 0 B extrudeCap 1 I rotationPresetKey 9 R cameraPerspective 0.0 I effectStyle 1 I surfaceStyle 3 R surfaceAmbient 50.0 R surfaceMatte 40.0 B bevelExtentIn 1 R surfaceGloss 10.0 I numLights 1 B preserveSpots 0 B showHiddenSurfaces 0 B shadeMaps 0 R blendSteps 25.0 B invisibleGeo 0 I shadeMode 3 I numArtMaps 0 R mat_00 0.890047044425083 R mat_01 0.125087954547906 R mat_03 0.0 R mat_22 0.854803934540093 R mat_23 0.0 R mat_12 -0.27774263474948 R mat_20 -0.455865193785597 R mat_31 0.0 R mat_32 0.0 R mat_21 0.247986206450273 R mat_30 0.0 R mat_33 1.0 R mat_10 0.001784321998364 R mat_11 0.960653863281371 R mat_02 0.438371146789104 R mat_13 0.0 R lightDirX 0.389999985694885 R lightDirY 0.330000013113022 R lightDirZ -0.850000023841858 R lightPosZ -1.0 R lightPosX 0.0 R lightIntensity 1.0 R lightPosY 0.0 R rotZ 8.0 R rotY -26.0 R rotX -18.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe 3D Effect\"><Dict data=\"B paramsDictionaryInitialized 1 R revolveAngle 541.0 R revolveOffset 0.0 R bevelHeight 4.0 B revolveCap 1 R extrudeDepth 50.0 I 3Dversion 2 I revolveAxisMode 0 B extrudeCap 1 I rotationPresetKey 9 R cameraPerspective 0.0 I effectStyle 1 I surfaceStyle 3 R surfaceAmbient 50.0 R surfaceMatte 40.0 B bevelExtentIn 1 R surfaceGloss 10.0 I numLights 1 B preserveSpots 0 B showHiddenSurfaces 0 B shadeMaps 0 R blendSteps 25.0 B invisibleGeo 0 I shadeMode 3 I numArtMaps 0 R mat_00 0.890047044425083 R mat_01 0.125087954547906 R mat_03 0.0 R mat_22 0.854803934540093 R mat_23 0.0 R mat_12 -0.27774263474948 R mat_20 -0.455865193785597 R mat_31 0.0 R mat_32 0.0 R mat_21 0.247986206450273 R mat_30 0.0 R mat_33 1.0 R mat_10 0.001784321998364 R mat_11 0.960653863281371 R mat_02 0.438371146789104 R mat_13 0.0 R lightDirX 0.389999985694885 R lightDirY 0.330000013113022 R lightDirZ -0.850000023841858 R lightPosZ -1.0 R lightPosX 0.0 R lightIntensity 1.0 R lightPosY 0.0 R rotZ 8.0 R rotY -26.0 R rotX -18.0 \"/></LiveEffect>",
+  "changed": "revolveAngle",
+  "detail": "Adobe 3D Effect: 51 params read back, revolveAngle changed to 541.0",
+  "ms": 12789
+ },
+ {
+  "cmd": "Live 3DRotate",
+  "menu": "Effect > 3D and Materials > 3D (Classic) > Rotate (Classic)",
+  "ok": true,
+  "dialogs": [
+   "3D 旋轉選項 (經典)",
+   "",
+   ""
+  ],
+  "name": "Adobe 3D Effect",
+  "params": {
+   "DisplayString": "¸\\))",
+   "paramsDictionaryInitialized": true,
+   "revolveAngle": 360.0,
+   "revolveOffset": 0.0,
+   "bevelHeight": 4.0,
+   "revolveCap": true,
+   "extrudeDepth": 50.0,
+   "3Dversion": 2,
+   "revolveAxisMode": 0,
+   "extrudeCap": true,
+   "rotationPresetKey": 9,
+   "cameraPerspective": 0.0,
+   "effectStyle": 2,
+   "surfaceStyle": 1,
+   "surfaceAmbient": 50.0,
+   "surfaceMatte": 40.0,
+   "bevelExtentIn": true,
+   "surfaceGloss": 10.0,
+   "numLights": 1,
+   "preserveSpots": false,
+   "showHiddenSurfaces": false,
+   "shadeMaps": false,
+   "blendSteps": 25.0,
+   "invisibleGeo": false,
+   "shadeMode": 3,
+   "numArtMaps": 0,
+   "mat_00": 0.890047044425083,
+   "mat_01": 0.125087954547906,
+   "mat_03": 0.0,
+   "mat_22": 0.854803934540093,
+   "mat_23": 0.0,
+   "mat_12": -0.27774263474948,
+   "mat_20": -0.455865193785597,
+   "mat_31": 0.0,
+   "mat_32": 0.0,
+   "mat_21": 0.247986206450273,
+   "mat_30": 0.0,
+   "mat_33": 1.0,
+   "mat_10": 0.001784321998364,
+   "mat_11": 0.960653863281371,
+   "mat_02": 0.438371146789104,
+   "mat_13": 0.0,
+   "lightDirX": 0.389999985694885,
+   "lightDirY": 0.330000013113022,
+   "lightDirZ": -0.850000023841858,
+   "lightPosZ": -1.0,
+   "lightPosX": 0.0,
+   "lightIntensity": 1.0,
+   "lightPosY": 0.0,
+   "rotZ": 8.0,
+   "rotY": -26.0,
+   "rotX": -18.0
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "paramsDictionaryInitialized": "Bool",
+   "revolveAngle": "Real",
+   "revolveOffset": "Real",
+   "bevelHeight": "Real",
+   "revolveCap": "Bool",
+   "extrudeDepth": "Real",
+   "3Dversion": "Int",
+   "revolveAxisMode": "Int",
+   "extrudeCap": "Bool",
+   "rotationPresetKey": "Int",
+   "cameraPerspective": "Real",
+   "effectStyle": "Int",
+   "surfaceStyle": "Int",
+   "surfaceAmbient": "Real",
+   "surfaceMatte": "Real",
+   "bevelExtentIn": "Bool",
+   "surfaceGloss": "Real",
+   "numLights": "Int",
+   "preserveSpots": "Bool",
+   "showHiddenSurfaces": "Bool",
+   "shadeMaps": "Bool",
+   "blendSteps": "Real",
+   "invisibleGeo": "Bool",
+   "shadeMode": "Int",
+   "numArtMaps": "Int",
+   "mat_00": "Real",
+   "mat_01": "Real",
+   "mat_03": "Real",
+   "mat_22": "Real",
+   "mat_23": "Real",
+   "mat_12": "Real",
+   "mat_20": "Real",
+   "mat_31": "Real",
+   "mat_32": "Real",
+   "mat_21": "Real",
+   "mat_30": "Real",
+   "mat_33": "Real",
+   "mat_10": "Real",
+   "mat_11": "Real",
+   "mat_02": "Real",
+   "mat_13": "Real",
+   "lightDirX": "Real",
+   "lightDirY": "Real",
+   "lightDirZ": "Real",
+   "lightPosZ": "Real",
+   "lightPosX": "Real",
+   "lightIntensity": "Real",
+   "lightPosY": "Real",
+   "rotZ": "Real",
+   "rotY": "Real",
+   "rotX": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe 3D Effect\"><Dict data=\"B paramsDictionaryInitialized 1 R revolveAngle 360.0 R revolveOffset 0.0 R bevelHeight 4.0 B revolveCap 1 R extrudeDepth 50.0 I 3Dversion 2 I revolveAxisMode 0 B extrudeCap 1 I rotationPresetKey 9 R cameraPerspective 0.0 I effectStyle 2 I surfaceStyle 1 R surfaceAmbient 50.0 R surfaceMatte 40.0 B bevelExtentIn 1 R surfaceGloss 10.0 I numLights 1 B preserveSpots 0 B showHiddenSurfaces 0 B shadeMaps 0 R blendSteps 25.0 B invisibleGeo 0 I shadeMode 3 I numArtMaps 0 R mat_00 0.890047044425083 R mat_01 0.125087954547906 R mat_03 0.0 R mat_22 0.854803934540093 R mat_23 0.0 R mat_12 -0.27774263474948 R mat_20 -0.455865193785597 R mat_31 0.0 R mat_32 0.0 R mat_21 0.247986206450273 R mat_30 0.0 R mat_33 1.0 R mat_10 0.001784321998364 R mat_11 0.960653863281371 R mat_02 0.438371146789104 R mat_13 0.0 R lightDirX 0.389999985694885 R lightDirY 0.330000013113022 R lightDirZ -0.850000023841858 R lightPosZ -1.0 R lightPosX 0.0 R lightIntensity 1.0 R lightPosY 0.0 R rotZ 8.0 R rotY -26.0 R rotX -18.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe 3D Effect\"><Dict data=\"B paramsDictionaryInitialized 1 R revolveAngle 541.0 R revolveOffset 0.0 R bevelHeight 4.0 B revolveCap 1 R extrudeDepth 50.0 I 3Dversion 2 I revolveAxisMode 0 B extrudeCap 1 I rotationPresetKey 9 R cameraPerspective 0.0 I effectStyle 2 I surfaceStyle 1 R surfaceAmbient 50.0 R surfaceMatte 40.0 B bevelExtentIn 1 R surfaceGloss 10.0 I numLights 1 B preserveSpots 0 B showHiddenSurfaces 0 B shadeMaps 0 R blendSteps 25.0 B invisibleGeo 0 I shadeMode 3 I numArtMaps 0 R mat_00 0.890047044425083 R mat_01 0.125087954547906 R mat_03 0.0 R mat_22 0.854803934540093 R mat_23 0.0 R mat_12 -0.27774263474948 R mat_20 -0.455865193785597 R mat_31 0.0 R mat_32 0.0 R mat_21 0.247986206450273 R mat_30 0.0 R mat_33 1.0 R mat_10 0.001784321998364 R mat_11 0.960653863281371 R mat_02 0.438371146789104 R mat_13 0.0 R lightDirX 0.389999985694885 R lightDirY 0.330000013113022 R lightDirZ -0.850000023841858 R lightPosZ -1.0 R lightPosX 0.0 R lightIntensity 1.0 R lightPosY 0.0 R rotZ 8.0 R rotY -26.0 R rotX -18.0 \"/></LiveEffect>",
+  "changed": "revolveAngle",
+  "detail": "Adobe 3D Effect: 51 params read back, revolveAngle changed to 541.0",
+  "ms": 11416
+ },
+ {
+  "cmd": "Live SVG Filters",
+  "menu": "Effect > SVG Filters > Apply SVG Filter",
+  "ok": true,
+  "dialogs": [
+   "套用 SVG 濾鏡",
+   "",
+   ""
+  ],
+  "name": "Adobe SVG Filter Effect",
+  "params": {
+   "DisplayString": "SVG æ¿¾é¡:AI_Alpha_1",
+   "SVGFilterUIDName": "AI_Alpha_1"
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "SVGFilterUIDName": "UnicodeString"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe SVG Filter Effect\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe SVG Filter Effect\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "detail": "Adobe SVG Filter Effect: 0 params read back",
+  "ms": 9501
+ },
+ {
+  "cmd": "Live Deform Arc",
+  "menu": "Effect > Warp > Arc",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 1,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: å¼§å½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 1 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 1 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 9633
+ },
+ {
+  "cmd": "Live Deform Arc Lower",
+  "menu": "Effect > Warp > Arc Lower",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 2,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: ä¸å¼§å½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 2 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 2 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 12081
+ },
+ {
+  "cmd": "Live Deform Arc Upper",
+  "menu": "Effect > Warp > Arc Upper",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "彎曲選項",
+   "",
+   "",
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 3,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: ä¸å¼§å½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 3 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 3 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 13806
+ },
+ {
+  "cmd": "Live Deform Arch",
+  "menu": "Effect > Warp > Arch",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 4,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: æ±å½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 4 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 4 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 10251
+ },
+ {
+  "cmd": "Live Deform Bulge",
+  "menu": "Effect > Warp > Bulge",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 5,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: å¸å½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 5 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 5 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 9307
+ },
+ {
+  "cmd": "Live Deform Shell Lower",
+  "menu": "Effect > Warp > Shell Lower",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 6,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: å¹æ®¼",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 6 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 6 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 9946
+ },
+ {
+  "cmd": "Live Deform Shell Upper",
+  "menu": "Effect > Warp > Shell Upper",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 7,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: å¸æ®¼",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 7 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 7 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 9760
+ },
+ {
+  "cmd": "Live Deform Flag",
+  "menu": "Effect > Warp > Flag",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 8,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: æå½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 8 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 8 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 10135
+ },
+ {
+  "cmd": "Live Deform Wave",
+  "menu": "Effect > Warp > Wave",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 9,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: æ³¢å½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 9 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 9 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 12856
+ },
+ {
+  "cmd": "Live Deform Fish",
+  "menu": "Effect > Warp > Fish",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 10,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: é­å½¢",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 10 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 10 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 9925
+ },
+ {
+  "cmd": "Live Deform Rise",
+  "menu": "Effect > Warp > Rise",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 11,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: ä¸å",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 11 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 11 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 8914
+ },
+ {
+  "cmd": "Live Deform Fisheye",
+  "menu": "Effect > Warp > Fisheye",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 12,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: é­ç¼",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 12 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 12 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 10226
+ },
+ {
+  "cmd": "Live Deform Inflate",
+  "menu": "Effect > Warp > Inflate",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 13,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: è¨è¹",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 13 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 13 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 10799
+ },
+ {
+  "cmd": "Live Deform Squeeze",
+  "menu": "Effect > Warp > Squeeze",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   "",
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 14,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: æ å£",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 14 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 14 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 12529
+ },
+ {
+  "cmd": "Live Deform Twist",
+  "menu": "Effect > Warp > Twist",
+  "ok": true,
+  "dialogs": [
+   "彎曲選項",
+   "",
+   ""
+  ],
+  "name": "Adobe Deform",
+  "params": {
+   "DeformHoriz": 0.0,
+   "DeformStyle": 15,
+   "DeformValue": 0.5,
+   "DeformVert": 0.0,
+   "DisplayString": "å½æ²: èºæ",
+   "Rotate": false
+  },
+  "types": {
+   "DeformHoriz": "Real",
+   "DeformStyle": "Int",
+   "DeformValue": "Real",
+   "DeformVert": "Real",
+   "DisplayString": "UnicodeString",
+   "Rotate": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 15 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 1.0 I DeformStyle 15 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+  "changed": "DeformHoriz",
+  "detail": "Adobe Deform: 5 params read back, DeformHoriz changed to 1.0",
+  "ms": 10114
+ },
+ {
+  "cmd": "Live Pucker & Bloat",
+  "menu": "Effect > Distort & Transform > Pucker & Bloat",
+  "ok": true,
+  "dialogs": [
+   "縮攏與膨脹",
+   "",
+   ""
+  ],
+  "name": "Adobe Punk and Bloat",
+  "params": {
+   "d_factor": 0.0
+  },
+  "types": {
+   "d_factor": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Punk and Bloat\"><Dict data=\"R d_factor 0.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Punk and Bloat\"><Dict data=\"R d_factor 1.0 \"/></LiveEffect>",
+  "changed": "d_factor",
+  "detail": "Adobe Punk and Bloat: 1 params read back, d_factor changed to 1.0",
+  "ms": 10017
+ },
+ {
+  "cmd": "Live Twist",
+  "menu": "Effect > Distort & Transform > Twist",
+  "ok": true,
+  "dialogs": [
+   "螺旋",
+   "",
+   ""
+  ],
+  "name": "Adobe Twirl",
+  "params": {
+   "angle": 0.0
+  },
+  "types": {
+   "angle": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Twirl\"><Dict data=\"R angle 0.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Twirl\"><Dict data=\"R angle 1.0 \"/></LiveEffect>",
+  "changed": "angle",
+  "detail": "Adobe Twirl: 1 params read back, angle changed to 1.0",
+  "ms": 8427
+ },
+ {
+  "cmd": "Live Transform",
+  "menu": "Effect > Distort & Transform > Transform",
+  "ok": true,
+  "dialogs": [
+   "變形效果"
+  ],
+  "name": "Adobe Transform",
+  "params": {
+   "scaleH_Factor": 1.0,
+   "scaleLines": false,
+   "moveH_Pts": 0.0,
+   "rotate_Radians": 0.0,
+   "pinPoint": 4,
+   "transformObjects": true,
+   "reflectX": false,
+   "rotate_Degrees": 0.0,
+   "reflectY": false,
+   "randomize": false,
+   "moveV_Pts": 0.0,
+   "scaleV_Percent": 100.0,
+   "scaleV_Factor": 1.0,
+   "numCopies": 0,
+   "transformPatterns": true,
+   "scaleH_Percent": 100.0
+  },
+  "types": {
+   "scaleH_Factor": "Real",
+   "scaleLines": "Bool",
+   "moveH_Pts": "Real",
+   "rotate_Radians": "Real",
+   "pinPoint": "Int",
+   "transformObjects": "Bool",
+   "reflectX": "Bool",
+   "rotate_Degrees": "Real",
+   "reflectY": "Bool",
+   "randomize": "Bool",
+   "moveV_Pts": "Real",
+   "scaleV_Percent": "Real",
+   "scaleV_Factor": "Real",
+   "numCopies": "Int",
+   "transformPatterns": "Bool",
+   "scaleH_Percent": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Transform\"><Dict data=\"R scaleH_Factor 1.0 B scaleLines 0 R moveH_Pts 0.0 R rotate_Radians 0.0 I pinPoint 4 B transformObjects 1 B reflectX 0 R rotate_Degrees 0.0 B reflectY 0 B randomize 0 R moveV_Pts 0.0 R scaleV_Percent 100.0 R scaleV_Factor 1.0 I numCopies 0 B transformPatterns 1 R scaleH_Percent 100.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Transform\"><Dict data=\"R scaleH_Factor 2.5 B scaleLines 0 R moveH_Pts 0.0 R rotate_Radians 0.0 I pinPoint 4 B transformObjects 1 B reflectX 0 R rotate_Degrees 0.0 B reflectY 0 B randomize 0 R moveV_Pts 0.0 R scaleV_Percent 100.0 R scaleV_Factor 1.0 I numCopies 0 B transformPatterns 1 R scaleH_Percent 100.0 \"/></LiveEffect>",
+  "changed": "scaleH_Factor",
+  "detail": "Adobe Transform: 16 params read back, scaleH_Factor changed to 2.5",
+  "ms": 9240
+ },
+ {
+  "cmd": "Live Zig Zag",
+  "menu": "Effect > Distort & Transform > Zig Zag",
+  "ok": true,
+  "dialogs": [
+   "鋸齒化",
+   "",
+   ""
+  ],
+  "name": "Adobe Zigzag",
+  "params": {
+   "amount": 10.0,
+   "ridges": 4.0,
+   "absoluteness": 1.0,
+   "roundness": 0.0,
+   "relAmount": 10.0
+  },
+  "types": {
+   "amount": "Real",
+   "ridges": "Real",
+   "absoluteness": "Real",
+   "roundness": "Real",
+   "relAmount": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Zigzag\"><Dict data=\"R amount 10.0 R ridges 4.0 R absoluteness 1.0 R roundness 0.0 R relAmount 10.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Zigzag\"><Dict data=\"R amount 16.0 R ridges 4.0 R absoluteness 1.0 R roundness 0.0 R relAmount 10.0 \"/></LiveEffect>",
+  "changed": "amount",
+  "detail": "Adobe Zigzag: 5 params read back, amount changed to 16.0",
+  "ms": 8436
+ },
+ {
+  "cmd": "Live Free Distort",
+  "menu": "Effect > Distort & Transform > Free Distort",
+  "ok": true,
+  "dialogs": [
+   "隨意扭曲",
+   "",
+   ""
+  ],
+  "name": "Adobe Free Distort",
+  "params": {
+   "src3h": 500.0,
+   "dst1h": 500.0,
+   "dst2v": 400.0,
+   "src1h": 500.0,
+   "src2h": 200.0,
+   "dst1v": 600.0,
+   "src1v": 600.0,
+   "src3v": 400.0,
+   "dst3v": 400.0,
+   "src2v": 400.0,
+   "dst0v": 600.0,
+   "src0v": 600.0,
+   "dst3h": 500.0,
+   "dst0h": 200.0,
+   "dst2h": 200.0,
+   "src0h": 200.0
+  },
+  "types": {
+   "src3h": "Real",
+   "dst1h": "Real",
+   "dst2v": "Real",
+   "src1h": "Real",
+   "src2h": "Real",
+   "dst1v": "Real",
+   "src1v": "Real",
+   "src3v": "Real",
+   "dst3v": "Real",
+   "src2v": "Real",
+   "dst0v": "Real",
+   "src0v": "Real",
+   "dst3h": "Real",
+   "dst0h": "Real",
+   "dst2h": "Real",
+   "src0h": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Free Distort\"><Dict data=\"R src3h 500.0 R dst1h 500.0 R dst2v 400.0 R src1h 500.0 R src2h 200.0 R dst1v 600.0 R src1v 600.0 R src3v 400.0 R dst3v 400.0 R src2v 400.0 R dst0v 600.0 R src0v 600.0 R dst3h 500.0 R dst0h 200.0 R dst2h 200.0 R src0h 200.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Free Distort\"><Dict data=\"R src3h 751.0 R dst1h 500.0 R dst2v 400.0 R src1h 500.0 R src2h 200.0 R dst1v 600.0 R src1v 600.0 R src3v 400.0 R dst3v 400.0 R src2v 400.0 R dst0v 600.0 R src0v 600.0 R dst3h 500.0 R dst0h 200.0 R dst2h 200.0 R src0h 200.0 \"/></LiveEffect>",
+  "changed": "src3h",
+  "detail": "Adobe Free Distort: 16 params read back, src3h changed to 751.0",
+  "ms": 9415
+ },
+ {
+  "cmd": "Live Scribble and Tweak",
+  "menu": "Effect > Distort & Transform > Tweak",
+  "ok": true,
+  "dialogs": [
+   "隨意筆畫",
+   "",
+   ""
+  ],
+  "name": "Adobe Scribble and Tweak",
+  "params": {
+   "in": true,
+   "vert": 10.0,
+   "horz": 10.0,
+   "anch": true,
+   "out": true,
+   "aver": 10.0,
+   "ahor": 10.0,
+   "absoluteness": 0.0
+  },
+  "types": {
+   "in": "Bool",
+   "vert": "Real",
+   "horz": "Real",
+   "anch": "Bool",
+   "out": "Bool",
+   "aver": "Real",
+   "ahor": "Real",
+   "absoluteness": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Scribble and Tweak\"><Dict data=\"B in 1 R vert 10.0 R horz 10.0 B anch 1 B out 1 R aver 10.0 R ahor 10.0 R absoluteness 0.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Scribble and Tweak\"><Dict data=\"B in 1 R vert 16.0 R horz 10.0 B anch 1 B out 1 R aver 10.0 R ahor 10.0 R absoluteness 0.0 \"/></LiveEffect>",
+  "changed": "vert",
+  "detail": "Adobe Scribble and Tweak: 8 params read back, vert changed to 16.0",
+  "ms": 9488
+ },
+ {
+  "cmd": "Live Trim Marks",
+  "menu": "Effect > Crop Marks",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Trim Marks",
+  "params": {
+   "styl": 0
+  },
+  "types": {
+   "styl": "Int"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Trim Marks\"><Dict data=\"I styl 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Trim Marks\"><Dict data=\"I styl 1 \"/></LiveEffect>",
+  "changed": "styl",
+  "detail": "Adobe Trim Marks: 1 params read back, styl changed to 1",
+  "ms": 35092
+ },
+ {
+  "cmd": "Live Offset Path",
+  "menu": "Effect > Path > Offset Path",
+  "ok": true,
+  "dialogs": [
+   "位移複製"
+  ],
+  "name": "Adobe Offset Path",
+  "params": {
+   "ofst": 10.0,
+   "mlim": 4.0,
+   "jntp": 2
+  },
+  "types": {
+   "ofst": "Real",
+   "mlim": "Real",
+   "jntp": "Int"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Offset Path\"><Dict data=\"R ofst 10.0 R mlim 4.0 I jntp 2 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Offset Path\"><Dict data=\"R ofst 16.0 R mlim 4.0 I jntp 2 \"/></LiveEffect>",
+  "changed": "ofst",
+  "detail": "Adobe Offset Path: 3 params read back, ofst changed to 16.0",
+  "ms": 13137
+ },
+ {
+  "cmd": "Live Outline Object",
+  "menu": "Effect > Path > Outline Object",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Outline Type",
+  "params": {},
+  "types": {},
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Outline Type\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Outline Type\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "detail": "Adobe Outline Type: 0 params read back",
+  "ms": 50822
+ },
+ {
+  "cmd": "Live Outline Stroke",
+  "menu": "Effect > Path > Outline Stroke",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Outline Stroke",
+  "params": {},
+  "types": {},
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Outline Stroke\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Outline Stroke\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "detail": "Adobe Outline Stroke: 0 params read back",
+  "ms": 12285
+ },
+ {
+  "cmd": "Live Pathfinder Add",
+  "menu": "Effect > Pathfinder > Add",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "RemovePoints": false,
+   "TrapAspect": 1.0,
+   "TrapReverse": false,
+   "TrapMaxTint": 1.0,
+   "TrapTint": 0.4,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTintTolerance": 0.05,
+   "ExtractUnpainted": true,
+   "TrapConvertCustom": false,
+   "DisplayString": "ç¸å ",
+   "Command": 0,
+   "Mix": 0.5
+  },
+  "types": {
+   "RemovePoints": "Bool",
+   "TrapAspect": "Real",
+   "TrapReverse": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapTint": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTintTolerance": "Real",
+   "ExtractUnpainted": "Bool",
+   "TrapConvertCustom": "Bool",
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 1.0 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 0 R Mix 0.5 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 2.5 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 0 R Mix 0.5 \"/></LiveEffect>",
+  "changed": "TrapAspect",
+  "detail": "Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5",
+  "ms": 9534
+ },
+ {
+  "cmd": "Live Pathfinder Intersect",
+  "menu": "Effect > Pathfinder > Intersect",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "RemovePoints": false,
+   "TrapAspect": 1.0,
+   "TrapReverse": false,
+   "TrapMaxTint": 1.0,
+   "TrapTint": 0.4,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTintTolerance": 0.05,
+   "ExtractUnpainted": true,
+   "TrapConvertCustom": false,
+   "DisplayString": "äº¤é",
+   "Command": 1,
+   "Mix": 0.5
+  },
+  "types": {
+   "RemovePoints": "Bool",
+   "TrapAspect": "Real",
+   "TrapReverse": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapTint": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTintTolerance": "Real",
+   "ExtractUnpainted": "Bool",
+   "TrapConvertCustom": "Bool",
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 1.0 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 1 R Mix 0.5 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 2.5 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 1 R Mix 0.5 \"/></LiveEffect>",
+  "changed": "TrapAspect",
+  "detail": "Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5",
+  "ms": 10796
+ },
+ {
+  "cmd": "Live Pathfinder Exclude",
+  "menu": "Effect > Pathfinder > Exclude",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "RemovePoints": false,
+   "TrapAspect": 1.0,
+   "TrapReverse": false,
+   "TrapMaxTint": 1.0,
+   "TrapTint": 0.4,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTintTolerance": 0.05,
+   "ExtractUnpainted": true,
+   "TrapConvertCustom": false,
+   "DisplayString": "å·®é",
+   "Command": 2,
+   "Mix": 0.5
+  },
+  "types": {
+   "RemovePoints": "Bool",
+   "TrapAspect": "Real",
+   "TrapReverse": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapTint": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTintTolerance": "Real",
+   "ExtractUnpainted": "Bool",
+   "TrapConvertCustom": "Bool",
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 1.0 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 2 R Mix 0.5 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 2.5 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 2 R Mix 0.5 \"/></LiveEffect>",
+  "changed": "TrapAspect",
+  "detail": "Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5",
+  "ms": 10785
+ },
+ {
+  "cmd": "Live Pathfinder Subtract",
+  "menu": "Effect > Pathfinder > Subtract",
+  "ok": true,
+  "dialogs": [],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "DisplayString": "ç¸æ¸",
+   "Command": 3,
+   "Mix": 0.5,
+   "Precision": 10.0,
+   "TrapAspect": 1.0,
+   "TrapMaxTint": 1.0,
+   "TrapTintTolerance": 0.05,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "TrapTint": 0.4,
+   "TrapReverse": false,
+   "TrapConvertCustom": false,
+   "RemovePoints": false,
+   "ExtractUnpainted": true
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real",
+   "Precision": "Real",
+   "TrapAspect": "Real",
+   "TrapMaxTint": "Real",
+   "TrapTintTolerance": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "TrapTint": "Real",
+   "TrapReverse": "Bool",
+   "TrapConvertCustom": "Bool",
+   "RemovePoints": "Bool",
+   "ExtractUnpainted": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"I Command 3 R Mix 0.5 R Precision 10.0 R TrapAspect 1.0 R TrapMaxTint 1.0 R TrapTintTolerance 0.05 B ConvertCustom 1 R TrapThickness 0.25 R TrapTint 0.4 B TrapReverse 0 B TrapConvertCustom 0 B RemovePoints 0 B ExtractUnpainted 1 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"I Command 3 R Mix 1.75 R Precision 10.0 R TrapAspect 1.0 R TrapMaxTint 1.0 R TrapTintTolerance 0.05 B ConvertCustom 1 R TrapThickness 0.25 R TrapTint 0.4 B TrapReverse 0 B TrapConvertCustom 0 B RemovePoints 0 B ExtractUnpainted 1 \"/></LiveEffect>",
+  "changed": "Mix",
+  "detail": "Adobe Pathfinder: 13 params read back, Mix changed to 1.75",
+  "ms": 27090
+ },
+ {
+  "cmd": "Live Pathfinder Minus Back",
+  "menu": "Effect > Pathfinder > Minus Back",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "Adobe Illustrator",
+   "",
+   "",
+   "Adobe Illustrator",
+   "",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "RemovePoints": false,
+   "TrapAspect": 1.0,
+   "TrapReverse": false,
+   "TrapMaxTint": 1.0,
+   "TrapTint": 0.4,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTintTolerance": 0.05,
+   "ExtractUnpainted": true,
+   "TrapConvertCustom": false,
+   "DisplayString": "ä¾å¾ç½®ç©ä»¶åªè£",
+   "Command": 4,
+   "Mix": 0.5
+  },
+  "types": {
+   "RemovePoints": "Bool",
+   "TrapAspect": "Real",
+   "TrapReverse": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapTint": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTintTolerance": "Real",
+   "ExtractUnpainted": "Bool",
+   "TrapConvertCustom": "Bool",
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 1.0 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 4 R Mix 0.5 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 2.5 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 4 R Mix 0.5 \"/></LiveEffect>",
+  "changed": "TrapAspect",
+  "detail": "Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5",
+  "ms": 24278
+ },
+ {
+  "cmd": "Live Pathfinder Divide",
+  "menu": "Effect > Pathfinder > Divide",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "",
+   "",
+   "Adobe Illustrator",
+   "",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "RemovePoints": false,
+   "TrapAspect": 1.0,
+   "TrapReverse": false,
+   "TrapMaxTint": 1.0,
+   "TrapTint": 0.4,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTintTolerance": 0.05,
+   "ExtractUnpainted": true,
+   "TrapConvertCustom": false,
+   "DisplayString": "åå²",
+   "Command": 5,
+   "Mix": 0.5
+  },
+  "types": {
+   "RemovePoints": "Bool",
+   "TrapAspect": "Real",
+   "TrapReverse": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapTint": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTintTolerance": "Real",
+   "ExtractUnpainted": "Bool",
+   "TrapConvertCustom": "Bool",
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 1.0 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 5 R Mix 0.5 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 2.5 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 5 R Mix 0.5 \"/></LiveEffect>",
+  "changed": "TrapAspect",
+  "detail": "Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5",
+  "ms": 23366
+ },
+ {
+  "cmd": "Live Pathfinder Trim",
+  "menu": "Effect > Pathfinder > Trim",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "",
+   "",
+   "Adobe Illustrator",
+   "",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "RemovePoints": false,
+   "TrapAspect": 1.0,
+   "TrapReverse": false,
+   "TrapMaxTint": 1.0,
+   "TrapTint": 0.4,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTintTolerance": 0.05,
+   "ExtractUnpainted": true,
+   "TrapConvertCustom": false,
+   "DisplayString": "åªè£è¦èç¯å",
+   "Command": 7,
+   "Mix": 0.5
+  },
+  "types": {
+   "RemovePoints": "Bool",
+   "TrapAspect": "Real",
+   "TrapReverse": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapTint": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTintTolerance": "Real",
+   "ExtractUnpainted": "Bool",
+   "TrapConvertCustom": "Bool",
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 1.0 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 7 R Mix 0.5 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 2.5 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 7 R Mix 0.5 \"/></LiveEffect>",
+  "changed": "TrapAspect",
+  "detail": "Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5",
+  "ms": 16931
+ },
+ {
+  "cmd": "Live Pathfinder Merge",
+  "menu": "Effect > Pathfinder > Merge",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "RemovePoints": false,
+   "TrapAspect": 1.0,
+   "TrapReverse": false,
+   "TrapMaxTint": 1.0,
+   "TrapTint": 0.4,
+   "ConvertCustom": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTintTolerance": 0.05,
+   "ExtractUnpainted": true,
+   "TrapConvertCustom": false,
+   "DisplayString": "åä½µ",
+   "Command": 8,
+   "Mix": 0.5
+  },
+  "types": {
+   "RemovePoints": "Bool",
+   "TrapAspect": "Real",
+   "TrapReverse": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapTint": "Real",
+   "ConvertCustom": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTintTolerance": "Real",
+   "ExtractUnpainted": "Bool",
+   "TrapConvertCustom": "Bool",
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 1.0 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 8 R Mix 0.5 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"B RemovePoints 0 R TrapAspect 2.5 B TrapReverse 0 R TrapMaxTint 1.0 R TrapTint 0.4 B ConvertCustom 1 R TrapThickness 0.25 R Precision 10.0 R TrapTintTolerance 0.05 B ExtractUnpainted 1 B TrapConvertCustom 0 I Command 8 R Mix 0.5 \"/></LiveEffect>",
+  "changed": "TrapAspect",
+  "detail": "Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5",
+  "ms": 48001
+ },
+ {
+  "cmd": "Live Pathfinder Crop",
+  "menu": "Effect > Pathfinder > Crop",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "Adobe Illustrator"
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "DisplayString": "è£å",
+   "Command": 9,
+   "Mix": 0.5,
+   "TrapAspect": 1.0,
+   "ConvertCustom": true,
+   "TrapTintTolerance": 0.05,
+   "RemovePoints": false,
+   "TrapConvertCustom": false,
+   "TrapMaxTint": 1.0,
+   "TrapReverse": false,
+   "ExtractUnpainted": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTint": 0.4
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real",
+   "TrapAspect": "Real",
+   "ConvertCustom": "Bool",
+   "TrapTintTolerance": "Real",
+   "RemovePoints": "Bool",
+   "TrapConvertCustom": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapReverse": "Bool",
+   "ExtractUnpainted": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTint": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"I Command 9 R Mix 0.5 R TrapAspect 1.0 B ConvertCustom 1 R TrapTintTolerance 0.05 B RemovePoints 0 B TrapConvertCustom 0 R TrapMaxTint 1.0 B TrapReverse 0 B ExtractUnpainted 1 R TrapThickness 0.25 R Precision 10.0 R TrapTint 0.4 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"I Command 9 R Mix 1.75 R TrapAspect 1.0 B ConvertCustom 1 R TrapTintTolerance 0.05 B RemovePoints 0 B TrapConvertCustom 0 R TrapMaxTint 1.0 B TrapReverse 0 B ExtractUnpainted 1 R TrapThickness 0.25 R Precision 10.0 R TrapTint 0.4 \"/></LiveEffect>",
+  "changed": "Mix",
+  "detail": "Adobe Pathfinder: 13 params read back, Mix changed to 1.75",
+  "ms": 18964
+ },
+ {
+  "cmd": "Live Pathfinder Outline",
+  "menu": "Effect > Pathfinder > Outline",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "",
+   "Adobe Illustrator",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "DisplayString": "å¤æ¡",
+   "Command": 6,
+   "Mix": 0.5,
+   "TrapAspect": 1.0,
+   "ConvertCustom": true,
+   "TrapTintTolerance": 0.05,
+   "RemovePoints": false,
+   "TrapConvertCustom": false,
+   "TrapMaxTint": 1.0,
+   "TrapReverse": false,
+   "ExtractUnpainted": true,
+   "TrapThickness": 0.25,
+   "Precision": 10.0,
+   "TrapTint": 0.4
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "Command": "Int",
+   "Mix": "Real",
+   "TrapAspect": "Real",
+   "ConvertCustom": "Bool",
+   "TrapTintTolerance": "Real",
+   "RemovePoints": "Bool",
+   "TrapConvertCustom": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapReverse": "Bool",
+   "ExtractUnpainted": "Bool",
+   "TrapThickness": "Real",
+   "Precision": "Real",
+   "TrapTint": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"I Command 6 R Mix 0.5 R TrapAspect 1.0 B ConvertCustom 1 R TrapTintTolerance 0.05 B RemovePoints 0 B TrapConvertCustom 0 R TrapMaxTint 1.0 B TrapReverse 0 B ExtractUnpainted 1 R TrapThickness 0.25 R Precision 10.0 R TrapTint 0.4 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"I Command 6 R Mix 1.75 R TrapAspect 1.0 B ConvertCustom 1 R TrapTintTolerance 0.05 B RemovePoints 0 B TrapConvertCustom 0 R TrapMaxTint 1.0 B TrapReverse 0 B ExtractUnpainted 1 R TrapThickness 0.25 R Precision 10.0 R TrapTint 0.4 \"/></LiveEffect>",
+  "changed": "Mix",
+  "detail": "Adobe Pathfinder: 13 params read back, Mix changed to 1.75",
+  "ms": 55939
+ },
+ {
+  "cmd": "Live Pathfinder Hard Mix",
+  "menu": "Effect > Pathfinder > Hard Mix",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "OS_PopupWindow",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "DisplayString": "å¯¦è²çå°æ··å",
+   "Precision": 10.0,
+   "TrapThickness": 0.25,
+   "ConvertCustom": true,
+   "TrapAspect": 1.0,
+   "TrapTint": 0.4,
+   "RemovePoints": false,
+   "ExtractUnpainted": true,
+   "TrapMaxTint": 1.0,
+   "TrapReverse": false,
+   "TrapTintTolerance": 0.05,
+   "TrapConvertCustom": false,
+   "Mix": 0.5,
+   "Command": 10
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "Precision": "Real",
+   "TrapThickness": "Real",
+   "ConvertCustom": "Bool",
+   "TrapAspect": "Real",
+   "TrapTint": "Real",
+   "RemovePoints": "Bool",
+   "ExtractUnpainted": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapReverse": "Bool",
+   "TrapTintTolerance": "Real",
+   "TrapConvertCustom": "Bool",
+   "Mix": "Real",
+   "Command": "Int"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"R Precision 10.0 R TrapThickness 0.25 B ConvertCustom 1 R TrapAspect 1.0 R TrapTint 0.4 B RemovePoints 0 B ExtractUnpainted 1 R TrapMaxTint 1.0 B TrapReverse 0 R TrapTintTolerance 0.05 B TrapConvertCustom 0 R Mix 0.5 I Command 10 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"R Precision 16.0 R TrapThickness 0.25 B ConvertCustom 1 R TrapAspect 1.0 R TrapTint 0.4 B RemovePoints 0 B ExtractUnpainted 1 R TrapMaxTint 1.0 B TrapReverse 0 R TrapTintTolerance 0.05 B TrapConvertCustom 0 R Mix 0.5 I Command 10 \"/></LiveEffect>",
+  "changed": "Precision",
+  "detail": "Adobe Pathfinder: 13 params read back, Precision changed to 16.0",
+  "retried": true,
+  "ms": 94370
+ },
+ {
+  "cmd": "Live Pathfinder Soft Mix",
+  "menu": "Effect > Pathfinder > Soft Mix",
+  "ok": true,
+  "dialogs": [
+   "Adobe Illustrator",
+   "路徑管理員選項",
+   "OS_PopupWindow",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "DisplayString": "éæçå°æ··å",
+   "Precision": 10.0,
+   "TrapThickness": 0.25,
+   "ConvertCustom": true,
+   "TrapAspect": 1.0,
+   "TrapTint": 0.4,
+   "RemovePoints": false,
+   "ExtractUnpainted": true,
+   "TrapMaxTint": 1.0,
+   "TrapReverse": false,
+   "TrapTintTolerance": 0.05,
+   "TrapConvertCustom": false,
+   "Mix": 0.5,
+   "Command": 11
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "Precision": "Real",
+   "TrapThickness": "Real",
+   "ConvertCustom": "Bool",
+   "TrapAspect": "Real",
+   "TrapTint": "Real",
+   "RemovePoints": "Bool",
+   "ExtractUnpainted": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapReverse": "Bool",
+   "TrapTintTolerance": "Real",
+   "TrapConvertCustom": "Bool",
+   "Mix": "Real",
+   "Command": "Int"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"R Precision 10.0 R TrapThickness 0.25 B ConvertCustom 1 R TrapAspect 1.0 R TrapTint 0.4 B RemovePoints 0 B ExtractUnpainted 1 R TrapMaxTint 1.0 B TrapReverse 0 R TrapTintTolerance 0.05 B TrapConvertCustom 0 R Mix 0.5 I Command 11 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"R Precision 16.0 R TrapThickness 0.25 B ConvertCustom 1 R TrapAspect 1.0 R TrapTint 0.4 B RemovePoints 0 B ExtractUnpainted 1 R TrapMaxTint 1.0 B TrapReverse 0 R TrapTintTolerance 0.05 B TrapConvertCustom 0 R Mix 0.5 I Command 11 \"/></LiveEffect>",
+  "changed": "Precision",
+  "detail": "Adobe Pathfinder: 13 params read back, Precision changed to 16.0",
+  "ms": 17689
+ },
+ {
+  "cmd": "Live Pathfinder Trap",
+  "menu": "Effect > Pathfinder > Trap",
+  "ok": true,
+  "dialogs": [
+   "移動",
+   "OS_PopupWindow",
+   "",
+   "路徑管理員選項",
+   "移動",
+   "OS_PopupWindow",
+   "",
+   ""
+  ],
+  "name": "Adobe Pathfinder",
+  "params": {
+   "DisplayString": "è£æ¼ç½",
+   "Precision": 10.0,
+   "TrapThickness": 0.25,
+   "ConvertCustom": true,
+   "TrapAspect": 1.0,
+   "TrapTint": 0.4,
+   "RemovePoints": false,
+   "ExtractUnpainted": true,
+   "TrapMaxTint": 1.0,
+   "TrapReverse": false,
+   "TrapTintTolerance": 0.05,
+   "TrapConvertCustom": false,
+   "Mix": 0.5,
+   "Command": 12
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "Precision": "Real",
+   "TrapThickness": "Real",
+   "ConvertCustom": "Bool",
+   "TrapAspect": "Real",
+   "TrapTint": "Real",
+   "RemovePoints": "Bool",
+   "ExtractUnpainted": "Bool",
+   "TrapMaxTint": "Real",
+   "TrapReverse": "Bool",
+   "TrapTintTolerance": "Real",
+   "TrapConvertCustom": "Bool",
+   "Mix": "Real",
+   "Command": "Int"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"R Precision 10.0 R TrapThickness 0.25 B ConvertCustom 1 R TrapAspect 1.0 R TrapTint 0.4 B RemovePoints 0 B ExtractUnpainted 1 R TrapMaxTint 1.0 B TrapReverse 0 R TrapTintTolerance 0.05 B TrapConvertCustom 0 R Mix 0.5 I Command 12 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Pathfinder\"><Dict data=\"R Precision 16.0 R TrapThickness 0.25 B ConvertCustom 1 R TrapAspect 1.0 R TrapTint 0.4 B RemovePoints 0 B ExtractUnpainted 1 R TrapMaxTint 1.0 B TrapReverse 0 R TrapTintTolerance 0.05 B TrapConvertCustom 0 R Mix 0.5 I Command 12 \"/></LiveEffect>",
+  "changed": "Precision",
+  "detail": "Adobe Pathfinder: 13 params read back, Precision changed to 16.0",
+  "ms": 20115
+ },
+ {
+  "cmd": "Live Rectangle",
+  "menu": "Effect > Convert to Shape > Rectangle",
+  "ok": true,
+  "dialogs": [
+   "外框選項",
+   "外框選項"
+  ],
+  "name": "Adobe Shape Effects",
+  "params": {
+   "DisplayString": "ç©å½¢",
+   "Shape": 0,
+   "AbsHeight": 36.0,
+   "CornerRadius": 9.0,
+   "Absolute": 0.0,
+   "RelWidth": 18.0,
+   "AbsWidth": 36.0,
+   "RelHeight": 18.0
+  },
+  "types": {
+   "DisplayString": "UnicodeString",
+   "Shape": "Int",
+   "AbsHeight": "Real",
+   "CornerRadius": "Real",
+   "Absolute": "Real",
+   "RelWidth": "Real",
+   "AbsWidth": "Real",
+   "RelHeight": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Shape Effects\"><Dict data=\"I Shape 0 R AbsHeight 36.0 R CornerRadius 9.0 R Absolute 0.0 R RelWidth 18.0 R AbsWidth 36.0 R RelHeight 18.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Shape Effects\"><Dict data=\"I Shape 0 R AbsHeight 55.0 R CornerRadius 9.0 R Absolute 0.0 R RelWidth 18.0 R AbsWidth 36.0 R RelHeight 18.0 \"/></LiveEffect>",
+  "changed": "AbsHeight",
+  "detail": "Adobe Shape Effects: 7 params read back, AbsHeight changed to 55.0",
+  "ms": 16645
+ },
+ {
+  "cmd": "Live Rounded Rectangle",
+  "menu": "Effect > Convert to Shape > Rounded Rectangle",
+  "ok": true,
+  "dialogs": [
+   "外框選項"
+  ],
+  "name": "Adobe Shape Effects",
+  "params": {
+   "Shape": 1,
+   "DisplayString": "åè§ç©å½¢",
+   "AbsHeight": 36.0,
+   "RelWidth": 18.0,
+   "CornerRadius": 9.0,
+   "RelHeight": 18.0,
+   "Absolute": 0.0,
+   "AbsWidth": 36.0
+  },
+  "types": {
+   "Shape": "Int",
+   "DisplayString": "UnicodeString",
+   "AbsHeight": "Real",
+   "RelWidth": "Real",
+   "CornerRadius": "Real",
+   "RelHeight": "Real",
+   "Absolute": "Real",
+   "AbsWidth": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Shape Effects\"><Dict data=\"I Shape 1 R AbsHeight 36.0 R RelWidth 18.0 R CornerRadius 9.0 R RelHeight 18.0 R Absolute 0.0 R AbsWidth 36.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Shape Effects\"><Dict data=\"I Shape 1 R AbsHeight 55.0 R RelWidth 18.0 R CornerRadius 9.0 R RelHeight 18.0 R Absolute 0.0 R AbsWidth 36.0 \"/></LiveEffect>",
+  "changed": "AbsHeight",
+  "detail": "Adobe Shape Effects: 7 params read back, AbsHeight changed to 55.0",
+  "ms": 10424
+ },
+ {
+  "cmd": "Live Ellipse",
+  "menu": "Effect > Convert to Shape > Ellipse",
+  "ok": true,
+  "dialogs": [
+   "外框選項",
+   ""
+  ],
+  "name": "Adobe Shape Effects",
+  "params": {
+   "Shape": 2,
+   "DisplayString": "æ©¢åå½¢",
+   "AbsHeight": 36.0,
+   "RelWidth": 18.0,
+   "CornerRadius": 9.0,
+   "RelHeight": 18.0,
+   "Absolute": 0.0,
+   "AbsWidth": 36.0
+  },
+  "types": {
+   "Shape": "Int",
+   "DisplayString": "UnicodeString",
+   "AbsHeight": "Real",
+   "RelWidth": "Real",
+   "CornerRadius": "Real",
+   "RelHeight": "Real",
+   "Absolute": "Real",
+   "AbsWidth": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Shape Effects\"><Dict data=\"I Shape 2 R AbsHeight 36.0 R RelWidth 18.0 R CornerRadius 9.0 R RelHeight 18.0 R Absolute 0.0 R AbsWidth 36.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Shape Effects\"><Dict data=\"I Shape 2 R AbsHeight 55.0 R RelWidth 18.0 R CornerRadius 9.0 R RelHeight 18.0 R Absolute 0.0 R AbsWidth 36.0 \"/></LiveEffect>",
+  "changed": "AbsHeight",
+  "detail": "Adobe Shape Effects: 7 params read back, AbsHeight changed to 55.0",
+  "ms": 6124
+ },
+ {
+  "cmd": "Live Inner Glow",
+  "menu": "Effect > Stylize > Inner Glow",
+  "ok": true,
+  "dialogs": [
+   "內光暈",
+   "內光暈"
+  ],
+  "name": "Adobe Inner Glow",
+  "params": {
+   "blur": 5.0,
+   "opac": 0.75,
+   "blnd": 2,
+   "gtyp": 1
+  },
+  "types": {
+   "blur": "Real",
+   "opac": "Real",
+   "blnd": "Int",
+   "gtyp": "Int"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Inner Glow\"><Dict data=\"R blur 5.0 R opac 0.75 I blnd 2 I gtyp 1 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Inner Glow\"><Dict data=\"R blur 8.5 R opac 0.75 I blnd 2 I gtyp 1 \"/></LiveEffect>",
+  "changed": "blur",
+  "detail": "Adobe Inner Glow: 4 params read back, blur changed to 8.5",
+  "ms": 17003
+ },
+ {
+  "cmd": "Live Adobe Round Corners",
+  "menu": "Effect > Stylize > Round Corners",
+  "ok": true,
+  "dialogs": [
+   "移動",
+   "移動",
+   "",
+   "",
+   "移動",
+   "",
+   ""
+  ],
+  "name": "Adobe Round Corners",
+  "params": {
+   "radius": 10.0
+  },
+  "types": {
+   "radius": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Round Corners\"><Dict data=\"R radius 10.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Round Corners\"><Dict data=\"R radius 16.0 \"/></LiveEffect>",
+  "changed": "radius",
+  "detail": "Adobe Round Corners: 1 params read back, radius changed to 16.0",
+  "ms": 17930
+ },
+ {
+  "cmd": "Live Scribble Fill",
+  "menu": "Effect > Stylize > Scribble",
+  "ok": true,
+  "dialogs": [
+   "塗抹選項"
+  ],
+  "name": "Adobe Scribble Fill",
+  "params": {
+   "Angle": 30.0,
+   "Spacing": 5.0,
+   "SpacingVariation": 0.5,
+   "EdgeOverlapVariation": 5.0,
+   "EdgeOverlap": 0.0,
+   "Scribbliness": 0.05,
+   "StrokeWidth": 3.0,
+   "ScribbleVariation": 0.01
+  },
+  "types": {
+   "Angle": "Real",
+   "Spacing": "Real",
+   "SpacingVariation": "Real",
+   "EdgeOverlapVariation": "Real",
+   "EdgeOverlap": "Real",
+   "Scribbliness": "Real",
+   "StrokeWidth": "Real",
+   "ScribbleVariation": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Scribble Fill\"><Dict data=\"R Angle 30.0 R Spacing 5.0 R SpacingVariation 0.5 R EdgeOverlapVariation 5.0 R EdgeOverlap 0.0 R Scribbliness 0.05 R StrokeWidth 3.0 R ScribbleVariation 0.01 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Scribble Fill\"><Dict data=\"R Angle 46.0 R Spacing 5.0 R SpacingVariation 0.5 R EdgeOverlapVariation 5.0 R EdgeOverlap 0.0 R Scribbliness 0.05 R StrokeWidth 3.0 R ScribbleVariation 0.01 \"/></LiveEffect>",
+  "changed": "Angle",
+  "detail": "Adobe Scribble Fill: 8 params read back, Angle changed to 46.0",
+  "ms": 20771
+ },
+ {
+  "cmd": "Live Outer Glow",
+  "menu": "Effect > Stylize > Outer Glow",
+  "ok": true,
+  "dialogs": [
+   "外光暈",
+   "",
+   ""
+  ],
+  "name": "Adobe Outer Glow",
+  "params": {
+   "blur": 5.0,
+   "opac": 0.75,
+   "blnd": 2,
+   "Adobe Effect Expand Before Version": 16,
+   "usePSLBlur": true
+  },
+  "types": {
+   "blur": "Real",
+   "opac": "Real",
+   "blnd": "Int",
+   "Adobe Effect Expand Before Version": "Int",
+   "usePSLBlur": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Outer Glow\"><Dict data=\"R blur 5.0 R opac 0.75 I blnd 2 B usePSLBlur 1 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Outer Glow\"><Dict data=\"R blur 8.5 R opac 0.75 I blnd 2 B usePSLBlur 1 \"/></LiveEffect>",
+  "changed": "blur",
+  "detail": "Adobe Outer Glow: 4 params read back, blur changed to 8.5",
+  "ms": 16582
+ },
+ {
+  "cmd": "Live Feather",
+  "menu": "Effect > Stylize > Feather",
+  "ok": true,
+  "dialogs": [
+   "羽化",
+   "羽化"
+  ],
+  "name": "Adobe Fuzzy Mask",
+  "params": {
+   "Radius": 5.0
+  },
+  "types": {
+   "Radius": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Fuzzy Mask\"><Dict data=\"R Radius 5.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Fuzzy Mask\"><Dict data=\"R Radius 8.5 \"/></LiveEffect>",
+  "changed": "Radius",
+  "detail": "Adobe Fuzzy Mask: 1 params read back, Radius changed to 8.5",
+  "ms": 53573
+ },
+ {
+  "cmd": "Live Adobe Drop Shadow",
+  "menu": "Effect > Stylize > Drop Shadow",
+  "ok": true,
+  "dialogs": [
+   "製作陰影"
+  ],
+  "name": "Adobe Drop Shadow",
+  "params": {
+   "Adobe Effect Expand Before Version": 16,
+   "usePSLBlur": true,
+   "dark": 100.0,
+   "blnd": 1,
+   "blur": 5.0,
+   "pair": true,
+   "vert": 7.0,
+   "horz": 7.0,
+   "csrc": 0,
+   "opac": 0.75
+  },
+  "types": {
+   "Adobe Effect Expand Before Version": "Int",
+   "usePSLBlur": "Bool",
+   "dark": "Real",
+   "blnd": "Int",
+   "blur": "Real",
+   "pair": "Bool",
+   "vert": "Real",
+   "horz": "Real",
+   "csrc": "Int",
+   "opac": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Drop Shadow\"><Dict data=\"B usePSLBlur 1 R dark 100.0 I blnd 1 R blur 5.0 B pair 1 R vert 7.0 R horz 7.0 I csrc 0 R opac 0.75 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Drop Shadow\"><Dict data=\"B usePSLBlur 1 R dark 151.0 I blnd 1 R blur 5.0 B pair 1 R vert 7.0 R horz 7.0 I csrc 0 R opac 0.75 \"/></LiveEffect>",
+  "changed": "dark",
+  "detail": "Adobe Drop Shadow: 9 params read back, dark changed to 151.0",
+  "ms": 13514
+ },
+ {
+  "cmd": "Live Rasterize",
+  "menu": "Effect > Rasterize",
+  "ok": true,
+  "dialogs": [
+   "點陣化"
+  ],
+  "name": "Adobe Rasterize",
+  "params": {
+   "dpi.": 72,
+   "padd": 36.0,
+   "alis": false,
+   "colr": 4,
+   "mask": false,
+   "optn": 0
+  },
+  "types": {
+   "dpi.": "Int",
+   "padd": "Real",
+   "alis": "Bool",
+   "colr": "Int",
+   "mask": "Bool",
+   "optn": "Int"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe Rasterize\"><Dict data=\"I dpi. 72 R padd 36.0 B alis 0 I colr 4 B mask 0 I optn 0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe Rasterize\"><Dict data=\"I dpi. 72 R padd 55.0 B alis 0 I colr 4 B mask 0 I optn 0 \"/></LiveEffect>",
+  "changed": "padd",
+  "detail": "Adobe Rasterize: 6 params read back, padd changed to 55.0",
+  "ms": 17548
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_GEfc",
+  "menu": "Effect > Effect Gallery",
+  "ok": true,
+  "name": "PSAdapter_plugin_Gls ",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 97,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Gls ",
+   "DisplayString": "ç»çææ",
+   "ps": {
+    "GEfk": "Gls ",
+    "Dstr": 5,
+    "Smth": 3,
+    "TxtT": "TxFr",
+    "Scln": 100,
+    "InvT": false
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "DisplayString": "UnicodeString",
+   "ps": "PSDescriptor"
+  },
+  "detail": "UI: gallery filter chosen by click -> PSAdapter_plugin_Gls  {'GEfk': 'Gls ', 'Dstr': 5, 'Smth': 3, 'TxtT': 'TxFr', 'Scln': 100, 'InvT': False} read back; each gallery filter also has its own command",
+  "ms": 12419
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_ClrH",
+  "menu": "Effect > Pixelate > Color Halftone",
+  "ok": true,
+  "dialogs": [
+   "OS_PopupWindow",
+   "彩色網屏",
+   "",
+   "OS_PopupWindow",
+   "彩色網屏",
+   "",
+   "",
+   "移動"
+  ],
+  "name": "PSAdapter_plugin_ClrH",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "ps": {
+    "Rds ": 8,
+    "Ang1": 108,
+    "Ang2": 162,
+    "Ang3": 90,
+    "Ang4": 45
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_ClrH\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_ClrH\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 9,
+   "read": {
+    "Rds ": 9,
+    "Ang1": 108,
+    "Ang2": 162,
+    "Ang3": 90,
+    "Ang4": 45
+   }
+  },
+  "detail": "PSAdapter_plugin_ClrH: XML applies it with defaults; dialog field 0 typed 9 -> descriptor Rds =9 read back",
+  "retried": true,
+  "ms": 61455
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Crst",
+  "menu": "Effect > Pixelate > Crystallize",
+  "ok": true,
+  "dialogs": [
+   "結晶化",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Crst",
+  "params": {
+   "dataSize": 36,
+   "PrevDres": 72,
+   "go": true,
+   "ps": {
+    "ClSz": 10,
+    "FlRs": 1790491738
+   }
+  },
+  "types": {
+   "dataSize": "Int",
+   "PrevDres": "Int",
+   "go": "Bool",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Crst\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Crst\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 11,
+   "read": {
+    "ClSz": 11,
+    "FlRs": 1790491748
+   }
+  },
+  "detail": "PSAdapter_plugin_Crst: XML applies it with defaults; dialog field 0 typed 11 -> descriptor ClSz=11 read back",
+  "ms": 19046
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Mztn",
+  "menu": "Effect > Pixelate > Mezzotint",
+  "ok": true,
+  "dialogs": [
+   "網線銅版",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Mztn",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 36,
+   "ps": {
+    "MztT": "FnDt",
+    "FlRs": 15985656
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Mztn\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Mztn\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "detail": "PSAdapter_plugin_Mztn: applyEffect adds it with its defaults ({'MztT': 'FnDt', 'FlRs': 15985656}); no numeric dialog field to set",
+  "ms": 7235
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_DfsG",
+  "menu": "Effect > Distort > Diffuse Glow",
+  "ok": true,
+  "dialogs": [
+   "擴散光暈 (100%)",
+   "OS_PopupWindow",
+   ""
+  ],
+  "name": "PSAdapter_plugin_DfsG",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_DfsG",
+   "ps": {
+    "GEfk": "DfsG",
+    "Grns": 6,
+    "GlwA": 10,
+    "ClrA": 15,
+    "FlRs": 23072049
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_DfsG\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_DfsG\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 7,
+   "read": {
+    "GEfk": "DfsG",
+    "Grns": 7,
+    "GlwA": 10,
+    "ClrA": 15,
+    "FlRs": 589007844
+   }
+  },
+  "detail": "PSAdapter_plugin_DfsG: XML applies it with defaults; dialog field 0 typed 7 -> descriptor Grns=7 read back",
+  "retried": true,
+  "ms": 53341
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_OcnR",
+  "menu": "Effect > Distort > Ocean Ripple",
+  "ok": true,
+  "dialogs": [
+   "海浪效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_OcnR",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_OcnR",
+   "ps": {
+    "GEfk": "OcnR",
+    "RplS": 9,
+    "RplM": 9,
+    "FlRs": 1503157
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_OcnR\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_OcnR\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 10,
+   "read": {
+    "GEfk": "OcnR",
+    "RplS": 10,
+    "RplM": 9,
+    "FlRs": 245843040
+   }
+  },
+  "detail": "PSAdapter_plugin_OcnR: XML applies it with defaults; dialog field 0 typed 10 -> descriptor RplS=10 read back",
+  "ms": 40029
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Gls ",
+  "menu": "Effect > Distort > Glass",
+  "ok": true,
+  "dialogs": [
+   "玻璃效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Gls ",
+  "params": {
+   "dataSize": 97,
+   "PrevDres": 72,
+   "go": true,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Gls ",
+   "ps": {
+    "GEfk": "Gls ",
+    "Dstr": 6,
+    "Smth": 3,
+    "TxtT": "TxFr",
+    "Scln": 100,
+    "InvT": false
+   }
+  },
+  "types": {
+   "dataSize": "Int",
+   "PrevDres": "Int",
+   "go": "Bool",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Gls \"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Gls \"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 7,
+   "read": {
+    "GEfk": "Gls ",
+    "Dstr": 7,
+    "Smth": 3,
+    "TxtT": "TxFr",
+    "Scln": 100,
+    "InvT": false
+   }
+  },
+  "detail": "PSAdapter_plugin_Gls : XML applies it with defaults; dialog field 0 typed 7 -> descriptor Dstr=7 read back",
+  "ms": 31322
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_RdlB",
+  "menu": "Effect > Blur > Radial Blur",
+  "ok": true,
+  "dialogs": [
+   "放射狀模糊",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_RdlB",
+  "params": {
+   "dataSize": 112,
+   "PrevDres": 72,
+   "go": true,
+   "ps": {
+    "Amnt": 10,
+    "_unparsed_BlrM": "BlrM"
+   }
+  },
+  "types": {
+   "dataSize": "Int",
+   "PrevDres": "Int",
+   "go": "Bool",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_RdlB\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_RdlB\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 11,
+   "read": {
+    "Amnt": 11,
+    "_unparsed_BlrM": "BlrM"
+   }
+  },
+  "detail": "PSAdapter_plugin_RdlB: XML applies it with defaults; dialog field 0 typed 11 -> descriptor Amnt=11 read back",
+  "ms": 14625
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_SmrB",
+  "menu": "Effect > Blur > Smart Blur",
+  "ok": true,
+  "dialogs": [
+   "智慧型模糊",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_SmrB",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 76,
+   "ps": {
+    "Rds ": 3.0,
+    "Thsh": 25.0,
+    "SmBQ": "SBQL",
+    "SmBM": "SBMN"
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_SmrB\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_SmrB\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "detail": "PSAdapter_plugin_SmrB: applyEffect adds it with its defaults ({'Rds ': 3.0, 'Thsh': 25.0, 'SmBQ': 'SBQL', 'SmBM': 'SBMN'}); no numeric dialog field to set",
+  "ms": 8081
+ },
+ {
+  "cmd": "Live Adobe PSL Gaussian Blur",
+  "menu": "Effect > Blur > Gaussian Blur",
+  "ok": true,
+  "dialogs": [
+   "高斯模糊",
+   "",
+   ""
+  ],
+  "name": "Adobe PSL Gaussian Blur",
+  "params": {
+   "PrevDres": 72,
+   "blur": 10.0,
+   "PrevDocScale": 1.0
+  },
+  "types": {
+   "PrevDres": "Int",
+   "blur": "Real",
+   "PrevDocScale": "Real"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"Adobe PSL Gaussian Blur\"><Dict data=\"I PrevDres 72 R blur 10.0 R PrevDocScale 1.0 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"Adobe PSL Gaussian Blur\"><Dict data=\"I PrevDres 72 R blur 16.0 R PrevDocScale 1.0 \"/></LiveEffect>",
+  "changed": "blur",
+  "detail": "Adobe PSL Gaussian Blur: 3 params read back, blur changed to 16.0",
+  "ms": 43201
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Crsh",
+  "menu": "Effect > Brush Strokes > Crosshatch",
+  "ok": true,
+  "dialogs": [
+   "交叉底紋 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Crsh",
+  "params": {
+   "dataSize": 68,
+   "PrevDres": 72,
+   "go": true,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Crsh",
+   "ps": {
+    "GEfk": "Crsh",
+    "StrL": 10,
+    "Shrp": 6,
+    "Strg": 1
+   }
+  },
+  "types": {
+   "dataSize": "Int",
+   "PrevDres": "Int",
+   "go": "Bool",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Crsh\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Crsh\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 11,
+   "read": {
+    "GEfk": "Crsh",
+    "StrL": 11,
+    "Shrp": 6,
+    "Strg": 1
+   }
+  },
+  "detail": "PSAdapter_plugin_Crsh: XML applies it with defaults; dialog field 0 typed 11 -> descriptor StrL=11 read back",
+  "ms": 29230
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_SprS",
+  "menu": "Effect > Brush Strokes > Sprayed Strokes",
+  "ok": true,
+  "dialogs": [
+   "噴灑 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_SprS",
+  "params": {
+   "dataSize": 84,
+   "PrevDres": 72,
+   "go": true,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_SprS",
+   "ps": {
+    "GEfk": "SprS",
+    "StrL": 12,
+    "SprR": 7,
+    "SDir": "SDRD",
+    "FlRs": 404056068
+   }
+  },
+  "types": {
+   "dataSize": "Int",
+   "PrevDres": "Int",
+   "go": "Bool",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_SprS\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_SprS\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 13,
+   "read": {
+    "GEfk": "SprS",
+    "StrL": 13,
+    "SprR": 7,
+    "SDir": "SDRD",
+    "FlRs": 304448198
+   }
+  },
+  "detail": "PSAdapter_plugin_SprS: XML applies it with defaults; dialog field 0 typed 13 -> descriptor StrL=13 read back",
+  "ms": 29939
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Smie",
+  "menu": "Effect > Brush Strokes > Sumi-e",
+  "ok": true,
+  "dialogs": [
+   "墨繪 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Smie",
+  "params": {
+   "dataSize": 68,
+   "PrevDres": 72,
+   "go": true,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Smie",
+   "ps": {
+    "GEfk": "Smie",
+    "StrW": 10,
+    "StrP": 2,
+    "Cntr": 16
+   }
+  },
+  "types": {
+   "dataSize": "Int",
+   "PrevDres": "Int",
+   "go": "Bool",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Smie\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Smie\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 11,
+   "read": {
+    "GEfk": "Smie",
+    "StrW": 11,
+    "StrP": 2,
+    "Cntr": 16
+   }
+  },
+  "detail": "PSAdapter_plugin_Smie: XML applies it with defaults; dialog field 0 typed 11 -> descriptor StrW=11 read back",
+  "ms": 64136
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_AccE",
+  "menu": "Effect > Brush Strokes > Accented Edges",
+  "ok": true,
+  "dialogs": [
+   "強調邊緣 (100%)"
+  ],
+  "name": "PSAdapter_plugin_AccE",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_AccE",
+   "ps": {
+    "GEfk": "AccE",
+    "EdgW": 2,
+    "EdgB": 38,
+    "Smth": 5
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_AccE\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_AccE\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 3,
+   "read": {
+    "GEfk": "AccE",
+    "EdgW": 3,
+    "EdgB": 38,
+    "Smth": 5
+   }
+  },
+  "detail": "PSAdapter_plugin_AccE: XML applies it with defaults; dialog field 0 typed 3 -> descriptor EdgW=3 read back",
+  "ms": 19095
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_InkO",
+  "menu": "Effect > Brush Strokes > Ink Outlines",
+  "ok": true,
+  "dialogs": [
+   "油墨外框 (100%)"
+  ],
+  "name": "PSAdapter_plugin_InkO",
+  "params": {
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_InkO",
+   "go": true,
+   "ps": {
+    "GEfk": "InkO",
+    "StrL": 4,
+    "DrkI": 20,
+    "LghI": 10
+   }
+  },
+  "types": {
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "go": "Bool",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_InkO\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_InkO\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 5,
+   "read": {
+    "GEfk": "InkO",
+    "StrL": 5,
+    "DrkI": 20,
+    "LghI": 10
+   }
+  },
+  "detail": "PSAdapter_plugin_InkO: XML applies it with defaults; dialog field 0 typed 5 -> descriptor StrL=5 read back",
+  "ms": 82494
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Spt ",
+  "menu": "Effect > Brush Strokes > Spatter",
+  "ok": true,
+  "dialogs": [
+   "潑濺 (100%)",
+   "OS_PopupWindow",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Spt ",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Spt ",
+   "ps": {
+    "GEfk": "Spt ",
+    "SprR": 11,
+    "Smth": 5,
+    "FlRs": 835326
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Spt \"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Spt \"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 12,
+   "read": {
+    "GEfk": "Spt ",
+    "SprR": 12,
+    "Smth": 5,
+    "FlRs": 104152500
+   }
+  },
+  "detail": "PSAdapter_plugin_Spt : XML applies it with defaults; dialog field 0 typed 12 -> descriptor SprR=12 read back",
+  "retried": true,
+  "ms": 137455
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_AngS",
+  "menu": "Effect > Brush Strokes > Angled Strokes",
+  "ok": true,
+  "dialogs": [
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_AngS",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_AngS",
+   "ps": {
+    "GEfk": "AngS",
+    "DrcB": 50,
+    "StrL": 15,
+    "Shrp": 3
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_AngS\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_AngS\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 51,
+   "read": {
+    "GEfk": "AngS",
+    "DrcB": 51,
+    "StrL": 15,
+    "Shrp": 3
+   }
+  },
+  "detail": "PSAdapter_plugin_AngS: XML applies it with defaults; dialog field 0 typed 51 -> descriptor DrcB=51 read back",
+  "ms": 42061
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_DrkS",
+  "menu": "Effect > Brush Strokes > Dark Strokes",
+  "ok": true,
+  "dialogs": [
+   "變暗筆觸 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_DrkS",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_DrkS",
+   "ps": {
+    "GEfk": "DrkS",
+    "Blnc": 5,
+    "BlcI": 6,
+    "WhtI": 2
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_DrkS\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_DrkS\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 6,
+   "read": {
+    "GEfk": "DrkS",
+    "Blnc": 5,
+    "BlcI": 6,
+    "WhtI": 2
+   }
+  },
+  "detail": "PSAdapter_plugin_DrkS: XML applies it with defaults; dialog field 0 typed 6 -> descriptor BlcI=6 read back",
+  "ms": 26194
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_MscT",
+  "menu": "Effect > Texture > Mosaic Tiles",
+  "ok": true,
+  "dialogs": [
+   "嵌磚效果 (100%)"
+  ],
+  "name": "PSAdapter_plugin_MscT",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_MscT",
+   "ps": {
+    "GEfk": "MscT",
+    "TlSz": 100,
+    "GrtW": 15,
+    "LghG": 10,
+    "FlRs": 375893738
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_MscT\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_MscT\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 99,
+   "read": {
+    "GEfk": "MscT",
+    "TlSz": 99,
+    "GrtW": 15,
+    "LghG": 10,
+    "FlRs": 23942016
+   }
+  },
+  "detail": "PSAdapter_plugin_MscT: XML applies it with defaults; dialog field 0 typed 99 -> descriptor TlSz=99 read back",
+  "ms": 18410
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_StnG",
+  "menu": "Effect > Texture > Stained Glass",
+  "ok": true,
+  "dialogs": [
+   "彩繪玻璃 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_StnG",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_StnG",
+   "ps": {
+    "GEfk": "StnG",
+    "ClSz": 10,
+    "BrdT": 4,
+    "LghI": 3,
+    "FlRs": 294734048
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_StnG\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_StnG\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 11,
+   "read": {
+    "GEfk": "StnG",
+    "ClSz": 11,
+    "BrdT": 4,
+    "LghI": 3,
+    "FlRs": 14022736
+   }
+  },
+  "detail": "PSAdapter_plugin_StnG: XML applies it with defaults; dialog field 0 typed 11 -> descriptor ClSz=11 read back",
+  "ms": 28398
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Ptch",
+  "menu": "Effect > Texture > Patchwork",
+  "ok": true,
+  "dialogs": [
+   "拼貼 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Ptch",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Ptch",
+   "ps": {
+    "GEfk": "Ptch",
+    "SqrS": 4,
+    "Rlf ": 8,
+    "FlRs": 47392606
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Ptch\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Ptch\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 5,
+   "read": {
+    "GEfk": "Ptch",
+    "SqrS": 5,
+    "Rlf ": 8,
+    "FlRs": 104603821
+   }
+  },
+  "detail": "PSAdapter_plugin_Ptch: XML applies it with defaults; dialog field 0 typed 5 -> descriptor SqrS=5 read back",
+  "ms": 43754
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Grn ",
+  "menu": "Effect > Texture > Grain",
+  "ok": true,
+  "dialogs": [
+   "粒狀紋理 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Grn ",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Grn ",
+   "ps": {
+    "GEfk": "Grn ",
+    "Intn": 40,
+    "Cntr": 50,
+    "Grnt": "GrnR",
+    "FlRs": 123201688
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Grn \"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Grn \"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 41,
+   "read": {
+    "GEfk": "Grn ",
+    "Intn": 41,
+    "Cntr": 50,
+    "Grnt": "GrnR",
+    "FlRs": 80521896
+   }
+  },
+  "detail": "PSAdapter_plugin_Grn : XML applies it with defaults; dialog field 0 typed 41 -> descriptor Intn=41 read back",
+  "ms": 23739
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Txtz",
+  "menu": "Effect > Texture > Texturizer",
+  "ok": true,
+  "dialogs": [
+   "紋理化 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Txtz",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 97,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Txtz",
+   "ps": {
+    "GEfk": "Txtz",
+    "TxtT": "TxCa",
+    "Scln": 100,
+    "Rlf ": 4,
+    "LghD": "LDTp",
+    "InvT": false
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Txtz\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Txtz\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 101,
+   "read": {
+    "GEfk": "Txtz",
+    "TxtT": "TxCa",
+    "Scln": 101,
+    "Rlf ": 4,
+    "LghD": "LDTp",
+    "InvT": false
+   }
+  },
+  "detail": "PSAdapter_plugin_Txtz: XML applies it with defaults; dialog field 0 typed 101 -> descriptor Scln=101 read back",
+  "ms": 23394
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Crql",
+  "menu": "Effect > Texture > Craquelure",
+  "ok": true,
+  "dialogs": [
+   "裂縫紋理 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Crql",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Crql",
+   "ps": {
+    "GEfk": "Crql",
+    "CrcS": 15,
+    "CrcD": 6,
+    "CrcB": 9,
+    "FlRs": 20213575
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Crql\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Crql\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 16,
+   "read": {
+    "GEfk": "Crql",
+    "CrcS": 16,
+    "CrcD": 6,
+    "CrcB": 9,
+    "FlRs": 608982224
+   }
+  },
+  "detail": "PSAdapter_plugin_Crql: XML applies it with defaults; dialog field 0 typed 16 -> descriptor CrcS=16 read back",
+  "ms": 22709
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_NtPr",
+  "menu": "Effect > Sketch > Note Paper",
+  "ok": true,
+  "dialogs": [
+   "便條紙張效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_NtPr",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_NtPr",
+   "ps": {
+    "GEfk": "NtPr",
+    "ImgB": 25,
+    "Grns": 10,
+    "Rlf ": 11,
+    "FlRs": 589710016
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_NtPr\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_NtPr\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 26,
+   "read": {
+    "GEfk": "NtPr",
+    "ImgB": 26,
+    "Grns": 10,
+    "Rlf ": 11,
+    "FlRs": 26318852
+   }
+  },
+  "detail": "PSAdapter_plugin_NtPr: XML applies it with defaults; dialog field 0 typed 26 -> descriptor ImgB=26 read back",
+  "ms": 22401
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Stmp",
+  "menu": "Effect > Sketch > Stamp",
+  "ok": true,
+  "dialogs": [
+   "印章效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Stmp",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 52,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Stmp",
+   "ps": {
+    "GEfk": "Stmp",
+    "LgDr": 25,
+    "Smth": 5
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Stmp\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Stmp\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 26,
+   "read": {
+    "GEfk": "Stmp",
+    "LgDr": 26,
+    "Smth": 5
+   }
+  },
+  "detail": "PSAdapter_plugin_Stmp: XML applies it with defaults; dialog field 0 typed 26 -> descriptor LgDr=26 read back",
+  "ms": 26153
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Phtc",
+  "menu": "Effect > Sketch > Photocopy",
+  "ok": true,
+  "dialogs": [
+   "拓印 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Phtc",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 52,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Phtc",
+   "ps": {
+    "GEfk": "Phtc",
+    "Dtl ": 7,
+    "Drkn": 8
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Phtc\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Phtc\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 8,
+   "read": {
+    "GEfk": "Phtc",
+    "Dtl ": 7,
+    "Drkn": 8
+   }
+  },
+  "detail": "PSAdapter_plugin_Phtc: XML applies it with defaults; dialog field 0 typed 8 -> descriptor Drkn=8 read back",
+  "ms": 17741
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_WtrP",
+  "menu": "Effect > Sketch > Water Paper",
+  "ok": true,
+  "dialogs": [
+   "濕紙效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_WtrP",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_WtrP",
+   "ps": {
+    "GEfk": "WtrP",
+    "FbrL": 15,
+    "Brgh": 60,
+    "Cntr": 80,
+    "FlRs": 21224839
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_WtrP\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_WtrP\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 16,
+   "read": {
+    "GEfk": "WtrP",
+    "FbrL": 16,
+    "Brgh": 60,
+    "Cntr": 80,
+    "FlRs": 474145062
+   }
+  },
+  "detail": "PSAdapter_plugin_WtrP: XML applies it with defaults; dialog field 0 typed 16 -> descriptor FbrL=16 read back",
+  "ms": 22609
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Chrc",
+  "menu": "Effect > Sketch > Charcoal",
+  "ok": true,
+  "dialogs": [
+   "炭筆 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Chrc",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Chrc",
+   "ps": {
+    "GEfk": "Chrc",
+    "ChAm": 1,
+    "Dtl ": 5,
+    "LgDr": 50
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Chrc\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Chrc\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 2,
+   "read": {
+    "GEfk": "Chrc",
+    "ChAm": 2,
+    "Dtl ": 5,
+    "LgDr": 50
+   }
+  },
+  "detail": "PSAdapter_plugin_Chrc: XML applies it with defaults; dialog field 0 typed 2 -> descriptor ChAm=2 read back",
+  "ms": 21724
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_GraP",
+  "menu": "Effect > Sketch > Graphic Pen",
+  "ok": true,
+  "dialogs": [
+   "畫筆效果 (100%)"
+  ],
+  "name": "PSAdapter_plugin_GraP",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_GraP",
+   "ps": {
+    "GEfk": "GraP",
+    "StrL": 15,
+    "LgDr": 50,
+    "SDir": "SDRD",
+    "FlRs": 94567070
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_GraP\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_GraP\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 16,
+   "read": {
+    "GEfk": "GraP",
+    "StrL": 15,
+    "LgDr": 16,
+    "SDir": "SDRD",
+    "FlRs": 588437220
+   }
+  },
+  "detail": "PSAdapter_plugin_GraP: XML applies it with defaults; dialog field 0 typed 16 -> descriptor LgDr=16 read back",
+  "ms": 26312
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Plst",
+  "menu": "Effect > Sketch > Plaster",
+  "ok": true,
+  "dialogs": [
+   "石膏效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Plst",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Plst",
+   "ps": {
+    "GEfk": "Plst",
+    "ImgB": 20,
+    "Smth": 2,
+    "LghP": "LPTp"
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Plst\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Plst\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 21,
+   "read": {
+    "GEfk": "Plst",
+    "ImgB": 21,
+    "Smth": 2,
+    "LghP": "LPTp"
+   }
+  },
+  "detail": "PSAdapter_plugin_Plst: XML applies it with defaults; dialog field 0 typed 21 -> descriptor ImgB=21 read back",
+  "ms": 21945
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_BsRl",
+  "menu": "Effect > Sketch > Bas Relief",
+  "ok": true,
+  "dialogs": [
+   "立體浮雕 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_BsRl",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_BsRl",
+   "ps": {
+    "GEfk": "BsRl",
+    "Dtl ": 13,
+    "Smth": 3,
+    "LghD": "LDBt"
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_BsRl\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_BsRl\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 14,
+   "read": {
+    "GEfk": "BsRl",
+    "Dtl ": 14,
+    "Smth": 3,
+    "LghD": "LDBt"
+   }
+  },
+  "detail": "PSAdapter_plugin_BsRl: XML applies it with defaults; dialog field 0 typed 14 -> descriptor Dtl =14 read back",
+  "ms": 20787
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_ChlC",
+  "menu": "Effect > Sketch > Chalk & Charcoal",
+  "ok": true,
+  "dialogs": [
+   "粉筆和炭筆 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_ChlC",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_ChlC",
+   "ps": {
+    "GEfk": "ChlC",
+    "ChrA": 6,
+    "ChlA": 6,
+    "StrP": 1,
+    "FlRs": 154701933
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_ChlC\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_ChlC\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 7,
+   "read": {
+    "GEfk": "ChlC",
+    "ChrA": 7,
+    "ChlA": 6,
+    "StrP": 1,
+    "FlRs": 383847000
+   }
+  },
+  "detail": "PSAdapter_plugin_ChlC: XML applies it with defaults; dialog field 0 typed 7 -> descriptor ChrA=7 read back",
+  "ms": 21247
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_HlfS",
+  "menu": "Effect > Sketch > Halftone Pattern",
+  "ok": true,
+  "dialogs": [
+   "網屏圖樣 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_HlfS",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_HlfS",
+   "ps": {
+    "GEfk": "HlfS",
+    "HlSz": 1,
+    "Cntr": 5,
+    "ScrT": "ScrD"
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_HlfS\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_HlfS\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 2,
+   "read": {
+    "GEfk": "HlfS",
+    "HlSz": 2,
+    "Cntr": 5,
+    "ScrT": "ScrD"
+   }
+  },
+  "detail": "PSAdapter_plugin_HlfS: XML applies it with defaults; dialog field 0 typed 2 -> descriptor HlSz=2 read back",
+  "ms": 20803
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Rtcl",
+  "menu": "Effect > Sketch > Reticulation",
+  "ok": true,
+  "dialogs": [
+   "網狀效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Rtcl",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Rtcl",
+   "ps": {
+    "GEfk": "Rtcl",
+    "Dnst": 12,
+    "BlcL": 40,
+    "WhtL": 5,
+    "FlRs": 154589591
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Rtcl\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Rtcl\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 13,
+   "read": {
+    "GEfk": "Rtcl",
+    "Dnst": 13,
+    "BlcL": 40,
+    "WhtL": 5,
+    "FlRs": 95460755
+   }
+  },
+  "detail": "PSAdapter_plugin_Rtcl: XML applies it with defaults; dialog field 0 typed 13 -> descriptor Dnst=13 read back",
+  "ms": 20504
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_CntC",
+  "menu": "Effect > Sketch > Conté Crayon",
+  "ok": true,
+  "dialogs": [
+   "蠟筆紋理 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_CntC",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 129,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_CntC",
+   "ps": {
+    "GEfk": "CntC",
+    "FrgL": 11,
+    "BckL": 7,
+    "TxtT": "TxCa",
+    "Scln": 100,
+    "Rlf ": 4,
+    "LghD": "LDTp",
+    "InvT": false
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_CntC\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_CntC\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 12,
+   "read": {
+    "GEfk": "CntC",
+    "FrgL": 12,
+    "BckL": 7,
+    "TxtT": "TxCa",
+    "Scln": 100,
+    "Rlf ": 4,
+    "LghD": "LDTp",
+    "InvT": false
+   }
+  },
+  "detail": "PSAdapter_plugin_CntC: XML applies it with defaults; dialog field 0 typed 12 -> descriptor FrgL=12 read back",
+  "ms": 21245
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_TrnE",
+  "menu": "Effect > Sketch > Torn Edges",
+  "ok": true,
+  "dialogs": [
+   "邊緣撕裂 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_TrnE",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_TrnE",
+   "ps": {
+    "GEfk": "TrnE",
+    "ImgB": 25,
+    "Smth": 11,
+    "Cntr": 17,
+    "FlRs": 230892300
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_TrnE\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_TrnE\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 26,
+   "read": {
+    "GEfk": "TrnE",
+    "ImgB": 26,
+    "Smth": 11,
+    "Cntr": 17,
+    "FlRs": 22557807
+   }
+  },
+  "detail": "PSAdapter_plugin_TrnE: XML applies it with defaults; dialog field 0 typed 26 -> descriptor ImgB=26 read back",
+  "ms": 21135
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Chrm",
+  "menu": "Effect > Sketch > Chrome",
+  "ok": true,
+  "dialogs": [
+   "鉻黃 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Chrm",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 52,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Chrm",
+   "ps": {
+    "GEfk": "Chrm",
+    "Dtl ": 4,
+    "Smth": 7
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Chrm\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Chrm\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 5,
+   "read": {
+    "GEfk": "Chrm",
+    "Dtl ": 5,
+    "Smth": 7
+   }
+  },
+  "detail": "PSAdapter_plugin_Chrm: XML applies it with defaults; dialog field 0 typed 5 -> descriptor Dtl =5 read back",
+  "ms": 23332
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_DryB",
+  "menu": "Effect > Artistic > Dry Brush",
+  "ok": true,
+  "dialogs": [
+   "乾性筆刷 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_DryB",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_DryB",
+   "ps": {
+    "GEfk": "DryB",
+    "BrsS": 2,
+    "BrsD": 8,
+    "Txtr": 1
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_DryB\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_DryB\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 3,
+   "read": {
+    "GEfk": "DryB",
+    "BrsS": 3,
+    "BrsD": 8,
+    "Txtr": 1
+   }
+  },
+  "detail": "PSAdapter_plugin_DryB: XML applies it with defaults; dialog field 0 typed 3 -> descriptor BrsS=3 read back",
+  "ms": 21392
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_PlsW",
+  "menu": "Effect > Artistic > Plastic Wrap",
+  "ok": true,
+  "dialogs": [
+   "塑膠覆膜 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_PlsW",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_PlsW",
+   "ps": {
+    "GEfk": "PlsW",
+    "HghS": 15,
+    "Dtl ": 9,
+    "Smth": 7
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_PlsW\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_PlsW\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 16,
+   "read": {
+    "GEfk": "PlsW",
+    "HghS": 16,
+    "Dtl ": 9,
+    "Smth": 7
+   }
+  },
+  "detail": "PSAdapter_plugin_PlsW: XML applies it with defaults; dialog field 0 typed 16 -> descriptor HghS=16 read back",
+  "ms": 22652
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_SmdS",
+  "menu": "Effect > Artistic > Smudge Stick",
+  "ok": true,
+  "dialogs": [
+   "塗抹沾污 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_SmdS",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_SmdS",
+   "ps": {
+    "GEfk": "SmdS",
+    "StrL": 2,
+    "HghA": 0,
+    "Intn": 10,
+    "FlRs": 101295339
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_SmdS\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_SmdS\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 3,
+   "read": {
+    "GEfk": "SmdS",
+    "StrL": 3,
+    "HghA": 0,
+    "Intn": 10,
+    "FlRs": 234183432
+   }
+  },
+  "detail": "PSAdapter_plugin_SmdS: XML applies it with defaults; dialog field 0 typed 3 -> descriptor StrL=3 read back",
+  "ms": 21371
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_PntD",
+  "menu": "Effect > Artistic > Paint Daubs",
+  "ok": true,
+  "dialogs": [
+   "塗抹繪畫 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_PntD",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_PntD",
+   "ps": {
+    "GEfk": "PntD",
+    "Sz  ": 8,
+    "Shrp": 7,
+    "BrsT": "BrSm"
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_PntD\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_PntD\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 9,
+   "read": {
+    "GEfk": "PntD",
+    "Sz  ": 9,
+    "Shrp": 7,
+    "BrsT": "BrSm"
+   }
+  },
+  "detail": "PSAdapter_plugin_PntD: XML applies it with defaults; dialog field 0 typed 9 -> descriptor Sz  =9 read back",
+  "ms": 21462
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Frsc",
+  "menu": "Effect > Artistic > Fresco",
+  "ok": true,
+  "dialogs": [
+   "壁畫 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Frsc",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Frsc",
+   "ps": {
+    "GEfk": "Frsc",
+    "BrsS": 2,
+    "BrsD": 8,
+    "Txtr": 1
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Frsc\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Frsc\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 3,
+   "read": {
+    "GEfk": "Frsc",
+    "BrsS": 3,
+    "BrsD": 8,
+    "Txtr": 1
+   }
+  },
+  "detail": "PSAdapter_plugin_Frsc: XML applies it with defaults; dialog field 0 typed 3 -> descriptor BrsS=3 read back",
+  "ms": 21391
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_ClrP",
+  "menu": "Effect > Artistic > Colored Pencil",
+  "ok": true,
+  "dialogs": [
+   "彩色鉛筆 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_ClrP",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_ClrP",
+   "ps": {
+    "GEfk": "ClrP",
+    "Pncl": 4,
+    "StrP": 8,
+    "PprB": 25
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_ClrP\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_ClrP\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 5,
+   "read": {
+    "GEfk": "ClrP",
+    "Pncl": 5,
+    "StrP": 8,
+    "PprB": 25
+   }
+  },
+  "detail": "PSAdapter_plugin_ClrP: XML applies it with defaults; dialog field 0 typed 5 -> descriptor Pncl=5 read back",
+  "ms": 21239
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Ct  ",
+  "menu": "Effect > Artistic > Cutout",
+  "ok": true,
+  "dialogs": [
+   "挖剪圖案 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Ct  ",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Ct  ",
+   "ps": {
+    "GEfk": "Ct  ",
+    "NmbL": 4,
+    "EdgS": 4,
+    "EdgF": 2
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Ct  \"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Ct  \"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 5,
+   "read": {
+    "GEfk": "Ct  ",
+    "NmbL": 5,
+    "EdgS": 4,
+    "EdgF": 2
+   }
+  },
+  "detail": "PSAdapter_plugin_Ct  : XML applies it with defaults; dialog field 0 typed 5 -> descriptor NmbL=5 read back",
+  "ms": 21466
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Wtrc",
+  "menu": "Effect > Artistic > Watercolor",
+  "ok": true,
+  "dialogs": [
+   "水彩 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Wtrc",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Wtrc",
+   "ps": {
+    "GEfk": "Wtrc",
+    "BrsD": 9,
+    "ShdI": 1,
+    "Txtr": 1
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Wtrc\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Wtrc\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 10,
+   "read": {
+    "GEfk": "Wtrc",
+    "BrsD": 10,
+    "ShdI": 1,
+    "Txtr": 1
+   }
+  },
+  "detail": "PSAdapter_plugin_Wtrc: XML applies it with defaults; dialog field 0 typed 10 -> descriptor BrsD=10 read back",
+  "ms": 21344
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_PstE",
+  "menu": "Effect > Artistic > Poster Edges",
+  "ok": true,
+  "dialogs": [
+   "海報邊緣 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_PstE",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_PstE",
+   "ps": {
+    "GEfk": "PstE",
+    "EdgT": 2,
+    "EdgI": 1,
+    "Pstr": 2
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_PstE\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_PstE\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 3,
+   "read": {
+    "GEfk": "PstE",
+    "EdgT": 3,
+    "EdgI": 1,
+    "Pstr": 2
+   }
+  },
+  "detail": "PSAdapter_plugin_PstE: XML applies it with defaults; dialog field 0 typed 3 -> descriptor EdgT=3 read back",
+  "ms": 21627
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Spng",
+  "menu": "Effect > Artistic > Sponge",
+  "ok": true,
+  "dialogs": [
+   "海綿效果 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Spng",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Spng",
+   "ps": {
+    "GEfk": "Spng",
+    "BrsS": 2,
+    "Dfnt": 12,
+    "Smth": 5,
+    "FlRs": 371639278
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Spng\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Spng\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 3,
+   "read": {
+    "GEfk": "Spng",
+    "BrsS": 3,
+    "Dfnt": 12,
+    "Smth": 5,
+    "FlRs": 44504313
+   }
+  },
+  "detail": "PSAdapter_plugin_Spng: XML applies it with defaults; dialog field 0 typed 3 -> descriptor BrsS=3 read back",
+  "ms": 21602
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_FlmG",
+  "menu": "Effect > Artistic > Film Grain",
+  "ok": true,
+  "dialogs": [
+   "粒狀影像 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_FlmG",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 84,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_FlmG",
+   "ps": {
+    "GEfk": "FlmG",
+    "Grn ": 4,
+    "HghA": 0,
+    "Intn": 10,
+    "FlRs": 216386829
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_FlmG\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_FlmG\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 5,
+   "read": {
+    "GEfk": "FlmG",
+    "Grn ": 5,
+    "HghA": 0,
+    "Intn": 10,
+    "FlRs": 484807411
+   }
+  },
+  "detail": "PSAdapter_plugin_FlmG: XML applies it with defaults; dialog field 0 typed 5 -> descriptor Grn =5 read back",
+  "ms": 20814
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_RghP",
+  "menu": "Effect > Artistic > Rough Pastels",
+  "ok": true,
+  "dialogs": [
+   "粗粉蠟筆 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_RghP",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 129,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_RghP",
+   "ps": {
+    "GEfk": "RghP",
+    "StrL": 6,
+    "StDt": 4,
+    "TxtT": "TxCa",
+    "Scln": 100,
+    "Rlf ": 20,
+    "LghD": "LDBt",
+    "InvT": false
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_RghP\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_RghP\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 7,
+   "read": {
+    "GEfk": "RghP",
+    "StrL": 7,
+    "StDt": 4,
+    "TxtT": "TxCa",
+    "Scln": 100,
+    "Rlf ": 20,
+    "LghD": "LDBt",
+    "InvT": false
+   }
+  },
+  "detail": "PSAdapter_plugin_RghP: XML applies it with defaults; dialog field 0 typed 7 -> descriptor StrL=7 read back",
+  "ms": 21062
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Undr",
+  "menu": "Effect > Artistic > Underpainting",
+  "ok": true,
+  "dialogs": [
+   "著底色 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Undr",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 129,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_Undr",
+   "ps": {
+    "GEfk": "Undr",
+    "BrsS": 6,
+    "TxtC": 16,
+    "TxtT": "TxCa",
+    "Scln": 100,
+    "Rlf ": 4,
+    "LghD": "LDTp",
+    "InvT": false
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Undr\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Undr\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 7,
+   "read": {
+    "GEfk": "Undr",
+    "BrsS": 7,
+    "TxtC": 16,
+    "TxtT": "TxCa",
+    "Scln": 100,
+    "Rlf ": 4,
+    "LghD": "LDTp",
+    "InvT": false
+   }
+  },
+  "detail": "PSAdapter_plugin_Undr: XML applies it with defaults; dialog field 0 typed 7 -> descriptor BrsS=7 read back",
+  "ms": 21204
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_PltK",
+  "menu": "Effect > Artistic > Palette Knife",
+  "ok": true,
+  "dialogs": [
+   "調色刀 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_PltK",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_PltK",
+   "ps": {
+    "GEfk": "PltK",
+    "StrS": 25,
+    "StDt": 3,
+    "Sftn": 0
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_PltK\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_PltK\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 26,
+   "read": {
+    "GEfk": "PltK",
+    "StrS": 26,
+    "StDt": 3,
+    "Sftn": 0
+   }
+  },
+  "detail": "PSAdapter_plugin_PltK: XML applies it with defaults; dialog field 0 typed 26 -> descriptor StrS=26 read back",
+  "ms": 21346
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_NGlw",
+  "menu": "Effect > Artistic > Neon Glow",
+  "ok": true,
+  "dialogs": [
+   "霓虹光 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_NGlw",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 132,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_NGlw",
+   "ps": {
+    "GEfk": "NGlw",
+    "Sz  ": 5,
+    "Brgh": 15,
+    "Clr ": "\u0000\u0000\u0000@",
+    "\u0000\u0000\u0000\u0001": "doub",
+    "\u0000\u0000\u0000\u0000": "\u0000\u0000\u0000\u0000",
+    "doub": "Bl  "
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_NGlw\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_NGlw\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 6,
+   "read": {
+    "GEfk": "NGlw",
+    "Sz  ": 6,
+    "Brgh": 15,
+    "Clr ": "\u0000\u0000\u0000@",
+    "\u0000\u0000\u0000\u0001": "doub",
+    "\u0000\u0000\u0000\u0000": "\u0000\u0000\u0000\u0000",
+    "doub": "Bl  "
+   }
+  },
+  "detail": "PSAdapter_plugin_NGlw: XML applies it with defaults; dialog field 0 typed 6 -> descriptor Sz  =6 read back",
+  "ms": 21261
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_NTSC",
+  "menu": "Effect > Video > NTSC Colors",
+  "ok": true,
+  "dialogs": [],
+  "name": "PSAdapter_plugin_NTSC",
+  "params": {
+   "go": true
+  },
+  "types": {
+   "go": "Bool"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_NTSC\"><Dict data=\"B go 1 \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_NTSC\"><Dict data=\"B go 1 \"/></LiveEffect>",
+  "changed": null,
+  "detail": "PSAdapter_plugin_NTSC: 1 params read back",
+  "ms": 4773
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_Dntr",
+  "menu": "Effect > Video > De-Interlace",
+  "ok": true,
+  "dialogs": [
+   "反交錯",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_Dntr",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 36,
+   "ps": {
+    "IntE": "ElmO",
+    "IntC": "CrtI"
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_Dntr\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_Dntr\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "detail": "PSAdapter_plugin_Dntr: applyEffect adds it with its defaults ({'IntE': 'ElmO', 'IntC': 'CrtI'}); no numeric dialog field to set",
+  "ms": 5993
+ },
+ {
+  "cmd": "Live PSAdapter_plugin_GlwE",
+  "menu": "Effect > Stylize > Glowing Edges",
+  "ok": true,
+  "dialogs": [
+   "邊緣亮光化 (100%)",
+   "",
+   ""
+  ],
+  "name": "PSAdapter_plugin_GlwE",
+  "params": {
+   "go": true,
+   "PrevDres": 72,
+   "dataSize": 68,
+   "Photoshop Filter Gallery Effect": "PSAdapter_plugin_GlwE",
+   "ps": {
+    "GEfk": "GlwE",
+    "EdgW": 2,
+    "EdgB": 6,
+    "Smth": 5
+   }
+  },
+  "types": {
+   "go": "Bool",
+   "PrevDres": "Int",
+   "dataSize": "Int",
+   "Photoshop Filter Gallery Effect": "String",
+   "ps": "PSDescriptor"
+  },
+  "also": [],
+  "xml": "<LiveEffect name=\"PSAdapter_plugin_GlwE\"><Dict data=\" \"/></LiveEffect>",
+  "xml_test": "<LiveEffect name=\"PSAdapter_plugin_GlwE\"><Dict data=\" \"/></LiveEffect>",
+  "changed": null,
+  "ps_dialog": {
+   "typed": 3,
+   "read": {
+    "GEfk": "GlwE",
+    "EdgW": 3,
+    "EdgB": 6,
+    "Smth": 5
+   }
+  },
+  "detail": "PSAdapter_plugin_GlwE: XML applies it with defaults; dialog field 0 typed 3 -> descriptor EdgW=3 read back",
+  "ms": 21693
+ }
+]

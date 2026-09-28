@@ -1,0 +1,5146 @@
+{
+"rows": [
+{
+"top": "File",
+"path": "File > New",
+"cmd": "new",
+"status": "✅",
+"level": "readback",
+"how": "app.documents.add(DocumentColorSpace.RGB, w, h) / AI.newDoc()"
+},
+{
+"top": "File",
+"path": "File > New from Template",
+"cmd": "newFromTemplate",
+"status": "✅",
+"level": "readback",
+"how": "app.open(template.ait) -> new untitled document with the template's content"
+},
+{
+"top": "File",
+"path": "File > Open",
+"cmd": "open",
+"status": "✅",
+"level": "readback",
+"how": "app.open(file)"
+},
+{
+"top": "File",
+"path": "File > Browse in Bridge",
+"cmd": "Adobe Bridge Browse",
+"status": "n/a",
+"level": "",
+"how": "external application / web / quits Illustrator"
+},
+{
+"top": "File",
+"path": "File > Close",
+"cmd": "close",
+"status": "✅",
+"level": "readback",
+"how": "document.close(SaveOptions.DONOTSAVECHANGES)"
+},
+{
+"top": "File",
+"path": "File > Close All",
+"cmd": "closeAll",
+"status": "✅",
+"level": "readback",
+"how": "while (documents.length) documents[0].close(DONOTSAVECHANGES)"
+},
+{
+"top": "File",
+"path": "File > Save",
+"cmd": "save",
+"status": "✅",
+"level": "readback",
+"how": "document.save() (or MENU('save') on a saved document)"
+},
+{
+"top": "File",
+"path": "File > Save As",
+"cmd": "saveas",
+"status": "✅",
+"level": "readback",
+"how": "AI.saveAI(path) = document.saveAs(file, IllustratorSaveOptions)"
+},
+{
+"top": "File",
+"path": "File > Save a Copy",
+"cmd": "saveacopy",
+"status": "✅",
+"level": "readback",
+"how": "document.save() + File.copy(target) (the open document keeps its name, like Save a Copy)"
+},
+{
+"top": "File",
+"path": "File > Save Selected Slices",
+"cmd": "Adobe AI Save Selected Slices",
+"status": "blocked",
+"level": "",
+"how": "Opens the legacy Save for Web > Save Optimized As file dialog, which re-opens itself after every answer (the sweep recorded the same '另存最佳化檔案' dialog 30+ times). Use Export for Screens (AI.exportScreens, verified) or AI.png / AI.jpg on a slice-sized artboard instead."
+},
+{
+"top": "File",
+"path": "File > Save as Template",
+"cmd": "saveasTemplate",
+"status": "✅",
+"level": "readback",
+"how": "save the .ai and store it as .ait (a template is an .ai opened as a new untitled document; the menu itself needs the Save dialog)"
+},
+{
+"top": "File",
+"path": "File > Revert",
+"cmd": "revert",
+"status": "✅",
+"level": "readback",
+"how": "File > Revert (confirm dialog accepted)"
+},
+{
+"top": "File",
+"path": "File > Search Adobe Stock",
+"cmd": "Search Adobe Stock",
+"status": "n/a",
+"level": "",
+"how": "external application / web / quits Illustrator"
+},
+{
+"top": "File",
+"path": "File > Place",
+"cmd": "AI Place",
+"status": "✅",
+"level": "readback",
+"how": "document.placedItems.add(); item.file = File / AI.place(file, x, y, {w, embed})"
+},
+{
+"top": "File",
+"path": "File > Export > Export for Screens",
+"cmd": "exportForScreens",
+"status": "✅",
+"level": "readback",
+"how": "document.exportForScreens(folder, ExportForScreensType, options, itemToExport) / AI.exportScreens()"
+},
+{
+"top": "File",
+"path": "File > Export > Export As",
+"cmd": "export",
+"status": "✅",
+"level": "readback",
+"how": "document.exportFile(file, ExportType.*, options) / AI.png() AI.jpg() AI.svg() AI.webp() AI.psd()"
+},
+{
+"top": "File",
+"path": "File > Export > Save for Web (Legacy)",
+"cmd": "Adobe AI Save For Web",
+"status": "✅",
+"level": "readback",
+"how": "exportFile(ExportType.GIF / PNG8 / JPEG) (the legacy Save for Web formats)"
+},
+{
+"top": "File",
+"path": "File > Export Selection",
+"cmd": "exportSelection",
+"status": "✅",
+"level": "readback",
+"how": "document.exportSelectionAsPNG(path) (Export Selection)"
+},
+{
+"top": "File",
+"path": "File > Package",
+"cmd": "Package Menu Item",
+"status": "✅",
+"level": "readback",
+"how": "File > Package: menu + package dialog (default location next to the .ai)"
+},
+{
+"top": "File",
+"path": "File > Scripts > Other Script",
+"cmd": "ai_browse_for_script",
+"status": "✅",
+"level": "readback",
+"how": "$.evalFile(file) (File > Scripts > Other Script runs a .jsx the same way)"
+},
+{
+"top": "File",
+"path": "File > Document Setup",
+"cmd": "document",
+"status": "✅",
+"level": "deep",
+"how": "File > Document Setup: bleed / units / transparency grid are dialog-only; scripting sets them at creation (DocumentPreset) — here the dialog's first field (bleed top) is typed"
+},
+{
+"top": "File",
+"path": "File > Document Color Mode > CMYK Color",
+"cmd": "doc-color-cmyk",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('doc-color-cmyk')"
+},
+{
+"top": "File",
+"path": "File > Document Color Mode > RGB Color",
+"cmd": "doc-color-rgb",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('doc-color-rgb')"
+},
+{
+"top": "File",
+"path": "File > File Info",
+"cmd": "File Info",
+"status": "✅",
+"level": "readback",
+"how": "document.XMPString (File Info edits the XMP metadata)"
+},
+{
+"top": "File",
+"path": "File > Print",
+"cmd": "Print",
+"status": "blocked",
+"level": "",
+"how": "document.print(PrintOptions) with printerName 'Adobe PostScript File' and jobOptions.file never returns on this machine: the sweep timed out after 180 s three times with no dialog window visible (the job goes to the OS spooler). Workaround for output: AI.pdf() / AI.png(); verify prints outside the agent."
+},
+{
+"top": "File",
+"path": "File > Exit",
+"cmd": "quit",
+"status": "n/a",
+"level": "",
+"how": "external application / web / quits Illustrator"
+},
+{
+"top": "Edit",
+"path": "Edit > Undo",
+"cmd": "undo",
+"status": "✅",
+"level": "readback",
+"how": "app.undo() / MENU('undo') (undoes the last step of the running script)"
+},
+{
+"top": "Edit",
+"path": "Edit > Redo",
+"cmd": "redo",
+"status": "✅",
+"level": "readback",
+"how": "app.redo() / MENU('redo')"
+},
+{
+"top": "Edit",
+"path": "Edit > Cut",
+"cmd": "cut",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('cut')"
+},
+{
+"top": "Edit",
+"path": "Edit > Copy",
+"cmd": "copy",
+"status": "✅",
+"level": "readback",
+"how": "MENU('copy') then MENU('paste')"
+},
+{
+"top": "Edit",
+"path": "Edit > Paste",
+"cmd": "paste",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('paste')"
+},
+{
+"top": "Edit",
+"path": "Edit > Paste in Front",
+"cmd": "pasteFront",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('pasteFront')"
+},
+{
+"top": "Edit",
+"path": "Edit > Paste in Back",
+"cmd": "pasteBack",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('pasteBack')"
+},
+{
+"top": "Edit",
+"path": "Edit > Paste in Place",
+"cmd": "pasteInPlace",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('pasteInPlace')"
+},
+{
+"top": "Edit",
+"path": "Edit > Paste on All Artboards",
+"cmd": "pasteInAllArtboard",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('pasteInAllArtboard')"
+},
+{
+"top": "Edit",
+"path": "Edit > Paste without Formatting",
+"cmd": "pasteWithoutFormatting",
+"status": "✅",
+"level": "readback",
+"how": "append the text to contents: the new characters take the destination's style (Paste without Formatting)"
+},
+{
+"top": "Edit",
+"path": "Edit > Clear",
+"cmd": "clear",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('clear')"
+},
+{
+"top": "Edit",
+"path": "Edit > Find and Replace",
+"cmd": "Find and Replace",
+"status": "✅",
+"level": "readback",
+"how": "AI.replaceText(find, replace) (keeps character styles)"
+},
+{
+"top": "Edit",
+"path": "Edit > Find Next",
+"cmd": "Find Next",
+"status": "✅",
+"level": "readback",
+"how": "AI.findText(str) -> [{frame, index}] (search the stories)"
+},
+{
+"top": "Edit",
+"path": "Edit > Spelling > Auto Spell Check",
+"cmd": "Auto Spell Check",
+"status": "n/a",
+"level": "",
+"how": "proofing UI (spelling), no document change"
+},
+{
+"top": "Edit",
+"path": "Edit > Spelling > Check Spelling",
+"cmd": "Check Spelling",
+"status": "n/a",
+"level": "",
+"how": "proofing UI (spelling), no document change"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Custom Dictionary",
+"cmd": "Edit Custom Dictionary...",
+"status": "n/a",
+"level": "",
+"how": "proofing UI (spelling), no document change"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Recolor Artwork",
+"cmd": "Recolor Art Dialog",
+"status": "✅",
+"level": "readback",
+"how": "AI.recolor(items, [[from, to], ...]) (Recolor Artwork: color mapping)"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Generative Recolor",
+"cmd": "Generative Recolor Art Dialog",
+"status": "n/a",
+"level": "",
+"how": "generative AI / cloud feature (excluded by policy, like the Photoshop skill)"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Invert Colors",
+"cmd": "Colors6",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Colors6')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Blend Vertically",
+"cmd": "Colors5",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Colors5')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Blend Horizontally",
+"cmd": "Colors4",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Colors4')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Blend Front to Back",
+"cmd": "Colors3",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Colors3')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Adjust Color Balance",
+"cmd": "Adjust3",
+"status": "✅",
+"level": "readback",
+"how": "Edit Colors > Adjust Color Balance (dialog: first channel -50 through UI Automation)"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Convert to CMYK",
+"cmd": "Colors8",
+"status": "✅",
+"level": "fingerprint",
+"how": "app.executeMenuCommand('Colors8')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Convert to RGB",
+"cmd": "Colors9",
+"status": "✅",
+"level": "fingerprint",
+"how": "app.executeMenuCommand('Colors9')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Convert to Grayscale",
+"cmd": "Colors7",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Colors7')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Saturate",
+"cmd": "Saturate3",
+"status": "✅",
+"level": "readback",
+"how": "Edit Colors > Saturate: menu + dialog (intensity typed)"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Colors > Overprint Black",
+"cmd": "Overprint2",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Overprint2')"
+},
+{
+"top": "Edit",
+"path": "Edit > Edit Original",
+"cmd": "EditOriginal Menu Item",
+"status": "n/a",
+"level": "",
+"how": "opens the linked file in another application"
+},
+{
+"top": "Edit",
+"path": "Edit > Transparency Flattener Presets",
+"cmd": "Transparency Presets",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Print Presets",
+"cmd": "Print Presets",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Adobe PDF Presets",
+"cmd": "PDF Presets",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Perspective Grid Presets",
+"cmd": "PerspectiveGridPresets",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Color Settings",
+"cmd": "color",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Assign Profile",
+"cmd": "assignprofile",
+"status": "✅",
+"level": "readback",
+"how": "Edit > Assign Profile: 'Don't Color Manage' chosen (readback document.colorProfileName)"
+},
+{
+"top": "Edit",
+"path": "Edit > Keyboard Shortcuts",
+"cmd": "KBSC Menu Item",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > My Settings > Export Settings",
+"cmd": "ExportSettings",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > My Settings > Import Settings",
+"cmd": "ImportSettings",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > General",
+"cmd": "preference",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Selection & Anchor Display",
+"cmd": "selectionPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Type",
+"cmd": "keyboardPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Units",
+"cmd": "unitundoPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Guides & Grid",
+"cmd": "guidegridPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Smart Guides",
+"cmd": "snapPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Slices",
+"cmd": "slicePref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Hyphenation",
+"cmd": "hyphenPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Plug-ins & Scratch Disks",
+"cmd": "pluginPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > User Interface",
+"cmd": "userInterfacePref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Performance",
+"cmd": "GPUPerformancePref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > File Handling",
+"cmd": "FilePref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Clipboard Handling",
+"cmd": "ClipboardPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Appearance of Black",
+"cmd": "BlackPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Touch Workspace",
+"cmd": "TouchPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Edit",
+"path": "Edit > Preferences > Devices",
+"cmd": "DevicesPref",
+"status": "n/a",
+"level": "",
+"how": "application settings and preset libraries (global, not the document); PDF presets are applied by name in AI.pdf()"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Transform Again",
+"cmd": "transformagain",
+"status": "✅",
+"level": "readback",
+"how": "MENU('transformagain') repeats the last menu transform (here Move 30 pt)"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Move",
+"cmd": "transformmove",
+"status": "✅",
+"level": "readback",
+"how": "item.translate(dx, dy) / AI.moveTo(); menu: Move dialog (horizontal typed)"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Rotate",
+"cmd": "transformrotate",
+"status": "✅",
+"level": "readback",
+"how": "item.rotate(deg) / AI.rotate(); menu: Rotate dialog (angle typed)"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Reflect",
+"cmd": "transformreflect",
+"status": "✅",
+"level": "fingerprint",
+"how": "item.resize(-100, 100) / AI.flip(); menu: Reflect dialog"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Scale",
+"cmd": "transformscale",
+"status": "✅",
+"level": "readback",
+"how": "item.resize(sx, sy) / AI.scaleTo(); menu: Scale dialog (uniform % typed)"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Shear",
+"cmd": "transformshear",
+"status": "✅",
+"level": "readback",
+"how": "item.transform(matrix) with a shear matrix; menu: Shear dialog (angle typed)"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Transform Each",
+"cmd": "Transform v23",
+"status": "✅",
+"level": "readback",
+"how": "loop items: item.resize(); menu: Transform Each dialog (horizontal scale typed)"
+},
+{
+"top": "Object",
+"path": "Object > Transform > Reset Bounding Box",
+"cmd": "AI Reset Bounding Box",
+"status": "✅",
+"level": "deep",
+"how": "Object > Transform > Reset Bounding Box (after a menu Rotate 30 deg; the saved art records the box)"
+},
+{
+"top": "Object",
+"path": "Object > Arrange > Bring to Front",
+"cmd": "sendToFront",
+"status": "✅",
+"level": "readback",
+"how": "item.zOrder(ZOrderMethod.BRINGTOFRONT)"
+},
+{
+"top": "Object",
+"path": "Object > Arrange > Bring Forward",
+"cmd": "sendForward",
+"status": "✅",
+"level": "readback",
+"how": "item.zOrder(ZOrderMethod.BRINGFORWARD)"
+},
+{
+"top": "Object",
+"path": "Object > Arrange > Send Backward",
+"cmd": "sendBackward",
+"status": "✅",
+"level": "readback",
+"how": "item.zOrder(ZOrderMethod.SENDBACKWARD)"
+},
+{
+"top": "Object",
+"path": "Object > Arrange > Send to Back",
+"cmd": "sendToBack",
+"status": "✅",
+"level": "readback",
+"how": "item.zOrder(ZOrderMethod.SENDTOBACK)"
+},
+{
+"top": "Object",
+"path": "Object > Arrange > Send to Current Layer",
+"cmd": "Selection Hat 2",
+"status": "✅",
+"level": "readback",
+"how": "item.move(layer, ElementPlacement.PLACEATBEGINNING)"
+},
+{
+"top": "Object",
+"path": "Object > Align > Horizontal Align Left",
+"cmd": "Horizontal Align Left",
+"status": "✅",
+"level": "readback",
+"how": "AI.align(items, 'left')"
+},
+{
+"top": "Object",
+"path": "Object > Align > Horizontal Align Center",
+"cmd": "Horizontal Align Center",
+"status": "✅",
+"level": "readback",
+"how": "AI.align(items, 'hcenter')"
+},
+{
+"top": "Object",
+"path": "Object > Align > Horizontal Align Right",
+"cmd": "Horizontal Align Right",
+"status": "✅",
+"level": "readback",
+"how": "AI.align(items, 'right')"
+},
+{
+"top": "Object",
+"path": "Object > Align > Vertical Align Top",
+"cmd": "Vertical Align Top",
+"status": "✅",
+"level": "readback",
+"how": "AI.align(items, 'top')"
+},
+{
+"top": "Object",
+"path": "Object > Align > Vertical Align Center",
+"cmd": "Vertical Align Center",
+"status": "✅",
+"level": "readback",
+"how": "AI.align(items, 'vcenter')"
+},
+{
+"top": "Object",
+"path": "Object > Align > Vertical Align Bottom",
+"cmd": "Vertical Align Bottom",
+"status": "✅",
+"level": "readback",
+"how": "AI.align(items, 'bottom')"
+},
+{
+"top": "Object",
+"path": "Object > Distribute > Vertical Distribute Top",
+"cmd": "Vertical Distribute Top",
+"status": "✅",
+"level": "readback",
+"how": "AI.distribute(items, 'v') (top edges)"
+},
+{
+"top": "Object",
+"path": "Object > Distribute > Vertical Distribute Center",
+"cmd": "Vertical Distribute Center",
+"status": "✅",
+"level": "readback",
+"how": "AI.distribute(items, 'v') (centers)"
+},
+{
+"top": "Object",
+"path": "Object > Distribute > Vertical Distribute Bottom",
+"cmd": "Vertical Distribute Bottom",
+"status": "✅",
+"level": "readback",
+"how": "AI.distribute(items, 'v') (bottom edges)"
+},
+{
+"top": "Object",
+"path": "Object > Distribute > Horizontal Distribute Left",
+"cmd": "Horizontal Distribute Left",
+"status": "✅",
+"level": "readback",
+"how": "AI.distribute(items, 'h') (left edges)"
+},
+{
+"top": "Object",
+"path": "Object > Distribute > Horizontal Distribute Center",
+"cmd": "Horizontal Distribute Center",
+"status": "✅",
+"level": "readback",
+"how": "AI.distribute(items, 'h') (centers)"
+},
+{
+"top": "Object",
+"path": "Object > Distribute > Horizontal Distribute Right",
+"cmd": "Horizontal Distribute Right",
+"status": "✅",
+"level": "readback",
+"how": "AI.distribute(items, 'h') (right edges)"
+},
+{
+"top": "Object",
+"path": "Object > Group",
+"cmd": "group",
+"status": "✅",
+"level": "readback",
+"how": "AI.group(items)"
+},
+{
+"top": "Object",
+"path": "Object > Ungroup",
+"cmd": "ungroup",
+"status": "✅",
+"level": "readback",
+"how": "AI.ungroup(group)"
+},
+{
+"top": "Object",
+"path": "Object > Lock > Selection",
+"cmd": "lock",
+"status": "✅",
+"level": "readback",
+"how": "item.locked = true"
+},
+{
+"top": "Object",
+"path": "Object > Lock > All Artwork Above",
+"cmd": "Selection Hat 5",
+"status": "✅",
+"level": "readback",
+"how": "lock every item above: item.locked = true for absoluteZOrderPosition > n"
+},
+{
+"top": "Object",
+"path": "Object > Lock > Other Layers",
+"cmd": "Selection Hat 7",
+"status": "✅",
+"level": "readback",
+"how": "layer.locked = true for the other layers"
+},
+{
+"top": "Object",
+"path": "Object > Unlock All",
+"cmd": "unlockAll",
+"status": "✅",
+"level": "readback",
+"how": "item.locked = false (for all)"
+},
+{
+"top": "Object",
+"path": "Object > Hide > Selection",
+"cmd": "hide",
+"status": "✅",
+"level": "readback",
+"how": "item.hidden = true"
+},
+{
+"top": "Object",
+"path": "Object > Hide > All Artwork Above",
+"cmd": "Selection Hat 4",
+"status": "✅",
+"level": "readback",
+"how": "item.hidden = true for items above"
+},
+{
+"top": "Object",
+"path": "Object > Hide > Other Layers",
+"cmd": "Selection Hat 6",
+"status": "✅",
+"level": "readback",
+"how": "layer.visible = false for the other layers"
+},
+{
+"top": "Object",
+"path": "Object > Show All",
+"cmd": "showAll",
+"status": "✅",
+"level": "readback",
+"how": "item.hidden = false (for all)"
+},
+{
+"top": "Object",
+"path": "Object > Expand",
+"cmd": "Expand3",
+"status": "✅",
+"level": "readback",
+"how": "Object > Expand (dialog accepted): fill and stroke become separate paths"
+},
+{
+"top": "Object",
+"path": "Object > Expand Appearance",
+"cmd": "expandStyle",
+"status": "✅",
+"level": "readback",
+"how": "AI.expandAppearance(item)"
+},
+{
+"top": "Object",
+"path": "Object > Crop Image",
+"cmd": "Crop Image",
+"status": "✅",
+"level": "readback",
+"how": "Object > Crop Image (or executeMenuCommand('Crop Image')), drag a crop handle (tools/menu_ui.edge_drag), Enter commits"
+},
+{
+"top": "Object",
+"path": "Object > Rasterize",
+"cmd": "Rasterize 8 menu item",
+"status": "✅",
+"level": "readback",
+"how": "document.rasterize(item, bounds, RasterizeOptions) / AI.rasterize()"
+},
+{
+"top": "Object",
+"path": "Object > Create Gradient Mesh",
+"cmd": "make mesh",
+"status": "✅",
+"level": "readback",
+"how": "Object > Create Gradient Mesh (dialog accepted)"
+},
+{
+"top": "Object",
+"path": "Object > Create Object Mosaic",
+"cmd": "AI Object Mosaic Plug-in4",
+"status": "✅",
+"level": "readback",
+"how": "Object > Create Object Mosaic (dialog accepted)"
+},
+{
+"top": "Object",
+"path": "Object > Create Trim Marks",
+"cmd": "TrimMark v25",
+"status": "✅",
+"level": "readback",
+"how": "Object > Create Trim Marks"
+},
+{
+"top": "Object",
+"path": "Object > Flatten Transparency",
+"cmd": "Flatten Transparency",
+"status": "✅",
+"level": "readback",
+"how": "Object > Flatten Transparency (dialog accepted)"
+},
+{
+"top": "Object",
+"path": "Object > Make Pixel Perfect",
+"cmd": "Make Pixel Perfect",
+"status": "✅",
+"level": "readback",
+"how": "item.pixelAligned = true / MENU('Make Pixel Perfect')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Make",
+"cmd": "AISlice Make Slice",
+"status": "✅",
+"level": "readback",
+"how": "item.sliced = true / MENU('AISlice Make Slice')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Release",
+"cmd": "AISlice Release Slice",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('AISlice Release Slice')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Create from Guides",
+"cmd": "AISlice Create from Guides",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('AISlice Create from Guides')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Create from Selection",
+"cmd": "AISlice Create from Selection",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('AISlice Create from Selection')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Duplicate Slice",
+"cmd": "AISlice Duplicate",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('AISlice Duplicate')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Combine Slices",
+"cmd": "AISlice Combine",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('AISlice Combine')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Divide Slices",
+"cmd": "AISlice Divide",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('AISlice Divide')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Delete All",
+"cmd": "AISlice Delete All Slices",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('AISlice Delete All Slices')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Slice Options",
+"cmd": "AISlice Slice Options",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('AISlice Slice Options')"
+},
+{
+"top": "Object",
+"path": "Object > Slice > Clip to Artboard",
+"cmd": "AISlice Clip to Artboard",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('AISlice Clip to Artboard')"
+},
+{
+"top": "Object",
+"path": "Object > Path > Join",
+"cmd": "join",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Join (two open paths)"
+},
+{
+"top": "Object",
+"path": "Object > Path > Average",
+"cmd": "average",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Average (dialog: both axes)"
+},
+{
+"top": "Object",
+"path": "Object > Path > Outline Stroke",
+"cmd": "OffsetPath v22",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Outline Stroke"
+},
+{
+"top": "Object",
+"path": "Object > Path > Offset Path",
+"cmd": "OffsetPath v23",
+"status": "✅",
+"level": "readback",
+"how": "AI.offsetPath(item, d) + AI.expandAppearance(); menu: Offset Path dialog (offset typed)"
+},
+{
+"top": "Object",
+"path": "Object > Path > Reverse Path Direction",
+"cmd": "Reverse Path Direction",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Reverse Path Direction')"
+},
+{
+"top": "Object",
+"path": "Object > Path > Simplify",
+"cmd": "simplify menu item",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Simplify via the menu bar; the on-canvas widget's automatic result is committed with Enter (121 -> ~10 points)"
+},
+{
+"top": "Object",
+"path": "Object > Path > Smooth",
+"cmd": "smooth menu item",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Smooth via the menu bar; the on-canvas slider is dragged (tools/menu_ui.widget_drag) and applies on release"
+},
+{
+"top": "Object",
+"path": "Object > Path > Add Anchor Points",
+"cmd": "Add Anchor Points2",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Add Anchor Points"
+},
+{
+"top": "Object",
+"path": "Object > Path > Remove Anchor Points",
+"cmd": "Remove Anchor Points menu",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Remove Anchor Points (selected anchors)"
+},
+{
+"top": "Object",
+"path": "Object > Path > Divide Objects Below",
+"cmd": "Knife Tool2",
+"status": "✅",
+"level": "fingerprint",
+"how": "Object > Path > Divide Objects Below (top object cuts the ones below)"
+},
+{
+"top": "Object",
+"path": "Object > Path > Split Into Grid",
+"cmd": "Rows and Columns....",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Split Into Grid (dialog: rows 2, columns 2 set through UI Automation)"
+},
+{
+"top": "Object",
+"path": "Object > Path > Clean Up",
+"cmd": "cleanup menu item",
+"status": "✅",
+"level": "readback",
+"how": "Object > Path > Clean Up (dialog: stray points, unpainted, empty text)"
+},
+{
+"top": "Object",
+"path": "Object > Shape > Convert to Shapes",
+"cmd": "Convert to Shape",
+"status": "✅",
+"level": "deep",
+"how": "Object > Shape > Convert to Shapes (live shape)"
+},
+{
+"top": "Object",
+"path": "Object > Shape > Expand Shape",
+"cmd": "Expand Shape",
+"status": "✅",
+"level": "deep",
+"how": "Object > Shape > Expand Shape"
+},
+{
+"top": "Object",
+"path": "Object > Pattern > Make",
+"cmd": "Adobe Make Pattern",
+"status": "✅",
+"level": "readback",
+"how": "Object > Pattern > Make (enters pattern mode, adds a swatch); exit with MENU('exitFocus')"
+},
+{
+"top": "Object",
+"path": "Object > Pattern > Edit Pattern",
+"cmd": "Adobe Edit Pattern",
+"status": "✅",
+"level": "deep",
+"how": "Object > Pattern > Edit Pattern on a pattern-filled object (enters pattern editing mode)"
+},
+{
+"top": "Object",
+"path": "Object > Pattern > Tile Edge Color",
+"cmd": "Adobe Pattern Tile Color",
+"status": "n/a",
+"level": "",
+"how": "pattern-editing display option"
+},
+{
+"top": "Object",
+"path": "Object > Pattern > Text to Pattern (Beta)",
+"cmd": "Text To Pattern",
+"status": "n/a",
+"level": "",
+"how": "generative AI / cloud feature (excluded by policy, like the Photoshop skill)"
+},
+{
+"top": "Object",
+"path": "Object > Repeat > Radial",
+"cmd": "Make Radial Repeat",
+"status": "✅",
+"level": "readback",
+"how": "AI.repeat(item, 'radial')"
+},
+{
+"top": "Object",
+"path": "Object > Repeat > Grid",
+"cmd": "Make Grid Repeat",
+"status": "✅",
+"level": "readback",
+"how": "AI.repeat(item, 'grid')"
+},
+{
+"top": "Object",
+"path": "Object > Repeat > Mirror",
+"cmd": "Make Symmetry Repeat",
+"status": "✅",
+"level": "readback",
+"how": "AI.repeat(item, 'mirror') (nothing stays selected; readback document.symmetryRepeatItems)"
+},
+{
+"top": "Object",
+"path": "Object > Repeat > Release",
+"cmd": "Release Repeat Art",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Release Repeat Art')"
+},
+{
+"top": "Object",
+"path": "Object > Repeat > Options",
+"cmd": "Repeat Art Options",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Repeat Art Options')"
+},
+{
+"top": "Object",
+"path": "Object > Intertwine > Make",
+"cmd": "Partial Rearrange Make",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Partial Rearrange Make')"
+},
+{
+"top": "Object",
+"path": "Object > Intertwine > Release",
+"cmd": "Partial Rearrange Release",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Partial Rearrange Release')"
+},
+{
+"top": "Object",
+"path": "Object > Intertwine > Edit",
+"cmd": "Partial Rearrange Edit",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Partial Rearrange Edit')"
+},
+{
+"top": "Object",
+"path": "Object > Blend > Make",
+"cmd": "Path Blend Make",
+"status": "✅",
+"level": "readback",
+"how": "AI.blend([a, b])"
+},
+{
+"top": "Object",
+"path": "Object > Blend > Release",
+"cmd": "Path Blend Release",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Path Blend Release')"
+},
+{
+"top": "Object",
+"path": "Object > Blend > Blend Options",
+"cmd": "Path Blend Options",
+"status": "✅",
+"level": "deep",
+"how": "Object > Blend > Blend Options (dialog: orientation 'Align to Path' clicked through UI Automation)"
+},
+{
+"top": "Object",
+"path": "Object > Blend > Expand",
+"cmd": "Path Blend Expand",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Path Blend Expand')"
+},
+{
+"top": "Object",
+"path": "Object > Blend > Replace Spine",
+"cmd": "Path Blend Replace Spine",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Path Blend Replace Spine')"
+},
+{
+"top": "Object",
+"path": "Object > Blend > Reverse Spine",
+"cmd": "Path Blend Reverse Spine",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Path Blend Reverse Spine')"
+},
+{
+"top": "Object",
+"path": "Object > Blend > Reverse Front to Back",
+"cmd": "Path Blend Reverse Stack",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Path Blend Reverse Stack')"
+},
+{
+"top": "Object",
+"path": "Object > Envelope Distort > Make with Warp",
+"cmd": "Make Warp",
+"status": "✅",
+"level": "readback",
+"how": "Object > Envelope Distort > Make with Warp (dialog accepted) — or AI.warp() as a live effect"
+},
+{
+"top": "Object",
+"path": "Object > Envelope Distort > Make with Mesh",
+"cmd": "Create Envelope Grid",
+"status": "✅",
+"level": "readback",
+"how": "Object > Envelope Distort > Make with Mesh (dialog accepted)"
+},
+{
+"top": "Object",
+"path": "Object > Envelope Distort > Make with Top Object",
+"cmd": "Make Envelope",
+"status": "✅",
+"level": "readback",
+"how": "Object > Envelope Distort > Make with Top Object"
+},
+{
+"top": "Object",
+"path": "Object > Envelope Distort > Release",
+"cmd": "Release Envelope",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Release Envelope')"
+},
+{
+"top": "Object",
+"path": "Object > Envelope Distort > Envelope Options",
+"cmd": "Envelope Options",
+"status": "✅",
+"level": "deep",
+"how": "Object > Envelope Distort > Envelope Options (fidelity 90 through UI Automation)"
+},
+{
+"top": "Object",
+"path": "Object > Envelope Distort > Expand",
+"cmd": "Expand Envelope",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Expand Envelope')"
+},
+{
+"top": "Object",
+"path": "Object > Envelope Distort > Edit Contents",
+"cmd": "Edit Envelope Contents",
+"status": "✅",
+"level": "deep",
+"how": "Object > Envelope Distort > Edit Contents (the saved art records the envelope in contents-editing state) — via the menu bar: 物件 > 封套扭曲 > 編輯內容 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Object",
+"path": "Object > Perspective > Attach to Active Plane",
+"cmd": "Attach to Active Plane",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Attach to Active Plane')"
+},
+{
+"top": "Object",
+"path": "Object > Perspective > Release with Perspective",
+"cmd": "Release with Perspective",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Release with Perspective')"
+},
+{
+"top": "Object",
+"path": "Object > Perspective > Move Plane to Match Object",
+"cmd": "Show Object Grid Plane",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Show Object Grid Plane')"
+},
+{
+"top": "Object",
+"path": "Object > Perspective > Edit Text",
+"cmd": "Edit Original Object",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Edit Original Object')"
+},
+{
+"top": "Object",
+"path": "Object > Live Paint > Make",
+"cmd": "Make Planet X",
+"status": "✅",
+"level": "readback",
+"how": "Object > Live Paint > Make"
+},
+{
+"top": "Object",
+"path": "Object > Live Paint > Merge",
+"cmd": "Marge Planet X",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Marge Planet X')"
+},
+{
+"top": "Object",
+"path": "Object > Live Paint > Release",
+"cmd": "Release Planet X",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Release Planet X')"
+},
+{
+"top": "Object",
+"path": "Object > Live Paint > Gap Options",
+"cmd": "Planet X Options",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Planet X Options')"
+},
+{
+"top": "Object",
+"path": "Object > Live Paint > Expand",
+"cmd": "Expand Planet X",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Expand Planet X')"
+},
+{
+"top": "Object",
+"path": "Object > Mockup (Beta) > Make",
+"cmd": "Make Vector Edge",
+"status": "n/a",
+"level": "",
+"how": "generative AI / cloud feature (excluded by policy, like the Photoshop skill)"
+},
+{
+"top": "Object",
+"path": "Object > Mockup (Beta) > Release",
+"cmd": "Release Vector Edge",
+"status": "n/a",
+"level": "",
+"how": "generative AI / cloud feature (excluded by policy, like the Photoshop skill)"
+},
+{
+"top": "Object",
+"path": "Object > Mockup (Beta) > Edit",
+"cmd": "Edit Vector Edge",
+"status": "n/a",
+"level": "",
+"how": "generative AI / cloud feature (excluded by policy, like the Photoshop skill)"
+},
+{
+"top": "Object",
+"path": "Object > Image Trace > Make",
+"cmd": "Make Image Tracing",
+"status": "✅",
+"level": "readback",
+"how": "rasterOrPlaced.trace() / AI.trace()"
+},
+{
+"top": "Object",
+"path": "Object > Image Trace > Make and Expand",
+"cmd": "Make and Expand Image Tracing",
+"status": "✅",
+"level": "readback",
+"how": "AI.trace(item, preset, true)"
+},
+{
+"top": "Object",
+"path": "Object > Image Trace > Release",
+"cmd": "Release Image Tracing",
+"status": "✅",
+"level": "readback",
+"how": "tracing.releaseTracing()"
+},
+{
+"top": "Object",
+"path": "Object > Image Trace > Expand",
+"cmd": "Expand Image Tracing",
+"status": "✅",
+"level": "readback",
+"how": "tracing.expandTracing()"
+},
+{
+"top": "Object",
+"path": "Object > Text Wrap > Make",
+"cmd": "Make Text Wrap",
+"status": "✅",
+"level": "readback",
+"how": "item.wrapped = true"
+},
+{
+"top": "Object",
+"path": "Object > Text Wrap > Release",
+"cmd": "Release Text Wrap",
+"status": "✅",
+"level": "readback",
+"how": "item.wrapped = false"
+},
+{
+"top": "Object",
+"path": "Object > Text Wrap > Text Wrap Options",
+"cmd": "Text Wrap Options...",
+"status": "✅",
+"level": "readback",
+"how": "item.wrapOffset / wrapInside"
+},
+{
+"top": "Object",
+"path": "Object > Clipping Mask > Make",
+"cmd": "makeMask",
+"status": "✅",
+"level": "readback",
+"how": "AI.clip(mask, items)"
+},
+{
+"top": "Object",
+"path": "Object > Clipping Mask > Release",
+"cmd": "releaseMask",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('releaseMask')"
+},
+{
+"top": "Object",
+"path": "Object > Clipping Mask > Edit Mask",
+"cmd": "editMask",
+"status": "✅",
+"level": "readback",
+"how": "Object > Clipping Mask > Edit Mask (the mask path gets selected)"
+},
+{
+"top": "Object",
+"path": "Object > Compound Path > Make",
+"cmd": "compoundPath",
+"status": "✅",
+"level": "readback",
+"how": "AI.compound(paths)"
+},
+{
+"top": "Object",
+"path": "Object > Compound Path > Release",
+"cmd": "noCompoundPath",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('noCompoundPath')"
+},
+{
+"top": "Object",
+"path": "Object > Artboards > Convert to Artboards",
+"cmd": "setCropMarks",
+"status": "✅",
+"level": "readback",
+"how": "document.artboards.add(rect) / AI.addArtboard()"
+},
+{
+"top": "Object",
+"path": "Object > Artboards > Rearrange All Artboards",
+"cmd": "ReArrange Artboards",
+"status": "✅",
+"level": "deep",
+"how": "document.rearrangeArtboards(layout, rowsOrCols, spacing, moveArtwork)"
+},
+{
+"top": "Object",
+"path": "Object > Artboards > Fit to Artwork Bounds",
+"cmd": "Fit Artboard to artwork bounds",
+"status": "✅",
+"level": "readback",
+"how": "AI.fitArtboard(i)"
+},
+{
+"top": "Object",
+"path": "Object > Artboards > Fit to Selected Art",
+"cmd": "Fit Artboard to selected Art",
+"status": "✅",
+"level": "readback",
+"how": "document.fitArtboardToSelectedArt(i) / AI.fitArtboard(i, items)"
+},
+{
+"top": "Object",
+"path": "Object > Graph > Type",
+"cmd": "setGraphStyle",
+"status": "✅",
+"level": "deep",
+"how": "Object > Graph > Type (dialog: chart type)"
+},
+{
+"top": "Object",
+"path": "Object > Graph > Data",
+"cmd": "editGraphData",
+"status": "✅",
+"level": "readback",
+"how": "Object > Graph > Data (opens the data window)"
+},
+{
+"top": "Object",
+"path": "Object > Graph > Design",
+"cmd": "graphDesigns",
+"status": "✅",
+"level": "deep",
+"how": "Object > Graph > Design: select the artwork, then New Design in the dialog (dialog plan: uiaclick 新增設計, OK)"
+},
+{
+"top": "Object",
+"path": "Object > Graph > Column",
+"cmd": "setBarDesign",
+"status": "✅",
+"level": "deep",
+"how": "Object > Graph > Column"
+},
+{
+"top": "Object",
+"path": "Object > Graph > Marker",
+"cmd": "setIconDesign",
+"status": "✅",
+"level": "deep",
+"how": "Object > Graph > Marker"
+},
+{
+"top": "Object",
+"path": "Object > Collect For Export > As Single Asset",
+"cmd": "collectForExportSingleAsset",
+"status": "✅",
+"level": "readback",
+"how": "document.assets.add(group of the items) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Object",
+"path": "Object > Collect For Export > As Multiple Assets",
+"cmd": "collectForExportMultipleAsset",
+"status": "✅",
+"level": "readback",
+"how": "document.assets.add(item) per item [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > More from Adobe Fonts",
+"cmd": "Browse Typekit Fonts Menu IllustratorUI",
+"status": "n/a",
+"level": "",
+"how": "font service / panel / display only"
+},
+{
+"top": "Type",
+"path": "Type > Glyphs",
+"cmd": "alternate glyph palette plugin",
+"status": "n/a",
+"level": "",
+"how": "font service / panel / display only"
+},
+{
+"top": "Type",
+"path": "Type > Convert To Area Type / Point Type",
+"cmd": "point-area",
+"status": "✅",
+"level": "readback",
+"how": "textFrame.convertPointObjectToAreaObject() [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Area Type Options",
+"cmd": "areatextoptions",
+"status": "✅",
+"level": "readback",
+"how": "textFrame.columnCount / rowCount / columnGutter / rowGutter / spacing / firstBaseline"
+},
+{
+"top": "Type",
+"path": "Type > Type on a Path > Rainbow",
+"cmd": "textpathtypeRainbow",
+"status": "✅",
+"level": "pixels",
+"how": "Type > Type on a Path > Rainbow (from Skew; Rainbow is the default) — via the menu bar: 文字 > 路徑文字 > 彩虹效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Type on a Path > Skew",
+"cmd": "textpathtypeSkew",
+"status": "✅",
+"level": "pixels",
+"how": "Type > Type on a Path > Skew — via the menu bar: 文字 > 路徑文字 > 偏斜效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Type on a Path > 3D Ribbon",
+"cmd": "textpathtype3d",
+"status": "✅",
+"level": "pixels",
+"how": "Type > Type on a Path > 3d — via the menu bar: 文字 > 路徑文字 > 3D 帶狀效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Type on a Path > Stair Step",
+"cmd": "textpathtypestairs",
+"status": "✅",
+"level": "pixels",
+"how": "Type > Type on a Path > stairs — via the menu bar: 文字 > 路徑文字 > 階梯效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Type on a Path > Gravity",
+"cmd": "textpathtypeGravity",
+"status": "✅",
+"level": "pixels",
+"how": "Type > Type on a Path > Gravity — via the menu bar: 文字 > 路徑文字 > 重力效果 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Type on a Path > Type on a Path Options",
+"cmd": "textpathtypeOptions",
+"status": "✅",
+"level": "pixels",
+"how": "Type > Type on a Path > Options (dialog: Flip toggled) — via the menu bar: 文字 > 路徑文字 > 路徑文字選項 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Type on a Path > Update Legacy Type on a Path",
+"cmd": "updateLegacyTOP",
+"status": "✅",
+"level": "deep",
+"how": "Type > Type on a Path > Update Legacy Type on a Path (legacy file)"
+},
+{
+"top": "Type",
+"path": "Type > Composite Fonts",
+"cmd": "Adobe internal composite font plugin",
+"status": "n/a",
+"level": "",
+"how": "CJK set editors (settings dialogs); applying a set is paragraphAttributes.kinsoku / mojikumi"
+},
+{
+"top": "Type",
+"path": "Type > Kinsoku Shori Settings",
+"cmd": "Adobe Kinsoku Settings",
+"status": "n/a",
+"level": "",
+"how": "CJK set editors (settings dialogs); applying a set is paragraphAttributes.kinsoku / mojikumi"
+},
+{
+"top": "Type",
+"path": "Type > Mojikumi Settings",
+"cmd": "Adobe MojiKumi Settings",
+"status": "n/a",
+"level": "",
+"how": "CJK set editors (settings dialogs); applying a set is paragraphAttributes.kinsoku / mojikumi"
+},
+{
+"top": "Type",
+"path": "Type > Threaded Text > Create",
+"cmd": "threadTextCreate",
+"status": "✅",
+"level": "readback",
+"how": "Type > Threaded Text > Create (area text + an empty path)"
+},
+{
+"top": "Type",
+"path": "Type > Threaded Text > Release Selection",
+"cmd": "releaseThreadedTextSelection",
+"status": "✅",
+"level": "readback",
+"how": "Type > Threaded Text > Release Selection (the selected frame leaves the thread) — via the menu bar: 文字 > 文字緒 > 釋放選取的文字物件 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Threaded Text > Remove Threading",
+"cmd": "removeThreading",
+"status": "✅",
+"level": "readback",
+"how": "Type > Threaded Text > Remove Threading (every frame keeps its text, the thread is gone) — via the menu bar: 文字 > 文字緒 > 移除文字緒 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Type",
+"path": "Type > Fit Headline",
+"cmd": "fitHeadline",
+"status": "✅",
+"level": "readback",
+"how": "AI.fitHeadline(frame): largest tracking that keeps the line on one line of the frame (the menu needs a text cursor)"
+},
+{
+"top": "Type",
+"path": "Type > Resolve Missing Fonts",
+"cmd": "Adobe IllustratorUI Resolve Missing Font",
+"status": "n/a",
+"level": "",
+"how": "font service / panel / display only"
+},
+{
+"top": "Type",
+"path": "Type > Find/Replace Font",
+"cmd": "Adobe Illustrator Find Font Menu Item",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.textFont = app.textFonts.getByName(...) (Find/Replace Font)"
+},
+{
+"top": "Type",
+"path": "Type > Change Case > UPPERCASE",
+"cmd": "UpperCase Change Case Item",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('UpperCase Change Case Item')"
+},
+{
+"top": "Type",
+"path": "Type > Change Case > lowercase",
+"cmd": "LowerCase Change Case Item",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('LowerCase Change Case Item')"
+},
+{
+"top": "Type",
+"path": "Type > Change Case > Title Case",
+"cmd": "Title Case Change Case Item",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Title Case Change Case Item')"
+},
+{
+"top": "Type",
+"path": "Type > Change Case > Sentence case",
+"cmd": "Sentence case Change Case Item",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Sentence case Change Case Item')"
+},
+{
+"top": "Type",
+"path": "Type > Smart Punctuation",
+"cmd": "Adobe Illustrator Smart Punctuation Menu Item",
+"status": "✅",
+"level": "readback",
+"how": "Type > Smart Punctuation (dialog accepted)"
+},
+{
+"top": "Type",
+"path": "Type > Create Outlines",
+"cmd": "outline",
+"status": "✅",
+"level": "readback",
+"how": "textFrame.createOutline() / AI.outline()"
+},
+{
+"top": "Type",
+"path": "Type > Optical Margin Alignment",
+"cmd": "Adobe Optical Alignment Item",
+"status": "✅",
+"level": "readback",
+"how": "textFrame.opticalAlignment = true"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Symbols > Bullet",
+"cmd": "~bullet",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2022' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Symbols > Copyright Symbol",
+"cmd": "~copyright",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u00A9' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Symbols > Ellipsis",
+"cmd": "~ellipsis",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2026' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Symbols > Paragraph Symbol",
+"cmd": "~paragraphSymbol",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u00B6' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Symbols > Registered Trademark Symbol",
+"cmd": "~registeredTrademark",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u00AE' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Symbols > Section Symbol",
+"cmd": "~sectionSymbol",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u00A7' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Symbols > Trademark Symbol",
+"cmd": "~trademarkSymbol",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2122' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Hyphens and Dashes > Em Dash",
+"cmd": "~emDash",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2014' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Hyphens and Dashes > En Dash",
+"cmd": "~enDash",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2013' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Hyphens and Dashes > Discretionary Hyphen",
+"cmd": "~discretionaryHyphen",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u00AD' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Quotation Marks > Double Left Quotation Marks",
+"cmd": "~doubleLeftQuote",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u201C' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Quotation Marks > Double Right Quotation Marks",
+"cmd": "~doubleRightQuote",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u201D' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Quotation Marks > Single Left Quotation Mark",
+"cmd": "~singleLeftQuote",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2018' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Special Character > Quotation Marks > Single Right Quotation Mark",
+"cmd": "~singleRightQuote",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2019' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Whitespace Character > Em Space",
+"cmd": "~emSpace",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2003' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Whitespace Character > En Space",
+"cmd": "~enSpace",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2002' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Whitespace Character > Hair Space",
+"cmd": "~hairSpace",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u200A' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Whitespace Character > Thin Space",
+"cmd": "~thinSpace",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u2009' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Insert Break Character > Forced Line Break",
+"cmd": "~forcedLineBreak",
+"status": "✅",
+"level": "readback",
+"how": "characters[i].contents = '\\u0003' [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Fill with Placeholder Text",
+"cmd": "~placeHolderText",
+"status": "✅",
+"level": "readback",
+"how": "textFrame.contents = placeholder text [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Show Hidden Characters",
+"cmd": "showHiddenChar",
+"status": "n/a",
+"level": "",
+"how": "font service / panel / display only"
+},
+{
+"top": "Type",
+"path": "Type > Type Orientation > Horizontal",
+"cmd": "type-horizontal",
+"status": "✅",
+"level": "readback",
+"how": "textFrame.orientation = TextOrientation.HORIZONTAL"
+},
+{
+"top": "Type",
+"path": "Type > Type Orientation > Vertical",
+"cmd": "type-vertical",
+"status": "✅",
+"level": "readback",
+"how": "textFrame.orientation = TextOrientation.VERTICAL"
+},
+{
+"top": "Type",
+"path": "Type > Legacy Text > Update All Legacy Text",
+"cmd": "convertlegacyText",
+"status": "✅",
+"level": "readback",
+"how": "legacyTextItems[i].convertToNative() for all [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Legacy Text > Update Selected Legacy Text",
+"cmd": "convertlegacyText1",
+"status": "✅",
+"level": "readback",
+"how": "legacyTextItem.convertToNative() [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Legacy Text > Hide Copies",
+"cmd": "convertlegacyText2",
+"status": "✅",
+"level": "readback",
+"how": "legacyTextItem.hidden = true (hide copies) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Legacy Text > Delete Copies",
+"cmd": "convertlegacyText3",
+"status": "✅",
+"level": "readback",
+"how": "legacyTextItem.remove() (delete copies) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Type",
+"path": "Type > Legacy Text > Select Copies",
+"cmd": "convertlegacyText4",
+"status": "✅",
+"level": "readback",
+"how": "legacyTextItem.selected = true (select copies) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Select",
+"path": "Select > All",
+"cmd": "selectall",
+"status": "✅",
+"level": "readback",
+"how": "item.selected = true for every item / document.selection = items"
+},
+{
+"top": "Select",
+"path": "Select > All on Active Artboard",
+"cmd": "selectallinartboard",
+"status": "✅",
+"level": "readback",
+"how": "document.selectObjectsOnActiveArtboard()"
+},
+{
+"top": "Select",
+"path": "Select > Deselect",
+"cmd": "deselectall",
+"status": "✅",
+"level": "readback",
+"how": "document.selection = null"
+},
+{
+"top": "Select",
+"path": "Select > Reselect",
+"cmd": "Find Reselect menu item",
+"status": "✅",
+"level": "readback",
+"how": "app.executeMenuCommand('Find Reselect menu item')"
+},
+{
+"top": "Select",
+"path": "Select > Inverse",
+"cmd": "Inverse menu item",
+"status": "✅",
+"level": "readback",
+"how": "select every item that is not selected"
+},
+{
+"top": "Select",
+"path": "Select > Next Object Above",
+"cmd": "Selection Hat 8",
+"status": "✅",
+"level": "readback",
+"how": "select the item with the next higher absoluteZOrderPosition"
+},
+{
+"top": "Select",
+"path": "Select > Next Object Below",
+"cmd": "Selection Hat 9",
+"status": "✅",
+"level": "readback",
+"how": "select the item with the next lower absoluteZOrderPosition"
+},
+{
+"top": "Select",
+"path": "Select > Same > Appearance",
+"cmd": "Find Appearance menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare appearance (fill, stroke, effects) and select matches"
+},
+{
+"top": "Select",
+"path": "Select > Same > Appearance Attribute",
+"cmd": "Find Appearance Attributes menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items sharing a live effect"
+},
+{
+"top": "Select",
+"path": "Select > Same > Blending Mode",
+"cmd": "Find Blending Mode menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items with the same blendingMode"
+},
+{
+"top": "Select",
+"path": "Select > Same > Fill & Stroke",
+"cmd": "Find Fill & Stroke menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items with equal fillColor and strokeColor"
+},
+{
+"top": "Select",
+"path": "Select > Same > Fill Color",
+"cmd": "Find Fill Color menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items with equal fillColor"
+},
+{
+"top": "Select",
+"path": "Select > Same > Opacity",
+"cmd": "Find Opacity menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items with equal opacity"
+},
+{
+"top": "Select",
+"path": "Select > Same > Stroke Color",
+"cmd": "Find Stroke Color menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items with equal strokeColor"
+},
+{
+"top": "Select",
+"path": "Select > Same > Stroke Weight",
+"cmd": "Find Stroke Weight menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items with equal strokeWidth"
+},
+{
+"top": "Select",
+"path": "Select > Same > Graphic Style",
+"cmd": "Find Style menu item",
+"status": "✅",
+"level": "readback",
+"how": "select items with the same graphic style"
+},
+{
+"top": "Select",
+"path": "Select > Same > Shape",
+"cmd": "Find Live Shape menu item",
+"status": "✅",
+"level": "readback",
+"how": "select live shapes of the same kind"
+},
+{
+"top": "Select",
+"path": "Select > Same > Symbol Instance",
+"cmd": "Find Symbol Instance menu item",
+"status": "✅",
+"level": "readback",
+"how": "select symbolItems whose .symbol is the same"
+},
+{
+"top": "Select",
+"path": "Select > Same > Link Block Series",
+"cmd": "Find Link Block Series menu item",
+"status": "✅",
+"level": "readback",
+"how": "select the frames of one story (textFrame.story.textFrames)"
+},
+{
+"top": "Select",
+"path": "Select > Same > Font Family",
+"cmd": "Find Text Font Family menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames"
+},
+{
+"top": "Select",
+"path": "Select > Same > Font Family & Style",
+"cmd": "Find Text Font Family Style menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames"
+},
+{
+"top": "Select",
+"path": "Select > Same > Font Family, Style & Size",
+"cmd": "Find Text Font Family Style Size menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames"
+},
+{
+"top": "Select",
+"path": "Select > Same > Font Size",
+"cmd": "Find Text Font Size menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames"
+},
+{
+"top": "Select",
+"path": "Select > Same > Text Fill Color",
+"cmd": "Find Text Fill Color menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames"
+},
+{
+"top": "Select",
+"path": "Select > Same > Text Stroke Color",
+"cmd": "Find Text Stroke Color menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames"
+},
+{
+"top": "Select",
+"path": "Select > Same > Text Fill & Stroke Color",
+"cmd": "Find Text Fill Stroke Color menu item",
+"status": "✅",
+"level": "readback",
+"how": "compare characterAttributes (textFont, size, fillColor, strokeColor) across textFrames"
+},
+{
+"top": "Select",
+"path": "Select > Object > All on Same Layers",
+"cmd": "Selection Hat 3",
+"status": "✅",
+"level": "readback",
+"how": "select every item of item.layer"
+},
+{
+"top": "Select",
+"path": "Select > Object > Direction Handles",
+"cmd": "Selection Hat 1",
+"status": "✅",
+"level": "readback",
+"how": "pathPoint.selected = PathPointSelection.*"
+},
+{
+"top": "Select",
+"path": "Select > Object > Bristle Brush Strokes",
+"cmd": "Bristle Brush Strokes menu item",
+"status": "✅",
+"level": "readback",
+"how": "Select > Object > Bristle Brush Strokes (in a document that has bristle brushes: the shipped Bristle Brush library)"
+},
+{
+"top": "Select",
+"path": "Select > Object > Brush Strokes",
+"cmd": "Brush Strokes menu item",
+"status": "✅",
+"level": "readback",
+"how": "brush.applyTo(path); select paths that have a brush"
+},
+{
+"top": "Select",
+"path": "Select > Object > Clipping Masks",
+"cmd": "Clipping Masks menu item",
+"status": "✅",
+"level": "readback",
+"how": "select pathItems with clipping == true"
+},
+{
+"top": "Select",
+"path": "Select > Object > Stray Points",
+"cmd": "Stray Points menu item",
+"status": "✅",
+"level": "readback",
+"how": "select pathItems with a single point"
+},
+{
+"top": "Select",
+"path": "Select > Object > All Text Objects",
+"cmd": "Text Objects menu item",
+"status": "✅",
+"level": "readback",
+"how": "select every textFrame"
+},
+{
+"top": "Select",
+"path": "Select > Object > Point Text Objects",
+"cmd": "Point Text Objects menu item",
+"status": "✅",
+"level": "readback",
+"how": "select textFrames with kind POINTTEXT"
+},
+{
+"top": "Select",
+"path": "Select > Object > Area Text Objects",
+"cmd": "Area Text Objects menu item",
+"status": "✅",
+"level": "readback",
+"how": "select textFrames with kind AREATEXT"
+},
+{
+"top": "Select",
+"path": "Select > Start Global Edit",
+"cmd": "SmartEdit Menu Item",
+"status": "✅",
+"level": "readback",
+"how": "Select > Start Global Edit"
+},
+{
+"top": "Select",
+"path": "Select > Save Selection",
+"cmd": "Selection Hat 10",
+"status": "✅",
+"level": "deep",
+"how": "Select > Save Selection (name typed)"
+},
+{
+"top": "Select",
+"path": "Select > Edit Selection",
+"cmd": "Selection Hat 11",
+"status": "✅",
+"level": "deep",
+"how": "Select > Edit Selection (dialog: the saved selection 'MySel' deleted through UI Automation)"
+},
+{
+"top": "Select",
+"path": "Select > Update Selection",
+"cmd": "Selection Hat 14",
+"status": "✅",
+"level": "readback",
+"how": "Select > Update Selection (choose saved 'MySel', add an object, update; re-choosing 'MySel' now selects 2 objects) — via the menu bar: 選取 > 更新選取範圍 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "Effect",
+"path": "Effect > Apply Last Effect",
+"cmd": "Adobe Apply Last Effect",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Adobe Apply Last Effect')"
+},
+{
+"top": "Effect",
+"path": "Effect > Last Effect",
+"cmd": "Adobe Last Effect",
+"status": "✅",
+"level": "deep",
+"how": "app.executeMenuCommand('Adobe Last Effect')"
+},
+{
+"top": "Effect",
+"path": "Effect > Document Raster Effects Settings",
+"cmd": "Live Rasterize Effect Setting",
+"status": "✅",
+"level": "readback",
+"how": "document.rasterEffectSettings.resolution / .transparency / .padding ..."
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > Extrude & Bevel",
+"cmd": "Live Adobe Geometry3D Extrude",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Geometry3D', {…}) = applyEffect(XML); menu command verified too (Adobe Geometry3D: 36 params read back, Geometry3DkSunlightRotationKey changed to 218.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > Revolve",
+"cmd": "Live Adobe Geometry3D Revolve",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Geometry3D', {…}) = applyEffect(XML); menu command verified too (Adobe Geometry3D: 38 params read back, Geometry3DkSunlightRotationKey changed to 218.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > Inflate",
+"cmd": "Live Adobe Geometry3D Inflate",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Geometry3D', {…}) = applyEffect(XML); menu command verified too (Adobe Geometry3D: 38 params read back, Geometry3DkSunlightRotationKey changed to 218.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > Rotate",
+"cmd": "Live Adobe Geometry3D Rotate",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Geometry3D', {…}) = applyEffect(XML); menu command verified too (Adobe Geometry3D: 36 params read back, Geometry3DkSunlightRotationKey changed to 218.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > Materials",
+"cmd": "Live Adobe Geometry3D Materials",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Geometry3D', {…}) = applyEffect(XML); menu command verified too (Adobe Geometry3D: 36 params read back, Geometry3DkSunlightRotationKey changed to 218.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > 3D (Classic) > Extrude & Bevel (Classic)",
+"cmd": "Live 3DExtrude",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe 3D Effect', {…}) = applyEffect(XML); menu command verified too (Adobe 3D Effect: 51 params read back, revolveAngle changed to 541.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > 3D (Classic) > Revolve (Classic)",
+"cmd": "Live 3DRevolve",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe 3D Effect', {…}) = applyEffect(XML); menu command verified too (Adobe 3D Effect: 51 params read back, revolveAngle changed to 541.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > 3D and Materials > 3D (Classic) > Rotate (Classic)",
+"cmd": "Live 3DRotate",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe 3D Effect', {…}) = applyEffect(XML); menu command verified too (Adobe 3D Effect: 51 params read back, revolveAngle changed to 541.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > SVG Filters > Apply SVG Filter",
+"cmd": "Live SVG Filters",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe SVG Filter Effect', {…}) = applyEffect(XML); menu command verified too (Adobe SVG Filter Effect: 0 params read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > SVG Filters > Import SVG Filter",
+"cmd": "SVG Filter Import",
+"status": "✅",
+"level": "deep",
+"how": "Effect > SVG Filters > Import SVG Filter (file typed into the open dialog)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Arc",
+"cmd": "Live Deform Arc",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Arc Lower",
+"cmd": "Live Deform Arc Lower",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Arc Upper",
+"cmd": "Live Deform Arc Upper",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Arch",
+"cmd": "Live Deform Arch",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Bulge",
+"cmd": "Live Deform Bulge",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Shell Lower",
+"cmd": "Live Deform Shell Lower",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Shell Upper",
+"cmd": "Live Deform Shell Upper",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Flag",
+"cmd": "Live Deform Flag",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Wave",
+"cmd": "Live Deform Wave",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Fish",
+"cmd": "Live Deform Fish",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Rise",
+"cmd": "Live Deform Rise",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Fisheye",
+"cmd": "Live Deform Fisheye",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Inflate",
+"cmd": "Live Deform Inflate",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Squeeze",
+"cmd": "Live Deform Squeeze",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Warp > Twist",
+"cmd": "Live Deform Twist",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Deform', {…}) = applyEffect(XML); menu command verified too (Adobe Deform: 5 params read back, DeformHoriz changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort & Transform > Roughen",
+"cmd": "Live Roughen",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Roughen', {…}) = applyEffect(XML); menu command verified too (Adobe Roughen: 5 params read back, dtal changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort & Transform > Pucker & Bloat",
+"cmd": "Live Pucker & Bloat",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Punk and Bloat', {…}) = applyEffect(XML); menu command verified too (Adobe Punk and Bloat: 1 params read back, d_factor changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort & Transform > Twist",
+"cmd": "Live Twist",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Twirl', {…}) = applyEffect(XML); menu command verified too (Adobe Twirl: 1 params read back, angle changed to 1.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort & Transform > Transform",
+"cmd": "Live Transform",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Transform', {…}) = applyEffect(XML); menu command verified too (Adobe Transform: 16 params read back, scaleH_Factor changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort & Transform > Zig Zag",
+"cmd": "Live Zig Zag",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Zigzag', {…}) = applyEffect(XML); menu command verified too (Adobe Zigzag: 5 params read back, amount changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort & Transform > Free Distort",
+"cmd": "Live Free Distort",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Free Distort', {…}) = applyEffect(XML); menu command verified too (Adobe Free Distort: 16 params read back, src3h changed to 751.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort & Transform > Tweak",
+"cmd": "Live Scribble and Tweak",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Scribble and Tweak', {…}) = applyEffect(XML); menu command verified too (Adobe Scribble and Tweak: 8 params read back, vert changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Crop Marks",
+"cmd": "Live Trim Marks",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Trim Marks', {…}) = applyEffect(XML); menu command verified too (Adobe Trim Marks: 1 params read back, styl changed to 1)"
+},
+{
+"top": "Effect",
+"path": "Effect > Path > Offset Path",
+"cmd": "Live Offset Path",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Offset Path', {…}) = applyEffect(XML); menu command verified too (Adobe Offset Path: 3 params read back, ofst changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Path > Outline Object",
+"cmd": "Live Outline Object",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Outline Type', {…}) = applyEffect(XML); menu command verified too (Adobe Outline Type: 0 params read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Path > Outline Stroke",
+"cmd": "Live Outline Stroke",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Outline Stroke', {…}) = applyEffect(XML); menu command verified too (Adobe Outline Stroke: 0 params read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Add",
+"cmd": "Live Pathfinder Add",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Intersect",
+"cmd": "Live Pathfinder Intersect",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Exclude",
+"cmd": "Live Pathfinder Exclude",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Subtract",
+"cmd": "Live Pathfinder Subtract",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, Mix changed to 1.75)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Minus Back",
+"cmd": "Live Pathfinder Minus Back",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Divide",
+"cmd": "Live Pathfinder Divide",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Trim",
+"cmd": "Live Pathfinder Trim",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Merge",
+"cmd": "Live Pathfinder Merge",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, TrapAspect changed to 2.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Crop",
+"cmd": "Live Pathfinder Crop",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, Mix changed to 1.75)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Outline",
+"cmd": "Live Pathfinder Outline",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, Mix changed to 1.75)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Hard Mix",
+"cmd": "Live Pathfinder Hard Mix",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, Precision changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Soft Mix",
+"cmd": "Live Pathfinder Soft Mix",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, Precision changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pathfinder > Trap",
+"cmd": "Live Pathfinder Trap",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Pathfinder', {…}) = applyEffect(XML); menu command verified too (Adobe Pathfinder: 13 params read back, Precision changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Convert to Shape > Rectangle",
+"cmd": "Live Rectangle",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Shape Effects', {…}) = applyEffect(XML); menu command verified too (Adobe Shape Effects: 7 params read back, AbsHeight changed to 55.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Convert to Shape > Rounded Rectangle",
+"cmd": "Live Rounded Rectangle",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Shape Effects', {…}) = applyEffect(XML); menu command verified too (Adobe Shape Effects: 7 params read back, AbsHeight changed to 55.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Convert to Shape > Ellipse",
+"cmd": "Live Ellipse",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Shape Effects', {…}) = applyEffect(XML); menu command verified too (Adobe Shape Effects: 7 params read back, AbsHeight changed to 55.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Stylize > Inner Glow",
+"cmd": "Live Inner Glow",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Inner Glow', {…}) = applyEffect(XML); menu command verified too (Adobe Inner Glow: 4 params read back, blur changed to 8.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Stylize > Round Corners",
+"cmd": "Live Adobe Round Corners",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Round Corners', {…}) = applyEffect(XML); menu command verified too (Adobe Round Corners: 1 params read back, radius changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Stylize > Scribble",
+"cmd": "Live Scribble Fill",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Scribble Fill', {…}) = applyEffect(XML); menu command verified too (Adobe Scribble Fill: 8 params read back, Angle changed to 46.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Stylize > Outer Glow",
+"cmd": "Live Outer Glow",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Outer Glow', {…}) = applyEffect(XML); menu command verified too (Adobe Outer Glow: 4 params read back, blur changed to 8.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Stylize > Feather",
+"cmd": "Live Feather",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Fuzzy Mask', {…}) = applyEffect(XML); menu command verified too (Adobe Fuzzy Mask: 1 params read back, Radius changed to 8.5)"
+},
+{
+"top": "Effect",
+"path": "Effect > Stylize > Drop Shadow",
+"cmd": "Live Adobe Drop Shadow",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Drop Shadow', {…}) = applyEffect(XML); menu command verified too (Adobe Drop Shadow: 9 params read back, dark changed to 151.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Rasterize",
+"cmd": "Live Rasterize",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe Rasterize', {…}) = applyEffect(XML); menu command verified too (Adobe Rasterize: 6 params read back, padd changed to 55.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Effect Gallery",
+"cmd": "Live PSAdapter_plugin_GEfc",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Gls ', {…}) = applyEffect(XML); menu command verified too (UI: gallery filter chosen by click -> PSAdapter_plugin_Gls  {'GEfk': 'Gls ', 'Dstr': 5, 'Smth': 3, 'TxtT': 'TxFr', 'Scln': 100, 'InvT': False} read back; each gallery filter also has its own command)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pixelate > Color Halftone",
+"cmd": "Live PSAdapter_plugin_ClrH",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_ClrH', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_ClrH: XML applies it with defaults; dialog field 0 typed 9 -> descriptor Rds =9 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pixelate > Crystallize",
+"cmd": "Live PSAdapter_plugin_Crst",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Crst', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Crst: XML applies it with defaults; dialog field 0 typed 11 -> descriptor ClSz=11 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pixelate > Mezzotint",
+"cmd": "Live PSAdapter_plugin_Mztn",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Mztn', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Mztn: applyEffect adds it with its defaults ({'MztT': 'FnDt', 'FlRs': 15985656}); no numeric dialog field to set)"
+},
+{
+"top": "Effect",
+"path": "Effect > Pixelate > Pointillize",
+"cmd": "Live PSAdapter_plugin_Pntl",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Pntl', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Pntl: XML applies it with defaults; dialog field 0 typed 6 -> descriptor ClSz=6 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort > Diffuse Glow",
+"cmd": "Live PSAdapter_plugin_DfsG",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_DfsG', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_DfsG: XML applies it with defaults; dialog field 0 typed 7 -> descriptor Grns=7 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort > Ocean Ripple",
+"cmd": "Live PSAdapter_plugin_OcnR",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_OcnR', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_OcnR: XML applies it with defaults; dialog field 0 typed 10 -> descriptor RplS=10 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Distort > Glass",
+"cmd": "Live PSAdapter_plugin_Gls ",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Gls ', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Gls : XML applies it with defaults; dialog field 0 typed 7 -> descriptor Dstr=7 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Blur > Radial Blur",
+"cmd": "Live PSAdapter_plugin_RdlB",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_RdlB', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_RdlB: XML applies it with defaults; dialog field 0 typed 11 -> descriptor Amnt=11 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Blur > Smart Blur",
+"cmd": "Live PSAdapter_plugin_SmrB",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_SmrB', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_SmrB: applyEffect adds it with its defaults ({'Rds ': 3.0, 'Thsh': 25.0, 'SmBQ': 'SBQL', 'SmBM': 'SBMN'}); no numeric dialog field to set)"
+},
+{
+"top": "Effect",
+"path": "Effect > Blur > Gaussian Blur",
+"cmd": "Live Adobe PSL Gaussian Blur",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'Adobe PSL Gaussian Blur', {…}) = applyEffect(XML); menu command verified too (Adobe PSL Gaussian Blur: 3 params read back, blur changed to 16.0)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Crosshatch",
+"cmd": "Live PSAdapter_plugin_Crsh",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Crsh', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Crsh: XML applies it with defaults; dialog field 0 typed 11 -> descriptor StrL=11 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Sprayed Strokes",
+"cmd": "Live PSAdapter_plugin_SprS",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_SprS', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_SprS: XML applies it with defaults; dialog field 0 typed 13 -> descriptor StrL=13 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Sumi-e",
+"cmd": "Live PSAdapter_plugin_Smie",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Smie', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Smie: XML applies it with defaults; dialog field 0 typed 11 -> descriptor StrW=11 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Accented Edges",
+"cmd": "Live PSAdapter_plugin_AccE",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_AccE', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_AccE: XML applies it with defaults; dialog field 0 typed 3 -> descriptor EdgW=3 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Ink Outlines",
+"cmd": "Live PSAdapter_plugin_InkO",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_InkO', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_InkO: XML applies it with defaults; dialog field 0 typed 5 -> descriptor StrL=5 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Spatter",
+"cmd": "Live PSAdapter_plugin_Spt ",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Spt ', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Spt : XML applies it with defaults; dialog field 0 typed 12 -> descriptor SprR=12 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Angled Strokes",
+"cmd": "Live PSAdapter_plugin_AngS",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_AngS', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_AngS: XML applies it with defaults; dialog field 0 typed 51 -> descriptor DrcB=51 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Brush Strokes > Dark Strokes",
+"cmd": "Live PSAdapter_plugin_DrkS",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_DrkS', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_DrkS: XML applies it with defaults; dialog field 0 typed 6 -> descriptor BlcI=6 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Texture > Mosaic Tiles",
+"cmd": "Live PSAdapter_plugin_MscT",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_MscT', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_MscT: XML applies it with defaults; dialog field 0 typed 99 -> descriptor TlSz=99 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Texture > Stained Glass",
+"cmd": "Live PSAdapter_plugin_StnG",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_StnG', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_StnG: XML applies it with defaults; dialog field 0 typed 11 -> descriptor ClSz=11 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Texture > Patchwork",
+"cmd": "Live PSAdapter_plugin_Ptch",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Ptch', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Ptch: XML applies it with defaults; dialog field 0 typed 5 -> descriptor SqrS=5 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Texture > Grain",
+"cmd": "Live PSAdapter_plugin_Grn ",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Grn ', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Grn : XML applies it with defaults; dialog field 0 typed 41 -> descriptor Intn=41 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Texture > Texturizer",
+"cmd": "Live PSAdapter_plugin_Txtz",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Txtz', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Txtz: XML applies it with defaults; dialog field 0 typed 101 -> descriptor Scln=101 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Texture > Craquelure",
+"cmd": "Live PSAdapter_plugin_Crql",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Crql', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Crql: XML applies it with defaults; dialog field 0 typed 16 -> descriptor CrcS=16 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Note Paper",
+"cmd": "Live PSAdapter_plugin_NtPr",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_NtPr', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_NtPr: XML applies it with defaults; dialog field 0 typed 26 -> descriptor ImgB=26 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Stamp",
+"cmd": "Live PSAdapter_plugin_Stmp",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Stmp', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Stmp: XML applies it with defaults; dialog field 0 typed 26 -> descriptor LgDr=26 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Photocopy",
+"cmd": "Live PSAdapter_plugin_Phtc",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Phtc', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Phtc: XML applies it with defaults; dialog field 0 typed 8 -> descriptor Drkn=8 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Water Paper",
+"cmd": "Live PSAdapter_plugin_WtrP",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_WtrP', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_WtrP: XML applies it with defaults; dialog field 0 typed 16 -> descriptor FbrL=16 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Charcoal",
+"cmd": "Live PSAdapter_plugin_Chrc",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Chrc', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Chrc: XML applies it with defaults; dialog field 0 typed 2 -> descriptor ChAm=2 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Graphic Pen",
+"cmd": "Live PSAdapter_plugin_GraP",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_GraP', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_GraP: XML applies it with defaults; dialog field 0 typed 16 -> descriptor LgDr=16 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Plaster",
+"cmd": "Live PSAdapter_plugin_Plst",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Plst', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Plst: XML applies it with defaults; dialog field 0 typed 21 -> descriptor ImgB=21 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Bas Relief",
+"cmd": "Live PSAdapter_plugin_BsRl",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_BsRl', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_BsRl: XML applies it with defaults; dialog field 0 typed 14 -> descriptor Dtl =14 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Chalk & Charcoal",
+"cmd": "Live PSAdapter_plugin_ChlC",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_ChlC', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_ChlC: XML applies it with defaults; dialog field 0 typed 7 -> descriptor ChrA=7 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Halftone Pattern",
+"cmd": "Live PSAdapter_plugin_HlfS",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_HlfS', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_HlfS: XML applies it with defaults; dialog field 0 typed 2 -> descriptor HlSz=2 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Reticulation",
+"cmd": "Live PSAdapter_plugin_Rtcl",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Rtcl', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Rtcl: XML applies it with defaults; dialog field 0 typed 13 -> descriptor Dnst=13 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Conté Crayon",
+"cmd": "Live PSAdapter_plugin_CntC",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_CntC', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_CntC: XML applies it with defaults; dialog field 0 typed 12 -> descriptor FrgL=12 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Torn Edges",
+"cmd": "Live PSAdapter_plugin_TrnE",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_TrnE', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_TrnE: XML applies it with defaults; dialog field 0 typed 26 -> descriptor ImgB=26 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Sketch > Chrome",
+"cmd": "Live PSAdapter_plugin_Chrm",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Chrm', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Chrm: XML applies it with defaults; dialog field 0 typed 5 -> descriptor Dtl =5 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Dry Brush",
+"cmd": "Live PSAdapter_plugin_DryB",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_DryB', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_DryB: XML applies it with defaults; dialog field 0 typed 3 -> descriptor BrsS=3 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Plastic Wrap",
+"cmd": "Live PSAdapter_plugin_PlsW",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_PlsW', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_PlsW: XML applies it with defaults; dialog field 0 typed 16 -> descriptor HghS=16 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Smudge Stick",
+"cmd": "Live PSAdapter_plugin_SmdS",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_SmdS', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_SmdS: XML applies it with defaults; dialog field 0 typed 3 -> descriptor StrL=3 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Paint Daubs",
+"cmd": "Live PSAdapter_plugin_PntD",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_PntD', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_PntD: XML applies it with defaults; dialog field 0 typed 9 -> descriptor Sz  =9 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Fresco",
+"cmd": "Live PSAdapter_plugin_Frsc",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Frsc', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Frsc: XML applies it with defaults; dialog field 0 typed 3 -> descriptor BrsS=3 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Colored Pencil",
+"cmd": "Live PSAdapter_plugin_ClrP",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_ClrP', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_ClrP: XML applies it with defaults; dialog field 0 typed 5 -> descriptor Pncl=5 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Cutout",
+"cmd": "Live PSAdapter_plugin_Ct  ",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Ct  ', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Ct  : XML applies it with defaults; dialog field 0 typed 5 -> descriptor NmbL=5 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Watercolor",
+"cmd": "Live PSAdapter_plugin_Wtrc",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Wtrc', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Wtrc: XML applies it with defaults; dialog field 0 typed 10 -> descriptor BrsD=10 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Poster Edges",
+"cmd": "Live PSAdapter_plugin_PstE",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_PstE', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_PstE: XML applies it with defaults; dialog field 0 typed 3 -> descriptor EdgT=3 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Sponge",
+"cmd": "Live PSAdapter_plugin_Spng",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Spng', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Spng: XML applies it with defaults; dialog field 0 typed 3 -> descriptor BrsS=3 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Film Grain",
+"cmd": "Live PSAdapter_plugin_FlmG",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_FlmG', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_FlmG: XML applies it with defaults; dialog field 0 typed 5 -> descriptor Grn =5 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Rough Pastels",
+"cmd": "Live PSAdapter_plugin_RghP",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_RghP', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_RghP: XML applies it with defaults; dialog field 0 typed 7 -> descriptor StrL=7 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Underpainting",
+"cmd": "Live PSAdapter_plugin_Undr",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Undr', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Undr: XML applies it with defaults; dialog field 0 typed 7 -> descriptor BrsS=7 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Palette Knife",
+"cmd": "Live PSAdapter_plugin_PltK",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_PltK', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_PltK: XML applies it with defaults; dialog field 0 typed 26 -> descriptor StrS=26 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Artistic > Neon Glow",
+"cmd": "Live PSAdapter_plugin_NGlw",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_NGlw', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_NGlw: XML applies it with defaults; dialog field 0 typed 6 -> descriptor Sz  =6 read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Video > NTSC Colors",
+"cmd": "Live PSAdapter_plugin_NTSC",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_NTSC', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_NTSC: 1 params read back)"
+},
+{
+"top": "Effect",
+"path": "Effect > Video > De-Interlace",
+"cmd": "Live PSAdapter_plugin_Dntr",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_Dntr', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_Dntr: applyEffect adds it with its defaults ({'IntE': 'ElmO', 'IntC': 'CrtI'}); no numeric dialog field to set)"
+},
+{
+"top": "Effect",
+"path": "Effect > Stylize > Glowing Edges",
+"cmd": "Live PSAdapter_plugin_GlwE",
+"status": "✅",
+"level": "effect readback",
+"how": "AI.fx(item, 'PSAdapter_plugin_GlwE', {…}) = applyEffect(XML); menu command verified too (PSAdapter_plugin_GlwE: XML applies it with defaults; dialog field 0 typed 3 -> descriptor EdgW=3 read back)"
+},
+{
+"top": "View",
+"path": "View > Outline / Preview",
+"cmd": "preview",
+"status": "✅",
+"level": "readback",
+"how": "View > Outline (readback document.isOutlineMode())"
+},
+{
+"top": "View",
+"path": "View > GPU Preview / Preview on CPU",
+"cmd": "OpenGLCompositorPreview",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Overprint Preview",
+"cmd": "ink",
+"status": "✅",
+"level": "readback",
+"how": "View > Overprint Preview (readback document.getPreviewMode())"
+},
+{
+"top": "View",
+"path": "View > Pixel Preview",
+"cmd": "raster",
+"status": "✅",
+"level": "readback",
+"how": "View > Pixel Preview (readback document.getPreviewMode())"
+},
+{
+"top": "View",
+"path": "View > Trim View",
+"cmd": "TrimView",
+"status": "✅",
+"level": "readback",
+"how": "View > Trim View (readback document.isTrimViewEnabled()) — via the menu bar: 檢視 > 剪裁視圖 (tools/menu_ui.py; app.executeMenuCommand refuses this id)"
+},
+{
+"top": "View",
+"path": "View > Presentation Mode",
+"cmd": "Adobe Presentation Mode",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Setup > Working CMYK",
+"cmd": "proof-document",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Setup > Legacy Macintosh RGB",
+"cmd": "proof-mac-rgb",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Setup > Internet Standard RGB (sRGB)",
+"cmd": "proof-win-rgb",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Setup > Monitor RGB",
+"cmd": "proof-monitor-rgb",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Setup > Color blindness - Protanopia-type",
+"cmd": "proof-colorblindp",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Setup > Color blindness - Deuteranopia-type",
+"cmd": "proof-colorblindd",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Setup > Customize",
+"cmd": "proof-custom",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Proof Colors",
+"cmd": "proofColors",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Zoom In",
+"cmd": "zoomin",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.zoom"
+},
+{
+"top": "View",
+"path": "View > Zoom Out",
+"cmd": "zoomout",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.zoom"
+},
+{
+"top": "View",
+"path": "View > Fit Artboard in Window",
+"cmd": "fitin",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.zoom"
+},
+{
+"top": "View",
+"path": "View > Fit All in Window",
+"cmd": "fitall",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.zoom"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 180°",
+"cmd": "RotateView180",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 180 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 150°",
+"cmd": "RotateView150",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 150 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 135°",
+"cmd": "RotateView135",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 135 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 120°",
+"cmd": "RotateView120",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 120 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 90°",
+"cmd": "RotateView90",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 90 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 60°",
+"cmd": "RotateView60",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 60 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 45°",
+"cmd": "RotateView45",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 45 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 30°",
+"cmd": "RotateView30",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 30 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 15°",
+"cmd": "RotateView15",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 15 (the menu needs GPU Preview) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > 0°",
+"cmd": "RotateViewZero",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 0 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -15°",
+"cmd": "RotateViewNegative15",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -15 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -30°",
+"cmd": "RotateViewNegative30",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -30 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -45°",
+"cmd": "RotateViewNegative45",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -45 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -60°",
+"cmd": "RotateViewNegative60",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -60 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -90°",
+"cmd": "RotateViewNegative90",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -90 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -120°",
+"cmd": "RotateViewNegative120",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -120 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -135°",
+"cmd": "RotateViewNegative135",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -135 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -150°",
+"cmd": "RotateViewNegative150",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -150 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View > -180°",
+"cmd": "RotateViewNegative180",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = -180 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Reset Rotate View",
+"cmd": "resetRotationView",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = 0 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Rotate View to Selection",
+"cmd": "rotateViewToSelection",
+"status": "✅",
+"level": "readback",
+"how": "document.activeView.rotateAngle = the item's rotation (30 deg here) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "View",
+"path": "View > Hide Slices",
+"cmd": "AISlice Feedback Menu",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Lock Slices",
+"cmd": "AISlice Lock Menu",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Hide Bounding Box",
+"cmd": "AI Bounding Box Toggle",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Show Transparency Grid",
+"cmd": "TransparencyGrid Menu Item",
+"status": "✅",
+"level": "readback",
+"how": "View > Transparency Grid (readback document.isTransparencyGridVisible())"
+},
+{
+"top": "View",
+"path": "View > Actual Size",
+"cmd": "actualsize",
+"status": "✅",
+"level": "readback",
+"how": "view.visibleZoom reads 1 (view.zoom is scaled by the display DPI: 1.5 at 150%)"
+},
+{
+"top": "View",
+"path": "View > Hide Gradient Annotator",
+"cmd": "Gradient Feedback",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Show Live Paint Gaps",
+"cmd": "Show Gaps Planet X",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Hide Corner Widget",
+"cmd": "Live Corner Annotator",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Hide Edges",
+"cmd": "edge",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Smart Guides",
+"cmd": "Snapomatic on-off menu item",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Perspective Grid > Show Grid",
+"cmd": "Show Perspective Grid",
+"status": "✅",
+"level": "deep",
+"how": "document.showPerspectiveGrid() / hidePerspectiveGrid()"
+},
+{
+"top": "View",
+"path": "View > Perspective Grid > Show Rulers",
+"cmd": "Show Ruler",
+"status": "n/a",
+"level": "",
+"how": "perspective grid display / preset settings"
+},
+{
+"top": "View",
+"path": "View > Perspective Grid > Snap to Grid",
+"cmd": "Snap to Grid",
+"status": "n/a",
+"level": "",
+"how": "perspective grid display / preset settings"
+},
+{
+"top": "View",
+"path": "View > Perspective Grid > Lock Grid",
+"cmd": "Lock Perspective Grid",
+"status": "n/a",
+"level": "",
+"how": "perspective grid display / preset settings"
+},
+{
+"top": "View",
+"path": "View > Perspective Grid > Lock Station Point",
+"cmd": "Lock Station Point",
+"status": "n/a",
+"level": "",
+"how": "perspective grid display / preset settings"
+},
+{
+"top": "View",
+"path": "View > Perspective Grid > Define Grid",
+"cmd": "Define Perspective Grid",
+"status": "n/a",
+"level": "",
+"how": "perspective grid display / preset settings"
+},
+{
+"top": "View",
+"path": "View > Perspective Grid > Save Grid as Preset",
+"cmd": "Save Perspective Grid as Preset",
+"status": "n/a",
+"level": "",
+"how": "perspective grid display / preset settings"
+},
+{
+"top": "View",
+"path": "View > Hide Artboards",
+"cmd": "artboard",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Show Print Tiling",
+"cmd": "pagetiling",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Show Template",
+"cmd": "showtemplate",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Rulers > Show Rulers",
+"cmd": "ruler",
+"status": "✅",
+"level": "readback",
+"how": "View > Rulers (readback document.isRulerVisible())"
+},
+{
+"top": "View",
+"path": "View > Rulers > Change to Global Rulers",
+"cmd": "rulerCoordinateSystem",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Rulers > Show Video Rulers",
+"cmd": "videoruler",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Show Text Threads",
+"cmd": "textthreads",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Guides > Hide Guides",
+"cmd": "showguide",
+"status": "✅",
+"level": "readback",
+"how": "View > Guides (readback document.isGuideVisible())"
+},
+{
+"top": "View",
+"path": "View > Guides > Lock Guides",
+"cmd": "lockguide",
+"status": "✅",
+"level": "menu readback",
+"how": "View > Guides > Lock Guides (readback: the Guides menu switches between Lock and Unlock Guides)"
+},
+{
+"top": "View",
+"path": "View > Guides > Make Guides",
+"cmd": "makeguide",
+"status": "✅",
+"level": "readback",
+"how": "pathItem.guides = true"
+},
+{
+"top": "View",
+"path": "View > Guides > Release Guides",
+"cmd": "releaseguide",
+"status": "✅",
+"level": "readback",
+"how": "pathItem.guides = false"
+},
+{
+"top": "View",
+"path": "View > Guides > Clear Guides",
+"cmd": "clearguide",
+"status": "✅",
+"level": "readback",
+"how": "remove every pathItem with guides == true"
+},
+{
+"top": "View",
+"path": "View > Show Grid",
+"cmd": "showgrid",
+"status": "✅",
+"level": "readback",
+"how": "View > Show Grid (readback document.isGridVisible())"
+},
+{
+"top": "View",
+"path": "View > Snap to Grid",
+"cmd": "snapgrid",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Snap to Pixel",
+"cmd": "pixelconstraints",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Snap to Point",
+"cmd": "snappoint",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Snap to Glyph",
+"cmd": "glyphSnapping",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > New View",
+"cmd": "newview",
+"status": "✅",
+"level": "deep",
+"how": "View > New View (name typed)"
+},
+{
+"top": "View",
+"path": "View > Edit Views",
+"cmd": "editview",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 1",
+"cmd": "view1",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 2",
+"cmd": "view2",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 3",
+"cmd": "view3",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 4",
+"cmd": "view4",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 5",
+"cmd": "view5",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 6",
+"cmd": "view6",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 7",
+"cmd": "view7",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 8",
+"cmd": "view8",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 9",
+"cmd": "view9",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "View",
+"path": "View > Saved View 10",
+"cmd": "view10",
+"status": "n/a",
+"level": "",
+"how": "display-only toggle or preference (no document change, no readback)"
+},
+{
+"top": "Window",
+"path": "Window > New Window",
+"cmd": "newwindow",
+"status": "✅",
+"level": "readback",
+"how": "Window > New Window (readback document.views.length)"
+},
+{
+"top": "Window",
+"path": "Window > Arrange > Cascade",
+"cmd": "cascade",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Arrange > Tile",
+"cmd": "tile",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Arrange > Float in Window",
+"cmd": "floatInWindow",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Arrange > Float All in Windows",
+"cmd": "floatAllInWindows",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Arrange > Consolidate All Windows",
+"cmd": "consolidateAllWindows",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Find Extensions on Exchange",
+"cmd": "Browse Add-Ons Menu",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Workspace > Touch",
+"cmd": "Adobe Touch Workspace",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Workspace > Reset",
+"cmd": "Adobe Reset Workspace",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Workspace > New Workspace",
+"cmd": "Adobe New Workspace",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Workspace > Manage Workspaces",
+"cmd": "Adobe Manage Workspace",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Toolbars > Basic",
+"cmd": "Adobe Basic Toolbar Menu",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Toolbars > Advanced",
+"cmd": "Adobe Advanced Toolbar Menu",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Toolbars > New Toolbar",
+"cmd": "New Tools Panel",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Toolbars > Manage Toolbar",
+"cmd": "Manage Tools Panel",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Control",
+"cmd": "drover control palette plugin",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > 3D and Materials",
+"cmd": "Adobe 3D Panel",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > CSS Properties",
+"cmd": "CSS Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Retype (Beta)",
+"cmd": "ReTypeWindowMenu",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > SVG Interactivity",
+"cmd": "Adobe SVG Interactivity Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Generate Patterns (Beta)",
+"cmd": "Generate",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Properties",
+"cmd": "Adobe Property Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Separations Preview",
+"cmd": "Adobe Separation Preview Panel",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Actions",
+"cmd": "Adobe Action Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Layers",
+"cmd": "AdobeLayerPalette1",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Pattern Options",
+"cmd": "Adobe Pattern Panel Toggle",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Asset Export",
+"cmd": "Style Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Align",
+"cmd": "AdobeAlignObjects2",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Navigator",
+"cmd": "AdobeNavigator",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Attributes",
+"cmd": "internal palettes posing as plug-in menus-attributes",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Artboards",
+"cmd": "Adobe Artboard Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Flattener Preview",
+"cmd": "Adobe Flattening Preview",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Image Trace",
+"cmd": "Adobe Vectorize Panel",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Document Info",
+"cmd": "DocInfo1",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Type > OpenType",
+"cmd": "internal palettes posing as plug-in menus-opentype",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Type > Character",
+"cmd": "internal palettes posing as plug-in menus-character",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Type > Character Styles",
+"cmd": "Character Styles",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Type > Glyphs",
+"cmd": "alternate glyph palette plugin 2",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Type > Tabs",
+"cmd": "internal palettes posing as plug-in menus-tab",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Type > Paragraph",
+"cmd": "internal palettes posing as plug-in menus-paragraph",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Type > Paragraph Styles",
+"cmd": "Adobe Paragraph Styles Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Mockup (Beta)",
+"cmd": "Adobe Vector Edge Panel",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > History",
+"cmd": "Adobe History Panel Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Gradient",
+"cmd": "Adobe Gradient Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Symbols",
+"cmd": "Adobe Symbol Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Brushes",
+"cmd": "Adobe BrushManager Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Stroke",
+"cmd": "Adobe Stroke Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Graphic Styles",
+"cmd": "Adobe Style Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Color Guide",
+"cmd": "Adobe Harmony Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Swatches",
+"cmd": "Adobe Swatches Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Transform",
+"cmd": "AdobeTransformObjects1",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Variables",
+"cmd": "Adobe Variables Palette Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Libraries",
+"cmd": "Adobe CSXS Extension com.adobe.DesignLibraries.angular\\750\\663\\607\\746\\626\\631\\745\\672\\653",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Asset Export",
+"cmd": "Adobe SmartExport Panel Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Info",
+"cmd": "internal palettes posing as plug-in menus-info",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Pathfinder",
+"cmd": "Adobe PathfinderUI",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Transparency",
+"cmd": "Adobe Transparency Palette Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Links",
+"cmd": "Adobe LinkPalette Menu Item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Color",
+"cmd": "Adobe Color Palette",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Magic Wand",
+"cmd": "AI Magic Wand",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Symbol Libraries > Other Library",
+"cmd": "Adobe Symbol Palette Plugin Other libraries menu item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Brush Libraries > Other Library",
+"cmd": "AdobeBrushMgrUI Other libraries menu item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Graphic Style Libraries > Other Library",
+"cmd": "Adobe Art Style Plugin Other libraries menu item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Window",
+"path": "Window > Swatch Libraries > Other Library",
+"cmd": "AdobeSwatch_ Other libraries menu item",
+"status": "n/a",
+"level": "",
+"how": "panel / workspace / toolbar UI"
+},
+{
+"top": "Help",
+"path": "Help > Illustrator Help",
+"cmd": "helpcontent",
+"status": "n/a",
+"level": "",
+"how": "help, web pages, bug report"
+},
+{
+"top": "Help",
+"path": "Help > Support Center",
+"cmd": "supportContent",
+"status": "n/a",
+"level": "",
+"how": "help, web pages, bug report"
+},
+{
+"top": "Help",
+"path": "Help > What's New",
+"cmd": "whatsNewContent",
+"status": "n/a",
+"level": "",
+"how": "help, web pages, bug report"
+},
+{
+"top": "Help",
+"path": "Help > Community",
+"cmd": "supportCommunity",
+"status": "n/a",
+"level": "",
+"how": "help, web pages, bug report"
+},
+{
+"top": "Help",
+"path": "Help > Submit Bug/Feature Request",
+"cmd": "wishform",
+"status": "n/a",
+"level": "",
+"how": "help, web pages, bug report"
+},
+{
+"top": "Help",
+"path": "Help > System Info",
+"cmd": "systemInfo",
+"status": "n/a",
+"level": "",
+"how": "help, web pages, bug report"
+},
+{
+"top": "Help",
+"path": "Help > About Illustrator",
+"cmd": "about",
+"status": "n/a",
+"level": "",
+"how": "help, web pages, bug report"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Switch Selection Tools",
+"cmd": "switchSelTool",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Font Size Up (large step)",
+"cmd": "faceSizeUp",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.size += 10 (large step) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Font Size Down (large step)",
+"cmd": "faceSizeDown",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.size -= 10 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Font Size Up",
+"cmd": "sizeStepUp",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.size += 2 (the shortcut step) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Font Size Down",
+"cmd": "sizeStepDown",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.size -= 2 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Kern/Track Looser",
+"cmd": "~kernFurther",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.tracking += 20 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Kern/Track Tighter",
+"cmd": "~kernCloser",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.tracking -= 20 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Tracking Looser (word)",
+"cmd": "tracking",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.tracking += 100 (word step) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Clear Tracking",
+"cmd": "clearTrack",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.tracking = 0 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Word Spacing",
+"cmd": "spacing",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.desiredWordSpacing [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Reset Horizontal/Vertical Scale",
+"cmd": "clearTypeScale",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.horizontalScale = verticalScale = 100 [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Highlight Font",
+"cmd": "highlightFont",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Highlight Font (alt)",
+"cmd": "highlightFont2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Align Text Left",
+"cmd": "leftAlign",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.justification = Justification.LEFT [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Align Text Center",
+"cmd": "centerAlign",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.justification = Justification.CENTER [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Align Text Right",
+"cmd": "rightAlign",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.justification = Justification.RIGHT [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Justify Left",
+"cmd": "justify",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.justification = Justification.FULLJUSTIFYLASTLINELEFT [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Justify Center",
+"cmd": "justifyCenter",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.justification = Justification.FULLJUSTIFYLASTLINECENTER [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Justify Right",
+"cmd": "justifyRight",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.justification = Justification.FULLJUSTIFYLASTLINERIGHT [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Justify All Lines",
+"cmd": "justifyAll",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.justification = Justification.FULLJUSTIFY [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Toggle Auto Hyphenation",
+"cmd": "toggleAutoHyphen",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.hyphenation = !hyphenation [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Toggle Line Composer",
+"cmd": "toggleLineComposer",
+"status": "✅",
+"level": "readback",
+"how": "paragraphAttributes.everyLineComposer = !everyLineComposer [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Subscript",
+"cmd": "~subscript",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.baselinePosition = FontBaselineOption.SUBSCRIPT [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Superscript",
+"cmd": "~superScript",
+"status": "✅",
+"level": "readback",
+"how": "characterAttributes.baselinePosition = FontBaselineOption.SUPERSCRIPT [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Lock Unselected Artwork",
+"cmd": "lock2",
+"status": "✅",
+"level": "readback",
+"how": "lock every unselected item: item.locked = true where !item.selected [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Hide Unselected Artwork",
+"cmd": "hide2",
+"status": "✅",
+"level": "readback",
+"how": "hide every unselected item: item.hidden = true where !item.selected [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Repeat Pathfinder",
+"cmd": "repeatPathfinder",
+"status": "✅",
+"level": "readback",
+"how": "call AI.pathfinder(items, op) again (repeat Pathfinder) [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Average and Join",
+"cmd": "avgAndJoin",
+"status": "✅",
+"level": "readback",
+"how": "MENU('average') + MENU('join') on the two end points [menu ID refuses scripts: PARM]"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Enter Isolation Mode",
+"cmd": "enterFocus",
+"status": "✅",
+"level": "readback",
+"how": "double-click the group with the Selection tool (tools/menu_ui.dblclick_color); readback: the temporary Isolation Mode layer appears"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Exit Isolation Mode",
+"cmd": "exitFocus",
+"status": "✅",
+"level": "readback",
+"how": "Esc in the document window leaves isolation mode (readback: the Isolation Mode layer is gone)"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > New Symbol",
+"cmd": "Adobe New Symbol Shortcut",
+"status": "✅",
+"level": "readback",
+"how": "document.symbols.add(item)"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Cycle Color Modes",
+"cmd": "Adobe Color Palette Secondary",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Actions Batch",
+"cmd": "Adobe Actions Batch",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Add New Fill",
+"cmd": "Adobe New Fill Shortcut",
+"status": "✅",
+"level": "deep",
+"how": "Appearance: add new fill"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Add New Stroke",
+"cmd": "Adobe New Stroke Shortcut",
+"status": "✅",
+"level": "deep",
+"how": "Appearance: add new stroke"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > New Graphic Style",
+"cmd": "Adobe New Style Shortcut",
+"status": "✅",
+"level": "readback",
+"how": "Graphic Styles: new style from selection"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > New Layer",
+"cmd": "AdobeLayerPalette2",
+"status": "✅",
+"level": "readback",
+"how": "document.layers.add()"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > New Layer with Options",
+"cmd": "AdobeLayerPalette3",
+"status": "✅",
+"level": "readback",
+"how": "document.layers.add() (+ options dialog)"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Update Link",
+"cmd": "Adobe Update Link Shortcut",
+"status": "✅",
+"level": "readback",
+"how": "placedItem.relink(file) / update after the file changed"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > New Swatch",
+"cmd": "Adobe New Swatch Shortcut Menu",
+"status": "✅",
+"level": "readback",
+"how": "document.swatches.add()"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Debug Panel",
+"cmd": "Debug Panel",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Cycle Units",
+"cmd": "switchUnits",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > New (alternate)",
+"cmd": "new2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Close All (alternate)",
+"cmd": "closeAll2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Help (alternate)",
+"cmd": "helpcontent2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Undo (alternate)",
+"cmd": "undo2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Cut (alternate)",
+"cmd": "cut2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Copy (alternate)",
+"cmd": "copy2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Paste (alternate)",
+"cmd": "paste2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Zoom In (alternate)",
+"cmd": "zoomin2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Debug Palette",
+"cmd": "debugPalette",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Next Document",
+"cmd": "navigateToNextDocument",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Previous Document",
+"cmd": "navigateToPreviousDocument",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Next Document Group",
+"cmd": "navigateToNextDocumentGroup",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Previous Document Group",
+"cmd": "navigateToPreviousDocumentGroup",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Subscript (alternate)",
+"cmd": "~subscript2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+},
+{
+"top": "Keyboard",
+"path": "Keyboard > Superscript (alternate)",
+"cmd": "~superScript2",
+"status": "n/a",
+"level": "",
+"how": "keyboard navigation / duplicate shortcut / UI toggle"
+}
+],
+"stat": {
+"File": {
+"✅": 21,
+"—": 0,
+"n/a": 3,
+"blocked": 2
+},
+"Edit": {
+"✅": 25,
+"—": 0,
+"n/a": 29,
+"blocked": 0
+},
+"Object": {
+"✅": 124,
+"—": 0,
+"n/a": 5,
+"blocked": 0
+},
+"Type": {
+"✅": 48,
+"—": 0,
+"n/a": 7,
+"blocked": 0
+},
+"Select": {
+"✅": 39,
+"—": 0,
+"n/a": 0,
+"blocked": 0
+},
+"Effect": {
+"✅": 119,
+"—": 0,
+"n/a": 0,
+"blocked": 0
+},
+"View": {
+"✅": 40,
+"—": 0,
+"n/a": 45,
+"blocked": 0
+},
+"Window": {
+"✅": 1,
+"—": 0,
+"n/a": 63,
+"blocked": 0
+},
+"Help": {
+"✅": 0,
+"—": 0,
+"n/a": 7,
+"blocked": 0
+},
+"Keyboard": {
+"✅": 35,
+"—": 0,
+"n/a": 22,
+"blocked": 0
+}
+}
+}

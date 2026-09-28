@@ -1,0 +1,4 @@
+{
+  "Print": "document.print(PrintOptions) with printerName 'Adobe PostScript File' and jobOptions.file never returns on this machine: the sweep timed out after 180 s three times with no dialog window visible (the job goes to the OS spooler). Workaround for output: AI.pdf() / AI.png(); verify prints outside the agent.",
+  "Adobe AI Save Selected Slices": "Opens the legacy Save for Web > Save Optimized As file dialog, which re-opens itself after every answer (the sweep recorded the same '另存最佳化檔案' dialog 30+ times). Use Export for Screens (AI.exportScreens, verified) or AI.png / AI.jpg on a slice-sized artboard instead."
+}

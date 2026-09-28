@@ -1,0 +1,4 @@
+pywin32>=306
+psutil>=5.9
+Pillow>=10.0
+playwright>=1.40

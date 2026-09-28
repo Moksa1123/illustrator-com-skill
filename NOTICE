@@ -1,0 +1,7 @@
+index/build_index.py generates index/ai-dom.json on YOUR machine from Illustrator's own type library
+(Plug-ins/Extensions/ScriptingSupport.aip) plus runtime checks. index/raw/ holds the menu-command names and the
+localized menu text exported by Illustrator's Edit > Keyboard Shortcuts dialog (tools/capture_commands.py
+re-captures them from your installation). presets/effects.json lists effect parameter names read back from files
+saved by Illustrator. No Adobe documentation or third-party index is redistributed in this repository.
+
+Adobe and Illustrator are trademarks of Adobe Inc.; this project is not affiliated with or endorsed by Adobe.

@@ -1,0 +1,556 @@
+{
+ "version": "28.0.0",
+ "date": "2026-09-28T08:21:13",
+ "results": [
+  {
+   "msg": "AI.box = 100,50,200,120 | 3 pixels sampled",
+   "px": [
+    [
+     150,
+     100,
+     [
+      220,
+      30,
+      30
+     ],
+     10
+    ],
+    [
+     90,
+     100,
+     [
+      255,
+      255,
+      255
+     ],
+     10
+    ],
+    [
+     150,
+     40,
+     [
+      255,
+      255,
+      255
+     ],
+     10
+    ]
+   ],
+   "ok": true,
+   "ms": 3476,
+   "cat": "shapes",
+   "name": "rect at artboard top-left coords"
+  },
+  {
+   "msg": "rounded corners 8 pts, hexagon 6, star 10, circle 100x100 at 450,20 | 4 pixels sampled",
+   "px": [
+    [
+     22,
+     22,
+     [
+      255,
+      255,
+      255
+     ],
+     10
+    ],
+    [
+     100,
+     70,
+     [
+      30,
+      60,
+      220
+     ],
+     12
+    ],
+    [
+     500,
+     70,
+     [
+      220,
+      30,
+      30
+     ],
+     12
+    ],
+    [
+     150,
+     300,
+     [
+      20,
+      170,
+      60
+     ],
+     12
+    ]
+   ],
+   "ok": true,
+   "ms": 1999,
+   "cat": "shapes",
+   "name": "roundRect / ellipse / circle / polygon / star"
+  },
+  {
+   "msg": "8 pt dashed [20,10], round caps | 1 pixels sampled",
+   "px": [
+    [
+     60,
+     100,
+     [
+      220,
+      30,
+      30
+     ],
+     15
+    ]
+   ],
+   "ok": true,
+   "ms": 2313,
+   "cat": "shapes",
+   "name": "line with stroke style (dash, cap)"
+  },
+  {
+   "msg": "bezier handles set; SVG \"M…Z M…Z\" -> compound path with a hole | 2 pixels sampled",
+   "px": [
+    [
+     500,
+     120,
+     [
+      220,
+      30,
+      30
+     ],
+     15
+    ],
+    [
+     500,
+     145,
+     [
+      255,
+      255,
+      255
+     ],
+     15
+    ]
+   ],
+   "ok": true,
+   "ms": 2521,
+   "cat": "shapes",
+   "name": "bezier path + SVG path data"
+  },
+  {
+   "msg": "hex #1e90ff -> 30,144,255; gray 50%; spot \"Brand Red\" tint 60; swatch \"brand blue\"",
+   "ok": true,
+   "ms": 2312,
+   "cat": "color",
+   "name": "hex / CMYK / gray / spot / swatch"
+  },
+  {
+   "msg": "linear 2 stops (red→blue), radial 3 stops with midpoint 30 | 3 pixels sampled",
+   "px": [
+    [
+     10,
+     100,
+     [
+      220,
+      30,
+      30
+     ],
+     40
+    ],
+    [
+     390,
+     100,
+     [
+      30,
+      60,
+      220
+     ],
+     40
+    ],
+    [
+     550,
+     100,
+     [
+      255,
+      255,
+      255
+     ],
+     30
+    ]
+   ],
+   "ok": true,
+   "ms": 2460,
+   "cat": "color",
+   "name": "linear + radial gradient fills"
+  },
+  {
+   "msg": "50% multiply on layer \"FX\" | 1 pixels sampled",
+   "px": [
+    [
+     200,
+     200,
+     [
+      28,
+      33,
+      123
+     ],
+     15
+    ]
+   ],
+   "ok": true,
+   "ms": 2501,
+   "cat": "style",
+   "name": "opacity / blend mode / layer / name"
+  },
+  {
+   "msg": "move to 300,200; fit 200x200 keep aspect -> 200x100; rotate 90 swaps w/h; flip mirrors anchors",
+   "ok": true,
+   "ms": 2552,
+   "cat": "layout",
+   "name": "moveTo / scaleTo (keep aspect) / rotate / flip"
+  },
+  {
+   "msg": "centered on 800 pt artboard (x 350 / 375); bottoms equal; key-object top align",
+   "ok": true,
+   "ms": 2252,
+   "cat": "layout",
+   "name": "align to artboard and to selection"
+  },
+  {
+   "msg": "equal gaps 190 pt; fixed 10 pt gap; 3-column grid",
+   "ok": true,
+   "ms": 2873,
+   "cat": "layout",
+   "name": "distribute equal spacing / fixed gap / grid"
+  },
+  {
+   "msg": "group of 2 named \"pair\", ungroup restores 2 items",
+   "ok": true,
+   "ms": 2014,
+   "cat": "structure",
+   "name": "group / ungroup"
+  },
+  {
+   "msg": "circle clips the square | 2 pixels sampled",
+   "px": [
+    [
+     200,
+     200,
+     [
+      220,
+      30,
+      30
+     ],
+     10
+    ],
+    [
+     20,
+     20,
+     [
+      255,
+      255,
+      255
+     ],
+     10
+    ]
+   ],
+   "ok": true,
+   "ms": 2045,
+   "cat": "structure",
+   "name": "clipping mask"
+  },
+  {
+   "msg": "outer 300x300, inner 100x100 hole | 2 pixels sampled",
+   "px": [
+    [
+     150,
+     150,
+     [
+      20,
+      170,
+      60
+     ],
+     20
+    ],
+    [
+     250,
+     250,
+     [
+      255,
+      255,
+      255
+     ],
+     10
+    ]
+   ],
+   "ok": true,
+   "ms": 2056,
+   "cat": "structure",
+   "name": "compound path (hole)"
+  },
+  {
+   "msg": "unite 150x150, minus front keeps the back 70 wide, intersect 50x50, exclude hole | 2 pixels sampled",
+   "px": [
+    [
+     375,
+     375,
+     [
+      255,
+      255,
+      255
+     ],
+     10
+    ],
+    [
+     320,
+     320,
+     [
+      220,
+      30,
+      30
+     ],
+     20
+    ]
+   ],
+   "ok": true,
+   "ms": 3352,
+   "cat": "pathfinder",
+   "name": "unite / minusFront / intersect / exclude"
+  },
+  {
+   "msg": "divide -> 3 pieces; crop keeps the circle area",
+   "ok": true,
+   "ms": 2545,
+   "cat": "pathfinder",
+   "name": "divide / trim / crop"
+  },
+  {
+   "msg": "Arial 48 pt, tracking 50, top of text box at y 100 (100,100,360.9,56.8)",
+   "px": [],
+   "ok": true,
+   "ms": 2094,
+   "cat": "text",
+   "name": "point text: font, size, color, tracking, top-left placement"
+  },
+  {
+   "msg": "area text 300 wide wraps to 3 lines, centered, leading 30",
+   "ok": true,
+   "ms": 2032,
+   "cat": "text",
+   "name": "area text: width, alignment, leading"
+  },
+  {
+   "msg": "\"Big \" 60 pt red + \"small\" 20 pt blue underlined",
+   "ok": true,
+   "ms": 2200,
+   "cat": "text",
+   "name": "mixed styles in one frame (runs)"
+  },
+  {
+   "msg": "vertical frame 585,50,30,180; SMALLCAPS + fractions",
+   "ok": true,
+   "ms": 2113,
+   "cat": "text",
+   "name": "vertical CJK text + OpenType caps"
+  },
+  {
+   "msg": "PATHTEXT on a circle",
+   "ok": true,
+   "ms": 2528,
+   "cat": "text",
+   "name": "text on a path"
+  },
+  {
+   "msg": "shrunk to ≤300 wide, then outlined -> group of paths",
+   "ok": true,
+   "ms": 2722,
+   "cat": "text",
+   "name": "fit text to width + create outlines"
+  },
+  {
+   "msg": "character style \"Accent\" 40 pt red; paragraph style \"Body\" right, space after 12",
+   "ok": true,
+   "ms": 2606,
+   "cat": "text",
+   "name": "character + paragraph styles"
+  },
+  {
+   "msg": "shadow widens visible bounds by 19 pt | effects read back: Adobe Drop Shadow, Adobe Round Corners, Adobe Outer Glow",
+   "fx": [
+    "Adobe Drop Shadow",
+    "Adobe Round Corners",
+    "Adobe Outer Glow"
+   ],
+   "ok": true,
+   "ms": 2486,
+   "cat": "effects",
+   "name": "drop shadow + outer glow + round corners"
+  },
+  {
+   "msg": "offset path grows visible bounds by 15 pt; 5 effects stored | effects read back: Adobe Offset Path, Adobe Fuzzy Mask, Adobe PSL Gaussian Blur, Adobe Roughen, Adobe Deform",
+   "fx": [
+    "Adobe Offset Path",
+    "Adobe Fuzzy Mask",
+    "Adobe PSL Gaussian Blur",
+    "Adobe Roughen",
+    "Adobe Deform"
+   ],
+   "ok": true,
+   "ms": 2065,
+   "cat": "effects",
+   "name": "offset path / feather / gaussian blur / roughen / warp"
+  },
+  {
+   "msg": "offset baked into geometry: 140 pt wide",
+   "ok": true,
+   "ms": 2165,
+   "cat": "effects",
+   "name": "expand appearance"
+  },
+  {
+   "msg": "placed 200 wide (linked), embedded RasterItem 150 wide, clipped to circle",
+   "ok": true,
+   "ms": 2108,
+   "cat": "image",
+   "name": "place + embed + fit + clip image"
+  },
+  {
+   "msg": "traced raster -> 2 paths",
+   "ok": true,
+   "ms": 2960,
+   "cat": "image",
+   "name": "image trace -> vector paths"
+  },
+  {
+   "msg": "star -> RasterItem | 1 pixels sampled",
+   "px": [
+    [
+     200,
+     200,
+     [
+      20,
+      170,
+      60
+     ],
+     30
+    ]
+   ],
+   "ok": true,
+   "ms": 2042,
+   "cat": "image",
+   "name": "rasterize vector art"
+  },
+  {
+   "msg": "symbol \"StarSym\" with 2 instances",
+   "ok": true,
+   "ms": 2027,
+   "cat": "symbols",
+   "name": "symbol create + place instances"
+  },
+  {
+   "msg": "applied \"製作陰影\" (7 styles available)",
+   "ok": true,
+   "ms": 1896,
+   "cat": "symbols",
+   "name": "graphic style applied"
+  },
+  {
+   "msg": "RadialRepeatItem, GridRepeatItem, SymmetryRepeatItem",
+   "ok": true,
+   "ms": 3042,
+   "cat": "structure",
+   "name": "repeat radial / grid / mirror"
+  },
+  {
+   "msg": "blend object (PluginItem)",
+   "ok": true,
+   "ms": 2642,
+   "cat": "structure",
+   "name": "blend two shapes"
+  },
+  {
+   "msg": "1080×1920, guides H1248 H269 V1015 V65, locked background",
+   "ok": true,
+   "ms": 5032,
+   "cat": "document",
+   "name": "newDoc with safe-zone guides + background"
+  },
+  {
+   "msg": "3 artboards + \"extra\"; fit artboard to selected art = 50x60",
+   "ok": true,
+   "ms": 5250,
+   "cat": "document",
+   "name": "multiple artboards + add + fit to art"
+  },
+  {
+   "msg": "layer \"Top\" in front, \"Hidden\" invisible",
+   "ok": true,
+   "ms": 2132,
+   "cat": "document",
+   "name": "layers: create, lock, hide, order"
+  },
+  {
+   "msg": "png 50% / 200% transparent, jpg, webp, svg (outlined text), psd | 6 files decoded",
+   "files": [
+    "<sandbox>\\_e.png",
+    "<sandbox>\\_e2x.png",
+    "<sandbox>\\_e.jpg",
+    "<sandbox>\\_e.webp",
+    "<sandbox>\\_e.svg",
+    "<sandbox>\\_e.psd"
+   ],
+   "size": {
+    "png": [
+     400,
+     300
+    ],
+    "png2": [
+     1600,
+     1200
+    ]
+   },
+   "ok": true,
+   "ms": 3603,
+   "cat": "export",
+   "name": "PNG / JPG / WebP / SVG / PDF / PSD"
+  },
+  {
+   "msg": "4 files (2 artboards × png@2x + svg) | 4 files decoded",
+   "files": [
+    "<sandbox>\\_efs\\2x\\工作區域 1.png",
+    "<sandbox>\\_efs\\2x\\工作區域 2.png",
+    "<sandbox>\\_efs\\SVG\\工作區域 1.svg",
+    "<sandbox>\\_efs\\SVG\\工作區域 2.svg"
+   ],
+   "ok": true,
+   "ms": 5398,
+   "cat": "export",
+   "name": "export for screens (all artboards x 2 formats)"
+  },
+  {
+   "msg": "PDF [High Quality Print]: 2 pages in the file, reopens in Illustrator | 1 files decoded",
+   "files": [
+    "<sandbox>\\_e.pdf"
+   ],
+   "ok": true,
+   "ms": 7393,
+   "cat": "export",
+   "name": "PDF save + reopen"
+  },
+  {
+   "msg": "tracking 1150 keeps \"HEADLINE\" on one 400 pt line",
+   "ok": true,
+   "ms": 2459,
+   "cat": "text",
+   "name": "fit headline (tracking fills one line)"
+  },
+  {
+   "msg": "text flows from frame 1 into frame 2 (3 lines there)",
+   "ok": true,
+   "ms": 1993,
+   "cat": "text",
+   "name": "thread two area-text frames"
+  }
+ ]
+}
