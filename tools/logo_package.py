@@ -166,6 +166,15 @@ def rule_map(fills, rule):
     return out, spot
 
 
+def png_plan(B, lay):
+    """(size by 'w'|'h', sizes, filename tag). Config "png_sizes": {"<layout>": {"by": "h", "sizes": [24, 40, …]}} overrides;
+    otherwise the horizontal layout gets widths, square layouts get squares."""
+    spec = B.get("png_sizes", {}).get(lay)
+    if spec:
+        return spec["by"], spec["sizes"], spec["by"]
+    return ("w", WIDE_PNG, "w") if lay == "horizontal" else ("w", SQUARE_PNG, "px")
+
+
 def resample(path, want_w=None, want_h=None):
     from PIL import Image
     im = Image.open(path)
@@ -219,11 +228,11 @@ def package(key):
             src = kit / grp / f"{stem}{sfx}.ai"
             if not src.exists():
                 continue
-            sizes = WIDE_PNG if lay == "horizontal" else SQUARE_PNG
-            q = [("w", s, (dirs["03_screen_PNG_JPG"] / f"{stem}{sfx}_RGB_{s}{'w' if lay == 'horizontal' else 'px'}.png").as_posix()) for s in sizes]
+            by, sizes, tag = png_plan(B, lay)
+            q = [(by, s, (dirs["03_screen_PNG_JPG"] / f"{stem}{sfx}_RGB_{s}{tag}.png").as_posix()) for s in sizes]
             r = json.loads(js(JS_SCREEN, {"opt": json.dumps({"src": src.as_posix(), "pngs": q, "pdf": (dirs["01_vector_RGB"] / f"{stem}{sfx}_RGB.pdf").as_posix()})}))
-            for _, s, fn in q:
-                resample(fn, want_w=s)
+            for b, s, fn in q:
+                resample(fn, want_w=s) if b == "w" else resample(fn, want_h=s)
             log["screen"][f"{stem}{sfx}"] = r
             print(f"screen {stem}{sfx}: {len(q)} png + pdf", flush=True)
     # 03 JPG on white / on brand dark (square logo)
@@ -294,9 +303,10 @@ def check(key):
     out = Path(B["out"])
     rep = {"png_size": [], "print": {}, "problems": []}
     for p in (out / "03_screen_PNG_JPG").glob("*.png"):
-        m = re.search(r"_(\d+)(px|w)\.png$", p.name)
+        m = re.search(r"_(\d+)(px|w|h)\.png$", p.name)
         w, h = Image.open(p).size
-        ok = m and ((w == int(m.group(1)) and (m.group(2) == "w" or h == int(m.group(1)))))
+        n = int(m.group(1)) if m else 0
+        ok = m and ((m.group(2) == "w" and w == n) or (m.group(2) == "h" and h == n) or (m.group(2) == "px" and w == h == n))
         rep["png_size"].append([p.name, w, h, bool(ok)])
         if not ok:
             rep["problems"].append(f"size {p.name} {w}x{h}")

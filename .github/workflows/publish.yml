@@ -1,0 +1,56 @@
+name: Publish to npm
+
+# Push a tag v<version> (same as package.json) -> tests -> npm publish.
+#   npm version patch && git push --follow-tags
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only test and pack, do not publish'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  id-token: write # npm Trusted Publishing (OIDC): short-lived credentials, no NPM_TOKEN secret
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      # Trusted Publishing needs npm 11.5.0+
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+
+      - name: Tag matches package.json and CHANGELOG
+        if: github.event_name == 'push'
+        run: |
+          set -euo pipefail
+          v=$(node -p "require('./package.json').version")
+          [ "v$v" = "$GITHUB_REF_NAME" ] || { echo "::error::tag $GITHUB_REF_NAME != package.json $v"; exit 1; }
+          grep -q "^## $v " CHANGELOG.md || { echo "::error::CHANGELOG.md has no '## $v' entry"; exit 1; }
+
+      - name: Installer tests (14 platforms, update keeps index, uninstall)
+        run: node tests/installer.test.mjs
+
+      - name: Python sources compile
+        run: python3 -m compileall -q lib tools index tests
+
+      - name: Package contents
+        run: |
+          set -euo pipefail
+          npm pack --dry-run --json > pack.json
+          node -e "const f=require('./pack.json')[0].files.map(x=>x.path);const bad=f.filter(p=>/ai-dom\.json|index\/raw\/|__pycache__|tests\/snaps\//.test(p));if(bad.length){console.error('generated files in package:',bad);process.exit(1)}console.log(f.length+' files')"
+
+      - name: Publish
+        if: github.event_name == 'push' || inputs.dry_run == false
+        run: npm publish --access public

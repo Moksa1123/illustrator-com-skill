@@ -65,12 +65,12 @@ def build(cfg, sheet=None):
         if stem:
             moved.append(cp(f, dst / "02_Digital_數位用" / "SVG" / f"{slug}_{LAY[stem]}_{TONE[sfx]}.svg"))
     for f in sorted((pkg / "03_screen_PNG_JPG").glob("*.png")):
-        m = re.match(r"(.+)_RGB_(\d+)(px|w)\.png$", f.name)
+        m = re.match(r"(.+)_RGB_(\d+)(px|w|h)\.png$", f.name)
         if not m:
             continue
         stem, sfx = split_tone(m.group(1), LAY, TONE)
         if stem:
-            size = f"{m.group(2)}x{m.group(2)}" if m.group(3) == "px" else f"{m.group(2)}w"
+            size = f"{m.group(2)}x{m.group(2)}" if m.group(3) == "px" else f"{m.group(2)}{m.group(3)}"
             moved.append(cp(f, dst / "02_Digital_數位用" / "PNG" / LAY[stem] / TONE[sfx] / f"{slug}_{LAY[stem]}_{TONE[sfx]}_{size}.png"))
     for f in sorted((pkg / "03_screen_PNG_JPG").glob("*.jpg")):
         m = re.match(r".+_on-(white|dark)_RGB_(\d+)px\.jpg$", f.name)
@@ -190,6 +190,7 @@ def readme(C, dst):
          "| 用途 | 開這個資料夾 | 用哪個檔 |", "|---|---|---|",
          "| **送印刷廠**（名片、包裝、貼紙、招牌） | `01_Print_印刷用` | `.pdf`（PDF/X-1a）或 `.eps`；燙金／燙銀用 `spot` 版 |",
          "| 網站、簡報、文件 | `02_Digital_數位用/SVG` | `.svg`（任何尺寸都清晰） |",
+         *(["| 網站 header、導覽列（高 40 px 以下） | `02_Digital_數位用/SVG`、`PNG/" + C["compact_label"] + "` | `" + C["compact_label"] + "` 版（線條較少較粗，小尺寸不糊） |"] if C.get("compact_label") else []),
          "| 需要圖片檔（LINE、Word、剪輯） | `02_Digital_數位用/PNG` | 依版型 → 淺底／深底 → 尺寸（去背） |",
          "| 社群大頭貼、封面、分享圖 | `03_Social_社群` | 檔名含平台與尺寸 |",
          "| 網站 favicon / App 圖示 | `04_Web-App_網站` | 附 `head-snippet.html` |",
