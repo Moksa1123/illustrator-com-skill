@@ -93,7 +93,10 @@ function runtimeFiles(root) {
 /** Copy this package into the skill home. Files the user edited there are backed up first; generated files the
  *  package does not ship (index/ai-dom.json, index/raw/, test snapshots) are never touched. */
 function syncRuntime(state, { dryRun = false } = {}) {
-  if (existsSync(SKILL_HOME) && sameDir(SKILL_HOME, PKG_ROOT)) return { linked: true, copied: 0, removed: 0, backedUp: 0 };
+  if (existsSync(SKILL_HOME) && sameDir(SKILL_HOME, PKG_ROOT)) {   // linked checkout: nothing to copy, but record the version it is at
+    if (!dryRun) { state.version = PKG.version; state.linked = true; }
+    return { linked: true, copied: 0, removed: 0, backedUp: 0 };
+  }
   if (isLink(SKILL_HOME)) {                                // was --link'ed to a checkout: replace the link, not its target
     if (!dryRun) unlinkSync(SKILL_HOME);
   }
