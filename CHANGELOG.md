@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- `tools/md_docx.py`: the PDF export works when called with a relative path or a non-ASCII (CJK) path — Word used to resolve relative paths against `C:\Windows\system32` and the export failed silently. Paths are now absolute, the PowerShell command is passed with `-EncodedCommand`, and a missing PDF raises an error.
+
 ## 1.0.1 — 2026-09-28
 
 - `versions` / `check` / `update` no longer end with a libuv assertion on Windows (registry request through `node:https`, no forced `process.exit`).

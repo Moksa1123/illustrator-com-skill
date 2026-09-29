@@ -4,6 +4,7 @@ each "## N." chapter can start on a new page.
 
 python tools/md_docx.py <in.md> [--title "..."] [--subtitle "..."]  -> <in>.docx + <in>.pdf
 """
+import base64
 import re
 import subprocess
 import sys
@@ -180,10 +181,14 @@ def build(md_path, title=None, subtitle=None, chapter_breaks=True):
 
 
 def to_pdf(docx_path, pdf=None):
-    pdf = Path(pdf) if pdf else Path(docx_path).with_suffix(".pdf")
-    ps = (f"$w = New-Object -ComObject Word.Application; $w.Visible = $false; $d = $w.Documents.Open('{Path(docx_path).as_posix()}'); "
+    docx_path = Path(docx_path).resolve()                                # Word resolves relative paths against system32
+    pdf = (Path(pdf) if pdf else docx_path.with_suffix(".pdf")).resolve()
+    ps = (f"$w = New-Object -ComObject Word.Application; $w.Visible = $false; $d = $w.Documents.Open('{docx_path.as_posix()}'); "
           f"$d.ExportAsFixedFormat('{pdf.as_posix()}', 17); $d.Close(0); $w.Quit(); 'ok'")
-    subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, text=True)
+    enc = base64.b64encode(ps.encode("utf-16-le")).decode("ascii")      # -EncodedCommand keeps non-ASCII paths intact
+    r = subprocess.run(["powershell", "-NoProfile", "-EncodedCommand", enc], capture_output=True, text=True)
+    if not pdf.exists():
+        raise RuntimeError(f"Word did not write {pdf}: {r.stdout.strip()} {r.stderr.strip()}")
     return pdf
 
 
