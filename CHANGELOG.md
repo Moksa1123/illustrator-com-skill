@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.2 — 2026-09-29
 
 - `tools/md_docx.py`: the PDF export works when called with a relative path or a non-ASCII (CJK) path — Word used to resolve relative paths against `C:\Windows\system32` and the export failed silently. Paths are now absolute, the PowerShell command is passed with `-EncodedCommand`, and a missing PDF raises an error.
 
