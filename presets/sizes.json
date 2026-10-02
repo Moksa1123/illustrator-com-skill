@@ -1,5 +1,5 @@
 {
- "checked": "2026-09-26",
+ "checked": "2026-10-02",
  "legend": {
   "official": "Number stated on the platform's own help / developer page (see source)",
   "widely-cited": "Platform gives only a ratio or minimum, or its page could not be verified; the pixel size is the industry-standard choice"
@@ -714,7 +714,7 @@
    "formats": [
     "jpg"
    ],
-   "note_en": "50 to 1000KB. Text and graphics may cover at most 20%, and the product must fill at least 80%. Logo only in the lower-left or lower-right. Save the JPG in YCbCr color.",
+   "note_en": "50 to 1000KB, 1 to 6 images, plain solid-colour background. Text, graphics and accessories together cover at most 20%, and the product must fill at least 80%; no white or black borders on the square. A logo or watermark only once, in the lower-left or lower-right corner. Save the JPG in YCbCr (not CMYK). File names must not contain Chinese characters. Variant (spec) images follow the same rules.",
    "source": "https://rules.momo.com.tw/goods/00021/",
    "confidence": "official",
    "tags": "momo 商品 主圖 電商 ecommerce"
@@ -733,10 +733,29 @@
    "formats": [
     "jpg"
    ],
-   "note_en": "Width 1000px, height at most 1500px.",
+   "note_en": "Product feature / description images: width 1000px, height at most 1500px, up to 20 images, 500KB each.",
    "source": "https://rules.momo.com.tw/goods/00021/",
    "confidence": "official",
    "tags": "momo 描述 長圖 電商 ecommerce"
+  },
+  {
+   "id": "momo_ad",
+   "group": "E-commerce (TW)",
+   "platform": "momo",
+   "name_en": "Ad image",
+   "name_zh": "momo 廣告用圖",
+   "w": 1000,
+   "h": 1000,
+   "ratio": "1:1",
+   "safe": null,
+   "max_kb": 1000,
+   "formats": [
+    "jpg"
+   ],
+   "note_en": "Required field when listing a product. 50 to 1000KB. No text, logo, frame or watermark, and no white or black borders (stricter than the main image).",
+   "source": "https://rules.momo.com.tw/goods/00021/",
+   "confidence": "official",
+   "tags": "momo 廣告 廣告用圖 ad 電商 ecommerce"
   },
   {
    "id": "gmc_product",
@@ -940,7 +959,7 @@
     "jpg",
     "png"
    ],
-   "note_en": "Minimum 600x314. Keep important content in the middle 80%.",
+   "note_en": "Minimum 600x314. Keep important content in the middle 80%. Google adds the logo itself: do not overlay a logo, and include at least one image per ratio without overlaid text.",
    "source": "https://support.google.com/google-ads/answer/17091269",
    "confidence": "official",
    "tags": "google ads pmax 廣告 橫式"
@@ -965,7 +984,7 @@
     "jpg",
     "png"
    ],
-   "note_en": "Minimum 300x300.",
+   "note_en": "Minimum 300x300. Google adds the logo itself: do not overlay a logo, and include at least one image per ratio without overlaid text.",
    "source": "https://support.google.com/google-ads/answer/17091269",
    "confidence": "official",
    "tags": "google ads pmax 廣告 方形"
@@ -990,7 +1009,7 @@
     "jpg",
     "png"
    ],
-   "note_en": "Minimum 480x600.",
+   "note_en": "Minimum 480x600. Google adds the logo itself: do not overlay a logo, and include at least one image per ratio without overlaid text.",
    "source": "https://support.google.com/google-ads/answer/17091269",
    "confidence": "official",
    "tags": "google ads pmax 廣告 直式"

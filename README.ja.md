@@ -17,7 +17,7 @@
 | `lib/fingerprint.jsx`、`tools/ai_dump.py` | 文書フィンガープリント（DOM の全要素）と非圧縮 `.ai` リーダー。DOM から見えないもの（全パラメーター付きのライブ効果、Photoshop フィルターのバイナリ記述子、安定したアートハッシュ）を取り出します。 |
 | `index/` | **お使いの Illustrator から生成する** API インデックス（`ScriptingSupport.aip` 内のタイプライブラリ＋実行時リフレクション）、キーボードショートカットから取得した全メニューコマンド一覧、検索ツール（`find`、`class`、`enum`、`member`、`menu`、`effect`、`stats`）。 |
 | `tests/` | ライブラリテスト（`run_tests.py` → `REPORT.md`）と、全メニューコマンド・効果・ツールのスイープ（`menu_sweep.py`、`effects_sweep.py`、`tools_sweep.py`）→ `CAPABILITIES.md`：それぞれのスクリプトでの実行方法と検証方法。 |
-| `presets/sizes.json` + `tools/sizes.py` | 53 種のデザインサイズ（Instagram、Facebook、Open Graph、LINE、YouTube、TikTok、Google 広告、Amazon、Shopify、Etsy、Shopee、momo…）、セーフゾーンと出典付き。`new <id>` でガイド付きアートボードを作成します。 |
+| `presets/sizes.json` + `tools/sizes.py` | 54 種のデザインサイズ（Instagram、Facebook、Open Graph、LINE、YouTube、TikTok、Google 広告、Amazon、Shopify、Etsy、Shopee、momo…）、セーフゾーンと出典付き。`new <id>` でガイド付きアートボードを作成します。 |
 | `tools/html2ai.py` | 固定サイズの HTML レイアウト → **編集可能なベクター**の Illustrator 文書：ボックスは図形（塗り、線形グラデーション、枠線、角丸、影）、写真は表示どおりに埋め込み、インライン SVG はパス、テキストは本物のテキストフレームになります。 |
 | `tools/logo_package.py`、`tools/brand_assets.py` | 完成したロゴ素材（JSON 設定 1 つ）から業界標準の**ロゴ納品パッケージ**を生成：RGB ベクター、そのまま入稿できる CMYK AI／EPS／PDF-X-1a（グレーは K 単色、ブランドインキの K 値、特色版、ファイルごとの色監査）、PNG 64–4096 px（300 ppi）、SNS アイコン／カバー／OGP／メール、favicon とアプリアイコン。さらに用途別の整理されたフォルダー（印刷／デジタル／SNS／Web／名刺／ガイドライン／ソース／商標）に再配置します。 |
 | `tools/tipo_form.py`、`tools/md_docx.py` | 台湾知的財産局（TIPO）への商標出願補助：商標見本（JPG＋TIF、300 dpi、7.6 cm）、公式 T0101 出願書類の記入（チェック欄は書式の枠そのものに記入）、Markdown → Word 経由の正式な DOCX／PDF（表のヘッダー行を各ページで繰り返し、行を分割しない）。 |

@@ -17,7 +17,7 @@
 | `lib/fingerprint.jsx`、`tools/ai_dump.py` | 文件指紋（DOM 每一部分），以及未壓縮 `.ai` 讀取器：找回 DOM 看不到的東西——即時效果與全部參數（含 Photoshop 濾鏡的二進位描述），以及穩定的圖稿雜湊。 |
 | `index/` | **從你自己的 Illustrator 建立**的 API 索引（`ScriptingSupport.aip` 內的型別庫＋執行期反射）、從鍵盤快捷鍵組合擷取的完整選單指令表、查詢工具（`find`、`class`、`enum`、`member`、`menu`、`effect`、`stats`）。 |
 | `tests/` | 函式庫測試（`run_tests.py` → `REPORT.md`），以及每個選單指令、效果、工具的掃描（`menu_sweep.py`、`effects_sweep.py`、`tools_sweep.py`）→ `CAPABILITIES.md`：每一項怎麼用腳本做、怎麼驗證的。 |
-| `presets/sizes.json` + `tools/sizes.py` | 53 種設計尺寸（IG、FB、OG、LINE、YouTube、TikTok、Google Ads、Amazon、Shopify、Etsy、蝦皮、momo…），含安全區與出處；`new <id>` 直接開出工作區域與參考線。 |
+| `presets/sizes.json` + `tools/sizes.py` | 54 種設計尺寸（IG、FB、OG、LINE、YouTube、TikTok、Google Ads、Amazon、Shopify、Etsy、蝦皮、momo…），含安全區與出處；`new <id>` 直接開出工作區域與參考線。 |
 | `tools/html2ai.py` | 固定尺寸 HTML 版面 → **可編輯向量** Illustrator 文件：方塊變成形狀（填色、線性漸層、邊框、圓角、陰影），照片依畫面裁切後嵌入，內嵌 SVG 匯入成路徑，文字是真的文字物件。 |
 | `tools/logo_package.py`、`tools/brand_assets.py` | 從完成的 logo 素材（一份 JSON 設定）產出業界標準的 **logo 交付包**：RGB 向量；可直接印刷的 CMYK AI／EPS／PDF-X-1a（灰色強制單 K、品牌墨色 K 值、特別色版，逐檔色彩稽核）；PNG 64–4096 px、300 ppi；社群頭像／封面／Open Graph／Email；favicon 與 App 圖示；再整理成依用途分類的乾淨資料夾（印刷／數位／社群／網站／名片／品牌規範／原始檔／商標申請）。 |
 | `tools/tipo_form.py`、`tools/md_docx.py` | 台灣智慧財產局（TIPO）商標申請輔助：商標圖樣（JPG＋TIF、300 dpi、7.6 cm）、填好的官方 T0101 申請書（勾選框直接打在表單原本的框內），以及 Markdown → 正式 DOCX／PDF（經 Word 輸出，表頭每頁重複、表列不跨頁切斷）。 |

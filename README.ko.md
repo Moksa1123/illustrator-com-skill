@@ -17,7 +17,7 @@
 | `lib/fingerprint.jsx`, `tools/ai_dump.py` | 문서 지문(DOM 전체)과 비압축 `.ai` 리더. DOM에서 보이지 않는 것(모든 매개변수가 포함된 라이브 효과, Photoshop 필터의 바이너리 설명자, 안정적인 아트 해시)을 꺼냅니다. |
 | `index/` | **사용자의 Illustrator에서 생성하는** API 인덱스(`ScriptingSupport.aip` 안의 형식 라이브러리 + 런타임 리플렉션), 단축키 세트에서 수집한 전체 메뉴 명령 목록, 조회 도구(`find`, `class`, `enum`, `member`, `menu`, `effect`, `stats`). |
 | `tests/` | 라이브러리 테스트(`run_tests.py` → `REPORT.md`)와 모든 메뉴 명령·효과·도구 스윕(`menu_sweep.py`, `effects_sweep.py`, `tools_sweep.py`) → `CAPABILITIES.md`: 각 항목을 스크립트로 하는 방법과 검증 방법. |
-| `presets/sizes.json` + `tools/sizes.py` | 53가지 디자인 크기(Instagram, Facebook, Open Graph, LINE, YouTube, TikTok, Google Ads, Amazon, Shopify, Etsy, Shopee, momo…), 안전 영역과 출처 포함. `new <id>`로 안내선이 있는 아트보드를 엽니다. |
+| `presets/sizes.json` + `tools/sizes.py` | 54가지 디자인 크기(Instagram, Facebook, Open Graph, LINE, YouTube, TikTok, Google Ads, Amazon, Shopify, Etsy, Shopee, momo…), 안전 영역과 출처 포함. `new <id>`로 안내선이 있는 아트보드를 엽니다. |
 | `tools/html2ai.py` | 고정 크기 HTML 레이아웃 → **편집 가능한 벡터** Illustrator 문서: 상자는 도형(칠, 선형 그라디언트, 테두리, 둥근 모서리, 그림자), 사진은 보이는 그대로 포함, 인라인 SVG는 패스, 텍스트는 실제 텍스트 프레임이 됩니다. |
 | `tools/logo_package.py`, `tools/brand_assets.py` | 완성된 로고 키트(JSON 설정 하나)로 업계 표준 **로고 납품 패키지** 생성: RGB 벡터, 바로 인쇄할 수 있는 CMYK AI/EPS/PDF-X-1a(회색은 K 단색, 브랜드 잉크 K 값, 별색 판, 파일별 색상 점검), PNG 64–4096 px(300 ppi), SNS 아바타/커버/Open Graph/이메일, 파비콘과 앱 아이콘. 이어서 용도별로 정리된 폴더(인쇄/디지털/SNS/웹/명함/가이드라인/원본/상표)로 다시 배치합니다. |
 | `tools/tipo_form.py`, `tools/md_docx.py` | 대만 지식재산국(TIPO) 상표 출원 보조: 상표 견본(JPG + TIF, 300 dpi, 7.6 cm), 공식 T0101 출원서 작성(체크 칸은 양식 자체의 칸에 표시), Markdown → Word를 통한 정식 DOCX/PDF(표 머리글 행을 페이지마다 반복, 행을 나누지 않음). |

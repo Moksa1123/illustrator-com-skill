@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4 — 2026-10-02
+
+- Size presets (54): new `momo_ad` (momo ad image, required when listing: 1000×1000, 50–1000 KB, no text / logo / frame / watermark / borders). momo main and description notes updated from the 2026-10-02 rule pages (plain background, 1–6 images, no borders, no Chinese file names; up to 20 description images); Google Ads PMax notes say not to overlay a logo and to keep one image per ratio without text.
+
 ## 1.0.3 — 2026-09-29
 
 - `sync` on a linked checkout (`init --link`) records the checkout's version, so `info` / `check` no longer report the version from the first install and a stale "update available".
