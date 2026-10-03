@@ -1,6 +1,6 @@
 {
   "name": "illustrator-com-skill",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Agent skill that drives Adobe Illustrator on Windows over COM: dialog-free ExtendScript, 452/452 scriptable menu commands and 115 live effects verified by readback, an API index built from your own Illustrator, a tested design library, 54 design-size presets, HTML-to-vector, and an industry-standard logo delivery package. Installs into 14 AI coding assistants.",
   "bin": {
     "illustrator-com": "bin/illustrator-com.mjs"

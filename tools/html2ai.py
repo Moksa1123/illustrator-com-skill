@@ -87,6 +87,7 @@ MEASURE_JS = r"""(sel) => {
         const rc = [...rg.getClientRects()].filter(x => x.width > 0 && x.height > 0)[0];
         if (!rc) continue;
         const k = vertical ? Math.round(rc.left) : Math.round(rc.top);
+        if (/\s/.test(s[i])) { if (lines[k]) lines[k].s += s[i]; continue; }   // spaces never set a line's bounds: a leading space would shift x
         const L = (lines[k] = lines[k] || {top: rc.top, left: rc.left, right: rc.right, bottom: rc.bottom, s: ''});
         L.s += s[i]; L.left = Math.min(L.left, rc.left); L.top = Math.min(L.top, rc.top); L.right = Math.max(L.right, rc.right); L.bottom = Math.max(L.bottom, rc.bottom);
       }
@@ -218,16 +219,23 @@ var n = {box: 0, img: 0, svg: 0, text: 0};
 for (var i = 0; i < IT.length; i++) {
   var t = IT[i];
   if (t.k == 'box') {
-    var fill = t.grad ? AI.gradient(t.grad.stops.map ? t.grad.stops : t.grad.stops, {angle: t.grad.angle}) : (t.bg && t.bg[3] > 0 ? AI.rgb(t.bg[0], t.bg[1], t.bg[2]) : null);
+    var gs = []; if (t.grad) for (var q = 0; q < t.grad.stops.length; q++) { var c4 = t.grad.stops[q][1]; gs.push([t.grad.stops[q][0], [c4[0], c4[1], c4[2]], c4[3] * 100]); }
+    var fill = t.grad ? AI.gradient(gs, {angle: t.grad.angle}) : (t.bg && t.bg[3] > 0 ? AI.rgb(t.bg[0], t.bg[1], t.bg[2]) : null);
     var uni = t.bw[0] == t.bw[1] && t.bw[1] == t.bw[2] && t.bw[2] == t.bw[3] && t.bw[0] > 0 && t.bs[0] != 'none';
     var sh = t.r > 0 ? AI.roundRect(t.x + (uni ? t.bw[0] / 2 : 0), t.y + (uni ? t.bw[0] / 2 : 0), t.w - (uni ? t.bw[0] : 0), t.h - (uni ? t.bw[0] : 0), t.r)
                      : AI.rect(t.x + (uni ? t.bw[0] / 2 : 0), t.y + (uni ? t.bw[0] / 2 : 0), t.w - (uni ? t.bw[0] : 0), t.h - (uni ? t.bw[0] : 0));
-    AI.style(sh, {fill: fill, stroke: uni ? [t.bc[0][0], t.bc[0][1], t.bc[0][2]] : null, strokeWidth: uni ? t.bw[0] : 0, name: t.name});
+    var fillA = t.grad ? 1 : (t.bg ? t.bg[3] : 1), split = uni && fill && t.bc[0][3] != fillA, bd = null;
+    AI.style(sh, {fill: fill, stroke: uni && !split ? [t.bc[0][0], t.bc[0][1], t.bc[0][2]] : null, strokeWidth: uni && !split ? t.bw[0] : 0, name: t.name});
+    if (split) {
+      bd = sh.duplicate(); AI.style(bd, {fill: null, stroke: [t.bc[0][0], t.bc[0][1], t.bc[0][2]], strokeWidth: t.bw[0], name: t.name + ' border'});
+      bd.opacity = t.bc[0][3] * 100 * (t.op < 1 ? t.op : 1);
+    } else if (uni && !fill && t.bc[0][3] < 1) sh.opacity = t.bc[0][3] * 100;
     if (uni && t.bs[0] == 'dashed') sh.strokeDashes = [t.bw[0] * 3, t.bw[0] * 2];
     if (uni && t.bs[0] == 'dotted') { sh.strokeDashes = [0, t.bw[0] * 2]; sh.strokeCap = StrokeCap.ROUNDENDCAP; }
     if (t.bg && t.bg[3] < 1 && !t.grad) sh.opacity = t.bg[3] * 100;
     if (t.op < 1) sh.opacity = sh.opacity * t.op;
     sh.move(L.shapes, ElementPlacement.PLACEATBEGINNING);
+    if (split) bd.move(L.shapes, ElementPlacement.PLACEATBEGINNING);             // border above its fill
     if (!uni) {                                                    // per-side borders as lines
       var sides = [[0, t.x, t.y + t.bw[0] / 2, t.x + t.w, t.y + t.bw[0] / 2], [1, t.x + t.w - t.bw[1] / 2, t.y, t.x + t.w - t.bw[1] / 2, t.y + t.h],
                    [2, t.x, t.y + t.h - t.bw[2] / 2, t.x + t.w, t.y + t.h - t.bw[2] / 2], [3, t.x + t.bw[3] / 2, t.y, t.x + t.bw[3] / 2, t.y + t.h]];

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5 — 2026-10-03
+
+- `html2ai.py`: a space before a word no longer sets the line's x (`<span>for</span> WooCommerce` was converted as "forWooCommerce"); a translucent border on a translucent box keeps its own opacity as a separate stroke-only shape (it used to take the fill's opacity and disappear); `linear-gradient` stops keep their alpha (fades to transparent came out solid). Checked by `tests/html2ai_check.py`, which reads the converted document back.
+
 ## 1.0.4 — 2026-10-02
 
 - Size presets (54): new `momo_ad` (momo ad image, required when listing: 1000×1000, 50–1000 KB, no text / logo / frame / watermark / borders). momo main and description notes updated from the 2026-10-02 rule pages (plain background, 1–6 images, no borders, no Chinese file names; up to 20 description images); Google Ads PMax notes say not to overlay a logo and to keep one image per ratio without text.
