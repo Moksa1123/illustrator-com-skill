@@ -13,6 +13,7 @@
     "!index/ai-dom.json",
     "!index/raw",
     "presets",
+    "data",
     "tools",
     "tests",
     "!tests/snaps",
