@@ -1,0 +1,5 @@
+date,question,why_not_found,asked_by,status
+2026-11-16,zh_TW labels of Drop Shadow / Round Corners / Gaussian Blur (製作陰影、圓角、高斯模糊),Illustrator 28.0 zh_TW Export Text skips these Effect-menu items; glossary rows marked inferred,skill 總機 (SOP item 3),open
+2026-11-16,zh_TW menu labels that terms_zh.csv could not pair with a command id (of 557 exported lines),the zh_TW export omits some commands and adds submenu headers; only shortcut anchors and equal-count gaps are paired (index/build_zh_terms.py),skill 總機 (SOP item 3),open
+2026-11-16,250 type-library members never confirmed in ExtendScript (shown as ? with --all),no instance of the owning class could be created in the sandbox or the member threw on read (GraphItem and others); needs fixtures,skill 總機 (SOP item 1),open
+2026-11-16,library tests not re-run since 2026-09-28 (40/40),run_tests.py needs Illustrator open; offline tests cover only the lookup layer,skill 總機 (SOP item 8),open
