@@ -1,0 +1,68 @@
+zh,en_path,cmd,dom_words,confidence,source
+建立外框,Type > Create Outlines,outline,createOutline,ui-string,zh label in index/raw/shortcuts_zh_TW.txt (Shift+Ctrl+O on both sides)
+外框筆畫,Object > Path > Outline Stroke,OffsetPath v22,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+位移複製,Object > Path > Offset Path,OffsetPath v23,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+簡化,Object > Path > Simplify,simplify menu item,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+分割下方物件,Object > Path > Divide Objects Below,Knife Tool2,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+分割成網格,Object > Path > Split Into Grid,Rows and Columns....,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+展開,Object > Expand,Expand3,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+擴充外觀,Object > Expand Appearance,expandStyle,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+點陣化,Object > Rasterize,Rasterize 8 menu item,rasterize,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+建立漸層網格,Object > Create Gradient Mesh,make mesh,mesh,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+轉換為形狀,Object > Shape > Convert to Shapes,Convert to Shape,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+封套扭曲,Object > Envelope Distort,,envelope,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+以網格製作,Object > Envelope Distort > Make with Mesh,Create Envelope Grid,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt (Alt+Ctrl+M on both sides)
+即時上色,Object > Live Paint > Make,Make Planet X,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+影像描圖,Object > Image Trace > Make,Make Image Tracing,trace,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+剪裁遮色片,Object > Clipping Mask > Make,makeMask,clipping,ui-string,zh label in index/raw/shortcuts_zh_TW.txt (Ctrl+7 on both sides)
+複合路徑,Object > Compound Path > Make,compoundPath,compoundPath,ui-string,zh label in index/raw/shortcuts_zh_TW.txt (Ctrl+8 on both sides)
+組成群組,Object > Group,group,group,ui-string,zh label in index/raw/shortcuts_zh_TW.txt (Ctrl+G on both sides)
+再次變形,Object > Transform > Transform Again,transformagain,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt (Ctrl+D on both sides)
+變更大小寫,Type > Change Case,,changeCaseTo,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+使工作區域符合視窗,View > Fit Artboard in Window,fitin,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt (Ctrl+0 on both sides)
+粗糙效果,Effect > Distort & Transform > Roughen,Live Roughen,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+縮攏與膨脹,Effect > Distort & Transform > Pucker & Bloat,Live Pucker & Bloat,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+鋸齒化,Effect > Distort & Transform > Zig Zag,Live Zig Zag,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+內光暈,Effect > Stylize > Inner Glow,Live Inner Glow,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+外光暈,Effect > Stylize > Outer Glow,Live Outer Glow,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+羽化,Effect > Stylize > Feather,Live Feather,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+塗抹,Effect > Stylize > Scribble,Live Scribble Fill,,ui-string,zh label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+製作陰影,Effect > Stylize > Drop Shadow,Live Adobe Drop Shadow,shadow,inferred,not in the zh export (it skips this item); common zh_TW label
+陰影,Effect > Stylize > Drop Shadow,Live Adobe Drop Shadow,shadow,inferred,designer wording; not an Illustrator label
+圓角,Effect > Stylize > Round Corners,Live Adobe Round Corners,corner,inferred,not in the zh export; common zh_TW label
+高斯模糊,Effect > Blur > Gaussian Blur,Live Adobe PSL Gaussian Blur,blur,inferred,not in the zh export; common zh_TW label
+模糊,Effect > Blur > Gaussian Blur,Live Adobe PSL Gaussian Blur,blur,ui-string,submenu label in index/raw/shortcuts_zh_TW.txt
+外框,View > Outline / Preview,preview,outline,inferred,"several commands use this label (View, Pathfinder, Object Path); designer wording for outlines"
+去背,Object > Image Trace > Make,Make Image Tracing,trace,inferred,designer wording; Illustrator has no background-removal command; nearest is Image Trace / Clipping Mask
+漸層,Window > Gradient,Adobe Gradient Palette,gradient,ui-string,tool label in index/raw/shortcuts_zh_TW.txt (G)
+筆畫,Window > Stroke,Adobe Stroke Palette,stroke,ui-string,label in index/raw/shortcuts_zh_TW.txt
+填色,,,fill,ui-string,label in index/raw/shortcuts_zh_TW.txt (切換填色/筆畫)
+透明度,Window > Transparency,Adobe Transparency Palette Menu Item,opacity,ui-string,label in index/raw/shortcuts_zh_TW.txt
+不透明度,,,opacity,ui-string,label in index/raw/shortcuts_zh_TW.txt (不透明度 - 50%)
+漸變模式,,,blendingMode,ui-string,label in index/raw/shortcuts_zh_TW.txt (漸變模式 - 色彩增值)
+混合模式,,,blendingMode,inferred,designer wording; Illustrator zh_TW says 漸變模式
+圖層,Window > Layers,AdobeLayerPalette1,layer,ui-string,label in index/raw/shortcuts_zh_TW.txt
+工作區域,Window > Artboards,Adobe Artboard Palette,artboard,ui-string,label in index/raw/shortcuts_zh_TW.txt
+畫板,Window > Artboards,Adobe Artboard Palette,artboard,ui-string,tool label in index/raw/shortcuts_zh_TW.txt (Shift+O)
+符號,Window > Symbols,Adobe Symbol Palette,symbol,ui-string,label in index/raw/shortcuts_zh_TW.txt
+色票,Window > Swatches,Adobe Swatches Menu Item,swatch,ui-string,label in index/raw/shortcuts_zh_TW.txt
+繪圖樣式,Window > Graphic Styles,Adobe Style Palette,graphicStyle,ui-string,label in index/raw/shortcuts_zh_TW.txt
+路徑管理員,Window > Pathfinder,Adobe PathfinderUI,pathfinder,ui-string,label in index/raw/shortcuts_zh_TW.txt
+對齊,Window > Align,AdobeAlignObjects2,align,ui-string,label in index/raw/shortcuts_zh_TW.txt
+字元,Window > Type > Character,internal palettes posing as plug-in menus-character,characterAttributes,ui-string,label in index/raw/shortcuts_zh_TW.txt
+段落,Window > Type > Paragraph,internal palettes posing as plug-in menus-paragraph,paragraphAttributes,ui-string,label in index/raw/shortcuts_zh_TW.txt
+字體,,,textFont,inferred,designer wording
+文字,,,text,ui-string,label in index/raw/shortcuts_zh_TW.txt
+參考線,View > Guides,,guides,ui-string,label in index/raw/shortcuts_zh_TW.txt
+製作參考線,View > Guides > Make Guides,makeguide,guides,ui-string,label in index/raw/shortcuts_zh_TW.txt (Ctrl+5 on both sides)
+智慧型參考線,View > Smart Guides,Snapomatic on-off menu item,,ui-string,label in index/raw/shortcuts_zh_TW.txt (Ctrl+U on both sides)
+圖樣,Object > Pattern > Make,Adobe Make Pattern,pattern,ui-string,label in index/raw/shortcuts_zh_TW.txt
+放射狀,Object > Repeat > Radial,Make Radial Repeat,radial,ui-string,label in index/raw/shortcuts_zh_TW.txt
+旋轉,Object > Transform > Rotate,transformrotate,rotate,ui-string,label in index/raw/shortcuts_zh_TW.txt
+縮放,Object > Transform > Scale,transformscale,resize,ui-string,label in index/raw/shortcuts_zh_TW.txt
+鏡射,Object > Transform > Reflect,transformreflect,reflect,ui-string,label in index/raw/shortcuts_zh_TW.txt
+傾斜,Object > Transform > Shear,transformshear,shear,ui-string,label in index/raw/shortcuts_zh_TW.txt
+取消選取,Select > Deselect,deselectall,selection,ui-string,label in index/raw/shortcuts_zh_TW.txt (Shift+Ctrl+A on both sides)
+重新上色圖稿,Edit > Edit Colors > Recolor Artwork,Recolor Art Dialog,,ui-string,label in index/raw/shortcuts_zh_TW.txt; paired by menu position
+轉存,File > Export > Export As,export,export,ui-string,label in index/raw/shortcuts_zh_TW.txt
+轉存為螢幕適用,File > Export > Export for Screens,exportForScreens,exportForScreens,ui-string,label in index/raw/shortcuts_zh_TW.txt (Alt+Ctrl+E on both sides)

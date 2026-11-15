@@ -9,9 +9,12 @@ Usage:
   python index/ai_api.py effect [words]        live effects known to work with pageItem.applyEffect(xml) (presets/effects.json)
   python index/ai_api.py menu [words]          menu commands (index/menu-index.json) with coverage status
   python index/ai_api.py stats                 index coverage
+Chinese words (zh_TW Illustrator labels or designer wording) are mapped through index/terms_zh.csv and
+index/glossary_zh.csv: `menu 建立外框`, `effect 陰影`, `find 陰影`.
 Options: --all  also show members not verified at runtime and COM-only members (hidden by default)
 Marks:   ✓ exists in ExtendScript on this machine   ? in the type library, not verified   COM  COM-only (ExtendScript: see js_equiv)
 """
+import csv
 import json
 import re
 import sys
@@ -23,6 +26,39 @@ sys.stdout.reconfigure(encoding="utf-8")
 D = json.loads((HERE / "ai-dom.json").read_text(encoding="utf-8"))
 ALL = "--all" in sys.argv
 args = [x for x in sys.argv[1:] if x != "--all"]
+
+
+CJK = re.compile("[㐀-鿿]")
+_ZH = None
+
+
+def zh_rows(term):
+    """Glossary rows whose Chinese label contains the term (index/terms_zh.csv + index/glossary_zh.csv)."""
+    global _ZH
+    if _ZH is None:
+        _ZH = []
+        for f in ("terms_zh.csv", "glossary_zh.csv"):
+            p = HERE / f
+            if p.exists():
+                with open(p, encoding="utf-8", newline="") as fh:
+                    _ZH += list(csv.DictReader(fh))
+    return [r for r in _ZH if term in r["zh"]]
+
+
+def matcher(t, field="cmd"):
+    """A predicate for one query word: English words are a regex on the text; Chinese words match the commands
+    (field="cmd") or the English words (field="words") their glossary rows point to."""
+    if not CJK.search(t):
+        rx = re.compile(re.escape(t), re.I)
+        return lambda text, cmd="": bool(rx.search(text))
+    rows = zh_rows(t)
+    cmds = {r["cmd"] for r in rows if r["cmd"]}
+    words = {w for r in rows for w in (r.get("dom_words") or "").split()}
+    words |= {r["en_path"].split(" > ")[-1] for r in rows if r["en_path"] and not r.get("dom_words")}
+    rxs = [re.compile(re.escape(w), re.I) for w in words]
+    if field == "cmd":
+        return lambda text, cmd="": cmd in cmds or t in text
+    return lambda text, cmd="": any(r.search(text) for r in rxs)
 
 
 def mark(x):
@@ -89,13 +125,13 @@ def cmd_member(q):
 
 
 def cmd_find(terms):
-    pats = [re.compile(re.escape(t), re.I) for t in terms]
+    pats = [matcher(t, "words") for t in terms]
     hits = []
 
     def score(name, text):
-        if not all(p.search(name + " " + text) for p in pats):
+        if not all(p(name + " " + text) for p in pats):
             return 0
-        return sum(3 if p.search(name) else 1 for p in pats)
+        return sum(3 if p(name) else 1 for p in pats)
 
     for k, c in D["classes"].items():
         s = score(k, c["help"])
@@ -124,6 +160,11 @@ def cmd_find(terms):
         print(f"... {len(hits)} hits, narrow the words")
     if not hits:
         print("no hits (try --all, or English words)")
+        for t in terms:
+            for r in zh_rows(t) if CJK.search(t) else []:
+                if r["en_path"]:
+                    kind = "effect" if r["en_path"].startswith("Effect >") else "menu"
+                    print(f"  {r['zh']} = {r['en_path']}  ->  ai_api.py {kind} {t}")
 
 
 def cmd_stats():
@@ -143,10 +184,10 @@ def cmd_effect(terms):
     if not p.exists():
         sys.exit("presets/effects.json missing: run python tests/effects_sweep.py")
     E = json.loads(p.read_text(encoding="utf-8"))
-    pats = [re.compile(re.escape(t), re.I) for t in terms]
+    pats = [matcher(t) for t in terms]
     for e in E["effects"]:
         text = f"{e['name']} {e.get('menu', '')} {' '.join(e.get('params', {}))}"
-        if all(p.search(text) for p in pats):
+        if all(p(text, e.get("cmd", "")) for p in pats):
             print(f"{'✓' if e.get('ok') else '✗'} {e.get('menu', ''):<40} {e['name']}")
             print(f"    {e['xml']}")
 
@@ -160,10 +201,10 @@ def cmd_menu(terms):
     cp = SKILL / "tests" / "coverage.json"
     if cp.exists():
         cov = {r["cmd"]: r for r in json.loads(cp.read_text(encoding="utf-8"))["rows"]}
-    pats = [re.compile(re.escape(t), re.I) for t in terms]
+    pats = [matcher(t) for t in terms]
     for it in M["items"]:
         text = f"{it['cmd']} {it['path']} {it.get('zh', '')}"
-        if all(p.search(text) for p in pats):
+        if all(p(text, it["cmd"]) for p in pats):
             c = cov.get(it["cmd"], {})
             print(f"{c.get('status', '·'):<4} {it['path']:<60} app.executeMenuCommand('{it['cmd']}')" + (f"   {c['how']}" if c.get("how") else ""))
 
