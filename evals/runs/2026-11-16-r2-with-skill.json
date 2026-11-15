@@ -1,0 +1,19 @@
+{"meta": {"date": "2026-11-16", "model": "claude-opus-5-5", "how": "subagent 讀 SKILL.md、用 ai_api.py 查"}, "answers": {
+"pucker-effect-name": "LiveEffect name \"Adobe Punk and Bloat\"; the amount key is d_factor (real, default 0.0): <LiveEffect name=\"Adobe Punk and Bloat\"><Dict data=\"R d_factor 0.0 \"/></LiveEffect>",
+"zigzag-effect-keys": "LiveEffect name \"Adobe Zigzag\"; ridges per segment is the key ridges (R ridges 4.0). Full defaults: R amount 10.0 R ridges 4.0 R absoluteness 1.0 R roundness 0.0 R relAmount 10.0.",
+"blocked-menu-cmds": "File > Save Selected Slices (`Adobe AI Save Selected Slices`: the legacy Save for Web 'Save Optimized As' dialog re-opens itself after every answer; use Export for Screens / AI.png instead) and File > Print (`Print`: document.print(PrintOptions) never returns, timed out after 180 s three times; use AI.pdf()/AI.png()).",
+"repeat-config-null": "The radialConfig / gridConfig / symmetryConfig getters return/throw a \"NULL pointer\" error in 28.0 (unusable). The skill sets Repeat options through Object > Repeat > Options instead, answering that dialog with a run_js dialog plan (e.g. dialog=[\"sel\", \"type:30\", \"tab\", \"ok\"]).",
+"press-quality-bleed": "PDF presets such as [Press Quality] reset the document bleed to 0 in the saved PDF. To keep the bleed, leave pDFPreset unset and set pDFXStandard = PDFXStandard.PDFX1A2001 plus trimMarks = true (bleed kept, verified via the PDF's BleedBox). DocumentPreset.documentBleedOffset sets the document bleed.",
+"tweak-effect-name": "\"Adobe Scribble and Tweak\" (defaults: B in 1 R vert 10.0 R horz 10.0 B anch 1 B out 1 R aver 10.0 R ahor 10.0 R absoluteness 0.0).",
+"twist-effect-name": "LiveEffect name \"Adobe Twirl\", parameter key angle: <LiveEffect name=\"Adobe Twirl\"><Dict data=\"R angle 0.0 \"/></LiveEffect>. (Not to be confused with Effect > Warp > Twist, which is Adobe Deform with DeformStyle 15.)",
+"warp-flag-style": "DeformStyle 8 (I DeformStyle 8) selects Flag: <LiveEffect name=\"Adobe Deform\"><Dict data=\"R DeformHoriz 0.0 I DeformStyle 8 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/></LiveEffect>",
+"roughen-detail-key": "dtal (R dtal 10.0). Other keys: asiz, size, absoluteness, roundness.",
+"offset-path-effect-keys": "ofst = offset distance (R ofst 10.0), jntp = join type (I jntp 2), mlim = miter limit (R mlim 4.0). LiveEffect \"Adobe Offset Path\".",
+"rasterize-effect-dpi-key": "\"dpi.\" (four characters including the trailing period): I dpi. 72. Other keys: padd, alis, colr, mask, optn.",
+"outline-object-effect-name": "\"Adobe Outline Type\" (empty Dict: <LiveEffect name=\"Adobe Outline Type\"><Dict data=\" \"/></LiveEffect>).",
+"point-area-route": "executeMenuCommand('point-area') is refused by Illustrator for scripts: it throws PARM. The DOM equivalent is textFrame.convertPointObjectToAreaObject() (verified by readback).",
+"type-on-path-route": "Through the real menu bar with tools/menu_ui.py, which reads the native popup menus and clicks 文字 > 路徑文字 > 偏斜效果 (Type > Type on a Path > Skew); verified by pixels.",
+"rotate-view-route": "document.activeView.rotateAngle = 90 (the menu itself also needs GPU Preview).",
+"unverified-member-count": "250 unverified (193 properties + 57 methods) and 684 COM-only (575 properties + 109 methods), out of 2715 members (1781 verified in ExtendScript).",
+"same-call-selection": "Illustrator refreshes command targets only when idle, so a menu command issued in the same run_js call that created/selected the objects acts on the old selection or silently does nothing. Fix: select in one run_js call and run app.executeMenuCommand() in the next call (give it an idle moment, ~0.6 s, between calls), and look items up again at the start of each call since references go stale; verify with FP()/FPDIFF()."
+}}

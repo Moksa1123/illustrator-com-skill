@@ -1,0 +1,392 @@
+{
+  "about": "illustrator-com skill 真題：「做 X 要用哪個指令／效果／API」。答案取自 index/menu-index.json、tests/coverage.json、presets/effects.json、index/ai-dom.json 與 SKILL.md 的實測踩坑。評分：must 裡每一組都要命中（組內任一正規式命中即可）。沒 skill 也答對的題不算數（SOP 6-4），在 RESULTS.md 標出並換題。answer 欄是標準答案，tests/test_evals.py 用它檢查評分規則。",
+  "cases": [
+    {
+      "id": "outline-stroke-cmd",
+      "question": "In an Illustrator ExtendScript, what exact string do you pass to app.executeMenuCommand() to run Object > Path > Outline Stroke (外框筆畫)?",
+      "must": [
+        [
+          "OffsetPath v22"
+        ]
+      ],
+      "answer": "app.executeMenuCommand('OffsetPath v22')",
+      "source": "index/menu-index.json + tests/coverage.json (✅)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "offset-path-cmd",
+      "question": "What exact app.executeMenuCommand() string runs Object > Path > Offset Path (位移複製) in Illustrator 2024?",
+      "must": [
+        [
+          "OffsetPath v23"
+        ]
+      ],
+      "answer": "app.executeMenuCommand('OffsetPath v23')",
+      "source": "index/menu-index.json + tests/coverage.json (✅)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "livepaint-make-cmd",
+      "question": "What exact app.executeMenuCommand() string makes a Live Paint group (Object > Live Paint > Make, 即時上色 > 製作)?",
+      "must": [
+        [
+          "Make Planet X"
+        ]
+      ],
+      "answer": "app.executeMenuCommand('Make Planet X')",
+      "source": "index/menu-index.json + tests/coverage.json (✅)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "split-grid-cmd",
+      "question": "What exact app.executeMenuCommand() string opens Object > Path > Split Into Grid (分割成網格)?",
+      "must": [
+        [
+          "Rows and Columns\\.{2,}"
+        ]
+      ],
+      "answer": "app.executeMenuCommand('Rows and Columns....')",
+      "source": "index/menu-index.json + tests/coverage.json (✅)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "lock-above-cmd",
+      "question": "What exact app.executeMenuCommand() string runs Object > Lock > All Artwork Above (鎖定上方所有圖稿)?",
+      "must": [
+        [
+          "Selection Hat 5"
+        ]
+      ],
+      "answer": "app.executeMenuCommand('Selection Hat 5')",
+      "source": "index/menu-index.json + tests/coverage.json (✅)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "rasterize-cmd",
+      "question": "What exact app.executeMenuCommand() string runs Object > Rasterize (點陣化) in Illustrator 2024?",
+      "must": [
+        [
+          "Rasterize 8 menu item"
+        ]
+      ],
+      "answer": "app.executeMenuCommand('Rasterize 8 menu item')",
+      "source": "index/menu-index.json + tests/coverage.json (✅)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "feather-effect-name",
+      "question": "To apply Effect > Stylize > Feather (羽化) with pageItem.applyEffect(xml), what is the LiveEffect name, and what is the parameter key for the radius?",
+      "must": [
+        [
+          "Adobe Fuzzy Mask"
+        ],
+        [
+          "\\bRadius\\b"
+        ]
+      ],
+      "answer": "<LiveEffect name=\"Adobe Fuzzy Mask\"><Dict data=\"R Radius 5.0 \"/></LiveEffect>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "pucker-effect-name",
+      "question": "To apply Effect > Distort & Transform > Pucker & Bloat (縮攏與膨脹) with applyEffect(xml), what is the LiveEffect name and the parameter key for the amount?",
+      "must": [
+        [
+          "Adobe Punk and Bloat"
+        ],
+        [
+          "d_factor"
+        ]
+      ],
+      "answer": "<LiveEffect name=\"Adobe Punk and Bloat\"><Dict data=\"R d_factor 0.0 \"/></LiveEffect>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測"
+    },
+    {
+      "id": "gaussian-effect-name",
+      "question": "What LiveEffect name does Illustrator use for Effect > Blur > Gaussian Blur (高斯模糊) in applyEffect XML, and which key holds the radius?",
+      "must": [
+        [
+          "Adobe PSL Gaussian Blur"
+        ],
+        [
+          "\\bblur\\b"
+        ]
+      ],
+      "answer": "<LiveEffect name=\"Adobe PSL Gaussian Blur\"><Dict data=\"I PrevDres 72 R blur 10.0 R PrevDocScale 1.0 \"/></LiveEffect>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "zigzag-effect-keys",
+      "question": "In the applyEffect XML for Effect > Distort & Transform > Zig Zag (鋸齒化), what is the LiveEffect name, and which key sets the number of ridges per segment?",
+      "must": [
+        [
+          "Adobe Zigzag"
+        ],
+        [
+          "\\bridges\\b"
+        ]
+      ],
+      "answer": "<LiveEffect name=\"Adobe Zigzag\"><Dict data=\"R amount 10.0 R ridges 4.0 R absoluteness 1.0 R roundness 0.0 R relAmount 10.0 \"/></LiveEffect>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測"
+    },
+    {
+      "id": "dropshadow-offset-keys",
+      "question": "In the Adobe Drop Shadow LiveEffect XML (Effect > Stylize > Drop Shadow, 製作陰影), which parameter keys hold the X offset, the Y offset and the opacity?",
+      "must": [
+        [
+          "\\bhorz\\b"
+        ],
+        [
+          "\\bvert\\b"
+        ],
+        [
+          "\\bopac\\b"
+        ]
+      ],
+      "answer": "horz (X offset), vert (Y offset), opac (opacity 0-1): <Dict data=\"... R vert 7.0 R horz 7.0 ... R opac 0.75 \"/>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "blocked-menu-cmds",
+      "question": "When every Illustrator 2024 (28.0) menu command was run from a script and read back, two could not be completed from a script at all (they hang or loop on a dialog). Which two menu items?",
+      "must": [
+        [
+          "\\bPrint\\b|列印"
+        ],
+        [
+          "Save Selected Slices|儲存選取的切片"
+        ]
+      ],
+      "answer": "File > Print (document.print never returns) and File > Save Selected Slices (the legacy Save for Web dialog re-opens itself)",
+      "source": "tests/coverage.json (status blocked)",
+      "trust": "實測"
+    },
+    {
+      "id": "repeat-config-null",
+      "question": "In Illustrator 28.0 ExtendScript, what happens when you read radialConfig / gridConfig / symmetryConfig on a Repeat item, and how does the skill set Repeat options instead?",
+      "must": [
+        [
+          "NULL pointer|null pointer"
+        ],
+        [
+          "Repeat > Options|Repeat Options|dialog"
+        ]
+      ],
+      "answer": "The getters return \"NULL pointer\" in 28.0; use Object > Repeat > Options with a dialog plan.",
+      "source": "SKILL.md Pitfalls (measured)",
+      "trust": "實測"
+    },
+    {
+      "id": "press-quality-bleed",
+      "question": "Saving a print PDF from an Illustrator script with pDFPreset = '[Press Quality]': what happens to the document bleed, and which PDFSaveOptions settings keep the bleed?",
+      "must": [
+        [
+          "\\b0\\b|zero|reset|lost|丟|歸零"
+        ],
+        [
+          "PDFX1A2001|PDF/X-1a"
+        ],
+        [
+          "trimMarks"
+        ]
+      ],
+      "answer": "The preset resets the bleed to 0 in the saved PDF; leave pDFPreset unset and use pDFXStandard = PDFXStandard.PDFX1A2001 + trimMarks = true.",
+      "source": "SKILL.md Pitfalls (verified with the PDF's BleedBox)",
+      "trust": "實測"
+    },
+    {
+      "id": "graphitem-unverified",
+      "question": "The skill's API index marks every ExtendScript member as verified at runtime, COM-only, or unverified. Which status does GraphItem.opacity have?",
+      "must": [
+        [
+          "unverified|not verified|未驗證|\\?"
+        ]
+      ],
+      "answer": "unverified (?): in the type library, never confirmed in ExtendScript (shown only with --all)",
+      "source": "index/ai-dom.json (ai_api.py member GraphItem.opacity)",
+      "trust": "實測",
+      "retired": "2026-11-16 沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "tweak-effect-name",
+      "question": "In applyEffect XML, what LiveEffect name does Illustrator 2024 use for Effect > Distort & Transform > Tweak?",
+      "must": [
+        [
+          "Adobe Scribble and Tweak"
+        ]
+      ],
+      "answer": "<LiveEffect name=\"Adobe Scribble and Tweak\"><Dict data=\"B in 1 R vert 10.0 R horz 10.0 ...\"/></LiveEffect>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測"
+    },
+    {
+      "id": "twist-effect-name",
+      "question": "In applyEffect XML, what LiveEffect name and parameter key does Effect > Distort & Transform > Twist (扭轉) use?",
+      "must": [
+        [
+          "Adobe Twirl"
+        ],
+        [
+          "\\bangle\\b"
+        ]
+      ],
+      "answer": "<LiveEffect name=\"Adobe Twirl\"><Dict data=\"R angle 0.0 \"/></LiveEffect>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測",
+      "retired": "2026-11-16 第 2 輪沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "warp-flag-style",
+      "question": "All Effect > Warp styles share the LiveEffect \"Adobe Deform\". Which integer value of the DeformStyle key selects the Flag style?",
+      "must": [
+        [
+          "DeformStyle\\D{0,20}\\b8\\b|\\b8\\b"
+        ]
+      ],
+      "answer": "DeformStyle 8 (<Dict data=\"R DeformHoriz 0.0 I DeformStyle 8 R DeformValue 0.5 R DeformVert 0.0 B Rotate 0 \"/>)",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測",
+      "retired": "2026-11-16 第 2 輪沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "roughen-detail-key",
+      "question": "In the Adobe Roughen LiveEffect XML (Effect > Distort & Transform > Roughen, 粗糙效果), which key holds the Detail (ridges per inch) value?",
+      "must": [
+        [
+          "\\bdtal\\b"
+        ]
+      ],
+      "answer": "dtal (<Dict data=\"R dtal 10.0 R asiz 5.0 R size 5.0 R absoluteness 0.0 R roundness 0.0 \"/>)",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測"
+    },
+    {
+      "id": "offset-path-effect-keys",
+      "question": "In the Adobe Offset Path LiveEffect XML (Effect > Path > Offset Path), which keys hold the offset distance, the join type and the miter limit?",
+      "must": [
+        [
+          "\\bofst\\b"
+        ],
+        [
+          "\\bjntp\\b"
+        ],
+        [
+          "\\bmlim\\b"
+        ]
+      ],
+      "answer": "ofst (offset), jntp (joins), mlim (miter limit): <Dict data=\"R ofst 10.0 R mlim 4.0 I jntp 2 \"/>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測",
+      "retired": "2026-11-16 第 2 輪沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "rasterize-effect-dpi-key",
+      "question": "In the Adobe Rasterize LiveEffect XML (Effect > Rasterize), what is the exact key for the resolution (ppi)?",
+      "must": [
+        [
+          "dpi\\."
+        ]
+      ],
+      "answer": "\"dpi.\" (with the dot): <Dict data=\"I dpi. 72 R padd 36.0 B alis 0 I colr 4 B mask 0 I optn 0 \"/>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測"
+    },
+    {
+      "id": "outline-object-effect-name",
+      "question": "What LiveEffect name does Effect > Path > Outline Object use in applyEffect XML?",
+      "must": [
+        [
+          "Adobe Outline Type"
+        ]
+      ],
+      "answer": "<LiveEffect name=\"Adobe Outline Type\"><Dict data=\" \"/></LiveEffect>",
+      "source": "presets/effects.json (read back from a saved .ai)",
+      "trust": "實測"
+    },
+    {
+      "id": "point-area-route",
+      "question": "From an Illustrator 2024 script, what happens with app.executeMenuCommand('point-area') (Type > Convert To Area Type), and what DOM method does the same thing?",
+      "must": [
+        [
+          "PARM|refuse|throw|error|fails"
+        ],
+        [
+          "convertPointObjectToAreaObject"
+        ]
+      ],
+      "answer": "The menu id refuses scripts (throws PARM); use textFrame.convertPointObjectToAreaObject().",
+      "source": "tests/coverage.json (how column)",
+      "trust": "實測",
+      "retired": "2026-11-16 第 2 輪沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "type-on-path-route",
+      "question": "app.executeMenuCommand('textpathtypeSkew') (Type > Type on a Path > Skew) is refused by Illustrator 2024. How does the skill run it instead?",
+      "must": [
+        [
+          "menu_ui|menu bar|menubar"
+        ]
+      ],
+      "answer": "Through the real menu bar with tools/menu_ui.py (reads the native popup menus and clicks 文字 > 路徑文字 > 偏斜效果).",
+      "source": "tests/coverage.json (how column) + SKILL.md Pitfalls",
+      "trust": "實測"
+    },
+    {
+      "id": "rotate-view-route",
+      "question": "executeMenuCommand('RotateView90') throws PARM from a script. What property does the skill set to rotate the view instead?",
+      "must": [
+        [
+          "rotateAngle"
+        ]
+      ],
+      "answer": "document.activeView.rotateAngle = 90",
+      "source": "tests/coverage.json (how column)",
+      "trust": "實測",
+      "retired": "2026-11-16 第 2 輪沒 skill 也答對（無鑑別度）"
+    },
+    {
+      "id": "unverified-member-count",
+      "question": "The skill's API index for Illustrator 28.0.0 sorts every type-library member into verified-in-ExtendScript, COM-only, or unverified. How many members are unverified, and how many are COM-only?",
+      "must": [
+        [
+          "\\b250\\b"
+        ],
+        [
+          "\\b684\\b"
+        ]
+      ],
+      "answer": "250 unverified (193 properties + 57 methods), 684 COM-only, of 2715 members.",
+      "source": "index/ai-dom.json (ai_api.py stats)",
+      "trust": "實測"
+    },
+    {
+      "id": "same-call-selection",
+      "question": "In this skill, a script selects objects and runs app.executeMenuCommand() in the same run_js call, and the command acts on the old selection or does nothing. Why, and what is the fix?",
+      "must": [
+        [
+          "idle|refresh"
+        ],
+        [
+          "\\bnext\\b|separate|another|second|two (run_js )?calls|下一次|分開"
+        ]
+      ],
+      "answer": "Illustrator refreshes command targets only when idle: select in one run_js call, run the menu command in the next.",
+      "source": "SKILL.md Pitfalls (measured)",
+      "trust": "實測"
+    }
+  ]
+}

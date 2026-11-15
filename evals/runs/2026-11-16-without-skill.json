@@ -1,0 +1,17 @@
+{"meta": {"date": "2026-11-16", "model": "claude-opus-5-5", "how": "subagent 不用任何工具，憑記憶作答"}, "answers": {
+"outline-stroke-cmd": "OffsetPath v22",
+"offset-path-cmd": "OffsetPath v23",
+"livepaint-make-cmd": "Make Planet X",
+"split-grid-cmd": "Rows and Columns....",
+"lock-above-cmd": "Selection Hat 5",
+"rasterize-cmd": "Rasterize 8 menu item",
+"feather-effect-name": "LiveEffect name: Adobe Fuzzy Mask; radius key: Rad",
+"pucker-effect-name": "LiveEffect name: Adobe Pucker & Bloat (Adobe Deform Pucker); amount key: ppvl (percentage)",
+"gaussian-effect-name": "LiveEffect name: Adobe PSL Gaussian Blur; radius key: blur (blurValue)",
+"zigzag-effect-keys": "LiveEffect name: Adobe Zig Zag Filter; ridges per segment key: ridges",
+"dropshadow-offset-keys": "X offset: horz; Y offset: vert; opacity: opac",
+"blocked-menu-cmds": "Edit > Check Spelling (Spelling dialog) and Type > Find Font (both dialog loops that cannot be completed from script)",
+"repeat-config-null": "Reading radialConfig/gridConfig/symmetryConfig on a Repeat item returns null/undefined (or throws) in 28.0, so they cannot be read or set directly; the skill instead creates the Repeat via executeMenuCommand (e.g. 'Make Radial Repeat' / 'Make Grid Repeat' / 'Make Symmetry Repeat') and sets its options through the Repeat Options dialog handled by the skill's dialog automation (or by preference keys) and reads back the result.",
+"press-quality-bleed": "The [Press Quality] preset has zero bleed, so the document bleed is dropped (bleed set to 0) in the exported PDF. To keep it set PDFSaveOptions.bleedLink = true and useDocumentBleeds = true (or set bleedOffsetRect explicitly), applied after setting pDFPreset.",
+"graphitem-unverified": "unverified"
+}}

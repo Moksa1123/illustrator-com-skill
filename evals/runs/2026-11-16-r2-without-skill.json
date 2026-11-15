@@ -1,0 +1,19 @@
+{"meta": {"date": "2026-11-16", "model": "claude-opus-5-5", "how": "subagent 不用任何工具，憑記憶作答"}, "answers": {
+"pucker-effect-name": "LiveEffect name \"Adobe Pucker & Bloat\" (escape as &amp; in the XML); amount key \"amount\" (negative = pucker, positive = bloat), e.g. <LiveEffect name=\"Adobe Pucker &amp; Bloat\"><Dict data=\"R amount 50 \"/></LiveEffect>",
+"zigzag-effect-keys": "LiveEffect name \"Adobe Zig Zag Filter\"; ridges per segment key is \"ridges\" (others: amount, absoluteness/relAbs, smooth)",
+"blocked-menu-cmds": "File > Save for Web (Legacy) and File > Package (both hang/loop on their dialog and cannot be completed from a script)",
+"repeat-config-null": "Reading radialConfig / gridConfig / symmetryConfig on a Repeat item returns null/undefined (or throws) in 28.0, so you cannot read or modify the options through the DOM. The skill instead sets Repeat options through the menu commands (Object > Repeat > Radial/Grid/Mirror and Repeat Options) via executeMenuCommand, answering the Repeat Options dialog with its own dialog handler (filling the fields), then reads back the result.",
+"press-quality-bleed": "The [Press Quality] preset has bleed 0 and does not use the document bleed, so the bleed is dropped (the PDF is cropped at the trim/artboard). To keep it set the bleed explicitly on PDFSaveOptions after choosing the preset: bleedLink = true (or use document bleed) and bleedOffsetRect = [bleed, bleed, bleed, bleed] (in points), optionally trimMarks = true.",
+"tweak-effect-name": "\"Adobe Tweak\"",
+"twist-effect-name": "LiveEffect name \"Adobe Twirl\"; parameter key \"angle\" (degrees)",
+"warp-flag-style": "8",
+"roughen-detail-key": "\"detail\"",
+"offset-path-effect-keys": "\"ofst\" = offset distance, \"jntp\" = join type, \"mlim\" = miter limit",
+"rasterize-effect-dpi-key": "\"dpi\"",
+"outline-object-effect-name": "\"Adobe Outline Object\"",
+"point-area-route": "app.executeMenuCommand('point-area') is refused / does nothing from a script (no conversion happens). The DOM equivalent is TextFrameItem.convertPointObjectToAreaObject() on the selected point text frame (and convertAreaObjectToPointObject() for the reverse).",
+"type-on-path-route": "It runs it by recording/loading an action and playing it with app.doScript (action set loaded via app.loadAction from a generated .aia file), or by opening Type > Type on a Path > Type on a Path Options and answering that dialog with Effect = Skew using the skill's dialog handler.",
+"rotate-view-route": "Set the view's rotation: app.activeDocument.views[0].rotateAngle = 90",
+"unverified-member-count": "Guess: about 40 unverified members and about 60 COM-only members",
+"same-call-selection": "Illustrator does not commit the new selection to the UI/menu-command context until the script yields or the document redraws, so executeMenuCommand in the same script still sees the old (or empty) selection. Fix: call app.redraw() after changing the selection and before executeMenuCommand, or split selection and the menu command into two separate run_js calls."
+}}

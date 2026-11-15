@@ -1,0 +1,17 @@
+pucker-effect-name	To apply Effect > Distort & Transform > Pucker & Bloat (縮攏與膨脹) with applyEffect(xml), what is the LiveEffect name and the parameter key for the amount?
+zigzag-effect-keys	In the applyEffect XML for Effect > Distort & Transform > Zig Zag (鋸齒化), what is the LiveEffect name, and which key sets the number of ridges per segment?
+blocked-menu-cmds	When every Illustrator 2024 (28.0) menu command was run from a script and read back, two could not be completed from a script at all (they hang or loop on a dialog). Which two menu items?
+repeat-config-null	In Illustrator 28.0 ExtendScript, what happens when you read radialConfig / gridConfig / symmetryConfig on a Repeat item, and how does the skill set Repeat options instead?
+press-quality-bleed	Saving a print PDF from an Illustrator script with pDFPreset = '[Press Quality]': what happens to the document bleed, and which PDFSaveOptions settings keep the bleed?
+tweak-effect-name	In applyEffect XML, what LiveEffect name does Illustrator 2024 use for Effect > Distort & Transform > Tweak?
+twist-effect-name	In applyEffect XML, what LiveEffect name and parameter key does Effect > Distort & Transform > Twist (扭轉) use?
+warp-flag-style	All Effect > Warp styles share the LiveEffect "Adobe Deform". Which integer value of the DeformStyle key selects the Flag style?
+roughen-detail-key	In the Adobe Roughen LiveEffect XML (Effect > Distort & Transform > Roughen, 粗糙效果), which key holds the Detail (ridges per inch) value?
+offset-path-effect-keys	In the Adobe Offset Path LiveEffect XML (Effect > Path > Offset Path), which keys hold the offset distance, the join type and the miter limit?
+rasterize-effect-dpi-key	In the Adobe Rasterize LiveEffect XML (Effect > Rasterize), what is the exact key for the resolution (ppi)?
+outline-object-effect-name	What LiveEffect name does Effect > Path > Outline Object use in applyEffect XML?
+point-area-route	From an Illustrator 2024 script, what happens with app.executeMenuCommand('point-area') (Type > Convert To Area Type), and what DOM method does the same thing?
+type-on-path-route	app.executeMenuCommand('textpathtypeSkew') (Type > Type on a Path > Skew) is refused by Illustrator 2024. How does the skill run it instead?
+rotate-view-route	executeMenuCommand('RotateView90') throws PARM from a script. What property does the skill set to rotate the view instead?
+unverified-member-count	The skill's API index for Illustrator 28.0.0 sorts every type-library member into verified-in-ExtendScript, COM-only, or unverified. How many members are unverified, and how many are COM-only?
+same-call-selection	In this skill, a script selects objects and runs app.executeMenuCommand() in the same run_js call, and the command acts on the old selection or does nothing. Why, and what is the fix?
