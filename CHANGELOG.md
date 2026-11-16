@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 — 2026-11-16
+
+- Chinese lookups: `ai_api.py` `menu` / `effect` / `find` accept zh_TW words through `index/terms_zh.csv` (Illustrator's own zh_TW menu export aligned to `menu-index.json`) and `index/glossary_zh.csv` (common design terms, with a confidence column).
+- `data/` ships with the package; `data/pending.csv` lists what could not be confirmed.
+- SKILL.md: sources table with counts, dates and confidence; when not to use; Chinese routing; tasks with done-when; output → verifier → pass table.
+- `tools/check_numbers.py` checks every count, version and date in SKILL.md and package.json against the data.
+- `tests/test_lookup.py`: offline self-tests for the lookup layer (no Illustrator needed); `evals/` holds 12 questions with with/without-skill runs.
+
 ## 1.0.5 — 2026-10-03
 
 - `html2ai.py`: a space before a word no longer sets the line's x (`<span>for</span> WooCommerce` was converted as "forWooCommerce"); a translucent border on a translucent box keeps its own opacity as a separate stroke-only shape (it used to take the fill's opacity and disappear); `linear-gradient` stops keep their alpha (fades to transparent came out solid). Checked by `tests/html2ai_check.py`, which reads the converted document back.
